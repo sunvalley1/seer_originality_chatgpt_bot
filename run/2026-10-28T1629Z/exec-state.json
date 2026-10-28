@@ -701,7 +701,26 @@
   "dual-buy:flashbots/mev-boost": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:46:35.695Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 88,
+     "nonce": 2781,
+     "hash": "0xaecdde8d7cd5434a4ab65c2b89a75fd3b5fd1dfd3b1dc488a020307488038ae6",
+     "block": 158803611
+    },
+    {
+     "idx": 89,
+     "nonce": 2782,
+     "hash": "0xe1617e6ba70f3400e4f496f29bb3f54cb8550096360c1568b5d3d1e5b98c23c0",
+     "block": 158803615
+    },
+    {
+     "idx": 90,
+     "nonce": 2783,
+     "hash": "0x3b83fddde5f4f44052cb6fe300d0a305044e849913c08c759af4ab5a1926c228",
+     "block": 158803618
+    }
+   ]
   }
  },
  "stop": null,
