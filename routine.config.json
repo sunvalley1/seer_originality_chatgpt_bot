@@ -12,11 +12,11 @@
     "parallel": 1
   },
   "_planner": "rpcGapMs and parallel pace the planner's RPC reads.",
-  "toolsDir": "~/r3-tools",
-  "signerDir": "~/.r3-signer-bin",
-  "keysDir": "~/.r3-signer-keys",
-  "stateDir": "~/.r3-signer-state",
-  "_dirs": "Folders on the cloud host for the planner/helper, signer, keys and signer lock/log. All must be outside the project folder. Keep keysDir at ~/.r3-signer-keys where Claude's denied-tool rules name that folder; verify equivalent restrictions for other platforms. The reviewed install writes key files only when R3_KEYSTORE_JSON and R3_KEYSTORE_PASSWORD are both privately configured. Never commit those files or values.",
+  "toolsDir": "/workspace/r3-runtime/tools",
+  "signerDir": "/workspace/r3-runtime/signer",
+  "keysDir": "/workspace/r3-runtime/keys",
+  "stateDir": "/workspace/r3-runtime/state",
+  "_dirs": "Cloud-only paths outside the checkout: /workspace/r3-runtime/tools for planner/helper, /workspace/r3-runtime/signer for signer, /workspace/r3-runtime/keys for private credential files, and /workspace/r3-runtime/state for signer lock/log. Configure matching credential-access restrictions for these exact cloud paths before any private values are supplied. The reviewed install writes key files only when R3_KEYSTORE_JSON and R3_KEYSTORE_PASSWORD are both privately configured. Never commit those files or values.",
   "rpcUrl": "https://mainnet.optimism.io",
   "dataFunctionUrl": "https://deep.seer.pm/.netlify/functions/get-originality-r3-v3-markets-data",
   "git": {
