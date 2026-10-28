@@ -153,7 +153,7 @@
    "effects_diffs": []
   },
   "dual-buy:blockscout/blockscout": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:38:37.947Z",
    "txs": [
     {
@@ -167,6 +167,32 @@
      "nonce": 2711,
      "hash": "0xb7be173fac11a7ae8516b853487e5d9a9520ec6ab39c8ed0d5ada93e3ae09229",
      "block": 158803376
+    },
+    {
+     "idx": 19,
+     "nonce": 2712,
+     "hash": "0xd61877fddc6f207b3ba3f75771462ba2372840c8be25cd79f0023c9c2a5bf311",
+     "block": 158803379
+    },
+    {
+     "idx": 20,
+     "nonce": 2713,
+     "hash": "0x7e16edd581f2ffbd418426c3b56ecfbd265ffdae136762640ab25a3b2e29a8e9",
+     "block": 158803382
+    }
+   ],
+   "ended_at": "2026-10-28T16:39:04.079Z",
+   "effects_diffs": []
+  },
+  "simple-buy:LFDT-web3j/web3j:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:39:04.827Z",
+   "txs": [
+    {
+     "idx": 21,
+     "nonce": 2714,
+     "hash": "0x8fe344f78f79df43a9fe1236493487842a488ea15aaa6ebfb59671d9e4d6c2b1",
+     "block": 158803386
     }
    ]
   }
