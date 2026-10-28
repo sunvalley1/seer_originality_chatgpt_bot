@@ -515,9 +515,36 @@
    "effects_diffs": []
   },
   "simple-buy:l2beat/l2beat:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:43:52.774Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 64,
+     "nonce": 2757,
+     "hash": "0xcc4e25e2242eb92caf635b65cac6f412d3854a6b1f2159c488c0fa77d29f4b7d",
+     "block": 158803530
+    },
+    {
+     "idx": 65,
+     "nonce": 2758,
+     "hash": "0xd504bf4b6a4805bc0128998034998418184e2ae2dc1bc7071cc4b08fab097608",
+     "block": 158803533
+    }
+   ],
+   "ended_at": "2026-10-28T16:44:05.642Z",
+   "effects_diffs": []
+  },
+  "complex-buy:Consensys/gnark-crypto:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:44:06.420Z",
+   "txs": [
+    {
+     "idx": 66,
+     "nonce": 2759,
+     "hash": "0x2d749ebf1d726bc92488bbd79e6a9a7edd5cf894f125d85f3ce2cb1c0cb1639c",
+     "block": 158803537
+    }
+   ]
   }
  },
  "stop": null,
