@@ -43,9 +43,36 @@
    "effects_diffs": []
   },
   "mint-middle-B": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:37:10.729Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 4,
+     "nonce": 2697,
+     "hash": "0x6c00a20ffa5f3a9cdfc8be45ed5530d91ef4aa4b698da36645fa5a293c32aa1a",
+     "block": 158803329
+    },
+    {
+     "idx": 5,
+     "nonce": 2698,
+     "hash": "0x93044173698e4a248d2332f6a59afd4bbca7096e49dab79aef794eba9d21a5d7",
+     "block": 158803332
+    }
+   ],
+   "ended_at": "2026-10-28T16:37:23.936Z",
+   "effects_diffs": []
+  },
+  "mint-middle-C": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:37:24.693Z",
+   "txs": [
+    {
+     "idx": 6,
+     "nonce": 2699,
+     "hash": "0x6132c2f1ca100ffbc4d58bd90cf31065080ac56d4bd91006ffc8e938aa4f69f6",
+     "block": 158803336
+    }
+   ]
   }
  },
  "stop": null,
