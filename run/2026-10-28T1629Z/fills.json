@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:51:03.280Z",
+ "generated_at": "2026-10-28T16:51:30.063Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -494,12 +494,38 @@
    "tx_hash": "0xc6a4e75bde1008a2cb0ab07924a26749376d19d84d5dcfbe942752685e56c66a",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ethstaker/eth-docker",
+   "address": "0x9525a58d53bc9d395ef56ec4c11e39370a88a304",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 10.3839162250347,
+   "filled": 16.2632523017353,
+   "fill_price": 0.6384895242587348,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x73c388096ccb1f6dd6d6756d643d82afd07d3243937469ff57440c56bcc7eac9",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "ethstaker/eth-docker",
+   "address": "0x9525a58d53bc9d395ef56ec4c11e39370a88a304",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 24.4886811606463,
+   "filled": 66.6578348049156,
+   "fill_price": 0.3673788870027991,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc0bcac1c33502f4819cbc447b6a50deaea6202f3198dee24ac9185e128186e7e",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 26
+  "positions_opened": 28
  },
  "retained_legs": []
 }
