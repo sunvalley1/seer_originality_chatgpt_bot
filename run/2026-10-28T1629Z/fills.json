@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:49:22.852Z",
+ "generated_at": "2026-10-28T16:50:09.263Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -427,6 +427,19 @@
    "fill_price": 0.15266647747268514,
    "slippage_vs_quote": 0,
    "tx_hash": "0x4e9a35128bc811a107830a1aa105fc8ba03fe920942478391c7d8eed6d6509e5",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "supranational/blst",
+   "address": "0x74a00a7a338f0fa8ce7afedb27279a30cf24df85",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 31.8187658263617,
+   "filled": 35.82953469825947,
+   "fill_price": 0.8880596997512071,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x53565598d89a1247df2f76462f1472047c7b73ba2f536ee66097c13c91fec537",
    "status": "filled",
    "error": null
   }
