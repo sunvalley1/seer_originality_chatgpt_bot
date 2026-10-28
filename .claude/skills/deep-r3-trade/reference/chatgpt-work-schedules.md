@@ -1,4 +1,4 @@
-# ChatGPT Work web schedules — optional route, validation pending
+# ChatGPT Work web schedules — optional route, trading validation pending
 
 Use this reference when the operator chooses ChatGPT Work web schedules. The proposed integration uses cloud
 execution and the operator's approved GitHub repository for forecasts and all durable run state. The operator
@@ -28,16 +28,48 @@ and read back a nonsecret JSON probe with marker `R3_SCHEDULE_PROBE_2026_10_28` 
 read access and filesystem write/readback within that execution. It does not verify authenticated GitHub writes,
 credential delivery, persistence across runs, long-running commands, single-sender coordination or a full bot run.
 
+Separately, a named Codex Cloud environment's setup workspace checked repository snapshot `76d46ff` with the
+official Node v22.22.0 distribution after verifying its checksum. Git 2.52 and npm 10.9.4 were available. All seven
+bounded offline gate tests passed, with no failures or skips; syntax and import checks also passed. Those checks
+needed no dependency installation and did not exercise the signer, RPC access or trading. Those test results
+belong to the setup workspace, not the ordinary web scheduler.
+
+The named environment was then successfully published on 2026-10-28 with access set to **Only me** and no
+environment variables or HTTP/network secrets configured. The UI confirmed publication and loaded a new draft
+based on the published version. Publication alone does not establish a successful task launch, delivery of private
+credentials, or use of that environment by a web schedule.
+
+A fresh task was subsequently launched through **Explore → Codex → Work in Cloud** with the published
+environment selected. Its environment status reported provider `cloud`, running and connected, at revision 1.
+Four commands exited 0: the explicit installed Node path reported v22.22.0, `pwd` reported `/workspace`, and
+Git confirmed the expected repository root and snapshot `76d46ff`. This verifies that a new task can use the
+published environment's runtime and checkout. It does not extend the setup test results to scheduled execution.
+
+A one-time hosted continuation created inside that cloud task with `automations.create` retained its current
+`thread_id`, with no chat selector supplied and `conversation_id` null. It was due at 10:19:26 UTC on 2026-10-28.
+A new turn began at 10:22:52 UTC with exactly the saved diagnostic instructions, without a manual submission or
+**Run now** action. Its four commands again reported Node v22.22.0, `/workspace`, the expected repository root
+and snapshot `76d46ff`, all with exit code 0. Its environment identity matched the selected cloud environment,
+with provider `cloud` and running/current status.
+
+The schedule UI showed **Completed**. A final `automations.peek` confirmed the matching target thread and
+`last_run_time` of `2026-10-28T10:22:52.316923Z`, with the one-time schedule disabled and no next run. Per-run
+ID/result details were absent; the separate task output supplies the command evidence. This demonstrates hosted
+continuation in this specific named environment. The observed start was about 3 minutes 26 seconds late; it is
+not a guarantee of future start times, recurring reliability, long-running bot execution, credential delivery or
+authenticated GitHub writes.
+
 The web schedule interface was observed with instructions, repeat, time, time zone, start-new-chat, model and
 reasoning-effort controls.
-No selector for a named, published Codex Cloud environment was shown in that interface. Do not equate a ChatGPT
-Work web chat or schedule with a selected Codex Cloud environment, and do not infer that a missing selector makes
-all cloud scheduling impossible.
+No selector for a named, published Codex Cloud environment was shown in that interface. That observation applies
+to the ordinary web schedule controls; the hosted continuation above was created within an existing cloud task
+and retained its target thread. Do not assume that every web schedule uses a selected Codex Cloud environment,
+or that the missing selector prevents the demonstrated continuation route.
 
-The bot targets Node 22. Verify that runtime on the actual scheduled execution host; the successful Node 24
-diagnostics do not validate the bot, its dependencies, signer or RPC access. Cloud preparation uses signer checks
-and simulated clearance that send no transactions. A completed live trading run is not a prerequisite. Keep the planner's guard against
-supervised sends when cloud key environment variables are present; the setup flow never needs to bypass it.
+The bot targets Node 22, now observed in the named cloud task's hosted continuation. The runtime probes do not
+validate the full bot, its dependencies, signer or RPC access. Cloud preparation uses signer checks and simulated
+clearance that send no transactions. A completed live trading run is not a prerequisite. Keep the planner's guard
+against supervised sends when cloud key environment variables are present; setup never needs to bypass it.
 
 ## Private credential settings are separate from a web schedule
 
@@ -55,11 +87,12 @@ to protected signer files outside the checkout. It does **not** convert a raw pr
 the wallet during installation. No new key-handling code is needed. The operator supplies the two values privately;
 the agent must never read, print or copy their contents into chat, logs, prompts or repository files.
 
-Configuring a named Codex Cloud environment does not prove that an ordinary ChatGPT Work web schedule uses it.
-That binding remains unverified: the observed schedule controls showed no environment selector. Verify the actual
-scheduled task's environment and credential-delivery mechanism without exposing credentials before treating this
-route as compatible. An unfinished environment, missing variables or unset startup configuration is setup work
-still to do, not evidence of a working adapter.
+The observed hosted continuation retained the named cloud environment for the tested task. It used no configured
+credentials, so private credential delivery remains unverified. Ordinary web schedule controls still showed no
+environment selector; do not generalize the current-thread result to a different schedule or task. Verify the
+actual scheduled task's environment and credential-delivery mechanism without exposing credentials before live
+use. An unfinished environment, missing variables or unset startup configuration is setup work still to do,
+not evidence of a working trading adapter.
 
 ## Storage contract
 
@@ -88,13 +121,16 @@ The agent performs authorized capability checks through available tools and the 
 website sign-ins and all credential entry privately. Ask only for information or human-only actions that remain
 unavailable after those checks; do not hand routine UI inspection back to the operator.
 
-1. Use the completed scheduled diagnostic as the baseline for shell, public GitHub read and same-run filesystem
-   access. For further bounded diagnostics, confirm the saved instructions, repeat, time zone and whether the
-   schedule starts a new chat. Keep diagnostics separate from any eventual live trading schedule.
-2. Verify Node 22 and the required dependency/network support in the actual scheduled context. Use only harmless
+1. Use the completed probes as evidence only for their tested contexts: the ordinary web schedule demonstrated
+   public GitHub read and filesystem access within one run; the named task's hosted continuation demonstrated
+   its Node 22 runtime and checkout. For further bounded diagnostics, confirm the target thread, environment,
+   saved instructions, repeat, time zone and whether the schedule starts a new chat. Keep diagnostics separate
+   from any eventual live trading schedule.
+2. Verify the required dependency/network support in the actual scheduled context, and recheck the runtime and
+   environment identity when the schedule target or configuration changes. Use only harmless
    runtime and filesystem checks, read-only network checks to the required hosts, and nonsecret probes for this
    capability diagnostic. No bot trading entry point, signer invocation, `cast`, `allowlist-init`, key access,
-   environment dump or wallet transaction belongs in it. The completed Node 24 probe is not full-bot validation.
+   environment dump or wallet transaction belongs in it. Neither runtime probe is full-bot validation.
 3. Public read access to the approved repository has passed. Verify the authenticated GitHub identity without
    printing tokens, and any private-repository access if applicable. Read access does not establish write access.
    If authorized, test saving a clearly identified nonsecret probe to that repository and retrieving it in a
@@ -114,7 +150,7 @@ operator-run. Credential entry also remains private and human-controlled. A miss
 not permission for the agent to take over key handling or operator-only actions.
 
 These diagnostics grant no trading authority. No verified adapter or live schedule is supplied by this documentation
-change. Until the gaps are resolved, report the cloud route as pending and leave trading disabled.
+change. Until the gaps are resolved, report trading setup as pending and leave trading disabled.
 
 ## Gates that remain required
 
