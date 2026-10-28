@@ -1,0 +1,264 @@
+{
+ "at": "2026-10-28T11:29:48.384Z",
+ "signer": "/workspace/r3-runtime/signer/signer.cjs",
+ "signer_sha256": "19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef",
+ "allowlist_sha256": "7228af0474ae40bfe0d70d23162eca9a846aae69c7e521a91729185941d4e090",
+ "replayed_from": "run/setup-2026-10-28T112250Z/selftest",
+ "env_dropped": [],
+ "cases": [
+  {
+   "case": "01-token-transfer",
+   "file": "case-01.json",
+   "expected": "token-transfer",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "token-transfer",
+    "detail": "transfer and transferFrom are never allowlisted",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "02-foreign-spender",
+   "file": "case-02.json",
+   "expected": "approval-spender",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "approval-spender",
+    "detail": "spender 0x000000000000000000000000000000000000dead is not the Router, SwapRouter02 or PSM3",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "03-max-approval",
+   "file": "case-03.json",
+   "expected": "approval-amount",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "approval-amount",
+    "detail": "an approval of type(uint256).max is never signed; approve the exact amount",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "04-input-recipient",
+   "file": "case-04.json",
+   "expected": "recipient",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "recipient",
+    "detail": "the swap recipient is always the holder",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "05-output-recipient",
+   "file": "case-05.json",
+   "expected": "recipient",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "recipient",
+    "detail": "the swap recipient is always the holder",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "06-psm-receiver",
+   "file": "case-06.json",
+   "expected": "receiver",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "receiver",
+    "detail": "the PSM3 receiver is always the holder",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "07-wrong-pair-exactInputSingle",
+   "file": "case-07.json",
+   "expected": "swap-pair",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "swap-pair",
+    "detail": "swaps are only (UP or DOWN of child j) <-> (repo token j)",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "07-wrong-pair-exactOutputSingle",
+   "file": "case-08.json",
+   "expected": "swap-pair",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "swap-pair",
+    "detail": "swaps are only (UP or DOWN of child j) <-> (repo token j)",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "08-wrong-fee-exactInputSingle",
+   "file": "case-09.json",
+   "expected": "swap-fee-tier",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "swap-fee-tier",
+    "detail": "fee 500 is not the tier 100 pinned for this pair",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "08-wrong-fee-exactOutputSingle",
+   "file": "case-10.json",
+   "expected": "swap-fee-tier",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "swap-fee-tier",
+    "detail": "fee 500 is not the tier 100 pinned for this pair",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "09-wrong-psm-pair",
+   "file": "case-11.json",
+   "expected": "psm3-pair",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "psm3-pair",
+    "detail": "PSM3 swaps are USDC or USDS <-> sUSDS only",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "10-unlisted-market",
+   "file": "case-12.json",
+   "expected": "router-market",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "router-market",
+    "detail": "market 0x000000000000000000000000000000000000dead is not the v3 parent, a middle or one of the 98 children",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "11-native-value",
+   "file": "case-13.json",
+   "expected": "native-value",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "native-value",
+    "detail": "native value must be 0",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "12-unlisted-selector",
+   "file": "case-14.json",
+   "expected": "selector",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "selector",
+    "detail": "selector 0x12345678 is not allowlisted on a token",
+    "index": 0
+   },
+   "pass": true
+  },
+  {
+   "case": "13-permit",
+   "file": "case-15.json",
+   "expected": "eip712",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "eip712",
+    "detail": "EIP-712 typed data is never signed by this signer (permits, Permit2, EIP-3009 included)"
+   },
+   "pass": true
+  },
+  {
+   "case": "14-7702",
+   "file": "case-16.json",
+   "expected": "eip7702",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "eip7702",
+    "detail": "EIP-7702 authorizations and SetCode transactions are never signed by this signer"
+   },
+   "pass": true
+  },
+  {
+   "case": "15-bad-call-in-list",
+   "file": "case-17.json",
+   "expected": "approval-spender@1",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "approval-spender",
+    "detail": "spender 0x000000000000000000000000000000000000dead is not the Router, SwapRouter02 or PSM3",
+    "index": 1
+   },
+   "pass": true
+  },
+  {
+   "case": "16-allowed",
+   "file": "case-18.json",
+   "expected": "allowed",
+   "exit": 0,
+   "got": {
+    "allowed": true
+   },
+   "pass": true
+  },
+  {
+   "case": "17-check-input-mode-key",
+   "file": "case-19.json",
+   "expected": "mode-switch",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "mode-switch",
+    "detail": "input key \"allowlist\" claims to change the signer mode; the input file cannot change the allowlist"
+   },
+   "pass": true
+  },
+  {
+   "case": "18-check-input-mode-key",
+   "file": "case-20.json",
+   "expected": "mode-switch",
+   "exit": 3,
+   "got": {
+    "refused": "allowlist",
+    "rule": "mode-switch",
+    "detail": "input key \"allowlist\" claims to change the signer mode; the input file cannot change the allowlist"
+   },
+   "pass": true
+  }
+ ],
+ "fails": []
+}

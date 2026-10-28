@@ -1,0 +1,91 @@
+{
+  "coverage": "Check-only substitutes for documented send cases 17/18. No send entrypoint exercised; actual send-mode refusal coverage remains untested. Shared offlinePipeline source audited.",
+  "cases": [
+    {
+      "case": "bad-extra",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "extra argument \"allowlist-off\" is not part of the check grammar; no argument can change the allowlist"
+      },
+      "pass": true
+    },
+    {
+      "case": "bad-flag",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "flag \"--allowlist-off\" is not part of the check grammar; no flag can change the allowlist"
+      },
+      "pass": true
+    },
+    {
+      "case": "bad-synthetic-env",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "environment variable SIGNER_ALLOWLIST looks like an allowlist switch; the signer reads no environment variable to change its behaviour"
+      },
+      "pass": true
+    },
+    {
+      "case": "bad-sidecar",
+      "entrypoint": "check",
+      "expected": "approval-spender",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "approval-spender",
+        "detail": "spender 0x000000000000000000000000000000000000dead is not the Router, SwapRouter02 or PSM3",
+        "index": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "good-extra",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "extra argument \"allowlist-off\" is not part of the check grammar; no argument can change the allowlist"
+      },
+      "pass": true
+    },
+    {
+      "case": "good-flag",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "flag \"--allowlist-off\" is not part of the check grammar; no flag can change the allowlist"
+      },
+      "pass": true
+    },
+    {
+      "case": "good-synthetic-env",
+      "entrypoint": "check",
+      "expected": "mode-switch",
+      "exit": 3,
+      "got": {
+        "refused": "allowlist",
+        "rule": "mode-switch",
+        "detail": "environment variable SIGNER_ALLOWLIST looks like an allowlist switch; the signer reads no environment variable to change its behaviour"
+      },
+      "pass": true
+    }
+  ],
+  "passed": 7
+}

@@ -1,0 +1,57 @@
+{
+ "at": "2026-10-28T11:47:04.033Z",
+ "rep": {
+  "data_files": {
+   "checked": 558,
+   "bad": 0
+  },
+  "boundary": {
+   "groups": 128,
+   "not_clear": 0
+  },
+  "quotes": {
+   "checked": 152,
+   "outside_bound": 0,
+   "differ_from_plan_quote": 0
+  },
+  "simulation": {
+   "clean": true,
+   "requests": 2,
+   "windowed": true,
+   "problems": []
+  },
+  "sale_proceeds": {
+   "checked": 15,
+   "differ": 0,
+   "problems": []
+  },
+  "sim_rows_vs_plan": {
+   "checked": 558,
+   "differ": 0,
+   "note": "a difference in gasUsed or gas_limit is reported; the pre-send gas check judges each transaction at its send"
+  },
+  "rebuild": {
+   "groups": 15,
+   "differ": 0
+  },
+  "affordability": {
+   "gas_price": "1000284",
+   "first_group_not_affordable": null,
+   "projected_end_eth": "0.005405239461940616"
+  },
+  "first_tx": {
+   "idx": 0,
+   "fresh_gas_used": "51101",
+   "plan_gas_used": 51101,
+   "gas_limit": "61322",
+   "notes": []
+  },
+  "settlement": {
+   "checked": 0,
+   "not_landed": 0
+  },
+  "problems": 0,
+  "seconds": 378
+ },
+ "bad": []
+}

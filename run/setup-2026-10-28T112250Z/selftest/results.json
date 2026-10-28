@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "case": "01-token-transfer",
+      "expected": "token-transfer"
+    },
+    {
+      "case": "02-foreign-spender",
+      "expected": "approval-spender"
+    },
+    {
+      "case": "03-max-approval",
+      "expected": "approval-amount"
+    },
+    {
+      "case": "04-input-recipient",
+      "expected": "recipient"
+    },
+    {
+      "case": "05-output-recipient",
+      "expected": "recipient"
+    },
+    {
+      "case": "06-psm-receiver",
+      "expected": "receiver"
+    },
+    {
+      "case": "07-wrong-pair-exactInputSingle",
+      "expected": "swap-pair"
+    },
+    {
+      "case": "07-wrong-pair-exactOutputSingle",
+      "expected": "swap-pair"
+    },
+    {
+      "case": "08-wrong-fee-exactInputSingle",
+      "expected": "swap-fee-tier"
+    },
+    {
+      "case": "08-wrong-fee-exactOutputSingle",
+      "expected": "swap-fee-tier"
+    },
+    {
+      "case": "09-wrong-psm-pair",
+      "expected": "psm3-pair"
+    },
+    {
+      "case": "10-unlisted-market",
+      "expected": "router-market"
+    },
+    {
+      "case": "11-native-value",
+      "expected": "native-value"
+    },
+    {
+      "case": "12-unlisted-selector",
+      "expected": "selector"
+    },
+    {
+      "case": "13-permit",
+      "expected": "eip712"
+    },
+    {
+      "case": "14-7702",
+      "expected": "eip7702"
+    },
+    {
+      "case": "15-bad-call-in-list",
+      "expected": "approval-spender@1"
+    },
+    {
+      "case": "16-allowed",
+      "expected": "allowed"
+    },
+    {
+      "case": "17-check-input-mode-key",
+      "expected": "mode-switch"
+    },
+    {
+      "case": "18-check-input-mode-key",
+      "expected": "mode-switch"
+    }
+  ]
+}

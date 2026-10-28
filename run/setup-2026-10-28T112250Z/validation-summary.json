@@ -1,0 +1,92 @@
+{
+  "recorded_at": "2026-10-28T11:49:04.381633Z",
+  "docs_commit_integrated": "efd61b4c5e1a7777c2bb7ea34143ede404cb5340",
+  "forecast_sha256": "52fd0781f1b59de3f7909f005a26fbf95a5bdfdb89693248aad2abdeba140ece",
+  "forecast_accepted_version": 1,
+  "policy_checks": 27,
+  "ordinary_inputs": 18,
+  "mode_attempts": 9,
+  "clearance": {
+    "run_id": "2026-10-28T1129Z-clearance",
+    "passed": true,
+    "empty_plan": false,
+    "steps": [
+      {
+        "step": "c",
+        "exit": 0,
+        "seconds": 13,
+        "stop": null,
+        "outcome": "body"
+      },
+      {
+        "step": "d",
+        "exit": 0,
+        "seconds": 0,
+        "stop": null,
+        "outcome": "stored"
+      },
+      {
+        "step": "e",
+        "exit": 0,
+        "seconds": 0,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "f",
+        "exit": 0,
+        "seconds": 304,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "g --indep",
+        "exit": 0,
+        "seconds": 381,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "exec --check",
+        "exit": 0,
+        "seconds": 379,
+        "stop": null,
+        "outcome": "check-passed"
+      }
+    ],
+    "groups": 128,
+    "unsigned_calls": 558,
+    "exec_check_problems": 0
+  },
+  "warnings": {
+    "proxy_agent": "Node EnvHttpProxyAgent experimental warning",
+    "F_optional_unconfirmed_probes": 6,
+    "full_G_second_provider_request": "optional; generated, not executed"
+  },
+  "signing_verified": false,
+  "publication_performed": false,
+  "hosted_schedule_created": false,
+  "remaining_platform_constraints": [
+    "No supported publication tool in this session; save nonsecret draft before credential-consuming install",
+    "No hosted scheduling tool in this session; no local automation substituted",
+    "No verified enforced command allow rule or 6-hour duration/concurrency guarantee"
+  ],
+  "environment_draft": {
+    "status": "saved",
+    "draft_id": "a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfgdraft_3f3789ff983c8190bc0714633c3aaf88",
+    "requires_publish": true,
+    "requested_runtime_names": [
+      "R3_KEYSTORE_JSON",
+      "R3_KEYSTORE_PASSWORD"
+    ],
+    "proxy_settings": {
+      "NODE_USE_ENV_PROXY": "1",
+      "NODE_USE_SYSTEM_CA": "1"
+    },
+    "runtime_delivered_variables": [],
+    "credential_consuming_install_performed": false,
+    "snapshot_after_private_install_permitted": false
+  },
+  "paused_schedule_spec": "run/setup-2026-10-28T112250Z/paused-hosted-schedule-spec.json",
+  "next_action": "Root publishes this nonsecret draft through UI, opens a selected cloud validation task, verifies metadata-only runtime readiness and privately connects existing vault entries only if required; host schedule/control gaps remain explicit."
+}

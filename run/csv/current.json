@@ -1,0 +1,14 @@
+{
+  "current": "./run/csv/originality-v1-setup-2026-10-28T112250Z.csv",
+  "version": 1,
+  "sha256": "52fd0781f1b59de3f7909f005a26fbf95a5bdfdb89693248aad2abdeba140ece",
+  "supplied_at": "2026-10-28T11:28:41Z",
+  "supplied_in_run": "setup-2026-10-28T112250Z",
+  "counts": {
+    "matched": 98,
+    "unmatched": 0,
+    "overwritten": 0,
+    "no_forecast": 0
+  },
+  "history": []
+}

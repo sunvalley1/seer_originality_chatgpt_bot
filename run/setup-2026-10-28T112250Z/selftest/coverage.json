@@ -1,0 +1,12 @@
+{
+  "policy_entrypoint": "check only",
+  "routine_replay_results": "run/setup-2026-10-28T1129Z/selftest/results.json",
+  "routine_replay_passed": 20,
+  "supplemental_results": "run/setup-2026-10-28T112250Z/selftest/mode-results.json",
+  "supplemental_passed": 7,
+  "total_actual_policy_checks": 27,
+  "send_entrypoint_tested": false,
+  "reduced_coverage": "Documented send mode cases 17/18 exercised only through check. Shared offlinePipeline confirmed by source review. No signing/decryption capability verified.",
+  "fixture_config_changes": false,
+  "expectation_bootstrap": "selftest/results.json contains only cases[].case and expected, as required by routine replay; actual exit/got/pass are in the replay result path."
+}

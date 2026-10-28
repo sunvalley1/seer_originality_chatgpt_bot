@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-28T11:31:12.255453+00:00",
+  "helper_sha256": "29673eb497de0ddfb16f611aaed10c99a6e281de7d6563f70889c67c4ae6acbc",
+  "slot0": {
+    "pool": "0xbf7706b52cD4740fDf7BE57cA94379954B4d4256",
+    "block": 158794145,
+    "sqrt_price_x96": "67346258301466759445866467320",
+    "tick": -3250,
+    "liquidity": "1138641802894253378367",
+    "token0": "0x3f86eA81953FFB9bB29702193203774B08cbE895",
+    "token1": "0xc9335b722174A667c6c7D69Ee85412dC41332B4C",
+    "fee": 100,
+    "price_token1_per_token0": "0.722549784662440923202604348544343529"
+  },
+  "independent_slot0_match": true,
+  "payout_denominator": {
+    "to": "0x8bdC504dC3A05310059c1c67E0A2667309D27B93",
+    "signature": "payoutDenominator(bytes32)",
+    "block": 158794146,
+    "calldata_bytes": 36,
+    "raw_bytes": 32,
+    "raw_keccak256": "0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563",
+    "result": [
+      "0"
+    ],
+    "raw": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "independent_payout_denominator_match": true,
+  "split_check": {
+    "allowed": true
+  },
+  "two_group_simulation": {
+    "from": "0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a",
+    "input": "groups",
+    "entries": 2,
+    "count": 4,
+    "all_success": true,
+    "failed_count": 0,
+    "first_failed_index": null,
+    "first_failed_group": null,
+    "over_cap_count": 0,
+    "first_over_cap_index": null,
+    "clamped_count": 0,
+    "pending_nonce": 2693,
+    "gas_limit_rule": "ceil(maxUsedGas x 1.2), clamped at 16777216; ceil(gasUsed x 1.5) for a call the RPC gave no maxUsedGas",
+    "columns": [
+      "index",
+      "group",
+      "status",
+      "gasUsed",
+      "maxUsedGas",
+      "gas_limit"
+    ],
+    "calls": [
+      [
+        0,
+        0,
+        "0x1",
+        51005,
+        51005,
+        61206
+      ],
+      [
+        1,
+        0,
+        "0x1",
+        595991,
+        744988,
+        893986
+      ],
+      [
+        2,
+        1,
+        "0x1",
+        48905,
+        48905,
+        58686
+      ],
+      [
+        3,
+        1,
+        "0x1",
+        4044560,
+        5055700,
+        6066840
+      ]
+    ]
+  },
+  "no_max_used_gas": false,
+  "independent_read_scope": "Independent curl eth_call at matching block via the same approved public endpoint; no second provider accessed"
+}
