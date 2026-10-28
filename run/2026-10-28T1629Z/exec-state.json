@@ -629,9 +629,36 @@
    "effects_diffs": []
   },
   "simple-buy:taikoxyz/taiko-mono:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:45:34.919Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 79,
+     "nonce": 2772,
+     "hash": "0x32a1d9321caf624808e28d6e1d2d657b39e0a6d8c49925512885d7c32646b921",
+     "block": 158803581
+    },
+    {
+     "idx": 80,
+     "nonce": 2773,
+     "hash": "0x42d4edc3ec0c49249f8c3f846562eb87ee821d8c1f7c8c6c04bdaf49aec69b07",
+     "block": 158803584
+    }
+   ],
+   "ended_at": "2026-10-28T16:45:48.304Z",
+   "effects_diffs": []
+  },
+  "merge-arb:flashbots/mev-boost": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:45:49.049Z",
+   "txs": [
+    {
+     "idx": 81,
+     "nonce": 2774,
+     "hash": "0x7801f72f436ab55b04506939939ef37e2a0f2a97406e70a7b167c1e62799f956",
+     "block": 158803588
+    }
+   ]
   }
  },
  "stop": null,
