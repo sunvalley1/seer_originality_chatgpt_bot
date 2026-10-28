@@ -333,7 +333,26 @@
   "dual-buy:arkworks-rs/algebra": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:41:12.794Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 40,
+     "nonce": 2733,
+     "hash": "0x39939ef8209926098574ba970ef4756bae5af24bcd4fbf69d1f5c690c68d6053",
+     "block": 158803450
+    },
+    {
+     "idx": 41,
+     "nonce": 2734,
+     "hash": "0xe53519f202c5975c6f6f91c5adfa23081be43e5958b2dccbeab4dbde17c9f275",
+     "block": 158803453
+    },
+    {
+     "idx": 42,
+     "nonce": 2735,
+     "hash": "0x34586facefd5e3929524d14a5878be5f2ff3dbc6c7f30fddf2d4b68a66f50c07",
+     "block": 158803457
+    }
+   ]
   }
  },
  "stop": null,

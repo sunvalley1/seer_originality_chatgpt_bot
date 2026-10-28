@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:41:11.685Z",
+ "generated_at": "2026-10-28T16:41:26.227Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -169,12 +169,25 @@
    "tx_hash": "0xca176519513d9e545c95393e8c523270aa9876c402a4b9159c7ff6b52d9bcd9a",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "arkworks-rs/algebra",
+   "address": "0xb52c7e58dc48250b6cb4fbe5ed251f617700bf06",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 11.6307201090893,
+   "filled": 13.758157141457598,
+   "fill_price": 0.8453690410354666,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xe53519f202c5975c6f6f91c5adfa23081be43e5958b2dccbeab4dbde17c9f275",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 7
+  "positions_opened": 8
  },
  "retained_legs": []
 }
