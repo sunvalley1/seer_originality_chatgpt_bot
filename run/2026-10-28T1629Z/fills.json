@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:52:51.183Z",
+ "generated_at": "2026-10-28T16:53:05.170Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -572,12 +572,25 @@
    "tx_hash": "0x793bba7a61390cde080eceb8e764b89249e596579e219b61722bde10b8f32dce",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "Plonky3/Plonky3",
+   "address": "0x8df828fcba7ec2b014742e202cf091807df939e6",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 33.8164611073668,
+   "filled": 43.77892229748801,
+   "fill_price": 0.7724370389379628,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x482745b9fda709f1ed0c785f1c252a2457249e27733e9c29f6d66768b94fb588",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 32
+  "positions_opened": 33
  },
  "retained_legs": []
 }

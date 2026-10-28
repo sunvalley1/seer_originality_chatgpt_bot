@@ -1133,7 +1133,26 @@
   "dual-buy:Plonky3/Plonky3": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:52:51.913Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 144,
+     "nonce": 2837,
+     "hash": "0xcf581b0e8c33945732634376d3e2aad5f5320deb8da096cc9476edb1cf8e034f",
+     "block": 158803799
+    },
+    {
+     "idx": 145,
+     "nonce": 2838,
+     "hash": "0x482745b9fda709f1ed0c785f1c252a2457249e27733e9c29f6d66768b94fb588",
+     "block": 158803803
+    },
+    {
+     "idx": 146,
+     "nonce": 2839,
+     "hash": "0xf291da5cc8e4e92b344d78368c048c559c57c8895e8a97e1486f0b42e22fed1e",
+     "block": 158803806
+    }
+   ]
   }
  },
  "stop": null,
