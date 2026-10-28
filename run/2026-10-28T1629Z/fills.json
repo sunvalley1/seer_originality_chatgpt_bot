@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:44:05.642Z",
+ "generated_at": "2026-10-28T16:44:46.311Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -273,12 +273,25 @@
    "tx_hash": "0xd504bf4b6a4805bc0128998034998418184e2ae2dc1bc7071cc4b08fab097608",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "Consensys/gnark-crypto",
+   "address": "0x9fc615e9a9e2066d3e8dda5c1c5280461489d808",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 38.141534286724,
+   "filled": 44.480798092790295,
+   "fill_price": 0.8574831370416935,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x2aaadd4fb6cc289355c11845674594b71e62d25d6ed00a6c0c76cb5ad1b0b7ee",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 13
+  "positions_opened": 14
  },
  "retained_legs": []
 }
