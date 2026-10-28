@@ -1265,7 +1265,7 @@
    "effects_diffs": []
   },
   "simple-buy:dappnode/DAppNode:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:54:44.021Z",
    "txs": [
     {
@@ -1273,6 +1273,38 @@
      "nonce": 2854,
      "hash": "0x1ac44fd195b65cdcd4dbc1b999144e3eb5cf6335ce699da7a1fa647dc910a7e7",
      "block": 158803855
+    },
+    {
+     "idx": 162,
+     "nonce": 2855,
+     "hash": "0x42855053feacbaab81b409a05db6325b441d6f1cf2a6785fb2de34b0daff611f",
+     "block": 158803859
+    }
+   ],
+   "ended_at": "2026-10-28T16:54:57.035Z",
+   "effects_diffs": []
+  },
+  "complex-buy:wealdtech/ethdo:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:54:57.776Z",
+   "txs": [
+    {
+     "idx": 163,
+     "nonce": 2856,
+     "hash": "0xf8d4387984762b24aba586af71139a0acdf5b465bc814dccbeac7d5d9f5076c6",
+     "block": 158803862
+    },
+    {
+     "idx": 164,
+     "nonce": 2857,
+     "hash": "0xfd54b1955166718f619d303a3ec84c9162ba080510a0f1c767e80b5e5f7f0b82",
+     "block": 158803865
+    },
+    {
+     "idx": 165,
+     "nonce": 2858,
+     "hash": "0xc790cb34da45dd87a5092904dceffa0c79934b455e0de0fd3eaac45b51196f19",
+     "block": 158803869
     }
    ]
   }
