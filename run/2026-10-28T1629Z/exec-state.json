@@ -133,7 +133,7 @@
    "effects_diffs": []
   },
   "simple-buy:ethereum/py_ecc:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:38:24.137Z",
    "txs": [
     {
@@ -141,6 +141,32 @@
      "nonce": 2708,
      "hash": "0xee312c56a7029ffe12ad539ca1cbfe7ca7d3ad1102ffc4150346cd345da55f7a",
      "block": 158803366
+    },
+    {
+     "idx": 16,
+     "nonce": 2709,
+     "hash": "0x8ae8ed64c8a9978aa42f5d2cb9e097986cdc679675bf810addbc5b9e74c41eb6",
+     "block": 158803369
+    }
+   ],
+   "ended_at": "2026-10-28T16:38:37.195Z",
+   "effects_diffs": []
+  },
+  "dual-buy:blockscout/blockscout": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:38:37.947Z",
+   "txs": [
+    {
+     "idx": 17,
+     "nonce": 2710,
+     "hash": "0x93e6a8b7f3a6fe589986f76a6357a0fc5f1efe7519c54232d9bdce85eba979ee",
+     "block": 158803372
+    },
+    {
+     "idx": 18,
+     "nonce": 2711,
+     "hash": "0xb7be173fac11a7ae8516b853487e5d9a9520ec6ab39c8ed0d5ada93e3ae09229",
+     "block": 158803376
     }
    ]
   }
