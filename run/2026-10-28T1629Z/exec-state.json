@@ -1399,7 +1399,7 @@
    "effects_diffs": []
   },
   "merge-arb:smartcontracts/simple-optimism-node": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:56:38.406Z",
    "txs": [
     {
@@ -1431,6 +1431,32 @@
      "nonce": 2875,
      "hash": "0xd74b29d8264155d0b7bc979c8c3b3d2eac54714720f8284ca58ffbedc49d180f",
      "block": 158803926
+    },
+    {
+     "idx": 183,
+     "nonce": 2876,
+     "hash": "0x2f1d1906117a04eb1e5244b980335870d04cb05921135e668dacdd7881f6b5e8",
+     "block": 158803929
+    },
+    {
+     "idx": 184,
+     "nonce": 2877,
+     "hash": "0x8f6759d0e9206c278c687ccd8a5d08034a7eab998b846887240605b7d7fc4d1b",
+     "block": 158803932
+    }
+   ],
+   "ended_at": "2026-10-28T16:57:24.302Z",
+   "effects_diffs": []
+  },
+  "simple-buy:smartcontracts/simple-optimism-node:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:57:25.075Z",
+   "txs": [
+    {
+     "idx": 185,
+     "nonce": 2878,
+     "hash": "0xe0a2ce08c021a67b23d12b50333439bc226898e91435119caebe6e07978a73fa",
+     "block": 158803936
     }
    ]
   }

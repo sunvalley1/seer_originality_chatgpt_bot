@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:56:37.677Z",
+ "generated_at": "2026-10-28T16:57:24.302Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -700,6 +700,19 @@
    "fill_price": 0.8162932922569515,
    "slippage_vs_quote": 0,
    "tx_hash": "0x111e4ddb3b72db3b9ac6a2f5dd1b63eb4ef32273b7c14b10a6ca0d75d1d7b5a7",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "smartcontracts/simple-optimism-node",
+   "address": "0x04f4d33c6aa72320a822bc0fcb32e097a45ae4f9",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 22.5797975900536,
+   "filled": 23.181583355297242,
+   "fill_price": 0.9740403510830052,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x8f6759d0e9206c278c687ccd8a5d08034a7eab998b846887240605b7d7fc4d1b",
    "status": "filled",
    "error": null
   }
