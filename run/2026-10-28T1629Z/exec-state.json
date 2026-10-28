@@ -1089,7 +1089,26 @@
   "complex-buy:Certora/CertoraProver:UP": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:52:11.231Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 138,
+     "nonce": 2831,
+     "hash": "0xc6769e3bcf180d070c56f4b0f659f8298756e9abece5abffd90522699db385cd",
+     "block": 158803779
+    },
+    {
+     "idx": 139,
+     "nonce": 2832,
+     "hash": "0xed23d89ab1177abe9e9dd770ae6b09277c38152cbfc69fe9e7b14770e1c106a2",
+     "block": 158803782
+    },
+    {
+     "idx": 140,
+     "nonce": 2833,
+     "hash": "0xa112e2eb26da70803618b0c9a36246c2be598f04b27a4a2bf7624766dc36a587",
+     "block": 158803785
+    }
+   ]
   }
  },
  "stop": null,
