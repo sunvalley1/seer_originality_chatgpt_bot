@@ -859,7 +859,26 @@
   "dual-buy:libp2p/libp2p": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:48:56.237Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 109,
+     "nonce": 2802,
+     "hash": "0x2e862b3ecf21314f6c720102681724a690238bf9a2b24b75dca46d7ff5a583c6",
+     "block": 158803682
+    },
+    {
+     "idx": 110,
+     "nonce": 2803,
+     "hash": "0x517462b08dbe057bcf21a7fd8113a44836fcd754fd86dbbb28c5e762488a5c27",
+     "block": 158803685
+    },
+    {
+     "idx": 111,
+     "nonce": 2804,
+     "hash": "0x3d77a9cbc5dc4e6990b5e635a8e3b18e8493be714a6c4aabee0b20671a0db9c5",
+     "block": 158803688
+    }
+   ]
   }
  },
  "stop": null,
