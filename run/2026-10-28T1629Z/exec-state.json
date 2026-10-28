@@ -433,7 +433,7 @@
    "effects_diffs": []
   },
   "dual-buy:protofire/solhint": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:42:40.037Z",
    "txs": [
     {
@@ -447,6 +447,32 @@
      "nonce": 2747,
      "hash": "0xe119993dbfba4e1e4df605ac8eff823e803cf036c2985aba8ad67022dc6f68df",
      "block": 158803497
+    },
+    {
+     "idx": 55,
+     "nonce": 2748,
+     "hash": "0x40a83210e428068aa62fbcc85efb18f237e7c38ceee3f2ea7d6705317545e496",
+     "block": 158803500
+    },
+    {
+     "idx": 56,
+     "nonce": 2749,
+     "hash": "0xc464bb4707a187ad87538e889c9bc5811379b19d3c13c9965266b8095b206af5",
+     "block": 158803503
+    }
+   ],
+   "ended_at": "2026-10-28T16:43:05.946Z",
+   "effects_diffs": []
+  },
+  "merge-arb:l2beat/l2beat": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:43:06.708Z",
+   "txs": [
+    {
+     "idx": 57,
+     "nonce": 2750,
+     "hash": "0x642145f836d7b031d85cbd40ef25d2c88f338c5d9ad4eb55207bf2cc09697924",
+     "block": 158803507
     }
    ]
   }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:42:52.999Z",
+ "generated_at": "2026-10-28T16:43:05.946Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -234,12 +234,25 @@
    "tx_hash": "0xe119993dbfba4e1e4df605ac8eff823e803cf036c2985aba8ad67022dc6f68df",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "protofire/solhint",
+   "address": "0x808055e027cada3fb6d2b84104cd46b6685c048e",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 9.10811565180328,
+   "filled": 38.8534649783398,
+   "fill_price": 0.23442222352320197,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc464bb4707a187ad87538e889c9bc5811379b19d3c13c9965266b8095b206af5",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 11
+  "positions_opened": 12
  },
  "retained_legs": []
 }
