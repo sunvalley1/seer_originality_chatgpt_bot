@@ -1131,7 +1131,7 @@
    "effects_diffs": []
   },
   "dual-buy:Plonky3/Plonky3": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:52:51.913Z",
    "txs": [
     {
@@ -1151,6 +1151,32 @@
      "nonce": 2839,
      "hash": "0xf291da5cc8e4e92b344d78368c048c559c57c8895e8a97e1486f0b42e22fed1e",
      "block": 158803806
+    },
+    {
+     "idx": 147,
+     "nonce": 2840,
+     "hash": "0x8a075613c1a847a921bf89962f73f8797a32edb33d921fa86bf7f465a2dc4abd",
+     "block": 158803809
+    }
+   ],
+   "ended_at": "2026-10-28T16:53:18.696Z",
+   "effects_diffs": []
+  },
+  "dual-buy:ChainSafe/bls": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:53:19.466Z",
+   "txs": [
+    {
+     "idx": 148,
+     "nonce": 2841,
+     "hash": "0xc736994336c2fea9e334a0ef9b9e2c539a207fd1f86fff06699a24d936c3402c",
+     "block": 158803813
+    },
+    {
+     "idx": 149,
+     "nonce": 2842,
+     "hash": "0x7a33ca95a594995d1b6d16bc6a60dcddbdec5f21a7010e858e074830dbfd9da8",
+     "block": 158803817
     }
    ]
   }
