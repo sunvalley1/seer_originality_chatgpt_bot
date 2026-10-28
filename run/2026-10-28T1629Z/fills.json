@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:49:09.242Z",
+ "generated_at": "2026-10-28T16:49:22.852Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -416,12 +416,25 @@
    "tx_hash": "0x517462b08dbe057bcf21a7fd8113a44836fcd754fd86dbbb28c5e762488a5c27",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "libp2p/libp2p",
+   "address": "0xde89236ae23777bdf655344858c44fa581c470a3",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 6.88460440050044,
+   "filled": 45.0957178974161,
+   "fill_price": 0.15266647747268514,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x4e9a35128bc811a107830a1aa105fc8ba03fe920942478391c7d8eed6d6509e5",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 21
+  "positions_opened": 22
  },
  "retained_legs": []
 }

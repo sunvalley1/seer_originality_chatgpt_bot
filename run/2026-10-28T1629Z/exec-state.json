@@ -857,7 +857,7 @@
    "effects_diffs": []
   },
   "dual-buy:libp2p/libp2p": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:48:56.237Z",
    "txs": [
     {
@@ -877,6 +877,32 @@
      "nonce": 2804,
      "hash": "0x3d77a9cbc5dc4e6990b5e635a8e3b18e8493be714a6c4aabee0b20671a0db9c5",
      "block": 158803688
+    },
+    {
+     "idx": 112,
+     "nonce": 2805,
+     "hash": "0x4e9a35128bc811a107830a1aa105fc8ba03fe920942478391c7d8eed6d6509e5",
+     "block": 158803692
+    }
+   ],
+   "ended_at": "2026-10-28T16:49:22.853Z",
+   "effects_diffs": []
+  },
+  "merge-arb:supranational/blst": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:49:23.602Z",
+   "txs": [
+    {
+     "idx": 113,
+     "nonce": 2806,
+     "hash": "0xafd4d41fa5fc0a31efa532beac1d538689f27b653eef70604ed9959f78c3c7d2",
+     "block": 158803695
+    },
+    {
+     "idx": 114,
+     "nonce": 2807,
+     "hash": "0x5ee64625ff97ead95648db81fdec50f082febd4e9333a849594593321b0b2375",
+     "block": 158803699
     }
    ]
   }
