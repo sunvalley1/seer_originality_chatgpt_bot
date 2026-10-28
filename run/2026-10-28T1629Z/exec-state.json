@@ -1329,7 +1329,7 @@
    "effects_diffs": []
   },
   "merge-arb:lambdaclass/lambdaworks": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:55:38.369Z",
    "txs": [
     {
@@ -1361,6 +1361,32 @@
      "nonce": 2866,
      "hash": "0x2332305724a3e83ad0cfb72e44340845c594405b3d8ac7b2dc1ded4315d61ea2",
      "block": 158803896
+    },
+    {
+     "idx": 174,
+     "nonce": 2867,
+     "hash": "0x3e6d2e74f2de79a9a612eaf6082f6a367e1162947265df34d4545d0d6ceb0561",
+     "block": 158803899
+    },
+    {
+     "idx": 175,
+     "nonce": 2868,
+     "hash": "0xe8b95b2a1772c8951fbbd8763c5e13db9442bfdf1bf078f68b32c269252b5819",
+     "block": 158803902
+    }
+   ],
+   "ended_at": "2026-10-28T16:56:23.608Z",
+   "effects_diffs": []
+  },
+  "simple-buy:lambdaclass/lambdaworks:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:56:24.359Z",
+   "txs": [
+    {
+     "idx": 176,
+     "nonce": 2869,
+     "hash": "0x77976fb745f6c79dd479ef3488caafd7693356e49160082d21596843c33763d3",
+     "block": 158803906
     }
    ]
   }
