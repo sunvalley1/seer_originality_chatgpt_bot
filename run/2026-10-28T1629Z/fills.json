@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:44:46.311Z",
+ "generated_at": "2026-10-28T16:45:34.125Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -284,6 +284,19 @@
    "fill_price": 0.8574831370416935,
    "slippage_vs_quote": 0,
    "tx_hash": "0x2aaadd4fb6cc289355c11845674594b71e62d25d6ed00a6c0c76cb5ad1b0b7ee",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "taikoxyz/taiko-mono",
+   "address": "0x6a6a3326d701d464034d141bece8c21a06b7854b",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 37.3199952753239,
+   "filled": 39.60633582592966,
+   "fill_price": 0.942273363518045,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x4e9dd4b8d9184fb00562349fb80c1d4590135dcce0fcb5fca766650f6f187520",
    "status": "filled",
    "error": null
   }
