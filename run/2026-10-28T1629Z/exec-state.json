@@ -763,7 +763,7 @@
    "effects_diffs": []
   },
   "complex-buy:ethereum/js-ethereum-cryptography:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:47:29.508Z",
    "txs": [
     {
@@ -789,6 +789,32 @@
      "nonce": 2792,
      "hash": "0xe21fbea2bdb48e3a0c52b73d038cdff43d764177a73692816e009a01d41b4020",
      "block": 158803648
+    },
+    {
+     "idx": 100,
+     "nonce": 2793,
+     "hash": "0x7a26c59822eda6cb90f990a011d0c97954b29c523e5c16ad6799077aab06172f",
+     "block": 158803652
+    },
+    {
+     "idx": 101,
+     "nonce": 2794,
+     "hash": "0x53892a98981dd07b4f2b7c1b93eab2465c4fd76dded89820ed80e14fd4cef900",
+     "block": 158803655
+    }
+   ],
+   "ended_at": "2026-10-28T16:48:09.293Z",
+   "effects_diffs": []
+  },
+  "merge-arb:libp2p/libp2p": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:48:10.031Z",
+   "txs": [
+    {
+     "idx": 102,
+     "nonce": 2795,
+     "hash": "0xfb280115a207f4d112c69f7346bbd8cbd0c652ac36eefb915994e275777c8adf",
+     "block": 158803658
     }
    ]
   }
