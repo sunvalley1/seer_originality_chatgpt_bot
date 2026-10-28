@@ -385,7 +385,26 @@
   "merge-arb:protofire/solhint": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:41:53.742Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 46,
+     "nonce": 2739,
+     "hash": "0xe6a505c0d15e5b451dae7860523481863557f052181e5ddeec171bc167dde333",
+     "block": 158803470
+    },
+    {
+     "idx": 47,
+     "nonce": 2740,
+     "hash": "0xabd6e6ff6e5f0e9b646f992bbcf4a3ac6856e59173b78e3336cdbd613393bb84",
+     "block": 158803474
+    },
+    {
+     "idx": 48,
+     "nonce": 2741,
+     "hash": "0x1ae3704b5c0d6d0254dd6aa83fc50a24fa4cf229d9a5b62563fb1f935c06af06",
+     "block": 158803477
+    }
+   ]
   }
  },
  "stop": null,
