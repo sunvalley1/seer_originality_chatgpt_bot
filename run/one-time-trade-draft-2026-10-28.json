@@ -1,0 +1,26 @@
+{
+  "status": "DRAFT_ONLY_NOT_CREATED",
+  "hosted_timer_id": null,
+  "title": "R3 one-time trade \u2014 enable before 16:23 UTC",
+  "proposed_fire_utc": "2026-10-28T16:23:00Z",
+  "proposed_fire_asia_bangkok": "2026-10-28T23:23:00+07:00",
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261028T162300Z\nEND:VEVENT",
+  "required_creation_enabled": false,
+  "atomic_paused_creation_supported_by_available_api": false,
+  "blocker": "automations_create schema has no is_enabled argument; observed create defaults enabled. Financial automation must never be transiently enabled.",
+  "hosted_thread_intended": "01a182e2-df18-71ca-b51b-4accee2140b1",
+  "environment_id_intended": "ccarenv_b64_Y2NhcmVudl81OTk0NTE2YjgxZmM4MTkxOGFkNzgwNDFjYzc1NGQ3YQ",
+  "daily_schedule": {
+    "id": "6ae20602fadc8191ba6f741dbd0a7084",
+    "is_enabled": false,
+    "schedule": "BEGIN:VEVENT\nDTSTART:20261029T090000Z\nRRULE:FREQ=DAILY;BYHOUR=9,15;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+    "changed": false
+  },
+  "duplicate_check": "No R3 immediate financial one-time schedule found among existing automations",
+  "sender_check": "No node/nodejs/r3/signer/cast/anvil processes observed locally; no global wallet activity claim",
+  "latest_daily_run": "Completed refusal before shell, matching run/result; no trade",
+  "retime_rule": "If review leaves less than two minutes, choose current UTC+3 minutes rounded up to next whole minute; never enable automatically.",
+  "instructions": "Use a supported atomically paused creation interface if it becomes available; insert the real one-shot ID in prompt, verify exact task/environment/time and paused state, then HUMAN final Resume. Do not repurpose diagnostic or daily schedule. No web Run now.",
+  "financial_execution": false,
+  "activation_evidence": "This exact timer firing after HUMAN manual enable; no requirement to remain enabled at execution because one-shots may auto-disable. Daily enabled state irrelevant; no reschedule/auto-enable."
+}
