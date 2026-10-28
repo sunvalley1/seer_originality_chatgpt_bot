@@ -731,7 +731,7 @@
    "effects_diffs": []
   },
   "dual-buy:flashbots/mev-boost-relay": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:47:02.629Z",
    "txs": [
     {
@@ -745,6 +745,32 @@
      "nonce": 2786,
      "hash": "0xc8c8a96c0c733b8f5b948fb0b20ed38dcda9edc1a5c3899c6b0f1e96a83578bc",
      "block": 158803628
+    },
+    {
+     "idx": 94,
+     "nonce": 2787,
+     "hash": "0x2db0b3a1a5d127d287d12231591c9226c5036c0d015a5dd258753b713f36ca6a",
+     "block": 158803631
+    },
+    {
+     "idx": 95,
+     "nonce": 2788,
+     "hash": "0xdd6c5ca2b16c288fd83830175b925c7e22e9bf1f0243040550bf15d02c9c8600",
+     "block": 158803635
+    }
+   ],
+   "ended_at": "2026-10-28T16:47:28.786Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:47:29.508Z",
+   "txs": [
+    {
+     "idx": 96,
+     "nonce": 2789,
+     "hash": "0xcad5cabd705328b4cd3b2e6c6568a55064a03abb21fa3be48340b6eecd24668c",
+     "block": 158803638
     }
    ]
   }
