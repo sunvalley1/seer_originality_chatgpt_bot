@@ -1469,7 +1469,7 @@
    "effects_diffs": []
   },
   "complex-buy:skalenetwork/libBLS:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:57:38.808Z",
    "txs": [
     {
@@ -1501,6 +1501,32 @@
      "nonce": 2884,
      "hash": "0xed3af47fd3db66a073e6a7d4ba1abf8b5224cf58301bfec0b665820901575c48",
      "block": 158803956
+    },
+    {
+     "idx": 192,
+     "nonce": 2885,
+     "hash": "0x67effa46c3c4d2aee5a96890e21263ec72e029f73fe12ea537b776a101e1a409",
+     "block": 158803960
+    }
+   ],
+   "ended_at": "2026-10-28T16:58:18.956Z",
+   "effects_diffs": []
+  },
+  "merge-arb:shazow/whatsabi": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:58:19.697Z",
+   "txs": [
+    {
+     "idx": 193,
+     "nonce": 2886,
+     "hash": "0xf0d9682a9cfbb707fa98e0ccad37d2b35e8b8edb17d57f53f7148378b21dd0c3",
+     "block": 158803963
+    },
+    {
+     "idx": 194,
+     "nonce": 2887,
+     "hash": "0x5425828e76a6fe22bc5261f83f4a4b9d92d922ab86f17ce9599655823e098590",
+     "block": 158803967
     }
    ]
   }

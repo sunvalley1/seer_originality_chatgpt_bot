@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:57:38.076Z",
+ "generated_at": "2026-10-28T16:58:18.955Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -728,12 +728,25 @@
    "tx_hash": "0x9106798ccc25c6b5b078f51756be32e927346e5126f4a0f640f0595c568b55a8",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "skalenetwork/libBLS",
+   "address": "0x5ba02d2373096140102b6d552e62f9d0f7c7c39d",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 43.142607555215,
+   "filled": 61.05361085478082,
+   "fill_price": 0.7066348239063522,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x67effa46c3c4d2aee5a96890e21263ec72e029f73fe12ea537b776a101e1a409",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 41
+  "positions_opened": 42
  },
  "retained_legs": []
 }
