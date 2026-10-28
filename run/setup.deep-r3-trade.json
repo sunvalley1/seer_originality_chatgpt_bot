@@ -81,9 +81,8 @@
   "schedule": {
     "enabled": false,
     "signer_allow_rule_added_at": "2026-10-28T15:07:29Z",
-    "cadence_hours": 24,
-    "requested_local_time": "16:54",
-    "timezone": "Asia/Bangkok",
+    "cadence_hours": null,
+    "timezone": "Etc/UTC",
     "creation_status": "created; paused; prepared for USER manual activation",
     "time_limit_hours": 6,
     "automation_id": "6ae20602fadc8191ba6f741dbd0a7084",
@@ -93,7 +92,22 @@
     "next_run_time": null,
     "prompt_record": "run/paused-trading-prompt-2026-10-28.txt",
     "metadata_record": "run/paused-trading-schedule-2026-10-28.json",
-    "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json"
+    "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json",
+    "fixed_utc_times": [
+      "09:00",
+      "15:00"
+    ],
+    "requested_local_times": [
+      "16:00",
+      "22:00"
+    ],
+    "display_timezone": "Asia/Bangkok",
+    "alternating_gap_hours": [
+      6,
+      18
+    ],
+    "cadence_description": "Twice every day at 09:00 and 15:00 UTC; alternating 6h and 18h gaps",
+    "cadence_hours_usage": "Display/status field only; null because schedule has no uniform interval"
   },
   "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json"
 }

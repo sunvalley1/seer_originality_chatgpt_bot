@@ -1,0 +1,37 @@
+{
+  "existing_schedule": "6ae20602fadc8191ba6f741dbd0a7084",
+  "native_api": "automations_run_now({jawbone_id})",
+  "available": true,
+  "requires_enabled_schedule": true,
+  "uses_saved_prompt_and_delivery": true,
+  "changes_recurring_schedule": false,
+  "request_success_is_not_completion": true,
+  "precise_one_minute_start_guarantee": false,
+  "invoked_during_preparation": false,
+  "current_schedule_paused": true,
+  "preparation_path": [
+    "On a future explicit trade-now request, inspect the same schedule and actual run state first",
+    "Confirm operator has handled any Claude sender using the same wallet; do not overlap",
+    "If schedule remains paused, do not silently enable it; the API requires enabled status",
+    "After the user's manual activation and explicit immediate-run request, request native Run now on the same schedule; do not create another recurring job or an enabled one-shot trading automation",
+    "Inspect returned run identity and peek run_details, correlate run/result IDs and timestamps; unavailable history cannot prove completion or no overlap"
+  ],
+  "completion_visibility": "peek schema supports last_run status/id/timestamps and latest_result; current schedule has null run details and no recorded run. Future availability not guaranteed.",
+  "overlap_visibility": "No global wallet overlap API or host serialization guarantee established. In-progress can be reported when run_details exists; absence cannot prove no active sender elsewhere.",
+  "timing": {
+    "utc": [
+      "09:00",
+      "15:00"
+    ],
+    "asia_bangkok": [
+      "16:00",
+      "22:00"
+    ],
+    "alternating_gap_hours": [
+      6,
+      18
+    ],
+    "uniform_interval": false
+  },
+  "cadence_hours_usage": "Only copied into wake status and report output by planner/wake.cjs:169 and planner/report.cjs:139; no operational scheduler use found."
+}

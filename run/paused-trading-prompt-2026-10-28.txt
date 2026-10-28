@@ -8,7 +8,7 @@ Cloud environment identity: ccarenv_b64_Y2NhcmVudl81OTk0NTE2YjgxZmM4MTkxOGFkNzgw
 Configuration: a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfg_6ae1c424793081909a911fe1a502f844
 Published version: a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfgver_6ae1e3c325548190963edcfc6e6f2f2d
 Hosted task: 01a182e2-df18-71ca-b51b-4accee2140b1
-Schedule: 6ae20602fadc8191ba6f741dbd0a7084 — R3 daily trading — PAUSED; daily 16:54 Asia/Bangkok (09:54 UTC), continuing this task, start-new-chat OFF.
+Schedule: 6ae20602fadc8191ba6f741dbd0a7084 — R3 daily trading — PAUSED; twice every day at the fixed UTC times 09:00 and 15:00 (16:00 and 22:00 Asia/Bangkok), continuing this task, start-new-chat OFF. The gaps alternate 6 and 18 hours; this is not a uniform interval.
 Approved tree excluding run/: 3e3ec397a8a03998026cf9e8afaedf049102283a. Later run-only commits may advance HEAD without changing this pin.
 Bot/holder: 0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a
 Owner: 0xB5a6a9c6d779e7dd7815f94AE2CcFb153a21801C
