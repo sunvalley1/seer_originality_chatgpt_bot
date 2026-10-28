@@ -971,7 +971,7 @@
    "effects_diffs": []
   },
   "dual-buy:wighawag/hardhat-deploy": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:50:37.072Z",
    "txs": [
     {
@@ -991,6 +991,26 @@
      "nonce": 2819,
      "hash": "0xacdd3e1e7f2a993adb9d27c6733a55063a719a890b71777702510b7f197ed65e",
      "block": 158803739
+    },
+    {
+     "idx": 127,
+     "nonce": 2820,
+     "hash": "0xc6a4e75bde1008a2cb0ab07924a26749376d19d84d5dcfbe942752685e56c66a",
+     "block": 158803742
+    }
+   ],
+   "ended_at": "2026-10-28T16:51:03.280Z",
+   "effects_diffs": []
+  },
+  "dual-buy:ethstaker/eth-docker": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:51:04.020Z",
+   "txs": [
+    {
+     "idx": 128,
+     "nonce": 2821,
+     "hash": "0x487f0fc32be8f0f4df2cd87550509718a1c9659c04b13a3dd5f0746d93a1f1db",
+     "block": 158803745
     }
    ]
   }
