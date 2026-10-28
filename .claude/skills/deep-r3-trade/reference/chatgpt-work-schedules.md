@@ -14,22 +14,52 @@ settings are not evidence that ChatGPT Work supports the same interface.
 
 On 2026-10-28, a harmless diagnostic in a regular ChatGPT Work web chat successfully ran `node --version`,
 `git --version`, and `pwd`, each with exit code 0. It reported Node v24.22.1, Git 2.51.1 and a cloud workspace
-directory. That proves shell access in that ordinary chat, not in a scheduled bot run.
+directory. That result established shell access in the ordinary chat.
 
 The same ordinary-chat diagnostic successfully read HEAD from the public source repository with Git credential
 helpers and interactive authentication disabled. This establishes public GitHub network/read access for that
-chat. It does not establish access to a private repository or permission to push, and needs repeating in the
-actual scheduled execution context.
+chat. It does not establish access to a private repository or permission to push.
 
-The web schedule interface was observed with instructions, repeat, time, time zone and start-new-chat controls.
+A one-time web schedule then completed on 2026-10-28 at 16:54 Asia/Bangkok (09:54 UTC). Its output reported
+Node v24.22.1, Git 2.51.1 and a cloud working directory, and successfully read the approved public records
+repository's HEAD without authentication; all of those commands exited 0. The scheduled execution also created
+and read back a nonsecret JSON probe with marker `R3_SCHEDULE_PROBE_2026_10_28` and timestamp
+`2026-10-28T09:54:01.284308+00:00`, with exit code 0. This verifies scheduled shell execution, public GitHub
+read access and filesystem write/readback within that execution. It does not verify authenticated GitHub writes,
+credential delivery, persistence across runs, long-running commands, single-sender coordination or a full bot run.
+
+The web schedule interface was observed with instructions, repeat, time, time zone, start-new-chat, model and
+reasoning-effort controls.
 No selector for a named, published Codex Cloud environment was shown in that interface. Do not equate a ChatGPT
 Work web chat or schedule with a selected Codex Cloud environment, and do not infer that a missing selector makes
 all cloud scheduling impossible.
 
 The bot targets Node 22. Verify that runtime on the actual scheduled execution host; the successful Node 24
-diagnostic above does not validate the bot. Cloud preparation uses signer checks and simulated clearance that
-send no transactions. A completed live trading run is not a prerequisite. Keep the planner's guard against
+diagnostics do not validate the bot, its dependencies, signer or RPC access. Cloud preparation uses signer checks
+and simulated clearance that send no transactions. A completed live trading run is not a prerequisite. Keep the planner's guard against
 supervised sends when cloud key environment variables are present; the setup flow never needs to bypass it.
+
+## Private credential settings are separate from a web schedule
+
+Codex Cloud provides a private configuration interface: **Settings → Codex Cloud → Environments → the chosen
+environment → Edit** (or **Continue setup** for an unfinished setup), then **Environment configuration → Manage
+environment variables**. The operator enters credentials there, never in chat. Alternatively, use **Personal vault**
+with type **Environment variable**, scoped to the named environment; verify that the environment requests those
+keys. These are direct process values, distinct from HTTP/network secrets that substitute credentials into request
+headers. A signer needs the direct values. See the official
+[environment-variable and network-secret documentation](https://learn.chatgpt.com/docs/environments/cloud-environments#configure-environment-variables-and-network-secrets).
+
+The existing `node r3.cjs install` implementation already accepts `R3_KEYSTORE_JSON` (the **existing encrypted
+keystore JSON**) and `R3_KEYSTORE_PASSWORD`. With the allowlist/config checks satisfied, it restores those values
+to protected signer files outside the checkout. It does **not** convert a raw private key into a keystore or decrypt
+the wallet during installation. No new key-handling code is needed. The operator supplies the two values privately;
+the agent must never read, print or copy their contents into chat, logs, prompts or repository files.
+
+Configuring a named Codex Cloud environment does not prove that an ordinary ChatGPT Work web schedule uses it.
+That binding remains unverified: the observed schedule controls showed no environment selector. Verify the actual
+scheduled task's environment and credential-delivery mechanism without exposing credentials before treating this
+route as compatible. An unfinished environment, missing variables or unset startup configuration is setup work
+still to do, not evidence of a working adapter.
 
 ## Storage contract
 
@@ -52,21 +82,23 @@ new records. The existing `--push` option can save records to GitHub, but it doe
 credentials, retrieve the starting state, select the execution environment or prevent two independent cloud
 workspaces from sending concurrently. Those pieces require a verified adapter before live use.
 
-## Next check: a scheduled test that sends nothing
+## Remaining checks before trading
 
 The agent performs authorized capability checks through available tools and the permitted UI. The operator does
 website sign-ins and all credential entry privately. Ask only for information or human-only actions that remain
 unavailable after those checks; do not hand routine UI inspection back to the operator.
 
-1. Use the chosen schedule interface for a bounded diagnostic. Confirm the saved instructions, repeat, time zone
-   and whether it starts a new chat. Keep the diagnostic separate from any eventual live trading schedule.
-2. Run only harmless runtime and filesystem checks, read-only network checks to the required hosts, and a
-   nonsecret probe-file write. No bot trading entry point, signer invocation, `cast`, `allowlist-init`, key access,
-   environment dump or wallet transaction belongs in this capability diagnostic. Verify Node 22 and the working directory in the
-   scheduled run itself; success in a regular chat is not sufficient.
-3. Verify GitHub read access to the chosen records repository and authenticated identity without printing tokens.
-   Read access does not establish write access. If authorized, test saving a clearly identified nonsecret probe
-   to that repository and retrieving it in a subsequent execution. No secret or real trading record is needed for this test.
+1. Use the completed scheduled diagnostic as the baseline for shell, public GitHub read and same-run filesystem
+   access. For further bounded diagnostics, confirm the saved instructions, repeat, time zone and whether the
+   schedule starts a new chat. Keep diagnostics separate from any eventual live trading schedule.
+2. Verify Node 22 and the required dependency/network support in the actual scheduled context. Use only harmless
+   runtime and filesystem checks, read-only network checks to the required hosts, and nonsecret probes for this
+   capability diagnostic. No bot trading entry point, signer invocation, `cast`, `allowlist-init`, key access,
+   environment dump or wallet transaction belongs in it. The completed Node 24 probe is not full-bot validation.
+3. Public read access to the approved repository has passed. Verify the authenticated GitHub identity without
+   printing tokens, and any private-repository access if applicable. Read access does not establish write access.
+   If authorized, test saving a clearly identified nonsecret probe to that repository and retrieving it in a
+   subsequent execution. No secret or real trading record is needed for this test.
 4. Establish the platform's supported credential-entry mechanism, which values its child commands can use, its
    network/tool boundaries, command-duration limit, and how a task resumes or reports interruption. The operator
    alone enters secrets in private settings after the mechanism is understood; never put them in chat, prompts,
@@ -81,7 +113,7 @@ clearance. Verify a supported human-controlled cloud interface for the operator'
 operator-run. Credential entry also remains private and human-controlled. A missing interface is an adapter gap,
 not permission for the agent to take over key handling or operator-only actions.
 
-This test grants no trading authority. No verified adapter or live schedule is supplied by this documentation
+These diagnostics grant no trading authority. No verified adapter or live schedule is supplied by this documentation
 change. Until the gaps are resolved, report the cloud route as pending and leave trading disabled.
 
 ## Gates that remain required
