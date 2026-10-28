@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:56:23.608Z",
+ "generated_at": "2026-10-28T16:56:37.677Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -689,12 +689,25 @@
    "tx_hash": "0xe8b95b2a1772c8951fbbd8763c5e13db9442bfdf1bf078f68b32c269252b5819",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "lambdaclass/lambdaworks",
+   "address": "0xd756f4a29de73f261f32185d0982c8e454db3356",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 41.180821326263,
+   "filled": 50.44856023795448,
+   "fill_price": 0.8162932922569515,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x111e4ddb3b72db3b9ac6a2f5dd1b63eb4ef32273b7c14b10a6ca0d75d1d7b5a7",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 39
+  "positions_opened": 40
  },
  "retained_legs": []
 }
