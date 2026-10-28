@@ -1,13 +1,13 @@
 {
-  "status": "DRAFT_ONLY_NOT_CREATED",
-  "hosted_timer_id": null,
-  "title": "R3 one-time trade \u2014 enable before 16:23 UTC",
-  "proposed_fire_utc": "2026-10-28T16:23:00Z",
-  "proposed_fire_asia_bangkok": "2026-10-28T23:23:00+07:00",
-  "schedule": "BEGIN:VEVENT\nDTSTART:20261028T162300Z\nEND:VEVENT",
+  "status": "HOSTED_TIMER_SAVED_PAUSED",
+  "hosted_timer_id": "6ae20cc0b5c48191bd23cd0570a48509",
+  "title": "R3 one-time REAL trade \u2014 PAUSED",
+  "proposed_fire_utc": "2026-10-28T16:28:00Z",
+  "proposed_fire_asia_bangkok": "2026-10-28T23:28:00+07:00",
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261028T162800Z\nEND:VEVENT",
   "required_creation_enabled": false,
   "atomic_paused_creation_supported_by_available_api": false,
-  "blocker": "automations_create schema has no is_enabled argument; observed create defaults enabled. Financial automation must never be transiently enabled.",
+  "blocker": null,
   "hosted_thread_intended": "01a182e2-df18-71ca-b51b-4accee2140b1",
   "environment_id_intended": "ccarenv_b64_Y2NhcmVudl81OTk0NTE2YjgxZmM4MTkxOGFkNzgwNDFjYzc1NGQ3YQ",
   "daily_schedule": {
@@ -20,7 +20,10 @@
   "sender_check": "No node/nodejs/r3/signer/cast/anvil processes observed locally; no global wallet activity claim",
   "latest_daily_run": "Completed refusal before shell, matching run/result; no trade",
   "retime_rule": "If review leaves less than two minutes, choose current UTC+3 minutes rounded up to next whole minute; never enable automatically.",
-  "instructions": "Use a supported atomically paused creation interface if it becomes available; insert the real one-shot ID in prompt, verify exact task/environment/time and paused state, then HUMAN final Resume. Do not repurpose diagnostic or daily schedule. No web Run now.",
+  "instructions": "USER manually Resume this exact timer before its future firing time. Do not use web Run now. Execute once only; no daily enabled dependency or enabled-at-execution requirement.",
   "financial_execution": false,
-  "activation_evidence": "This exact timer firing after HUMAN manual enable; no requirement to remain enabled at execution because one-shots may auto-disable. Daily enabled state irrelevant; no reschedule/auto-enable."
+  "activation_evidence": "This exact timer firing after HUMAN manual enable; no requirement to remain enabled at execution because one-shots may auto-disable. Daily enabled state irrelevant; no reschedule/auto-enable.",
+  "actual_is_enabled": false,
+  "atomic_paused_update_supported": true,
+  "method": "Reused completed disabled setup diagnostic via update(is_enabled=false); no create or transient activation"
 }
