@@ -84,6 +84,14 @@
     "cadence_hours": 24,
     "requested_local_time": "16:54",
     "timezone": "Asia/Bangkok",
-    "creation_status": "not-created; hosted scheduling tool unavailable in preparation session"
+    "creation_status": "created; paused; real-trading draft saved; setup pending",
+    "time_limit_hours": 6,
+    "automation_id": "6ae20602fadc8191ba6f741dbd0a7084",
+    "title": "R3 daily trading \u2014 PAUSED (setup pending)",
+    "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
+    "start_new_chat": false,
+    "next_run_time": null,
+    "prompt_record": "run/paused-trading-prompt-2026-10-28.txt",
+    "metadata_record": "run/paused-trading-schedule-2026-10-28.json"
   }
 }

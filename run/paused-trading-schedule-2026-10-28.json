@@ -1,0 +1,40 @@
+{
+  "automation": {
+    "id": "6ae20602fadc8191ba6f741dbd0a7084",
+    "team_id": null,
+    "title": "R3 daily trading — PAUSED (setup pending)",
+    "prompt": "VERIFIED DEPLOYMENT\nRepository: https://github.com/sunvalley1/seer_originality_chatgpt_bot (branch main; all nonsecret forecasts, setup evidence and run state persist here).\nCloud checkout: /workspace/seer_originality_chatgpt_bot\nEnvironment: seer_originality_chatgpt_bot; published version 6ae1e3c325548190963edcfc6e6f2f2d\nHosted execution task: 01a182e2-df18-71ca-b51b-4accee2140b1\nExisting schedule: 6ae20602fadc8191ba6f741dbd0a7084 — R3 initialization — PAUSED\nCadence: daily 16:54 Asia/Bangkok (09:54 UTC), continuing that hosted task. Its current initialization prompt does not trade.\nNode: /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node\nApproved code tree excluding run/: 3e3ec397a8a03998026cf9e8afaedf049102283a\nPublished main observed: e5cc9b6863d75f497b02eb431a783ffe770670a3. Later run-only commits may advance HEAD without changing the code tree. Uncommitted desktop documentation is not part of this cloud pin.\nSigner: /workspace/r3-runtime/signer/signer.cjs\nSHA-256: 19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef\nPlanner: /workspace/r3-runtime/tools/planner/planner.cjs\nSHA-256: d46f49bd70ef1cd2c1f890c0e175312e7f686ef37ca331eaa883227228783e09\nEvidence: 27 policy checks passed at 2026-10-28T11:49:04.381633Z. Helper checks passed. Clearance 2026-10-28T1129Z-clearance passed, nonempty: 128 groups, 558 unsigned calls, 318 matching balances. Credential installation and 31 source/installed hashes matched. ethers 6.17.0 lock SHA-256: 9fd244da71a8a21b055415ed3f4f348efc121022d6fff39cb74487d9dd5523de.\n\nDRAFT TRADING PROMPT — SAVE ONLY WHILE THE SCHEDULE REMAINS PAUSED\nThis is the operator's R3 daily trading routine. Execute it only after the operator manually activates the prepared schedule and genuine standing authorization is recorded. Follow the reviewed R3 strategy using the approved stored CSV. It may buy, sell, mint, merge and redeem with the dedicated wallet's available balance without per-batch approval. Do not change strategy or forecasts. The operator maintains one sender for this wallet; do not start another or retry a failed trade.\n\nUse only the verified hosted task/environment above, with command working directory /workspace/seer_originality_chatgpt_bot. Never inspect or print wallet secrets, credential files or environment contents. The reviewed installer alone consumes the privately configured wallet values. At each scheduled turn, use the supported request_permissions workflow for shell network access when needed; if permission is denied or unavailable, stop and report it. In actual scheduled turn 01a18302, default networking failed (git exit 128, curl exit 7); a TURN-scoped grant then allowed GitHub, Optimism RPC and Seer requests. Whether that grant was automatic or human-approved was not established. A persistent grant is not required by this workflow or claimed by this draft.\n\nBefore reading repository instructions or running its code, run this bootstrap as one shell invocation. It verifies the existing code, refuses dirty tracked files, refreshes by fast-forward only, and checks the code pin again. Confirm origin's fetch and push destinations are the approved repository before fetching. Stop on any failure; never reset, force, auto-stash, discard records or accept another code pin.\n\nset -eu\npin=3e3ec397a8a03998026cf9e8afaedf049102283a\ntest \"$(git ls-tree HEAD | awk -F '\\t' '$2 != \"run\"' | git mktree)\" = \"$pin\"\ngit diff --quiet\ngit diff --cached --quiet\ntest -z \"$(git ls-files --others --exclude-standard)\"\nfor remote_url in \"$(git remote get-url origin)\" \"$(git remote get-url --push origin)\"; do\n  case \"$remote_url\" in\n    https://github.com/sunvalley1/seer_originality_chatgpt_bot|https://github.com/sunvalley1/seer_originality_chatgpt_bot.git) ;;\n    *) exit 1 ;;\n  esac\ndone\ngit -c core.hooksPath=/dev/null fetch --no-tags origin main\ntest \"$(git ls-tree origin/main | awk -F '\\t' '$2 != \\\"run\\\"' | git mktree)\" = \"$pin\"\ngit merge-base --is-ancestor HEAD origin/main\ngit -c core.hooksPath=/dev/null merge --ff-only origin/main\ntest \"$(git ls-tree HEAD | awk -F '\\t' '$2 != \"run\"' | git mktree)\" = \"$pin\"\ngit diff --quiet\ngit diff --cached --quiet\n\nThen read the reviewed trading routine and use these exact commands in order. These are FUTURE LIVE-RUN commands, not permission to execute them during preparation:\n\nNODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs install --ethers-from /workspace/nontrading-validation/deps/node_modules\n\nRequire exit 0, keys=\"installed from the environment\", both installed pins=\"match\", and all four real authorization fields satisfied. Otherwise stop. When authorized, run once in the foreground with the hosted execution time budget matching schedule.time_limit_hours:\n\nNODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs trade --push\n\nDo not use planner send entry points or run the signer directly. Report run ID, status, exit code, report path and push result. Exit 0 alone does not prove records were pushed. A failed or uncertain run is not retried; preserve its records for the next scheduled recovery. Push only approved nonsecret run/ records. No keys, keystores, passwords or environment contents belong in GitHub. Never pull while the planner is running.",
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Bangkok:20261029T165400\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=54;BYSECOND=0\nEND:VEVENT",
+    "timing_mode": "exact_schedule",
+    "display_schedule": null,
+    "is_enabled": false,
+    "conversation_id": null,
+    "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
+    "default_timezone": "Asia/Bangkok",
+    "next_run_time": null,
+    "last_run_time": null,
+    "updated_at": "2026-10-28T15:03:57.657608+00:00",
+    "run_details": {
+      "last_run": null,
+      "latest_result": null,
+      "delivery_status": "unknown"
+    }
+  },
+  "verification": {
+    "exact_reviewed_prompt": true,
+    "disabled": true,
+    "no_next_run": true,
+    "same_thread": true,
+    "conversation_id_null": true
+  },
+  "remaining_gates": [
+    "autonomy.enabled remains false",
+    "autonomy.authorized_at remains null",
+    "schedule.signer_allow_rule_added_at remains null",
+    "signing_verified_at remains null",
+    "Saved draft origin/main awk expression contains escaped quotes inside single quotes and requires correction before activation",
+    "Enforced exact command boundaries, six-hour host execution guarantee, and wallet-wide serialization remain unverified"
+  ],
+  "time_limit_hours": 6,
+  "time_limit_note": "Requested configuration only; no host duration guarantee established"
+}

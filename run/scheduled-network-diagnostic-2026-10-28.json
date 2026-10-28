@@ -1,0 +1,43 @@
+{
+  "scheduled_turn": "01a18302",
+  "automation_id": "6ae20cc0b5c48191bd23cd0570a48509",
+  "observed_disabled": true,
+  "next_run_time": null,
+  "observed_last_run_time": "2026-10-28T14:55:27.056202+00:00",
+  "run_history_details": "unavailable; completed command evidence is in actual scheduled turn output",
+  "start_utc": "2026-10-28T14:55:34Z",
+  "end_utc": "2026-10-28T14:56:16Z",
+  "default": {
+    "git_exit": 128,
+    "curl_exit": 7,
+    "http_status": "000",
+    "error": "Failed to connect to proxy port 8080: Could not connect to server"
+  },
+  "network_permission": {
+    "granted": true,
+    "scope": "turn",
+    "approval_origin": "unknown; automatic versus human input not observable"
+  },
+  "retry": {
+    "git": {
+      "exit": 0,
+      "main": "e5cc9b6863d75f497b02eb431a783ffe770670a3"
+    },
+    "optimism": {
+      "exit": 0,
+      "http_status": 200,
+      "chain_id": "0xa"
+    },
+    "seer": {
+      "exit": 0,
+      "http_status": 200,
+      "markets": 98,
+      "parentWrappedTokens": 4,
+      "middleMarkets": 3
+    }
+  },
+  "persistent_permission_verified": false,
+  "duration_guarantee_verified": false,
+  "wallet_wide_nonoverlap_verified": false,
+  "financial_execution": false
+}
