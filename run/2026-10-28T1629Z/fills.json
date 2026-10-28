@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:39:04.078Z",
+ "generated_at": "2026-10-28T16:39:17.773Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -104,12 +104,25 @@
    "tx_hash": "0x7e16edd581f2ffbd418426c3b56ecfbd265ffdae136762640ab25a3b2e29a8e9",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "LFDT-web3j/web3j",
+   "address": "0xf799b67f0b8da6ed75d6d31370346e2dd6be187d",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 32.9635519582998,
+   "filled": 42.60618584681022,
+   "fill_price": 0.7736799552257427,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc01a3e42ab748d5d0e6e39556e6a061218db309bf5d886054186f1b89ea9cdb4",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 3
+  "positions_opened": 4
  },
  "retained_legs": []
 }

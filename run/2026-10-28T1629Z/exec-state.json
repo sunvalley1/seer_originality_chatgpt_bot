@@ -185,7 +185,7 @@
    "effects_diffs": []
   },
   "simple-buy:LFDT-web3j/web3j:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:39:04.827Z",
    "txs": [
     {
@@ -193,6 +193,32 @@
      "nonce": 2714,
      "hash": "0x8fe344f78f79df43a9fe1236493487842a488ea15aaa6ebfb59671d9e4d6c2b1",
      "block": 158803386
+    },
+    {
+     "idx": 22,
+     "nonce": 2715,
+     "hash": "0xc01a3e42ab748d5d0e6e39556e6a061218db309bf5d886054186f1b89ea9cdb4",
+     "block": 158803389
+    }
+   ],
+   "ended_at": "2026-10-28T16:39:17.774Z",
+   "effects_diffs": []
+  },
+  "complex-buy:herumi/mcl:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:39:18.526Z",
+   "txs": [
+    {
+     "idx": 23,
+     "nonce": 2716,
+     "hash": "0x36318afa4e1adfc0c39d262264c2e22dfa77fcd972bffcd769c66dec9d50ce2d",
+     "block": 158803393
+    },
+    {
+     "idx": 24,
+     "nonce": 2717,
+     "hash": "0x4815662513ab12ac1b34cde0d9b7307cc6076b728eff86dca69bfa1da4ecdde9",
+     "block": 158803396
     }
    ]
   }
