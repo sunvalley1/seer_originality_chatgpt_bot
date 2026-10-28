@@ -61,10 +61,13 @@ the arm lock with `owner.txt` stage `claude-p` and runs `wake` once (`steps/I-se
 - **Reads no environment variable** to change its behaviour; it passes its environment through to the helper and the
   signer unchanged (the signer's own tripwire may name a variable to drop for its read-only calls, signer README section 9).
 
-## 2. Install (operator, once)
+## 2. Install on the cloud execution host
+
+The setup guide uses `node r3.cjs install` in the pinned cloud checkout to perform the installation below.
+These paths describe the cloud host; no software installation on the operator's laptop is required.
 
 1. Pick a folder **outside the project folder** and outside every `Write` or `Edit` path a run grants, for example
-   `~/r3-tools/planner/` (`%USERPROFILE%\r3-tools\planner\` on Windows).
+   `~/r3-tools/planner/`.
 2. Copy `planner.cjs` and the whole `planner/` folder into it (keep the layout: `planner.cjs` next to `planner/`). Copy
    `planner.config.example.json` next to it as **`planner.config.json`** and fill it in (section 3).
 3. Make `ethers` 6.17.0 resolvable from that folder: `cd <folder>`, then `npm init -y`, then
@@ -72,9 +75,7 @@ the arm lock with `owner.txt` stage `claude-p` and runs `wake` once (`steps/I-se
    `ethers` that resolves inside the project or is another version. (`c`, `d` and `e` do not load it.)
 4. Record the sha256 of `planner.cjs` **and of every `planner/*.cjs`** (all of them load) with the chain helper's and
    the signer's hashes in the setup record (`steps/I-setup.md` I.1 section 7), and compare them with section 9:
-   - Windows: `certutil -hashfile <file> SHA256`, or PowerShell `Get-FileHash -Algorithm SHA256 <file>`
-   - macOS: `shasum -a 256 <file>`
-   - Linux: `sha256sum <file>`
+   use `sha256sum <file>` in the cloud shell.
 5. In a routine, `node r3.cjs install` writes it fresh at every run from the pinned commit, not read-only, with
    `ethers` 6.17.0 from the npm registry (`steps/I-setup.md` I.1 section 7, *The hash pins one file*).
 6. Run it from the **project root**: `node <planner path> <subcommand> <run-id> [flags]`. Every `./run/...` path is
@@ -317,8 +318,8 @@ changes (`result: "unchanged"` otherwise).
 ### `wake <run-id>`: the whole scheduled run
 
 Only inside the wrapper: `./run/.lock.deep-r3-trade` held by the wrapper (`owner.txt` stage `claude-p`) naming this
-run-id (else `not-scheduled`, exit 4, nothing written). It writes `wake-status.json` `aborted` first; checks the five
-gates of I.2 section 1 and G section 8 *Two modes* (`first_successful_run`, `autonomy.enabled`, `autonomy.authorized_at`,
+run-id (else `not-scheduled`, exit 4, nothing written). It writes `wake-status.json` `aborted` first; checks the four
+gates of I.2 section 1 and G section 8 *Two modes* (`autonomy.enabled`, `autonomy.authorized_at`,
 `autonomy.signer_selftest_passed_at`, `schedule.signer_allow_rule_added_at`; a null or false one is named, `report.md`
 is written, the wake stops; a setup in signer mode (b) stops the same way first, `unsupported-signer-mode`, section 8);
 runs the start-of-run repair of earlier run-ids that hold an `inflight.json` or
@@ -485,7 +486,7 @@ re-run with one attempt per nonce, a pre-send `simulate` still throttled after i
 `rpc-transport`, `rpc-http` 503 and plain `rpc-error` answers to exit 5 and a `-38xxx` one to exit 3, nothing sent;
 signer mode (b): `exec`, `exec --check` and `halfb --send` refused before any signer call), `wake` (the whole
 scheduled run inside a wrapper lock, the gates, a signer-mode (b) setup refused at the start check, the refusal
-outside the wrapper, D4, the five gates, a Half B affordability skip, exec's and Half B's pre-send `simulate`
+outside the wrapper, D4, the four authorization gates, a Half B affordability skip, exec's and Half B's pre-send `simulate`
 answering an RPC failure (exit 5, nothing sent, the wake `aborted`), the once-only re-plan and the cut, a group exec
 leaves half-done after its in-run recovery stopped ending the wake `aborted` (cause
 `half-done`), the next wake's repair applying the rule to it on the state of the day (Half B's middle merge had taken

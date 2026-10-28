@@ -464,15 +464,14 @@ async function confirm(env, book, tx, n, hash, meta = {}, settlement = null) {
   return { hash, receipt: rc, record: rec };
 }
 
-// The standing authorization (I-setup.md I.2 section 1, G section 8 Two modes): an autonomous send needs all five set
-// in the setup record (first_successful_run, autonomy.enabled true with autonomy.authorized_at,
+// The standing authorization (I-setup.md I.2 section 1, G section 8 Two modes): an autonomous send needs all four set
+// in the setup record (autonomy.enabled true with autonomy.authorized_at,
 // autonomy.signer_selftest_passed_at, schedule.signer_allow_rule_added_at). Checked by `wake` at its start and again by
 // every wrapper-mode send path (exec, halfb, the wake's ramp), so a revocation (autonomy.enabled false) stops sends even
 // when a step is driven alone.
 function gateProblems(setup) {
   if (!setup) return ['run/setup.deep-r3-trade.json does not exist'];
   const p = [];
-  if (!setup.first_successful_run) p.push('first_successful_run is null');
   if (!setup.autonomy || setup.autonomy.enabled !== true) p.push('autonomy.enabled is not true');
   if (!setup.autonomy || !setup.autonomy.authorized_at) p.push('autonomy.authorized_at is null');
   if (!setup.autonomy || !setup.autonomy.signer_selftest_passed_at) p.push('autonomy.signer_selftest_passed_at is null');

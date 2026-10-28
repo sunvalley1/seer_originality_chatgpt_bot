@@ -46,42 +46,31 @@ sign lives in `signer.cjs`. Its only dependency is `ethers` 6.17. Plain Node 22,
   policy and chain check passed. There is no export, no `getPrivateKey`, no key path in any output; errors from the
   crypto layer are replaced by a generic message.
 
-## 2. Install (operator, once)
+## 2. Install in the cloud execution environment
 
-1. Pick a folder **outside the project**, whose path does not contain `deep-r3-signer` (the deny rules in I.1
-   section 2 would block it), for example `~/.r3-signer-bin/` (`%USERPROFILE%\.r3-signer-bin\` on Windows).
-2. In that folder: `npm install ethers@6.17.0 --save-exact` (this creates the `node_modules` the signer resolves
-   `ethers` from; the signer refuses to run if `ethers` resolves to a path inside the project folder). Node 22 or newer.
-3. Copy `signer.cjs` there. Copy `signer.config.example.json` to `signer.config.json` next to it and edit it
-   (section 3). The config is read **only** from next to `signer.cjs`; no argument or environment variable moves it.
-4. Keystore. To reuse the bundled wallet's layout (an ethers JSON keystore plus a Windows DPAPI blob for its password)
-   set `keystorePath` and `unlockPath` to the two paths in the public `run/wallet.json` and `signerMode` to `dpapi`.
-   **Never open those two files, and never paste them anywhere.** On macOS or Linux use `keychain` or
-   `secret-service` (the human stores the password in their own terminal, I.1 section 2), or `password-file`.
-5. Build the allowlist, operator-run (section 4):
-   `node signer.cjs allowlist-init --skill-dir <project>/.claude/skills/deep-r3-trade`
-   (`--skill-dir` is the skill folder, the one holding `steps/C-select.md`, `steps/G-mint-and-trade.md` and this
-   `scripts/` folder: the installed skill, or the copy you reviewed)
-   Optionally add `--r3-data <project>/run/<run-id>/r3-data.json` to cross-check the chain helper's saved copy of the
-   data function body. It prints the sha256; put it in `signer.config.json` as `allowlistSha256`.
-6. `node signer.cjs info`: `allowlist_hash_matches` must be `true`. It also prints `signer_path` and `signer_sha256`.
-7. Run the self-test (section 7). Only after it passes record the signer's absolute path and sha256 (the `signer_sha256`
-   of `info`, or `sha256sum` / `shasum -a 256` / `certutil -hashfile`) in the `signer` record of
-   `setup.deep-r3-trade.json` (I.1 section 7, *The setup record*), which `autonomy.signer_path` and
-   `autonomy.signer_sha256` copy.
-8. Deny rules (I.1 section 2): the list there names `~/.deep-r3-signer.dpapi`, `~/.foundry/keystores/**` and the
-   placeholder `Read(<keystore and unlock folder>/**)`. Replace the placeholder with the folder (two entries if they
-   differ) of `keystorePath` and `unlockPath`; the bundled wallet's store, named in the public `run/wallet.json`, is in
-   neither default location. Put it in settings. A routine's install writes the key files to `routine.config.json`'s
-   `keysDir` (`~/.r3-signer-keys` by default), which the trading routine's denied tools name
-   (`Read(~/.r3-signer-keys/**)`, `steps/I-setup.md` I.2 section 7); a `Read` deny rule does not cover what a shell
-   command reads, so it is one layer, not a wall. The signer's own folder, config and allowlist should be unreadable
-   to the agent as well where the OS allows it; its log is the exception (it holds no key material, and the run reads
-   it to settle a nonce, I.1 section 7); the trading routine denies `Write` and `Edit` altogether.
-9. The hash pins one file (I.1 section 7, *The hash pins one file*): `r3.cjs`'s hash check covers `signer.cjs` only.
-   In a routine, `node r3.cjs install` writes the folder fresh at every run from the pinned commit, not read-only. The
-   send-lock and the log (`sendLockPath`, `logPath`) are written by the signer on every send, so point them at a
-   separate, writable folder outside the project (`install` uses `routine.config.json`'s `stateDir`).
+Follow the cloud setup sequence in `SETUP.md` and `steps/I-setup.md`. Node 22 and the tools belong on the cloud
+host; there is no laptop installation step. The `local-encrypted-eoa` identifier means an encrypted EOA on that
+execution host, not an instruction to use the operator's computer.
+
+1. Review the pinned source and the nonsecret `routine.config.json`, then run `node r3.cjs install` in the cloud
+   project. It installs the signer and ethers 6.17.0 outside the project. If the allowlist is missing, exit 4 is the
+   expected bootstrap result: the tools are installed and `next.allowlist_init` identifies the operator's next command.
+2. The operator runs that allowlist command through a supported human-controlled cloud interface (section 4).
+   Copy its nonsecret policy file to `setup/r3-allowlist.json`, record the printed hash in `routine.config.json`, and
+   repeat the install. Do not replace a missing operator interface with a laptop requirement or mark the step complete.
+3. The operator supplies the encrypted keystore and password privately through the chosen cloud platform's
+   verified settings mechanism. Neither goes in chat, repository files or agent-written code. The reviewed install
+   uses password-file mode and writes both outside the project only after the allowlist is in place.
+4. Verify public identity, allowlist hash and installed paths. Run the no-send policy self-test (section 7), then
+   record its actual result and the installed signer's path/hash. No previous live trading run is required.
+5. Apply the chosen platform's restrictions before credentials are present. Claude's denied tools include
+   `Read(~/.r3-signer-keys/**)`; that syntax does not configure another platform. A Read deny does not cover shell
+   reads, and the agent must never inspect key material on any route. Keep the signer, config, policy, keys and
+   state outside the project; only the nonsecret log is read for recovery.
+
+Every scheduled install recreates the tools from the pinned commit. The signer hash covers `signer.cjs`; review
+its adjacent config and policy as well. The signer writes its lock/log under `stateDir`, a separate writable cloud
+folder. Runtime support for other unlock modes in section 3 is compatibility information, not another setup route.
 
 ## 3. `signer.config.json`
 
@@ -404,7 +393,7 @@ id 10) on every run, never touches the network and never a real key, prints `PAS
 non-zero on any `FAIL`. It covers every case of I.1 section 7's list, the positive sends, the send-lock, nonce pinning, key hygiene and
 `allowlist-init` against a synthetic chain. It takes a few minutes (receipt waits and paced reads).
 
-**7.2 The setup self-test (I.1 section 7)**, run by the agent in the supervised session after the operator's first yes.
+**7.2 The setup self-test (I.1 section 7)**, run during non-sending cloud onboarding after the operator's authorization.
 The case list, its order and the record of the pass are written once, in `steps/I-setup.md` I.1 section 7; this
 section carries no list of its own and uses that list's numbers. Cases (1) to (16) go through `check`, which signs
 nothing; (17) and (18) are 7.3's `send` cases and (19) is 7.4. Use zero or 1-wei amounts and the burn address

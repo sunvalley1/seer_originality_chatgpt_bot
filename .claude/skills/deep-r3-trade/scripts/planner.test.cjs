@@ -734,7 +734,7 @@ function wrapperLock(proj, runId, o = {}) {
   fs.writeFileSync(path.join(lockDir(proj), 'live-runs.txt'), (o.live || []).join('\n'));
 }
 function setupRecord(proj, over = {}) {
-  wj(path.join(proj, 'run', 'setup.deep-r3-trade.json'), { nonce_pinning: true, atomic_batches: false, first_successful_run: { run_id: 'a-supervised-run' }, autonomy: { enabled: true, authorized_at: '2026-10-06T00:00:00Z', signer_selftest_passed_at: '2026-10-06T00:00:00Z' }, schedule: { signer_allow_rule_added_at: '2026-10-06T00:00:00Z', time_limit_hours: 2, max_turns_run_ids: 5, cadence_hours: 24 }, ...over });
+  wj(path.join(proj, 'run', 'setup.deep-r3-trade.json'), { nonce_pinning: true, atomic_batches: false, autonomy: { enabled: true, authorized_at: '2026-10-06T00:00:00Z', signer_selftest_passed_at: '2026-10-06T00:00:00Z' }, schedule: { signer_allow_rule_added_at: '2026-10-06T00:00:00Z', time_limit_hours: 2, max_turns_run_ids: 5, cadence_hours: 24 }, ...over });
 }
 function snapshot(L, rid) { const s = path.join(L.root, 'snap-' + rid); rmrf(s); fs.cpSync(path.join(L.proj, 'run', rid), path.join(s, 'run'), { recursive: true }); fs.copyFileSync(path.join(L.mock, 'world.json'), path.join(s, 'world.json')); return s; }
 function restore(L, rid, s) { rmrf(path.join(L.proj, 'run', rid)); fs.cpSync(path.join(s, 'run'), path.join(L.proj, 'run', rid), { recursive: true }); fs.copyFileSync(path.join(s, 'world.json'), path.join(L.mock, 'world.json')); rmrf(lockDir(L.proj)); }
@@ -2054,7 +2054,7 @@ async function wakeSection(root, csvStoreFrom) {
   setWorld(W, freshWorld());
   const P = (args, o) => runPlanner(W, args, o);
   const rf = (rid, n) => path.join(W.proj, 'run', rid, n);
-  // the CSV store a supervised session left (D's stored path), and the setup record of a green supervised run
+  // The stored CSV and an authorized cloud setup record, with no prior live trading run.
   fs.mkdirSync(path.join(W.proj, 'run', 'csv'), { recursive: true });
   if (csvStoreFrom && exists(csvStoreFrom)) fs.cpSync(csvStoreFrom, path.join(W.proj, 'run', 'csv'), { recursive: true });
   else {

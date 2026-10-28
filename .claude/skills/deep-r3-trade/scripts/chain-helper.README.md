@@ -37,10 +37,13 @@ This file is `chain-helper.README.md`; the signer's is `signer.README.md`.
 - **One JSON object on stdout**, never the raw body, never truncated: an answer longer than 28,000 characters (tool
   output is cut around 30k) is replaced by an `output_too_large` error (exit 7) that says how long it would have been.
 
-## Install
+## Install on the cloud execution host
+
+Use the setup guide's `node r3.cjs install` in the pinned cloud checkout. The paths below are on that cloud host;
+there is no laptop installation step.
 
 1. Create a folder **outside the project folder** and outside every `Write` or `Edit` path a run grants, for
-   example `~/r3-tools/` (`%USERPROFILE%\r3-tools\` on Windows).
+   example `~/r3-tools/`.
 2. Copy `chain-helper.cjs` into it, and copy `chain-helper.config.example.json` next to it as
    **`chain-helper.config.json`** (exactly that name). Edit `signerAddress` to the pinned holder address (the public
    address in `run/wallet.json`; `owner()` under signer mode (b)). Review the file: the helper cannot tell a hostile
@@ -50,9 +53,9 @@ This file is `chain-helper.README.md`; the signer's is `signer.README.md`.
    inside the project finds `ethers` only through the project's `node_modules`, and the helper refuses to run from
    inside the project folder; an installed copy outside the project needs its own `ethers`.)
 4. The trading routine needs no tool entry for it: the planner starts the helper as its own child process under
-   `r3.cjs trade` (`steps/I-setup.md` I.2 section 7). For supervised sessions, allow
-   `Bash(node <chain helper path> *)` (and `PowerShell(node <chain helper path> *)` where the session uses
-   PowerShell), where `<chain helper path>` is the full path to `chain-helper.cjs`. Run it from the
+   `r3.cjs trade` (`steps/I-setup.md` I.2 section 7). For interactive cloud diagnostics, permit the specific
+   required helper commands through the platform's supported controls. `<chain helper path>` is the full path
+   to `chain-helper.cjs`. Run it from the
    **project root**: every `./run/...` path is relative to the current directory.
 5. Smoke test, from the project root: `node <chain helper path> chain-id` prints `{"chain_id":10,"expected":10,"ok":true}`.
 

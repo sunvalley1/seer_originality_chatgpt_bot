@@ -2,8 +2,8 @@
 // in the skill's order and with its stop rules:
 //   0. only inside the wrapper: run/.lock.deep-r3-trade held by the wrapper (stage "claude-p") naming this run-id; its
 //      started_at is the run's start, its live-runs.txt the run-ids never touched;
-//   1. wake-status.json written `aborted` FIRST; then the five gates of I.2 section 1 and G section 8 Two modes
-//      (first_successful_run, autonomy.enabled, autonomy.authorized_at, autonomy.signer_selftest_passed_at,
+//   1. wake-status.json written `aborted` FIRST; then the four gates of I.2 section 1 and G section 8 Two modes
+//      (autonomy.enabled, autonomy.authorized_at, autonomy.signer_selftest_passed_at,
 //      schedule.signer_allow_rule_added_at): a null or false one is named in notes, report.md is written and the wake
 //      stops (status stays aborted); a setup in signer mode (b), signer_mode executor-session-key, stops the same way
 //      first, cause unsupported-signer-mode (I.2 section 7, The planner);
