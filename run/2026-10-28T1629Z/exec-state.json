@@ -3,7 +3,7 @@
  "plan_built_at": "2026-10-28T16:36:36.025Z",
  "groups": {
   "mint-parent": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:36:43.405Z",
    "txs": [
     {
@@ -11,8 +11,41 @@
      "nonce": 2693,
      "hash": "0xcee8ad0f72226cd5fb827297147ad508602e21853e0e190fa440a12dc48153e5",
      "block": 158803315
+    },
+    {
+     "idx": 1,
+     "nonce": 2694,
+     "hash": "0x6572ac9dce01d93b8aadf8566d45b38884d949ed2f340344680d63c9296f5b28",
+     "block": 158803318
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:36:56.024Z",
+   "effects_diffs": []
+  },
+  "mint-middle-A": {
+   "status": "done",
+   "started_at": "2026-10-28T16:36:56.783Z",
+   "txs": [
+    {
+     "idx": 2,
+     "nonce": 2695,
+     "hash": "0xf48d266d889b46332fd2f54125b0900448f2aa6d65d10d66a04901e3ac012b1a",
+     "block": 158803322
+    },
+    {
+     "idx": 3,
+     "nonce": 2696,
+     "hash": "0x0a3c8c721a20bb52a5f3402a52f2dce366ebc999e0cf105348eb9de4ed4d4e4d",
+     "block": 158803325
+    }
+   ],
+   "ended_at": "2026-10-28T16:37:09.752Z",
+   "effects_diffs": []
+  },
+  "mint-middle-B": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:37:10.729Z",
+   "txs": []
   }
  },
  "stop": null,

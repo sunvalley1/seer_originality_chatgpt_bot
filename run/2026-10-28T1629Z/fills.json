@@ -1,0 +1,37 @@
+{
+ "generated_at": "2026-10-28T16:37:09.751Z",
+ "runs": [
+  {
+   "market": "PARENT-MINT",
+   "address": "0x37ab5cbeee3a32289430e5d38b914ec7f580fd87",
+   "side": "mint",
+   "route": "split-parent",
+   "requested": 130.921944906964,
+   "filled": 130.921944906964,
+   "fill_price": 1,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x6572ac9dce01d93b8aadf8566d45b38884d949ed2f340344680d63c9296f5b28",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "side": "mint",
+   "route": "split-parent",
+   "requested": 130.921944906964,
+   "filled": 130.921944906964,
+   "fill_price": 1,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x0a3c8c721a20bb52a5f3402a52f2dce366ebc999e0cf105348eb9de4ed4d4e4d",
+   "status": "filled",
+   "error": null
+  }
+ ],
+ "totals": {
+  "spent": 130.921944906964,
+  "spent_unit": "sUSDS",
+  "positions_opened": 0
+ },
+ "retained_legs": []
+}
