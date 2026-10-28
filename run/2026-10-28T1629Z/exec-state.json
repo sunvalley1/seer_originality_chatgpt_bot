@@ -331,7 +331,7 @@
    "effects_diffs": []
   },
   "dual-buy:arkworks-rs/algebra": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:41:12.794Z",
    "txs": [
     {
@@ -351,8 +351,41 @@
      "nonce": 2735,
      "hash": "0x34586facefd5e3929524d14a5878be5f2ff3dbc6c7f30fddf2d4b68a66f50c07",
      "block": 158803457
+    },
+    {
+     "idx": 43,
+     "nonce": 2736,
+     "hash": "0xa68d2336f3f0e8ec10a42e8c21bc44bf8548fe6c578aa9b99d00701e45308870",
+     "block": 158803460
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:41:39.228Z",
+   "effects_diffs": []
+  },
+  "simple-buy:flashbots/rbuilder:UP": {
+   "status": "done",
+   "started_at": "2026-10-28T16:41:39.971Z",
+   "txs": [
+    {
+     "idx": 44,
+     "nonce": 2737,
+     "hash": "0x5f3bf219b4cc8e2b2c273b5aff721bec3574b742a872ffbed08165f00a7bfcbc",
+     "block": 158803463
+    },
+    {
+     "idx": 45,
+     "nonce": 2738,
+     "hash": "0x63e88ec4f70b18df24d5e47c91ede4901ea51d88915513107c7666de5ec69508",
+     "block": 158803467
+    }
+   ],
+   "ended_at": "2026-10-28T16:41:53.014Z",
+   "effects_diffs": []
+  },
+  "merge-arb:protofire/solhint": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:41:53.742Z",
+   "txs": []
   }
  },
  "stop": null,

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:41:26.227Z",
+ "generated_at": "2026-10-28T16:41:53.014Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -182,12 +182,38 @@
    "tx_hash": "0xe53519f202c5975c6f6f91c5adfa23081be43e5958b2dccbeab4dbde17c9f275",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "arkworks-rs/algebra",
+   "address": "0xb52c7e58dc48250b6cb4fbe5ed251f617700bf06",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.52579825398451,
+   "filled": 18.0316078082622,
+   "fill_price": 0.14007615298881823,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa68d2336f3f0e8ec10a42e8c21bc44bf8548fe6c578aa9b99d00701e45308870",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "flashbots/rbuilder",
+   "address": "0xb44e4ad21d40efb87a87c0692e28c71c90d08d20",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 39.0512116884682,
+   "filled": 54.37254871216523,
+   "fill_price": 0.7182155814544509,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x63e88ec4f70b18df24d5e47c91ede4901ea51d88915513107c7666de5ec69508",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 8
+  "positions_opened": 10
  },
  "retained_legs": []
 }
