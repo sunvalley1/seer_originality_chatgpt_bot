@@ -807,7 +807,7 @@
    "effects_diffs": []
   },
   "merge-arb:libp2p/libp2p": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:48:10.031Z",
    "txs": [
     {
@@ -833,8 +833,33 @@
      "nonce": 2798,
      "hash": "0x9fe88553712ead094d4e1fa6f7ffffb3217646200191da49ed0f5a1e79577ffa",
      "block": 158803668
+    },
+    {
+     "idx": 106,
+     "nonce": 2799,
+     "hash": "0x586d0f16187642a396fd6e48ff3c55717397e66b62713d8b52b460163edb712e",
+     "block": 158803672
+    },
+    {
+     "idx": 107,
+     "nonce": 2800,
+     "hash": "0x691e5af1bcc2bf2d1915f9cc2533c294ab79f15799f951e5d2f365cb3172ab31",
+     "block": 158803675
+    },
+    {
+     "idx": 108,
+     "nonce": 2801,
+     "hash": "0x1bed3ded8257d4b441b59dd346195c1c26f3d71a6b2068c00ea8536462995021",
+     "block": 158803678
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:48:55.495Z",
+   "effects_diffs": []
+  },
+  "dual-buy:libp2p/libp2p": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:48:56.237Z",
+   "txs": []
   }
  },
  "stop": null,
