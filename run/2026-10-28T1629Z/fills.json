@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:45:48.304Z",
+ "generated_at": "2026-10-28T16:46:34.938Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -310,6 +310,19 @@
    "fill_price": 0.7242729903477761,
    "slippage_vs_quote": 0,
    "tx_hash": "0x42d4edc3ec0c49249f8c3f846562eb87ee821d8c1f7c8c6c04bdaf49aec69b07",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "flashbots/mev-boost",
+   "address": "0xc53217f3ca3371921076c4e7ea9457ea3b758317",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 49.3696780759086,
+   "filled": 54.68858476756018,
+   "fill_price": 0.9027419211109925,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x7a1c03bfdf2ba3970604596e7159c5431c949ae92d89c9b5c00f5f185f7d1bee",
    "status": "filled",
    "error": null
   }
