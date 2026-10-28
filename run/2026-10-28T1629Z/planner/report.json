@@ -1,0 +1,26 @@
+{
+ "subcommand": "report",
+ "run_id": "2026-10-28T1629Z",
+ "started_at": "2026-10-28T16:59:32.947Z",
+ "finished_at": "2026-10-28T16:59:32.954Z",
+ "summary": {
+  "subcommand": "report",
+  "run_id": "2026-10-28T1629Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "report": "run/2026-10-28T1629Z/report.md",
+  "lines": 248,
+  "wake_status": {
+   "path": "run/2026-10-28T1629Z/wake-status.json",
+   "status": "aborted"
+  }
+ },
+ "detail": {},
+ "log": [],
+ "tool_calls": {
+  "helperCalls": 0,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}
