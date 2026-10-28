@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:50:36.286Z",
+ "generated_at": "2026-10-28T16:50:50.139Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -468,12 +468,25 @@
    "tx_hash": "0xd15c8e5ca3d5822cf88a7ab10b1c6259e79fe189a598230e446b7037c6f2787d",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "wighawag/hardhat-deploy",
+   "address": "0xc8db7cdd4bc8006353dd09d87ecab65f84c620e5",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 22.8344707891383,
+   "filled": 31.259273474347797,
+   "fill_price": 0.7304862925837661,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x63942d3ee2177811ea294b079d5766427eee38e82af9e101962bc5ac38de0064",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 24
+  "positions_opened": 25
  },
  "retained_legs": []
 }

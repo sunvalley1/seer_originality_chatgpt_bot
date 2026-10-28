@@ -969,6 +969,30 @@
    ],
    "ended_at": "2026-10-28T16:50:36.286Z",
    "effects_diffs": []
+  },
+  "dual-buy:wighawag/hardhat-deploy": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:50:37.072Z",
+   "txs": [
+    {
+     "idx": 124,
+     "nonce": 2817,
+     "hash": "0x9b8eb5af70e4e89713c3ff3d306746ee0af5b8f5076c87aab241f2de80bf1f21",
+     "block": 158803732
+    },
+    {
+     "idx": 125,
+     "nonce": 2818,
+     "hash": "0x63942d3ee2177811ea294b079d5766427eee38e82af9e101962bc5ac38de0064",
+     "block": 158803735
+    },
+    {
+     "idx": 126,
+     "nonce": 2819,
+     "hash": "0xacdd3e1e7f2a993adb9d27c6733a55063a719a890b71777702510b7f197ed65e",
+     "block": 158803739
+    }
+   ]
   }
  },
  "stop": null,
