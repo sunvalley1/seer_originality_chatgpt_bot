@@ -1,0 +1,60 @@
+{
+  "scope": "non-sending preparation only",
+  "run_id": "setup-2026-10-28T112250Z",
+  "source_commit": "3c8f5fa555c119e416443fafac1d88552bfa8c85",
+  "allowlist_sha256": "7228af0474ae40bfe0d70d23162eca9a846aae69c7e521a91729185941d4e090",
+  "allowlist_built_at_block": 158793888,
+  "markets_verified": 102,
+  "outcome_tokens_verified": 399,
+  "pools_verified": 196,
+  "allowlist_warnings": [],
+  "runtime_warning": "Node EnvHttpProxyAgent experimental warning; managed proxy and system CA used",
+  "planner_c": {
+    "exit": 0,
+    "candidates": 98,
+    "tradeable": 98,
+    "bundle_split": [
+      33,
+      33,
+      32
+    ]
+  },
+  "planner_d": {
+    "exit": 3,
+    "cause": "awaiting-continue",
+    "matched": 98,
+    "unmatched": 0,
+    "overwritten": 0,
+    "no_forecast": 0,
+    "stored": false
+  },
+  "public_balance_observations": {
+    "address": "0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a",
+    "ETH": {
+      "raw": "5489713014094880",
+      "decimals": 18,
+      "balance": "0.00548971301409488"
+    },
+    "USDC": {
+      "raw": "0",
+      "decimals": 6,
+      "balance": "0"
+    },
+    "USDS": {
+      "raw": "0",
+      "decimals": 18,
+      "balance": "0"
+    },
+    "sUSDS": {
+      "raw": "666632973623565635236",
+      "decimals": 18,
+      "balance": "666.632973623565635236"
+    }
+  },
+  "limitations": [
+    "Signing not verified",
+    "No credential activation",
+    "No transactions or enabled schedules",
+    "Forecast acceptance awaits human review"
+  ]
+}

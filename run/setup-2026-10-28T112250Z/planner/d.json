@@ -1,0 +1,60 @@
+{
+ "subcommand": "d",
+ "run_id": "setup-2026-10-28T112250Z",
+ "started_at": "2026-10-28T11:24:31.240Z",
+ "finished_at": "2026-10-28T11:24:31.253Z",
+ "summary": {
+  "subcommand": "d",
+  "run_id": "setup-2026-10-28T112250Z",
+  "exit": 3,
+  "ok": false,
+  "stop": {
+   "step": "D",
+   "cause": "awaiting-continue",
+   "status": null,
+   "notes": "D step 5: the report is printed; nothing is stored until the human says continue (re-run with --continue), or edits the CSV (re-run on the new file)."
+  },
+  "counts": {
+   "matched": 98,
+   "unmatched": 0,
+   "overwritten": 0,
+   "no_forecast": 0
+  },
+  "unmatched_rows": [],
+  "overwritten_rows": [],
+  "no_forecast_split": {
+   "blank_cell": 0,
+   "absent": 0
+  }
+ },
+ "detail": {
+  "report": [
+   "step 4/5 report (a CSV new in this session):",
+   "  matched: 98",
+   "  unmatched CSV rows: 0",
+   "  overwritten rows: 0",
+   "  markets with no forecast: 0 (0 blank cell, 0 absent)",
+   "  accounting: 98 non-blank CSV rows = 98 matched + 0 overwritten + 0 unmatched; 0 blank-cell rows skipped at the parse"
+  ],
+  "blank_cell": [],
+  "absent": [],
+  "unmatched": [],
+  "overwritten": []
+ },
+ "log": [
+  "2026-10-28T11:24:31.243Z step 1: 98 candidate rows; 98 kind \"scalar\"; 0 skipped as not scalar",
+  "2026-10-28T11:24:31.245Z step 2: case 1, a CSV supplied in this session: inputs/r3-forecast.csv (4433 bytes); it becomes a new version only at step 7",
+  "2026-10-28T11:24:31.252Z step 4/5 report (a CSV new in this session):",
+  "2026-10-28T11:24:31.252Z   matched: 98",
+  "2026-10-28T11:24:31.252Z   unmatched CSV rows: 0",
+  "2026-10-28T11:24:31.252Z   overwritten rows: 0",
+  "2026-10-28T11:24:31.252Z   markets with no forecast: 0 (0 blank cell, 0 absent)",
+  "2026-10-28T11:24:31.252Z   accounting: 98 non-blank CSV rows = 98 matched + 0 overwritten + 0 unmatched; 0 blank-cell rows skipped at the parse",
+  "2026-10-28T11:24:31.253Z failure: Error: D stop: awaiting-continue: D step 5: the report is printed; nothing is stored until the human says continue (re-run with --continue), or edits the CSV (re-run on the new file).\n    at dstop (/workspace/r3-runtime/tools/planner/planner/d.cjs:100:54)\n    at Object.run (/workspace/r3-runtime/tools/planner/planner/d.cjs:202:13)\n    at Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:27)\n    at main (/workspace/r3-runtime/tools/planner/planner.cjs:95:33)\n    at Object.<anonymous> (/workspace/r3-runtime/tools/planner/planner.cjs:100:1)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)"
+ ],
+ "tool_calls": {
+  "helperCalls": 0,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}
