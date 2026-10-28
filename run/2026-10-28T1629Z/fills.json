@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:54:57.035Z",
+ "generated_at": "2026-10-28T16:55:37.612Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -663,12 +663,25 @@
    "tx_hash": "0x42855053feacbaab81b409a05db6325b441d6f1cf2a6785fb2de34b0daff611f",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "wealdtech/ethdo",
+   "address": "0x1773e3a7d522e80903e9914a88c815e126fb0f81",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 22.5141833552113,
+   "filled": 30.954565782851656,
+   "fill_price": 0.7273299684818647,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x7194932b927c6f7d403e037793651ce18022e11661acec54bafb578b333b6269",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 38
+  "positions_opened": 39
  },
  "retained_legs": []
 }

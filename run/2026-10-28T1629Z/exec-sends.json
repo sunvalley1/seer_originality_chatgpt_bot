@@ -3040,5 +3040,41 @@
   "cost_wei": "127938864857",
   "rebuilt": true,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-28T16:55:43.894Z",
+  "source": "entry",
+  "group": "merge-arb:lambdaclass/lambdaworks",
+  "idx": 169,
+  "label": "approve repo -> SwapRouter02 (maxIn UP + maxIn DOWN)",
+  "nonce": 2862,
+  "tx_hash": "0x5cb3ee72597905ed7ace7a376d5b23e0281400c316c47bd7ade1bed343f4c7f3",
+  "block": 158803883,
+  "to": "0xc52ac4cd416bc1777d6fb1ce0478fc8f571f8f9c",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000322",
+  "l1_fee": "2928919780",
+  "cost_wei": "51933694238",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-28T16:55:50.594Z",
+  "source": "entry",
+  "group": "merge-arb:lambdaclass/lambdaworks",
+  "idx": 170,
+  "label": "buy q UP (exactOutput, merge-arb)",
+  "nonce": 2863,
+  "tx_hash": "0x883c1bf75afa1b7d4602a1af6ee4b1c01344d360eab8800a0a2b32d72e7d1f60",
+  "block": 158803886,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "159622",
+  "gas_used": "130218",
+  "effective_gas_price": "1000322",
+  "l1_fee": "4583800460",
+  "cost_wei": "134843730656",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]
