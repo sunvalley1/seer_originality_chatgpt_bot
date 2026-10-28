@@ -1,0 +1,38 @@
+[
+ {
+  "at": "2026-10-28T16:36:48.972Z",
+  "source": "entry",
+  "group": "mint-parent",
+  "idx": 0,
+  "label": "approve sUSDS -> Router (M)",
+  "nonce": 2693,
+  "tx_hash": "0xcee8ad0f72226cd5fb827297147ad508602e21853e0e190fa440a12dc48153e5",
+  "block": 158803315,
+  "to": "0xb5b2dc7fd34c249f4be7fb1fcea07950784229e0",
+  "gas_limit": "61307",
+  "gas_used": "51089",
+  "effective_gas_price": "1000311",
+  "l1_fee": "2957505434",
+  "cost_wei": "54062394113",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-28T16:36:55.244Z",
+  "source": "entry",
+  "group": "mint-parent",
+  "idx": 1,
+  "label": "Router.splitPosition(sUSDS, parent, M)",
+  "nonce": 2694,
+  "tx_hash": "0x6572ac9dce01d93b8aadf8566d45b38884d949ed2f340344680d63c9296f5b28",
+  "block": 158803318,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "894087",
+  "gas_used": "596058",
+  "effective_gas_price": "1000311",
+  "l1_fee": "3417910874",
+  "cost_wei": "599661284912",
+  "rebuilt": false,
+  "settled_via": null
+ }
+]
