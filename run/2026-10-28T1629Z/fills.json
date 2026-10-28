@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:40:25.129Z",
+ "generated_at": "2026-10-28T16:41:11.685Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -154,6 +154,19 @@
    "fill_price": 0.14488894305146224,
    "slippage_vs_quote": 0,
    "tx_hash": "0xffe3f464e7b6143a79bb54ddb810f4e0483206342126377a0e3eea9e4d44c7bf",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "arkworks-rs/algebra",
+   "address": "0xb52c7e58dc48250b6cb4fbe5ed251f617700bf06",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 21.4789468299303,
+   "filled": 22.8149350977212,
+   "fill_price": 0.9414423814019828,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xca176519513d9e545c95393e8c523270aa9876c402a4b9159c7ff6b52d9bcd9a",
    "status": "filled",
    "error": null
   }

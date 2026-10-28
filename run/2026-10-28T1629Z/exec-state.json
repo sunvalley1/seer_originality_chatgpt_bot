@@ -281,7 +281,7 @@
    "effects_diffs": []
   },
   "merge-arb:arkworks-rs/algebra": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:40:25.865Z",
    "txs": [
     {
@@ -307,8 +307,33 @@
      "nonce": 2729,
      "hash": "0x786cf37419a26d030cd4f36c8d5a126027bf67e8b52f9cbea53488645c9cb3c8",
      "block": 158803436
+    },
+    {
+     "idx": 37,
+     "nonce": 2730,
+     "hash": "0x8ff1b3df40dbf8e662b6bc1948ef155094e3fcaa7d267aa7620600f67093f3f1",
+     "block": 158803439
+    },
+    {
+     "idx": 38,
+     "nonce": 2731,
+     "hash": "0x9ab07c3950d6a2df615c7261d749a7a5c566eacf04fcdf8051b085c7fb400e52",
+     "block": 158803443
+    },
+    {
+     "idx": 39,
+     "nonce": 2732,
+     "hash": "0xca176519513d9e545c95393e8c523270aa9876c402a4b9159c7ff6b52d9bcd9a",
+     "block": 158803446
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:41:11.686Z",
+   "effects_diffs": []
+  },
+  "dual-buy:arkworks-rs/algebra": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:41:12.794Z",
+   "txs": []
   }
  },
  "stop": null,
