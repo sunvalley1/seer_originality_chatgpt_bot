@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:51:30.063Z",
+ "generated_at": "2026-10-28T16:51:43.812Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -520,12 +520,25 @@
    "tx_hash": "0xc0bcac1c33502f4819cbc447b6a50deaea6202f3198dee24ac9185e128186e7e",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "DefiLlama/DefiLlama-Adapters",
+   "address": "0xd71b2fe2ff2c91d5d822ce6399c646137723186a",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 9.96988973043313,
+   "filled": 13.711650617177,
+   "fill_price": 0.7271108350692281,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x4ac0ce24e240c8183d5891aced4231507353e3c5b0655eb0f4f039905330bbb5",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 28
+  "positions_opened": 29
  },
  "retained_legs": []
 }

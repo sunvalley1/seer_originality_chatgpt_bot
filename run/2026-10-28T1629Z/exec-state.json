@@ -1037,7 +1037,26 @@
   "dual-buy:DefiLlama/DefiLlama-Adapters": {
    "status": "in-progress",
    "started_at": "2026-10-28T16:51:30.831Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 132,
+     "nonce": 2825,
+     "hash": "0x2e9a3c47309f32d769dd1bef76f6d45ca2a2ff28e5e34c4ff5efe720c8f72cc8",
+     "block": 158803759
+    },
+    {
+     "idx": 133,
+     "nonce": 2826,
+     "hash": "0x4ac0ce24e240c8183d5891aced4231507353e3c5b0655eb0f4f039905330bbb5",
+     "block": 158803762
+    },
+    {
+     "idx": 134,
+     "nonce": 2827,
+     "hash": "0x1188a7bfadfabda51e58a84ea66cf9b82278eca04bb04464e5429057d4d21a9e",
+     "block": 158803765
+    }
+   ]
   }
  },
  "stop": null,
