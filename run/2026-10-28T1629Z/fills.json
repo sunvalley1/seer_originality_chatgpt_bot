@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:46:48.850Z",
+ "generated_at": "2026-10-28T16:47:15.879Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -338,12 +338,38 @@
    "tx_hash": "0xe1617e6ba70f3400e4f496f29bb3f54cb8550096360c1568b5d3d1e5b98c23c0",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "flashbots/mev-boost",
+   "address": "0xc53217f3ca3371921076c4e7ea9457ea3b758317",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.1609375471198,
+   "filled": 21.348743297910104,
+   "fill_price": 0.1012208314543433,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xb48065163a191628f44d1f5d193e7255126048e40b1f04d74fb683d37422b8c7",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "flashbots/mev-boost-relay",
+   "address": "0xfd9f5746c9451fedc03fa9d334d84099b61017ca",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 28.9518364201474,
+   "filled": 37.2657702875272,
+   "fill_price": 0.7769015962038917,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc8c8a96c0c733b8f5b948fb0b20ed38dcda9edc1a5c3899c6b0f1e96a83578bc",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 16
+  "positions_opened": 18
  },
  "retained_legs": []
 }

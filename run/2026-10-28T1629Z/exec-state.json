@@ -699,7 +699,7 @@
    "effects_diffs": []
   },
   "dual-buy:flashbots/mev-boost": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:46:35.695Z",
    "txs": [
     {
@@ -719,6 +719,32 @@
      "nonce": 2783,
      "hash": "0x3b83fddde5f4f44052cb6fe300d0a305044e849913c08c759af4ab5a1926c228",
      "block": 158803618
+    },
+    {
+     "idx": 91,
+     "nonce": 2784,
+     "hash": "0xb48065163a191628f44d1f5d193e7255126048e40b1f04d74fb683d37422b8c7",
+     "block": 158803621
+    }
+   ],
+   "ended_at": "2026-10-28T16:47:01.841Z",
+   "effects_diffs": []
+  },
+  "dual-buy:flashbots/mev-boost-relay": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:47:02.629Z",
+   "txs": [
+    {
+     "idx": 92,
+     "nonce": 2785,
+     "hash": "0xdab1dd747dbbfdb4426b324c585e9c6e3b1ed75843822ab58354c733755e30d9",
+     "block": 158803625
+    },
+    {
+     "idx": 93,
+     "nonce": 2786,
+     "hash": "0xc8c8a96c0c733b8f5b948fb0b20ed38dcda9edc1a5c3899c6b0f1e96a83578bc",
+     "block": 158803628
     }
    ]
   }
