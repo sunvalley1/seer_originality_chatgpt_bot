@@ -26,7 +26,7 @@ The actual task control observed by the operator is “Approve for me” — “
 The requested execution budget is schedule.time_limit_hours=6, not a verified platform duration guarantee. No wallet-wide host lock is claimed. Preloaded repository instruction context is a documented pin limitation.
 
 FIRST SHELL COMMAND — BOOTSTRAP ONLY, NO REPOSITORY CODE
-Use workdir /workspace/seer_originality_chatgpt_bot. Execute the following as one shell invocation. Stop on any failure. Preserve all dirty, divergent, unpushed or unsaved records, including ignored run records. Never reset, force, clean, auto-stash, discard, rebase or overwrite them. All ignored files under run/ are conservatively treated as unsaved records; stop for review/persistence rather than deleting them. Do not accept another code pin.
+Use workdir /workspace/seer_originality_chatgpt_bot. Execute the following as one shell invocation. Stop on any failure. Preserve all dirty, divergent, unpushed or unsaved records, including ignored run records. Never reset, force, clean, auto-stash, discard, rebase or overwrite them. Refuse unsaved durable run records; exclude only the runner's documented lock and scratch directories below. Preserve them; the runner owns lock handling. Do not accept another code pin.
 
 set -eu
 pin=3e3ec397a8a03998026cf9e8afaedf049102283a
@@ -34,7 +34,7 @@ test "$(git ls-tree HEAD | awk -F '\t' '$2 != "run"' | git mktree)" = "$pin"
 git diff --quiet
 git diff --cached --quiet
 test -z "$(git ls-files --others --exclude-standard)"
-test -z "$(git ls-files --others --ignored --exclude-standard -- run)"
+test -z "$(git ls-files --others --ignored --exclude-standard -- run ':(exclude,glob)run/.lock.deep-r3-trade/**' ':(exclude,glob)run/*/exec-tmp/**' ':(exclude,glob)run/*/f-tmp/**' ':(exclude,glob)run/*/g-tmp/**' ':(exclude,glob)run/*/halfb-tmp/**' ':(exclude,glob)run/*/recovery-tmp/**')"
 test "$(git remote get-url origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
 test "$(git remote get-url --push origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
 git -c core.hooksPath=/dev/null fetch --no-tags origin main

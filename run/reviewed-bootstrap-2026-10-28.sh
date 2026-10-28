@@ -4,7 +4,7 @@ test "$(git ls-tree HEAD | awk -F '\t' '$2 != "run"' | git mktree)" = "$pin"
 git diff --quiet
 git diff --cached --quiet
 test -z "$(git ls-files --others --exclude-standard)"
-test -z "$(git ls-files --others --ignored --exclude-standard -- run)"
+test -z "$(git ls-files --others --ignored --exclude-standard -- run ':(exclude,glob)run/.lock.deep-r3-trade/**' ':(exclude,glob)run/*/exec-tmp/**' ':(exclude,glob)run/*/f-tmp/**' ':(exclude,glob)run/*/g-tmp/**' ':(exclude,glob)run/*/halfb-tmp/**' ':(exclude,glob)run/*/recovery-tmp/**')"
 test "$(git remote get-url origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
 test "$(git remote get-url --push origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
 git -c core.hooksPath=/dev/null fetch --no-tags origin main
