@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:53:32.832Z",
+ "generated_at": "2026-10-28T16:53:45.705Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -611,12 +611,25 @@
    "tx_hash": "0x7a33ca95a594995d1b6d16bc6a60dcddbdec5f21a7010e858e074830dbfd9da8",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ChainSafe/bls",
+   "address": "0xf8d574d0a7dc92deb6ae61adae9ad1219aac2c73",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 46.2584460581798,
+   "filled": 114.347667915465,
+   "fill_price": 0.404542103056948,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x623d666cec2acd0a197e55e4fa0412d824bee138c19718bba0c5008c749d8c13",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 35
+  "positions_opened": 36
  },
  "retained_legs": []
 }

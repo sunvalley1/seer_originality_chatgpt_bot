@@ -1163,7 +1163,7 @@
    "effects_diffs": []
   },
   "dual-buy:ChainSafe/bls": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:53:19.466Z",
    "txs": [
     {
@@ -1177,6 +1177,32 @@
      "nonce": 2842,
      "hash": "0x7a33ca95a594995d1b6d16bc6a60dcddbdec5f21a7010e858e074830dbfd9da8",
      "block": 158803817
+    },
+    {
+     "idx": 150,
+     "nonce": 2843,
+     "hash": "0x1a0eb0a292d5bc8163ccc4f59617277cdb7fe02a606cd8cd93ca12d0d8ff78e0",
+     "block": 158803820
+    },
+    {
+     "idx": 151,
+     "nonce": 2844,
+     "hash": "0x623d666cec2acd0a197e55e4fa0412d824bee138c19718bba0c5008c749d8c13",
+     "block": 158803823
+    }
+   ],
+   "ended_at": "2026-10-28T16:53:45.705Z",
+   "effects_diffs": []
+  },
+  "simple-buy:intellij-solidity/intellij-solidity:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:53:46.484Z",
+   "txs": [
+    {
+     "idx": 152,
+     "nonce": 2845,
+     "hash": "0xc33c657c8976870111fad14ad8306a2de553036333e4192771830193fd07e2ac",
+     "block": 158803827
     }
    ]
   }
