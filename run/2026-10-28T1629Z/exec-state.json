@@ -1087,7 +1087,7 @@
    "effects_diffs": []
   },
   "complex-buy:Certora/CertoraProver:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:52:11.231Z",
    "txs": [
     {
@@ -1107,8 +1107,33 @@
      "nonce": 2833,
      "hash": "0xa112e2eb26da70803618b0c9a36246c2be598f04b27a4a2bf7624766dc36a587",
      "block": 158803785
+    },
+    {
+     "idx": 141,
+     "nonce": 2834,
+     "hash": "0xfe1440ead72dbb4a84032eecc897f5d9d81a56a30c0d93a194a564c8ff769a2c",
+     "block": 158803789
+    },
+    {
+     "idx": 142,
+     "nonce": 2835,
+     "hash": "0x6a8eee86ccc15ed86b9c4ddee08ca9082743a5f27e19d062c8fde2c085c4f01c",
+     "block": 158803793
+    },
+    {
+     "idx": 143,
+     "nonce": 2836,
+     "hash": "0x793bba7a61390cde080eceb8e764b89249e596579e219b61722bde10b8f32dce",
+     "block": 158803796
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:52:51.183Z",
+   "effects_diffs": []
+  },
+  "dual-buy:Plonky3/Plonky3": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:52:51.913Z",
+   "txs": []
   }
  },
  "stop": null,
