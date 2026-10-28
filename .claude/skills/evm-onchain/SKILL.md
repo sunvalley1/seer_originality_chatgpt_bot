@@ -7,13 +7,14 @@ description: Routes EVM and Ethereum questions to the right ethskills.com leaf a
 
 **INPUT:** none. **OUTPUT:** none. This is a reference, not a pipeline step. Every step C–I of
 `seer-trade` and `deep-r3-trade` may read it — including `../seer-trade/steps/I-setup.md` and
-`../deep-r3-trade/steps/I-setup.md`, which stand the wallet up before C and, only when requested after a
-green supervised pass, register the optional wake. **`deep-r3-trade`'s scheduled run trades
-autonomously** after setup — one green supervised run, the operator's consent on the first run (to
-autonomous daily trading, and to running the signer CLI without a prompt) and a passed signer allowlist
-self-test — signing only through the operator's signing process, whose allowlist bounds what it may sign
+`../deep-r3-trade/steps/I-setup.md`, which configure each arm before C. **R3 uses its own cloud-only setup:**
+Claude routines or validated ChatGPT Work web schedules, non-sending signer/helper checks and full planner
+clearance, with no laptop installation or prior live/supervised trading run required. **`deep-r3-trade`'s
+scheduled run trades autonomously** only after those checks and the operator's two explicit permissions
+(autonomous daily trading and the selected cloud routine's signer access). It signs only through the
+operator's signing process, whose allowlist bounds what it may sign
 (scope only, no amount or frequency limit); the agent never reads the key. **`seer-trade`'s wake remains
-prepare-only for now:** it holds no signer in any signer mode and must run as a separate standard
+prepare-only for now and retains its own requested-after-supervised-pass rule:** it holds no signer in any signer mode and must run as a separate standard
 (non-admin) OS user that cannot reach the key; without that user, do not schedule — run the pipeline
 manually ([wallet onboarding](reference/wallet-onboarding.md) has the plain-language rule for both).
 Seer's own mechanics (Router, ConditionalTokens, wrapped outcomes, Reality.eth,

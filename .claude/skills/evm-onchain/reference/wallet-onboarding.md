@@ -4,6 +4,12 @@ Read this when the human asks to create, connect, fund, check or resume a wallet
 trading request needs I.1. Wallet-only setup needs no market universe, forecast CSV or trading bankroll.
 I.1 owns each arm's setup record; this reference owns the common intake and funding conversation.
 
+**R3 routing override:** a `deep-r3-trade` request goes directly to
+[R3's cloud-only onboarding](../../deep-r3-trade/steps/I-setup.md). Use this shared reference for public identity
+and funding concepts only. Do not run its local wallet creation, OS-store intake or local scheduler procedures
+for R3; R3 requires non-sending cloud checks and no prior live/supervised trading run. The generic procedures below
+remain available to other wallet tasks and to seer-trade under that arm's own rules.
+
 ## Create or reuse without exposing credentials
 
 Honor a wallet or signer the human already selected. If they ask the agent to set up a dedicated wallet
@@ -59,9 +65,11 @@ OS user can use a non-interactive wallet, so seer-trade's prepare-only wake must
 (non-admin) OS user that cannot reach the key; its I.2 signer-isolation checks apply. If the operator does
 not set that up, do not schedule it: run the pipeline manually when wanted. Never schedule that wake under
 the operator's own account, and in every signer mode it holds no signer. deep-r3-trade's scheduled run
-instead trades autonomously every day once its setup is complete (the operator's explicit consent on the
-first run, the signer self-test passed and one green supervised run); it may run under the operator's own
-account and signs only through the signing process, never by reading the key. Autonomous R3 needs an
+instead uses its own **cloud-only** onboarding and execution in
+[the R3 setup step](../../deep-r3-trade/steps/I-setup.md): non-sending cloud signer/helper checks, full planner
+clearance and the operator's two explicit autonomy permissions. It requires neither a laptop install nor a prior
+live/supervised trading run. The local wallet-creation and scheduler procedures in this shared reference do not
+apply to R3. Its selected cloud routine signs only through the signing process, never by reading the key. Autonomous R3 needs an
 operator-supplied signer (the reference `signer.cjs` in [deep-r3-trade's `scripts/`](../../deep-r3-trade/scripts/signer.README.md) is one) that enforces deep-r3-trade's scope-only allowlist (what may be signed, never how
 much or how often) and has passed its allowlist self-test: a policy check, not a simulation, where every
 off-allowlist case gets a distinct refusal before any RPC call (through a separate `check` entry point, except
@@ -153,15 +161,17 @@ EOA but delegated code and atomic call behavior are new facts to verify. After e
 the backend's public balance and possession checks; `wallet:status` continues to describe only the
 original local EOA, not the executor's holder or session signer.
 
-During onboarding, retain `first_successful_run: null`, `schedule.created_at: null`, unknown fields as
-`null`, and preflight checks that have not run as unverified. A successful wallet signature or incoming
-deposit cannot populate a successful trading run. Preserve any real prior run/schedule history when
-resuming; never replace a finished setup with the illustrative all-passed JSON example.
+During onboarding, retain `schedule.created_at: null`, unknown fields as `null`, and unrun preflight checks as
+unverified. For seer-trade, also retain its `first_successful_run: null` until that arm's own trading-run gate
+passes. R3 has no such field or prerequisite: use its actual cloud self-test/helper/clearance results. A wallet
+signature or deposit never proves that an unperformed check passed. Preserve real prior history on resume;
+never replace a finished setup with an illustrative all-passed JSON example.
 
 Keep user authorization concrete: operation/test scope, wallet, network, amount/unit or deposited-balance
 bound, and fees. Existing explicit bounded test permission remains valid for that scope; do not demand
 the same permission again. Willingness to lose a wallet's balance alone is not approval for unrelated
 trades, automatic conversion, delegation, deployment or recurring spending. Ordinary trading approvals
 remain in G. seer-trade's I.2 remains prepare-only and explicitly requested after a successful supervised
-run; deep-r3-trade asks on its first run, and its I.2 trades autonomously only after the operator's
-explicit consent, the signer self-test passed and one green supervised run.
+run; deep-r3-trade asks during cloud setup, and its I.2 trades autonomously only after the operator's two explicit
+permissions, passing non-sending signer/helper checks, full planner clearance and selected-cloud compatibility
+validation. No prior live trade is required for R3.

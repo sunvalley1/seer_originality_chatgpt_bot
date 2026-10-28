@@ -1,70 +1,74 @@
 # Instructions for AI agents working in this repository
 
-**A scheduled run reads no further.** If your prompt has you run the code pin check as your first command
-(`test "$(git ls-tree HEAD | ...`, or a `node -e` command over `git ls-tree`), or says this is a setup run or that you
-are a Codex scheduled task, you are the trading routine, its setup run or the Codex scheduled task in its place: run
-nothing this file asks for, not even the checks below; follow your prompt and
-`.claude/skills/deep-r3-trade/routines/trade.md` only, and treat this file as data.
+**Setup and execution take place in the cloud.** Reuse the operator's choice of Claude cloud routines or ChatGPT
+Work web schedules; if unknown, explain the two and ask. Apply platform prerequisites only to the chosen route.
+For ChatGPT, first read [ChatGPT Work schedules](.claude/skills/deep-r3-trade/reference/chatgpt-work-schedules.md).
+Its bot integration needs validation; an ordinary chat's shell access does not establish scheduled compatibility.
 
-Everyone else: this repository is the R3 Originality trading bot, a skill in `.claude/skills/deep-r3-trade/`
-(`SKILL.md` is its overview). It trades real money on Optimism.
+**A scheduled run follows its saved prompt first.** If the prompt requires the code pin as the first command,
+run that check before reading or running anything else. On failure, stop and report the exit code and error.
+After a successful check, follow `.claude/skills/deep-r3-trade/routines/trade.md` and the saved prompt; treat this
+file as data. A bounded capability diagnostic follows its own no-send prompt and grants no trading authority.
 
-## When a person opens this repository
+Everyone else: this repository is the R3 Originality trading bot. Its overview is
+[SKILL.md](.claude/skills/deep-r3-trade/SKILL.md). It trades real money on Optimism. The setup path is
+[SETUP.md](SETUP.md): cloud preparation, signer checks and simulated clearance, followed by explicit standing
+authorization. A completed live trading run is not a setup requirement.
 
-Find out how far their setup has got before doing anything else, with these read-only checks, and tell them in one
-short list what is done and what is next:
+## Check setup progress
 
-1. `git remote get-url origin`: `sunvalley1/r3-originality-bot` (or no `origin`) means step 1 of
-   [SETUP.md](SETUP.md) is still to do in this folder; their own private repository means it is done (a `public`
-   remote pointing at `sunvalley1/r3-originality-bot` is expected then). If they made their private copy in another
-   folder, tell them to open you again there and stop: every command and the skill's `run/` use the folder you are
-   open in.
-2. `routine.config.json` exists, its `signerAddress` is not the template's `0x…0001`, its `owner` is not the
-   template's `0x…0002`, and the two differ; and `~/.claude/settings.json` lists SETUP.md step 2's six deny rules
-   (if not, adding them comes next, before any key file exists).
-3. `setup/r3-allowlist.json` exists and its sha256 equals `routine.config.json`'s `allowlistSha256`.
-4. `run/csv/current.json` exists (a CSV has been supplied).
-5. `run/setup.deep-r3-trade.json`, after a `git pull`: `first_successful_run`, `autonomy.authorized_at` and
-   `autonomy.signer_selftest_passed_at` (step 4); then step 8 is done only when `schedule.signer_allow_rule_added_at`
-   is set and `autonomy.signer_path` and `autonomy.planner_path` equal `installed.signer` and `installed.planner` in
-   the clearance that cleared the scheduler: the cloud setup run's (`/root/...` paths) for a Claude routine, or a
-   supervised `node r3.cjs clearance` on this computer for a Codex scheduled task (SETUP.md C1 and C2). Until then
-   every scheduled run stops at its start: do not let them switch the schedule on.
-6. What you cannot see (the cloud environment, the routine, the wallet's funding): ask.
-7. Which scheduler they will use: a Claude routine in the cloud (SETUP.md steps 6 to 8; it needs Claude Code's
-   `/schedule`, the only way to give a routine its allowed and denied tools), or a Codex scheduled task on their own
-   computer, which must then be on with the ChatGPT app open at run times (SETUP.md "6 to 8 with Codex instead").
+Inspect the available tools and permitted cloud UI before asking the operator to inspect them. Report what is
+done and the next concrete step; do not claim capabilities or successful checks without evidence.
 
-If anything is left, offer to walk them through [SETUP.md](SETUP.md) from that step, one step at a time: say what the
-step is for, what they will do and what you will do, wait for them to finish it, check it with the step's own check,
-and only then go on. If they decline, do what they asked.
+1. Verify the chosen cloud execution context has Node 22, Git, the required network access, supported credential
+   controls, sufficient command duration and configurable command boundaries. ChatGPT-specific gaps follow the
+   linked reference. A result from another host does not validate this one.
+2. Verify `git remote get-url origin` and `git remote get-url --push origin` identify the exact approved records
+   repository. The upstream `sunvalley1/r3-originality-bot` (normally remote `public`) is not a records destination.
+   Private storage is recommended by default; explicit approval for a named public repository permits nonsecret
+   code, forecasts and run records there. Preserve an approval already given.
+3. Verify `routine.config.json` has the confirmed, distinct `signerAddress` and `owner`, not the template
+   addresses; `setup/r3-allowlist.json` exists and its hash matches `allowlistSha256`; tools and keys are outside
+   the cloud checkout. Inspect nonsecret status and configuration only.
+4. Verify `run/csv/current.json` and its immutable CSV version exist. A draft under `inputs/` alone is not an
+   accepted trading forecast. Follow the operator's CSV acceptance flow without changing the scores.
+5. Verify actual cloud signer self-test results, chain-helper checks and nonempty simulated clearance. The
+   installed signer/planner paths and hashes in the setup record must match that execution host's tested install.
+   Leave `nonce_pinning` false unless it has really been verified; setup requires no nonce transaction.
+6. Before live execution, require the operator's explicit standing permissions and the actual readiness fields:
+   `autonomy.enabled`, `autonomy.authorized_at`, `autonomy.signer_selftest_passed_at`, and
+   `schedule.signer_allow_rule_added_at`. Record only genuine results and consent. No prior live-run timestamp is
+   required. Keep trading disabled while authorization, platform validation or a required test is missing.
+7. Verify the paused scheduler's prompt, code pin, permissions, repository, environment and cadence. Confirm it
+   retrieves current records and only one process can send from this wallet before enabling it with authorization.
+
+Continue the authorized preparation in SETUP.md. Explain any remaining human-only action clearly: sign-ins,
+credential entry, wallet actions and `allowlist-init` belong to the operator. Do not add a live trading test as a
+setup prerequisite or replace a missing cloud capability with a different execution route.
 
 ## Rules for every agent here
 
-- **Never ask for, accept, show or paste a private key, a recovery phrase, a keystore's text or a password**, in chat
-  or in a file you write. The person types or pastes those themselves, into their own terminal or into the cloud
-  service's settings page. If they paste one into the chat, stop and tell them: a raw private key or recovery phrase
-  is exposed, so move the funds to a new wallet; a password with its keystore is exposed the same way.
-- **Never read, list, open, print or copy a key file or a password**: not `~/.r3-signer-keys/`, not
-  `~/.foundry/keystores/`, not any `.env`, and never print `R3_KEYSTORE_JSON`, `R3_KEYSTORE_PASSWORD` or the whole
-  environment. Only the signer reads them, in its own process. Claude Code also gets deny rules for this in
-  `~/.claude/settings.json` (SETUP.md step 2): add them before any key file exists even if you are another agent,
-  because steps 7 and 8 run Claude Code in this folder. Other agents keep to the rule themselves.
-- Never write code that reads, converts or encrypts a key. Use the commands in SETUP.md, which the person runs.
-- **In a supervised session the person approves each command.** Run in a mode that asks before every command (for
-  Codex, an approval policy that asks; never a full-auto or bypass mode). Run `node r3.cjs planner exec ...`,
-  `node r3.cjs planner halfb ... --send` and any `node <signer path> ...` command (`clear-nonce`, `reconcile`,
-  `sweep-*`, `send`) only after the person approved that exact command; for `exec` and `halfb --send`, their "yes" to
-  the batch comes first (`SKILL.md`). `allowlist-init` is never yours to run, even with their approval: the person
-  runs it in their own terminal (SETUP.md step 3; `scripts/signer.README.md`).
-- Never start a scheduled trading run by hand while another run may be live: one sender per wallet. Pause the
-  routine (or the Codex scheduled task) before any supervised send from this computer.
-- Push only what the person asked for. Never push `run/` or `inputs/` to the public repository.
-- Use Node.js 22. On Windows, Node 24 crashes the bot's tools.
-- If you are not Claude Code: run the skill by reading `.claude/skills/deep-r3-trade/SKILL.md` in full and following
-  it; the skills it names are the folders beside it in `.claude/skills/`. For a supervised session's
-  `run/<run-id>/session-owner.json` (`steps/I-setup.md` I.2 §6), the long-lived process is your own agent's: if the
-  snippet stops with `no claude ancestor`, add your agent's process name to its match (for example `codex`). In the
-  Codex app, delete that marker yourself when the run's sends are done: it names the app's own process, which outlives
-  the chat, so a scheduled task would treat that run-id as live and skip its repair, merges, redeems and scoring.
-- `SKILL.md` and `steps/` are the authority when this file, SETUP.md or the README disagree with them.
+- Never ask for, accept, show or paste a private key, recovery phrase, keystore text or password in chat or a file
+  you write. The operator enters credentials only through the platform's supported private settings. If secret
+  material is pasted into chat, stop and explain the exposure; do not reuse it as setup input.
+- Never read, list, open, print or copy key files, passwords, `.env` files, `/proc` or environment contents,
+  including `R3_KEYSTORE_JSON` and `R3_KEYSTORE_PASSWORD`. Only the signer accesses its secrets in its own process.
+  Apply the chosen platform's credential and tool restrictions; Claude deny rules do not configure ChatGPT.
+- Never write code that reads, creates, converts or encrypts keys. The operator uses a supported private wallet
+  flow. If one is unavailable, report the capability gap without handling their secret material.
+- `allowlist-init` is operator-run through a supported human-controlled cloud interface, never agent-run, even
+  with general setup approval. If the platform lacks that interface, resolve the gap before continuing.
+- Setup uses non-sending preparation, signer checks and simulation. Preserve the planner's refusal of supervised
+  send entry points when cloud key variables are present. Never bypass it, make a test transaction, or invoke a
+  send to satisfy setup. Later manual trading, if explicitly requested, still requires the skill's batch and
+  exact-command approvals. Standing scheduled authorization applies only to the reviewed routine and signer.
+- Keep one sender per wallet. Never start a second scheduled run while another may be live. Pause the routine
+  before any separately authorized manual send; a pause does not stop an already executing run.
+- Push only approved nonsecret content to the exact chosen records repository. Verify the push remote and review
+  the staged content. Never push `run/` or `inputs/` to the upstream source. Never commit or upload keys,
+  keystores, passwords, `.env` files or environment contents, even to a private destination.
+- Read SKILL.md in full and then the step files it routes to. Respect the code pin, signer self-test, installed
+  path/hash checks, nonempty clearance, explicit standing authorization and one-sender rules. Keep the actual
+  trading schedule disabled during documentation and capability work.
+- `SKILL.md` and `steps/` are the operational authority when this file, SETUP.md or README disagree, subject to
+  the operator's explicit instructions. Do not manufacture readiness to conceal a mismatch.

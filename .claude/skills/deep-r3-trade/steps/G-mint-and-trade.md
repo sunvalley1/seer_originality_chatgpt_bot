@@ -773,7 +773,7 @@ never an input to this gate.
 approval of a plan, not per-transaction signing, and every batch needs one. In **autonomous mode** (the
 scheduled run, `I-setup.md` §I.2) the run builds its plan and sends it in the same run-id with no
 per-batch "yes" — only when `./run/setup.deep-r3-trade.json` carries `autonomy.enabled: true` with
-`authorized_at` and `signer_selftest_passed_at` set, `first_successful_run` is not null and
+`authorized_at` and `signer_selftest_passed_at` set, and
 `schedule.signer_allow_rule_added_at` set; otherwise it
 sends nothing. That standing authorization replaces the "yes" and nothing else. Every autonomous send still
 takes the whole-sequence `eth_simulateV1` immediately before sending (a group with any `status` other than
@@ -1298,8 +1298,8 @@ repo token of this run's own (`m_X − (S_j − r_j)⁺`, up to 98 entries: `m_X
 would count the held tokens again; plus a `set-sell`'s proceeds and a `merge-arb`'s returned `q`,
 which are not recycled in the same run), each middle Invalid (`m_X` of it, not `M`), the parent Invalid, any unsplit bundle
 tokens, and any child Invalid a `complex-buy` or `set-sell` split minted (a `set-sell` keeps its `q`) —
-without that, `I-setup.md` I.2's green-run
-check (iii) cannot reconcile. Every such child Invalid is never sold and never merged unless step 4 or
+without that, the run's fills and per-token balance changes cannot be reconciled. This is a live-run accounting
+requirement, not a prerequisite to non-sending cloud setup. Every such child Invalid is never sold and never merged unless step 4 or
 a later run's `merge-arb` consumes it, and Invalid is what bounds every merge at all three levels.
 H derives each market's net set count from it. Record amounts in the unit each token is denominated in
 and say which. **One entry per token:** `retained_legs` holds exactly one entry for each token address, its `amount` the sum of what every

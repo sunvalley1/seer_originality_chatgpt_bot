@@ -73,8 +73,8 @@ These paths describe the cloud host; no software installation on the operator's 
 3. Make `ethers` 6.17.0 resolvable from that folder: `cd <folder>`, then `npm init -y`, then
    `npm install ethers@6.17.0 --save-exact`, one command at a time (the same in every shell). The planner refuses an
    `ethers` that resolves inside the project or is another version. (`c`, `d` and `e` do not load it.)
-4. Record the sha256 of `planner.cjs` **and of every `planner/*.cjs`** (all of them load) with the chain helper's and
-   the signer's hashes in the setup record (`steps/I-setup.md` I.1 section 7), and compare them with section 9:
+4. Record the current sha256 of `planner.cjs` **and of every `planner/*.cjs`** (all of them load) with the chain helper's
+   and the signer's hashes in the setup record (`steps/I-setup.md` I.1 section 7). Section 9's older hashes are historical:
    use `sha256sum <file>` in the cloud shell.
 5. In a routine, `node r3.cjs install` writes it fresh at every run from the pinned commit, not read-only, with
    `ethers` 6.17.0 from the npm registry (`steps/I-setup.md` I.1 section 7, *The hash pins one file*).
@@ -579,6 +579,14 @@ node planner.test.cjs --skip-offline --live --helper <chain-helper.cjs> --signer
   gets round it, so it is one layer, not a wall. The planner has no ramp subcommand.
 
 ## 9. Verification record
+
+**2026-10-28 — cloud setup authorization change.** Commit `ccd152dd0a3f4068bc83f3fe5acebe77b6e1b66b`
+removes the previous-live-run prerequisite from the shared authorization gate. In a ChatGPT Work cloud workspace,
+`node --test .claude/skills/deep-r3-trade/scripts/planner-gates.test.cjs` passed all seven tests (exit 0) on Node
+v24.22.1. The tests exercise cloud setup with no prior live run, legacy-record compatibility, missing setup and each
+remaining authorization requirement. They invoke no signer or RPC. This is a targeted logic check, not validation
+of scheduled execution, credentials, Node 22 deployment or the full trading pipeline. The older table and full-suite
+records below predate this change; use the actual pinned commit and installed hashes for deployment.
 
 The table holds the sha256 of each file as git stores it (LF line endings), as of 2026-10-25. A Windows checkout with
 `core.autocrlf` writes CRLF, which changes a raw hash, so normalize line endings before you compare. (The fingerprint a

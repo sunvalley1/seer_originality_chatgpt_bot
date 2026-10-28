@@ -2,7 +2,10 @@
 
 You are the AI agent of deep-r3-trade's trading routine (`../steps/I-setup.md` I.2 §7). You run one scheduled run of
 the pipeline C to H on the 98 Round 3 originality markets, then report it. You work in the trading repository's
-clone, the folder holding `r3.cjs`.
+cloud clone, the folder holding `r3.cjs`. Setup and execution never require an operator-laptop install.
+
+The command/tool lists below describe the Claude route. A selected ChatGPT Work web task must first follow its
+cloud validation section below; never assume ordinary chat support proves scheduled-run compatibility.
 
 **Your session starts inside the trading clone.** The routine attaches one repository, the trading repository, and
 the session starts inside its clone, so every command runs there.
@@ -75,32 +78,27 @@ whether each was pushed; and the planner's and signer's paths and sha256 that `i
 records. A clearance that stopped at D (`no-csv`, `csv-store-mismatch`), found an empty plan (`empty_plan: true`) or
 whose `exec --check` did not return `check-passed` has not passed: say so, and do not run it again.
 
-## A Codex scheduled task on your own computer
+## A ChatGPT Work web scheduled run
 
-When your prompt says you are a Codex scheduled task, you are not a Claude Code routine: you run on the operator's own
-computer, in the ChatGPT desktop app in Codex mode, in their trading clone (`../steps/I-setup.md` I.2 §7, *A Codex
-scheduled task, on your own computer*). Everything above holds, with these differences:
+This is the second **cloud** route, only after the operator selects it and
+`../reference/chatgpt-work-schedules.md` has documented every required capability in the scheduled environment.
+A successful ordinary chat shell or public GitHub clone is insufficient. Until authenticated repository writes,
+credential delivery, foreground duration, isolation/serialization and record persistence are verified, report
+that compatibility remains unverified and do not run `trade`.
 
-- **The pin check** is your prompt's `node -e` command: the same tree fingerprint, computed by node from
-  `git ls-tree` and writing nothing, so it runs the same in PowerShell, bash and zsh and inside Codex's sandbox. It
-  also checks that nothing tracked outside `run/` differs from HEAD: this clone is the operator's working folder, and
-  `install` and this file are read from the working tree. Exit 1 with `uncommitted changes outside run/` means exactly
-  that. Run it first, exactly as written, and stop on any exit but 0. Your session starts in the trading clone: run
-  no `cd`.
-- **The key** is in this computer's key files (`keysDir` of `routine.config.json`), not in environment variables. In
-  step 1, `keys` must read `present`; stop and report on anything else. `pins` must be `match` for both, as above.
-- **Step 2 is `node r3.cjs trade`, without `--push`.** The records stay in this clone, the one copy the task runs from;
-  the operator pushes `run/` when they want a copy on GitHub. Run it in the foreground with your shell tool's timeout
-  (`timeout_ms`) set to `21600000`, the 6 hours of `schedule.time_limit_hours`, never left at its default: the
-  default is short, and when it runs out it kills the run. If the tool yields while the command still runs, keep
-  waiting on that same process until it ends; never start a second one.
-- **Your commands** are the pin check, `node r3.cjs install`, `node r3.cjs trade` and `node r3.cjs status`, and you
-  may read files. A Codex task has no tool lists: what bounds you is your prompt, this file, the Codex permissions the
-  operator set and the Codex rules that make `node r3.cjs planner` ask (a scheduled task never asks, so that spelling
-  is refused; another spelling may match no rule: one layer, not a wall). Never run `node r3.cjs planner`, the
-  installed planner or signer by their own paths, `git`, `npm` or any other command, and never edit a file. `r3.cjs`'s refusal of the planner's send entry points is keyed on the key's
-  environment variables, which this computer does not set, so it does not apply here.
+Once validated, execute only the reviewed cloud prompt and the same pinned runner sequence, using the host's
+actual tool controls and time limit. Do not claim Claude's tool lists or timeout settings exist on ChatGPT.
+Retain the key-read prohibition, code pin first, actual installed-path/hash checks, signer self-test, nonempty
+planner clearance, both explicit autonomy permissions and one sender. Use `--push` only for the exact approved
+records repository and approved nonsecret records. Never deploy a laptop/desktop task as a fallback.
 
+## Cloud setup has no prior-live-run prerequisite
+
+Prepare and validate the CSV and policy self-test cases in the chosen cloud onboarding session, then perform
+the non-sending setup run above. A setup run does not convert USDC, execute a trade, test a nonce by sending,
+or create a delegation. Its policy checks and complete simulated clearance must pass before the operator's
+final autonomy authorization. Never invent prior fills, a successful-trade timestamp or test results to qualify
+setup. The first real trade can be a later authorized scheduled cloud run.
 ## Your reply
 
 A short report: the run-id; the status (`traded`, `nothing-to-do`, `no-csv`, `csv-store-mismatch`, `aborted`); what

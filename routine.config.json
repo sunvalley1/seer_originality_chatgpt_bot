@@ -1,0 +1,28 @@
+{
+  "_README": "Cloud preparation only. The allowlist hash is a placeholder until operator-run allowlist setup is completed. No trading authorization or successful checks are implied. Contains public configuration only; all paths are on the cloud host.",
+  "signerAddress": "0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a",
+  "_signerAddress": "The bot wallet: it signs, pays gas and holds every position.",
+  "owner": "0xB5a6a9c6d779e7dd7815f94AE2CcFb153a21801C",
+  "_owner": "Your own address, the only one the signer's supervised sweeps can ever send to. Must differ from signerAddress.",
+  "allowlistFile": "setup/r3-allowlist.json",
+  "allowlistSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "_allowlist": "The signer's policy file, built once with `node <signer path> allowlist-init` (operator-run), committed in your private copy, and its sha256.",
+  "planner": {
+    "rpcGapMs": 120,
+    "parallel": 1
+  },
+  "_planner": "rpcGapMs and parallel pace the planner's RPC reads.",
+  "toolsDir": "~/r3-tools",
+  "signerDir": "~/.r3-signer-bin",
+  "keysDir": "~/.r3-signer-keys",
+  "stateDir": "~/.r3-signer-state",
+  "_dirs": "Folders on the cloud host for the planner/helper, signer, keys and signer lock/log. All must be outside the project folder. Keep keysDir at ~/.r3-signer-keys where Claude's denied-tool rules name that folder; verify equivalent restrictions for other platforms. The reviewed install writes key files only when R3_KEYSTORE_JSON and R3_KEYSTORE_PASSWORD are both privately configured. Never commit those files or values.",
+  "rpcUrl": "https://mainnet.optimism.io",
+  "dataFunctionUrl": "https://deep.seer.pm/.netlify/functions/get-originality-r3-v3-markets-data",
+  "git": {
+    "name": "deep-r3-trade routine",
+    "email": "noreply@localhost",
+    "branch": "main"
+  },
+  "_git": "Who commits the run records, and to which branch, when a routine pushes them (--push)."
+}
