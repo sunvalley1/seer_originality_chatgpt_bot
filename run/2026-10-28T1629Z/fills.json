@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:40:12.065Z",
+ "generated_at": "2026-10-28T16:40:25.129Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -143,12 +143,25 @@
    "tx_hash": "0xcab00c020e051d66a4fe6fa3cf4dbc849239d50051090c9b22b3e5ed654b848d",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "paulmillr/noble-curves",
+   "address": "0xf74142573cd11d76501dfd51d5512fc6b8ca7933",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.13998686737169,
+   "filled": 14.769842489717101,
+   "fill_price": 0.14488894305146224,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xffe3f464e7b6143a79bb54ddb810f4e0483206342126377a0e3eea9e4d44c7bf",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 6
+  "positions_opened": 7
  },
  "retained_legs": []
 }

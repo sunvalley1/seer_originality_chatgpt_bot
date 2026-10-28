@@ -249,7 +249,7 @@
    "effects_diffs": []
   },
   "dual-buy:paulmillr/noble-curves": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:39:59.051Z",
    "txs": [
     {
@@ -263,6 +263,32 @@
      "nonce": 2723,
      "hash": "0xcab00c020e051d66a4fe6fa3cf4dbc849239d50051090c9b22b3e5ed654b848d",
      "block": 158803416
+    },
+    {
+     "idx": 31,
+     "nonce": 2724,
+     "hash": "0x966cf7c41d39aa66ab6eb8d49f765377659a0ea8389ecf6bfd4e6b5e7bc0b065",
+     "block": 158803419
+    },
+    {
+     "idx": 32,
+     "nonce": 2725,
+     "hash": "0xffe3f464e7b6143a79bb54ddb810f4e0483206342126377a0e3eea9e4d44c7bf",
+     "block": 158803423
+    }
+   ],
+   "ended_at": "2026-10-28T16:40:25.129Z",
+   "effects_diffs": []
+  },
+  "merge-arb:arkworks-rs/algebra": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:40:25.865Z",
+   "txs": [
+    {
+     "idx": 33,
+     "nonce": 2726,
+     "hash": "0x0cc71059803732ad33e441216f9e855f515edb5c406bba9afcc2acf45d8374e8",
+     "block": 158803426
     }
    ]
   }
