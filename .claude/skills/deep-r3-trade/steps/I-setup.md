@@ -232,7 +232,67 @@ No `transfer` or `transferFrom` to any other address, and no other selector. In 
 
 **The hash pins one file.** What signs also depends on `signer.config.json` (which pins the allowlist's hash, the RPC, the owner and the key paths) and on the `ethers` the signer loads from its `node_modules`, and `r3.cjs`'s hash check covers neither. `node r3.cjs install` writes these folders fresh at every run, not read-only: the files from the commit the routine's prompt pins (I.2 §7, *The code pin*), the allowlist checked against `routine.config.json`'s `allowlistSha256`, the config written by `install` itself, and `ethers` 6.17.0 with its dependencies from the npm registry (exact version, `--ignore-scripts`, no lockfile); the hash pins below check the two entry files. The send-lock and the log are written by the signer on every send, so they live in a separate, writable folder (`stateDir`). The same holds for the planner (I.2 §7, *The planner*): `r3.cjs` hashes `planner.cjs` only and checks that its `planner.config.json` names this install's helper and signer; what it runs also depends on its `planner/` modules and its `ethers`. Those rest on the code pin and the npm registry (nothing re-hashes the modules at trade time; the clearance records their hashes).
 
-**Setup self-test — a policy check, not a simulation**, run after the operator's yes to I.2 §1's first question; a signer that passes broadcasts nothing. Cases (1) to (16) go through the signer's **policy-only entry point** — `checkPolicy` (above), or a separate `check` / dry-run subcommand with no signing code path, never a flag on `send` or `sendBatch` — which applies exactly the same allowlist as send and returns before signing. A signer without such an entry point **FAILS** the self-test, which, apart from (17) and (18), is **never** attempted through `sendBatch`, `send` or `--broadcast`. Use zero or 1-wei amounts, and the burn address `0x000000000000000000000000000000000000dEaD` as the foreign recipient and spender. **The self-test's case list is written here, once** (`SKILL.md` and `../scripts/signer.README.md` section 7.2 cite it and carry no list of their own). Give the signer these cases, one off-allowlist case per allowlist rule and call shape and each its own input: (1) a token transfer to another address; (2) an approval to an unlisted spender; (3) an `approve` of `type(uint256).max` to the Router; (4) `exactInputSingle` with recipient ≠ holder; (5) `exactOutputSingle` with recipient ≠ holder; (6) PSM3 `swapExactIn` with receiver ≠ holder; (7) a swap pair other than (UP/DOWN j ↔ repo token j), on `exactInputSingle` and on `exactOutputSingle` (two cases); (8) an allowlisted pair at a fee tier other than its pinned one, on both (two cases); (9) a PSM3 pair other than USDC/USDS ↔ sUSDS; (10) a Router call on an unlisted market; (11) value > 0; (12) an unlisted selector; (13) an EIP-712 typed-data permit; (14) an EIP-7702 authorization with the burn address as its delegate; (15) one bad call among good ones: under EIP-7702 or an executor, a batch with one bad inner call, and for a signer whose `check` takes a call list, a list with one bad call; (16) one allowlisted call, which it must **accept**. Cases (17) and (18) are the `send` mode-switch cases below, and (19) is the setup nonce test, its own step with its own record and no condition of the self-test's pass. For each of (1)–(15) it must return a **distinct allowlist-refusal result, decided before any RPC call** and, for the permit and the 7702 authorization too, before any signature is produced. **Cases (17) and (18), the ones through `send` itself, run only after every `check` case has passed:** (17) `send` with each mode-switch attempt (an extra argument, a flag, a switch-named environment variable, a switch-named key in the input file, and an agent-writable file beside the input) on a zero-amount `approve` with the burn address as spender, which moves nothing even if a broken signer sent it; each must still return the distinct allowlist refusal before signing (for the file beside the input, the refusal for the spender, which shows the file was ignored), and a signer that signs it **FAILS**. (18) Then the same attempts except the file, on an allowlisted zero-amount call, `sUSDS.approve(Router, 0)` (the nonce test's call, which costs only gas if a broken signer sends it, so each attempt follows I.2 §6's send rules under the setup run-id (`setup-<slug>`, I.2 §6), with its write-ahead `inflight.json` and `nonce-attempts.json` records, as the nonce test does): each must return `rule: "mode-switch"`, which proves the refusal comes from the switch and not from the call being out of scope. A revert, an RPC error or a generic failure is a **FAIL**, not a refusal. Record the pass in `setup.deep-r3-trade.json` only when every case (1)–(18) returns the distinct refusal and the allowed case is accepted, together with the exact signer path tested, as an absolute path, and that file's sha256: the `signer` record (*The setup record*, below), whose `autonomy.signer_selftest_passed_at`, `autonomy.signer_path` and `autonomy.signer_sha256` copies I.2 §1's no-prompt rule and `r3.cjs`' hash check (I.2 §7) depend on. **Prepare and save the `check` cases in the cloud onboarding session so the routine's setup run can replay them:** each case's input as `run/<setup run-id>/selftest/case-NN.json`, numbered with two digits in the list's order (`case-01.json` for (1); (7) and (8) take two numbers each), and the results beside them as `results.json`, `{at, signer, cases: [{case, expected, exit, got, pass}]}` in the same order, with `expected` a rule, `<rule>@<index>` or `allowed` (`../scripts/signer.README.md` section 7.2 gives each case's rule). `node r3.cjs selftest --cases <that folder>` refuses a folder whose case files and saved cases differ in number (I.2 §7). A path or hash that differs from the one recorded in `signer` also resets `nonce_pinning` to `false` and sends `atomic_batches` and `signer_mode` back to unverified (`atomic_batches: false`, `signer_mode` re-recorded) until the setup nonce test (below) and the checks of §2 and this section prove them again for that signer. **Autonomous mode is not enabled until the self-test passes.** The bundled `tools/wallet.cjs` **can** broadcast single transactions on Optimism (`wallet:send … --broadcast`) with **no allowlist**. It may trade in supervised sequential mode, it can never pass the self-test, and it must never be given self-test cases, because it would sign and broadcast them. So autonomous mode needs a signer that implements the allowlist, which the operator supplies and reviews (the reference `signer.cjs` in `scripts/` is one, adopted as I.2 §7 says); the agent still never writes key-handling code. Until such a signer exists, autonomous mode stays off and setup records `autonomy.blocked: needs-wallet` (no signer yet that implements and passes the scope allowlist; see Output); `onboarding.status` is unaffected and supervised mode still works with whatever signer can send.
+**Setup self-test — policy checks only**, run after the operator's yes to I.2 §1's first question. All setup cases
+(1)–(18) use the signer's **policy-only entry point** — `checkPolicy`, or a separate `check` subcommand with no
+signing code path, never `send`, `sendBatch` or `--broadcast`. It applies the same allowlist as send and returns
+before signing. A signer without such an entry point FAILS the self-test. Use zero or 1-wei amounts and the burn
+address `0x000000000000000000000000000000000000dEaD` as the foreign recipient and spender.
+
+**Cases (1)–(16).** The case list is written here once (`SKILL.md` and `../scripts/signer.README.md` section 7.2
+refer here). Give the signer one input per rule and call shape: (1) a token transfer to another address; (2) an
+approval to an unlisted spender; (3) an `approve` of `type(uint256).max` to the Router; (4) `exactInputSingle` with
+recipient ≠ holder; (5) `exactOutputSingle` with recipient ≠ holder; (6) PSM3 `swapExactIn` with receiver ≠ holder;
+(7) a swap pair other than (UP/DOWN j ↔ repo token j), on both swap functions (two inputs); (8) an allowlisted pair
+at a fee other than its pinned tier, on both swap functions (two inputs); (9) a PSM3 pair other than USDC/USDS ↔
+sUSDS; (10) a Router call on an unlisted market; (11) value > 0; (12) an unlisted selector; (13) an EIP-712 typed-data
+permit; (14) an EIP-7702 authorization naming the burn address as delegate; (15) one bad call among good ones:
+under EIP-7702 or an executor, a batch with one bad inner call; for a signer whose `check` accepts a call list,
+a list with one bad call (for the reference signer, the third call is a burn-spender approval); (16) one allowlisted call, which
+must be accepted. Cases (1)–(15) must return a **distinct allowlist refusal before any RPC call or signature**;
+a revert, RPC error or generic failure is a FAIL. The README's section 7.2 gives the expected rule for each case.
+
+**Cases (17) and (18): separate check-only mode tests.** Run these only after all ordinary cases pass. For (17),
+use a zero-amount `sUSDS.approve(burn, 0)` input. Invoke `check` with each of: an extra argument, a flag, a
+switch-named environment variable, and a switch-named key in the input file. Each must refuse with
+`rule: "mode-switch"`. Also place an override-looking nonsecret file beside the input and check the unchanged
+burn-spender input: it must still refuse with `rule: "approval-spender"`, showing the sidecar is ignored. For (18),
+repeat the four detectable attempts on the allowlisted zero-amount `sUSDS.approve(Router, 0)` input, which must
+pass without an attempt and refuse with `rule: "mode-switch"` with each attempt. A refusal is exit 3 with
+`refused: "allowlist"`; the allowed baseline is exit 0 with `allowed: true`. The reference signer's `check` refusal
+output does not include `signed` or `broadcast` fields, so their absence is not a failure. Exact command forms are
+in `../scripts/signer.README.md` section 7.3.
+
+The reference signer's `check` and `send` both call `offlinePipeline` for argument, environment, input and policy
+checks before key or network access. These check-only mode tests exercise that shared logic; they **do not test
+send dispatch, send-only nonce parsing, locking, signing or broadcast**. Record their scope as policy checks, not
+live signing verification. Do not invoke a send entry point to extend setup coverage. Case (19) is the separate,
+optional nonce capability test below and is not a condition of the setup self-test's pass.
+
+**Save first-time cases and observed results.** Cases (1)–(16) produce **18 files**, because (7) and (8) each have
+two inputs: `run/<setup run-id>/selftest/case-01.json` through `case-18.json`, in specification order. Build calldata
+with the chain helper's `encode`, as the README says; no case requires prior fills or key access. For a first run,
+create `results.json` beside them with only `{ "cases": [{ "case": "<description>", "expected": "<rule>" }, ...] }`
+in filename order. `expected` is a rule, `<rule>@<index>` or `allowed`. This initial manifest describes expectations
+only: do not invent `exit`, `got`, `pass`, timestamps or prior results. `node r3.cjs selftest --cases <that folder>`
+reads those expectations, runs the installed signer's `check` and saves actual results in a new
+`run/setup-<UTC slug>/selftest/results.json`, with the tested signer path/hash. It refuses a mismatch between case
+file and manifest counts; verify the complete 18-case list yourself. It replays these files only, not the separate
+mode-test command forms. Save the actual (17)/(18) commands and observations under
+`run/<setup run-id>/mode-check/`, separately from the ordinary case-file folder; keep their results as
+`{at, signer, cases: [{case, expected, exit, got, pass}]}`.
+
+Record `signer.selftest_passed_at` only when every ordinary case and separate mode test passed, including the
+allowed baseline. Record the exact absolute signer path, its sha256 and the actual number of checks in the
+`signer` record (*The setup record*, below); its copies in `autonomy.signer_selftest_passed_at`,
+`autonomy.signer_path` and `autonomy.signer_sha256` remain the scheduled-run gate. These checks do not decrypt the
+wallet and cannot establish `signing_verified_at`. A changed signer path or hash needs fresh checks, resets
+`nonce_pinning` to `false` and returns `atomic_batches` to `false` and `signer_mode` to unverified until the relevant checks
+prove them again. Autonomous mode remains off until the self-test passes.
+
+The bundled `tools/wallet.cjs` can broadcast single transactions with no allowlist and must never receive
+self-test inputs. Autonomous trading requires the reviewed allowlist signer; the agent writes no key-handling
+code. Until that signer exists and passes, record `autonomy.blocked: needs-wallet`; `onboarding.status` is
+unaffected, and separately authorized manual trading retains its existing rules.
 
 **Optional nonce capability test — not a setup prerequisite.** Keep `nonce_pinning: false` throughout non-sending
 cloud setup. The policy-only self-test cannot prove actual nonce handling. After an independently authorized live

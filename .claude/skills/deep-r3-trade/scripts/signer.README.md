@@ -394,38 +394,57 @@ non-zero on any `FAIL`. It covers every case of I.1 section 7's list, the positi
 `allowlist-init` against a synthetic chain. It takes a few minutes (receipt waits and paced reads).
 
 **7.2 The setup self-test (I.1 section 7)**, run during non-sending cloud onboarding after the operator's authorization.
-The case list, its order and the record of the pass are written once, in `steps/I-setup.md` I.1 section 7; this
-section carries no list of its own and uses that list's numbers. Cases (1) to (16) go through `check`, which signs
-nothing; (17) and (18) are 7.3's `send` cases and (19) is 7.4. Use zero or 1-wei amounts and the burn address
+The case list and pass record are defined in `steps/I-setup.md` I.1 section 7. Cases (1)–(16) go through `check`;
+(17) and (18) are the separate check-only mode tests in 7.3. No setup case invokes `send`. Case (19), in 7.4, is an
+optional later nonce capability test, not a setup requirement. Use zero or 1-wei amounts and the burn address
 `0x000000000000000000000000000000000000dEaD` as the foreign recipient and spender. Build each `data` with the chain
-helper's `encode` (the agent writes no ABI by hand); `H` is the holder, `Ci` is the first child of the allowlist. Each
-refusal must be `{"refused":"allowlist","rule":<rule>}`, exit 3; anything else (an `error`, a revert, a crash) is a FAIL.
-The `rule` this signer returns, by I.1's case number: (1) `token-transfer`; (2) `approval-spender`; (3) `approval-amount`;
+helper's `encode` (the agent writes no ABI by hand); `H` is the holder and `Ci` the first child of the allowlist.
+For a recipient or wrong-fee test, use an allowlisted pair with a non-null pinned fee; a missing pair cannot test
+those rules. Each refusal must be `{"refused":"allowlist","rule":<rule>}`, exit 3; an error, revert or crash is a FAIL.
+The expected rule, by I.1's specification case number: (1) `token-transfer`; (2) `approval-spender`; (3) `approval-amount`;
 (4) and (5) `recipient`; (6) `receiver`; (7) `swap-pair`, once per swap function; (8) `swap-fee-tier`, once per swap
 function; (9) `psm3-pair`; (10) `router-market`; (11) `native-value`; (12) `selector`; (13) `eip712`; (14) `eip7702`;
-(15) `approval-spender` with the `index` of the bad call (`check` takes a list: three calls, the third a burn-spender
-approve, gives `index: 2`); (16) is accepted, `{"allowed":true}`, exit 0. Save each case's input as
-`run/<setup run-id>/selftest/case-NN.json`, numbered in the list's order, and the results beside them as `results.json`
-(`{at, signer, cases: [{case, expected, exit, got, pass}]}`, `expected` a rule, `<rule>@<index>` or `allowed`): then
-`node r3.cjs selftest --cases <that folder>` replays them through a new install's `check`, as a routine's install needs
-(`steps/I-setup.md` I.2 section 7).
+(15) `approval-spender` with the bad call's `index` (three calls, with the burn-spender approval third: `index: 2`);
+(16) is accepted, `{"allowed":true}`, exit 0.
 
-Optional, same procedure: an input `"chainId": 1` -> `chain-id`; a changed allowlist byte -> `allowlist-hash-mismatch`.
+Cases (1)–(16) produce **18 input files**, because (7) and (8) each take two: save them as
+`run/<setup run-id>/selftest/case-01.json` through `case-18.json` in specification order. There is no separate
+case-generator command; use `encode` and the public allowlist, then save each input. For first-time setup,
+`results.json` may contain expectations only: `{"cases":[{"case":"<description>","expected":"<rule>"}, ...]}`,
+in filename order. `expected` is a rule, `<rule>@<index>` or `allowed`. Do not invent prior outcomes or pass fields.
+`node r3.cjs selftest --cases <that folder>` checks the installed signer and writes genuine results, including
+`exit`, `got` and `pass`, to a new `run/setup-<UTC slug>/selftest/results.json`. It checks file/manifest counts, not
+completeness of the specification list; review all 18 inputs. Keep 7.3's separate mode tests and their observed
+results in `run/<setup run-id>/mode-check/`, outside this replay folder. Both sets must pass before recording the
+setup self-test pass. No prior live fills are needed, and these checks do not prove wallet decryption.
 
-**7.3 Cases (17) and (18), through `send`, only after every `check` case passed.** A zero-amount `approve(burn, 0)` on sUSDS,
-once for each mode-switch attempt: an extra argument (`send <file> allowlist=off`), a flag (`send <file> --no-allowlist`),
-an environment variable (`SIGNER_ALLOWLIST=off node ... send <file>`), a key in the file (`{"calls":[...],
-"allowlist":"off"}`) and an agent-writable file beside it. Each must print the distinct allowlist refusal with
-`"signed":false,"broadcast":false`, exit 3: `mode-switch` for the first four, and for the file beside the input
-`approval-spender`, because the signer does not read that file (it shows the file changed nothing). A signer that
-signs it FAILS. That call is also out of scope on its own, so it would be refused even if the mode-switch detection
-were removed; therefore run the same four detectable attempts on an allowlisted zero-amount call,
-`approve(Router, 0)` on sUSDS (the call of 7.4; a broken signer that sent it would only reset an allowance, and each
-attempt follows I.2 section 6's send rules under the setup run-id `setup-<slug>`, with the write-ahead records, as 7.4 does). Each
-must print `{"refused":"allowlist","rule":"mode-switch",...}`, exit 3, which proves the refusal comes from the
-switch (the offline suite runs the same attempts).
+Optional, same policy-only procedure: an input `"chainId": 1` -> `chain-id`; a changed allowlist byte -> `allowlist-hash-mismatch`.
 
-**7.4 The setup nonce test, case (19)** (after the signer has one confirmed transaction): `send <file> --nonce <an already-used nonce>`
+**7.3 Cases (17) and (18), through `check`, only after every ordinary case passed.** Prepare one zero-amount
+`sUSDS.approve(burn, 0)` input and one allowlisted `sUSDS.approve(Router, 0)` input. The latter must first pass an
+ordinary `check`. For each input, test these four forms (the environment-prefix form below is for a POSIX shell):
+
+```sh
+node <signer-path> check <input-file> allowlist=off
+node <signer-path> check <input-file> --no-allowlist
+SIGNER_ALLOWLIST=off node <signer-path> check <input-file>
+node <signer-path> check <input-with-switch-key-file>
+```
+
+The last input wraps the same calls as `{"calls":[...],"allowlist":"off"}`. Each test must exit 3 with
+`{"refused":"allowlist","rule":"mode-switch",...}`. Also put an override-looking nonsecret sidecar beside the
+burn-spender input and check that unchanged input: it must still refuse with `approval-spender`, because the
+signer ignores the sidecar. These are five attempts for specification case (17) and four for (18); they are not
+`case-17.json` and `case-18.json`, which already belong to the ordinary 18-file sequence. Save actual commands,
+exit codes and results separately. `check` refusals omit `signed` and `broadcast`; do not require those fields.
+
+`check` and `send` both invoke `offlinePipeline` for argument, environment, input and allowlist checks before
+network or key access. The check-only tests validate that shared logic. They do **not** exercise the send
+dispatcher, send-only nonce parsing, locks, signing or broadcast, and must not be reported as doing so. Do not
+invoke `send` during cloud setup to extend coverage. Keep `nonce_pinning: false` and leave signing verification
+unset unless separately established by a supported non-sending check.
+
+**7.4 Optional later nonce capability test, case (19)** — never a prerequisite of non-sending setup. Only after a separately authorized live run has produced a confirmed transaction and the operator separately authorizes this test: `send <file> --nonce <an already-used nonce>`
 with `[{"to":"<sUSDS>","data":"<approve(Router, 0)>"}]`. Pass: `{"error":"nonce-too-low", ...}`, exit 1, no `broadcast`
 event, no hash, and no send-lock left behind (the lock event is printed first and the file is removed). Record
 `nonce_pinning: true` only on that result, which is I.1 section 7's pass condition: nonce-too-low for the used nonce,

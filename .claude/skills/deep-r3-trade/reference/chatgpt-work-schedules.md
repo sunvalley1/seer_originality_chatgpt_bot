@@ -64,7 +64,7 @@ validation dependency directory. Its `package-lock.json` remains there; no trans
 to the repository. Offline version/unit-conversion assertions, the 98-entry table and 33/33/32 bundle checks,
 and chain-helper syntax checks passed. Pure `d.cjs`/`table.cjs` draft CSV parsing/matching found 98 rows and 98
 matches, with zero unmatched rows, duplicates, errors or missing entries. Source bytes were unchanged; the CSV
-has **not** been formally accepted through D's report/`--continue` flow.
+was not formally accepted by that pure check. The later formal preparation status is recorded below.
 
 An authenticated cloud push saved the nonsecret `diagnostics/cloud-record-probe.json` at commit
 `d320a371748f237bc0a437683b8d57b82d323b85`. A subsequent cloud turn fetched the same origin and exact commit,
@@ -83,12 +83,21 @@ earlier validation task retained its older policy; recheck the selected task aft
 checks invoked no signer and sent no transactions.
 
 The cloud home directory `/home/agent` was read-only. Public configuration now places the tools, signer, keys
-and state under separate `/workspace/r3-runtime/` directories outside the checkout. With the allowlist absent,
-the existing installer provisioned tools and reached the expected pending-allowlist exit 4, before its credential
-handling branch. It emitted the operator-only allowlist command; no signer was executed. The tested task has no
-`cast` executable, and a supported private, human-controlled cloud terminal remains unverified. Wallet import,
-credential-access restrictions, allowlist creation, formal CSV acceptance, signer checks, nonempty clearance
-and live schedule activation are still incomplete. Do not present the capability checks as trading readiness.
+and state under separate `/workspace/r3-runtime/` directories outside the checkout. The installer initially
+stopped at the missing-allowlist gate. After the explicit cloud-chat authorization described below, the reviewed
+non-sending `allowlist-init` completed and saved public `setup/r3-allowlist.json` in cloud commit
+`06723f1555cea59141009a217214d145527cc90c`, with SHA-256
+`7228af0474ae40bfe0d70d23162eca9a846aae69c7e521a91729185941d4e090`. Generation used chain 10, block 158793888,
+and found 102 markets, 399 tokens and 196 pools with no warnings. The installer rerun succeeded with config
+SHA-256 `6633237dd5a02d5a95bb0264fde9e863d366f2e368a7bb0cdaff95f1bd72bd79`. This does not establish private
+credential delivery or successful cloud signing.
+
+A public balance snapshot reported 666.632973623565635236 sUSDS and 0.00548971301409488 ETH. Formal C reported
+98 tradeable markets with freshness 196/196; D reported 98 matched, zero unmatched, zero overwritten and zero
+missing forecasts. The user's existing instruction to proceed with unchanged forecasts is now being applied
+to formal acceptance. Check-only signer tests and planner clearance are running; neither has a passing result
+yet. Credential activation/restrictions and live schedule activation also remain incomplete. No transactions
+were sent, and these preparation results do not establish trading readiness.
 
 The web schedule interface was observed with instructions, repeat, time, time zone, start-new-chat, model and
 reasoning-effort controls.
@@ -124,6 +133,18 @@ environment selector; do not generalize the current-thread result to a different
 actual scheduled task's environment and credential-delivery mechanism without exposing credentials before live
 use. An unfinished environment, missing variables or unset startup configuration is setup work still to do,
 not evidence of a working trading adapter.
+
+For this deployment, the user reported completing a one-time wallet import privately using the verified portable
+Cast and saving the encrypted keystore JSON and password in Personal vault, scoped to the chosen environment.
+The agent did not inspect their contents. Environment requests and delivery of those values have not yet been
+activated; the user's report is not independent verification of cloud signing.
+
+The user then explicitly chose commands directed through the existing ChatGPT cloud chat as their operator
+interface and instructed the agent to proceed. For **this setup only**, that authorizes the reviewed, non-sending
+`allowlist-init` command through that chat and overrides the separate human-terminal requirement. The command
+completed as recorded above. This was a separately authorized setup action, not part of the harmless capability
+probes. It grants no access to key/password contents and no authority for live transactions. Do not apply this
+exception to other operators or treat it as successful signer validation.
 
 ## Storage contract
 
@@ -175,9 +196,11 @@ unavailable after those checks; do not hand routine UI inspection back to the op
 
 After the capability diagnostic passes, use SETUP.md's cloud preparation to accept the CSV, build the documented
 non-sending signer check cases, run the signer self-test and chain-helper checks, and obtain nonempty simulated
-clearance. Verify a supported human-controlled cloud interface for the operator's `allowlist-init`; it remains
-operator-run. Credential entry also remains private and human-controlled. A missing interface is an adapter gap,
-not permission for the agent to take over key handling or operator-only actions.
+clearance. For this deployment, honor the explicit cloud-chat authorization for the reviewed `allowlist-init`
+command recorded above; a standalone human terminal is not required. For other operators, the default remains
+operator-run through a supported human-controlled cloud interface unless they explicitly choose otherwise.
+Credential entry remains private and human-controlled. A missing interface alone never permits the agent to
+take over key handling or operator-only actions.
 
 These diagnostics grant no trading authority. No verified adapter or live schedule is supplied by this documentation
 change. Until the gaps are resolved, report trading setup as pending and leave trading disabled.
@@ -193,9 +216,10 @@ with permission. No live first-run timestamp is required. Leave `nonce_pinning` 
 setup requires no nonce transaction.
 
 Later manual batches and sending commands, if requested, still require their explicit approvals. The operator
-handles keys, passwords, funding and `allowlist-init`. Keep one sender per wallet and pause the scheduler before
-any separately authorized manual send. Preserve the code pin as the first command of any eventual trading run,
-and stop on mismatch. No setup check grants standing trading authority.
+handles keys, passwords and funding; `allowlist-init` follows the narrowly scoped operator-interface authorization
+above. Keep one sender per wallet and pause the scheduler before any separately authorized manual send. Preserve
+the code pin as the first command of any eventual trading run, and stop on mismatch. No setup check grants
+standing trading authority.
 
 ## Official platform documentation
 
