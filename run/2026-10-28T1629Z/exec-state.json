@@ -465,7 +465,7 @@
    "effects_diffs": []
   },
   "merge-arb:l2beat/l2beat": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:43:06.708Z",
    "txs": [
     {
@@ -491,8 +491,33 @@
      "nonce": 2753,
      "hash": "0xb57abb1d53405246545f1e2d50cb6e5e0e1d22f8bae009b49e16880c77b29733",
      "block": 158803517
+    },
+    {
+     "idx": 61,
+     "nonce": 2754,
+     "hash": "0x642cdd6831f2a2b11cb2f292901b54b88771d2039c85d246a2c77205bfccf789",
+     "block": 158803520
+    },
+    {
+     "idx": 62,
+     "nonce": 2755,
+     "hash": "0xb1e39a64c36ac639f53888a878c8c809b1de1349eb34e9a2910d2ba5bfa48c7a",
+     "block": 158803523
+    },
+    {
+     "idx": 63,
+     "nonce": 2756,
+     "hash": "0xb46b114afa6d531ff85582b13724a747ee3b75a48f349da2da0aa0faddb738d7",
+     "block": 158803526
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:43:51.991Z",
+   "effects_diffs": []
+  },
+  "simple-buy:l2beat/l2beat:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:43:52.774Z",
+   "txs": []
   }
  },
  "stop": null,
