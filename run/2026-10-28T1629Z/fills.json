@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:39:17.773Z",
+ "generated_at": "2026-10-28T16:40:12.065Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -117,12 +117,38 @@
    "tx_hash": "0xc01a3e42ab748d5d0e6e39556e6a061218db309bf5d886054186f1b89ea9cdb4",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "herumi/mcl",
+   "address": "0xc7846582934c4c1d1156ddf44d988f6857b0f743",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 101.577749960002,
+   "filled": 129.82514689208676,
+   "fill_price": 0.7824196805603111,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xf7f0b60a969de9c34f5c9c9c6a8e2b95d425158127296bbaab7bc1ce68743fe3",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "paulmillr/noble-curves",
+   "address": "0xf74142573cd11d76501dfd51d5512fc6b8ca7933",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 13.6876059218303,
+   "filled": 16.3202109298207,
+   "fill_price": 0.8386905034922035,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xcab00c020e051d66a4fe6fa3cf4dbc849239d50051090c9b22b3e5ed654b848d",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 4
+  "positions_opened": 6
  },
  "retained_legs": []
 }
