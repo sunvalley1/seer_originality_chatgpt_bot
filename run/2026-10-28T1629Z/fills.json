@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:53:45.705Z",
+ "generated_at": "2026-10-28T16:53:59.600Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -624,12 +624,25 @@
    "tx_hash": "0x623d666cec2acd0a197e55e4fa0412d824bee138c19718bba0c5008c749d8c13",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "intellij-solidity/intellij-solidity",
+   "address": "0xd413f199fb40a5c85e96b3582dda718570ae7675",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 17.8011657926294,
+   "filled": 22.66660471503019,
+   "fill_price": 0.7853476961560757,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xb299708cd471b8b4a2eb3df9b7acbd53cdc199bd5c84fbf565f89861b715a18d",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 36
+  "positions_opened": 37
  },
  "retained_legs": []
 }

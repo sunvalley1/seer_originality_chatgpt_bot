@@ -1195,7 +1195,7 @@
    "effects_diffs": []
   },
   "simple-buy:intellij-solidity/intellij-solidity:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:53:46.484Z",
    "txs": [
     {
@@ -1203,6 +1203,32 @@
      "nonce": 2845,
      "hash": "0xc33c657c8976870111fad14ad8306a2de553036333e4192771830193fd07e2ac",
      "block": 158803827
+    },
+    {
+     "idx": 153,
+     "nonce": 2846,
+     "hash": "0xb299708cd471b8b4a2eb3df9b7acbd53cdc199bd5c84fbf565f89861b715a18d",
+     "block": 158803830
+    }
+   ],
+   "ended_at": "2026-10-28T16:53:59.600Z",
+   "effects_diffs": []
+  },
+  "merge-arb:dappnode/DAppNode": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:54:00.396Z",
+   "txs": [
+    {
+     "idx": 154,
+     "nonce": 2847,
+     "hash": "0xc60d387b507023c6e2fe2208ccc3866fdd204e077f9ac477951bc0aa973e5e1b",
+     "block": 158803834
+    },
+    {
+     "idx": 155,
+     "nonce": 2848,
+     "hash": "0x7fe6846edccf7f5a688b24ad936cd3379be24fd7a91ab94f85e29d221bb643d9",
+     "block": 158803837
     }
    ]
   }
