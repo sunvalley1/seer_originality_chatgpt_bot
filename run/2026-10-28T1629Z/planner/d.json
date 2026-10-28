@@ -1,0 +1,83 @@
+{
+ "subcommand": "d",
+ "run_id": "2026-10-28T1629Z",
+ "started_at": "2026-10-28T16:29:43.350Z",
+ "finished_at": "2026-10-28T16:29:43.355Z",
+ "summary": {
+  "subcommand": "d",
+  "run_id": "2026-10-28T1629Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "source": "stored",
+  "forecasts": 98,
+  "csv": {
+   "version": 1,
+   "path": "./run/csv/originality-v1-setup-2026-10-28T112250Z.csv",
+   "sha256": "52fd0781f1b59de3f7909f005a26fbf95a5bdfdb89693248aad2abdeba140ece",
+   "supplied_at": "2026-10-28T11:28:41Z",
+   "supplied_in_run": "setup-2026-10-28T112250Z",
+   "reused": true,
+   "counts": {
+    "matched": 98,
+    "unmatched": 0,
+    "overwritten": 0,
+    "no_forecast": 0
+   },
+   "hash_checked": "not hashed (structural checks only)",
+   "counts_differ": null,
+   "store_repaired": false
+  },
+  "previous_run_cited": {
+   "run_id": "setup-2026-10-28T112250Z",
+   "path": "./run/csv/originality-v1-setup-2026-10-28T112250Z.csv",
+   "same_version": true
+  },
+  "counts": {
+   "matched": 98,
+   "unmatched": 0,
+   "overwritten": 0,
+   "no_forecast": 0
+  },
+  "unmatched_rows": [],
+  "overwritten_rows": [],
+  "no_forecast_split": {
+   "blank_cell": 0,
+   "absent": 0
+  },
+  "skipped_not_scalar": [],
+  "artifacts": [
+   "run/2026-10-28T1629Z/base-forecast.json"
+  ]
+ },
+ "detail": {
+  "report": [
+   "step 4/5 report (the stored CSV, reused):",
+   "  matched: 98",
+   "  unmatched CSV rows: 0",
+   "  overwritten rows: 0",
+   "  markets with no forecast: 0 (0 blank cell, 0 absent)",
+   "  accounting: 98 non-blank CSV rows = 98 matched + 0 overwritten + 0 unmatched; 0 blank-cell rows skipped at the parse"
+  ],
+  "blank_cell": [],
+  "absent": [],
+  "unmatched": [],
+  "overwritten": []
+ },
+ "log": [
+  "2026-10-28T16:29:43.352Z step 1: 98 candidate rows; 98 kind \"scalar\"; 0 skipped as not scalar",
+  "2026-10-28T16:29:43.352Z step 2: case 2, the stored CSV: current.json -> ./run/csv/originality-v1-setup-2026-10-28T112250Z.csv (v1, supplied 2026-10-28T11:28:41Z in run setup-2026-10-28T112250Z); proceeding silently. Structural checks only: nothing is hashed.",
+  "2026-10-28T16:29:43.353Z step 4/5 report (the stored CSV, reused):",
+  "2026-10-28T16:29:43.353Z   matched: 98",
+  "2026-10-28T16:29:43.353Z   unmatched CSV rows: 0",
+  "2026-10-28T16:29:43.353Z   overwritten rows: 0",
+  "2026-10-28T16:29:43.353Z   markets with no forecast: 0 (0 blank cell, 0 absent)",
+  "2026-10-28T16:29:43.353Z   accounting: 98 non-blank CSV rows = 98 matched + 0 overwritten + 0 unmatched; 0 blank-cell rows skipped at the parse",
+  "2026-10-28T16:29:43.355Z step 7: wrote run/2026-10-28T1629Z/base-forecast.json: 98 forecasts, method csv-face-value, price_seen false, sources [./run/csv/originality-v1-setup-2026-10-28T112250Z.csv]"
+ ],
+ "tool_calls": {
+  "helperCalls": 0,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}

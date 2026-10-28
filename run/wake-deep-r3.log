@@ -1,0 +1,5 @@
+[2026-10-28T16:29:24.823Z] run 2026-10-28T1629Z: lock taken by routine.cjs (pid 5169 on d70f2ba5ac58)
+[2026-10-28T16:29:24.823Z] signer log "/workspace/r3-runtime/state/r3-signer.log.jsonl"
+[2026-10-28T16:29:24.825Z] run 2026-10-28T1629Z: planner wake started
+(node:5178) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
