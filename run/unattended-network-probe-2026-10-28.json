@@ -1,0 +1,16 @@
+{
+  "id": "6ae20cc0b5c48191bd23cd0570a48509",
+  "title": "R3 unattended network check \u2014 no trades",
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261028T145556Z\nEND:VEVENT",
+  "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
+  "conversation_id": null,
+  "is_enabled": false,
+  "due_utc": "2026-10-28T14:55:56Z",
+  "existing_initialization_schedule_remains_disabled": true,
+  "purpose": "one-time read-only unattended network diagnostic; no trades",
+  "creation_enabled_snapshot": true,
+  "last_run_time": "2026-10-28T14:55:27.056202+00:00",
+  "next_run_time": null,
+  "completed_command_evidence": "run/scheduled-network-diagnostic-2026-10-28.json",
+  "api_run_details_available": false
+}

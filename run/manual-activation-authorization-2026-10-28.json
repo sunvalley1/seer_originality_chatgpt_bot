@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-28T15:07:29Z",
+  "source": "Direct human conditional standing authorization in originating chat 01a1817b-4660-7a63-a0b3-a5c921bc8413, relayed in this task; no repeated scripted consent required",
+  "scope": "This exact reviewed autonomous R3 routine and signer use, conditional on USER manual activation of the paused hosted schedule",
+  "automation_id": "6ae20602fadc8191ba6f741dbd0a7084",
+  "hosted_thread": "01a182e2-df18-71ca-b51b-4accee2140b1",
+  "bot_holder": "0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a",
+  "owner": "0xB5a6a9c6d779e7dd7815f94AE2CcFb153a21801C",
+  "repository": "https://github.com/sunvalley1/seer_originality_chatgpt_bot.git",
+  "outside_run_tree": "3e3ec397a8a03998026cf9e8afaedf049102283a",
+  "signer_sha256": "19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef",
+  "planner_sha256": "d46f49bd70ef1cd2c1f890c0e175312e7f686ef37ca331eaa883227228783e09",
+  "control_model": {
+    "ui_observation_source": "Operator/root independently observed the task permission UI",
+    "selected": "Approve for me",
+    "description": "Only ask for actions detected as potentially unsafe",
+    "signer_permission_field_meaning": "schedule.signer_allow_rule_added_at records the actual reviewed signer permission under this ChatGPT model, not a literal command allow-rule editor",
+    "network": "Supported per-turn request_permissions grant; scheduled probe succeeded after TURN grant",
+    "approval_origin": "unknown",
+    "persistent_grant_claimed": false,
+    "future_unattended_approval_guaranteed": false,
+    "platform_restrictions": "Must honor review decisions; stop on denied/unavailable permission; never bypass isolation"
+  },
+  "manual_activation_required": true,
+  "hosted_schedule_enabled": false,
+  "preparation_executed_financial_commands": false,
+  "signing_verified_at": null,
+  "nonce_pinning": false,
+  "one_sender": "Operator responsibility; no global host lock claimed",
+  "claude_caution": "If Claude uses bot wallet 0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a, operator must pause/finish that sender BEFORE manually enabling ChatGPT. Same wallet is unknown; Claude schedules untouched.",
+  "duration": "time_limit_hours=6 requested; host guarantee unverified"
+}

@@ -70,8 +70,8 @@
     "clearance_run_id": "2026-10-28T1129Z-clearance"
   },
   "autonomy": {
-    "enabled": false,
-    "authorized_at": null,
+    "enabled": true,
+    "authorized_at": "2026-10-28T15:07:29Z",
     "signer_selftest_passed_at": "2026-10-28T11:49:04.381633Z",
     "signer_path": "/workspace/r3-runtime/signer/signer.cjs",
     "signer_sha256": "19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef",
@@ -80,18 +80,20 @@
   },
   "schedule": {
     "enabled": false,
-    "signer_allow_rule_added_at": null,
+    "signer_allow_rule_added_at": "2026-10-28T15:07:29Z",
     "cadence_hours": 24,
     "requested_local_time": "16:54",
     "timezone": "Asia/Bangkok",
-    "creation_status": "created; paused; real-trading draft saved; setup pending",
+    "creation_status": "created; paused; prepared for USER manual activation",
     "time_limit_hours": 6,
     "automation_id": "6ae20602fadc8191ba6f741dbd0a7084",
-    "title": "R3 daily trading \u2014 PAUSED (setup pending)",
+    "title": "R3 daily trading \u2014 PAUSED",
     "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
     "start_new_chat": false,
     "next_run_time": null,
     "prompt_record": "run/paused-trading-prompt-2026-10-28.txt",
-    "metadata_record": "run/paused-trading-schedule-2026-10-28.json"
-  }
+    "metadata_record": "run/paused-trading-schedule-2026-10-28.json",
+    "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json"
+  },
+  "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json"
 }

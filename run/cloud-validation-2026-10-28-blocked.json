@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-10-28T14:22:28.531630+00:00",
+  "status": "BLOCKED_BEFORE_CODE_LOAD",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl81OTk0NTE2YjgxZmM4MTkxOGFkNzgwNDFjYzc1NGQ3YQ",
+  "source_config_id": "a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfg_6ae1c424793081909a911fe1a502f844",
+  "source_config_version_id": "a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfgver_6ae1e3c325548190963edcfc6e6f2f2d",
+  "observations_current": true,
+  "runtime_variable_readiness": {
+    "R3_KEYSTORE_JSON": "ready",
+    "R3_KEYSTORE_PASSWORD": "ready"
+  },
+  "network_policy": {
+    "state": "enforced",
+    "required_hosts_allowed": [
+      "mainnet.optimism.io",
+      "deep.seer.pm"
+    ]
+  },
+  "git": {
+    "fetch_origin": "https://github.com/sunvalley1/seer_originality_chatgpt_bot.git",
+    "push_origin": "https://github.com/sunvalley1/seer_originality_chatgpt_bot.git",
+    "initial_head": "9200ec66d5fa23cea6331367de0550e88f647803",
+    "initial_status": "clean",
+    "branch": "work",
+    "fetch_attempts": 2,
+    "fetch_exit_code": 128,
+    "fetch_error": "Failed to connect to proxy port 8080: Could not connect to server",
+    "origin_main_pin_verified": false,
+    "checkout_changed": false
+  },
+  "installer": {
+    "executed": false,
+    "reason": "Current origin/main could not be fetched and pinned"
+  },
+  "credential_values_or_files_inspected": false,
+  "repository_code_loaded_or_executed": false,
+  "trading_performed": false,
+  "publication_or_snapshot_performed": false,
+  "records_pushed": false,
+  "schedule": {
+    "created": false,
+    "existing_automations_inspected": true,
+    "requested_timezone": "Asia/Bangkok",
+    "requested_time": "16:54",
+    "requested_recurrence": "daily",
+    "requested_enabled": false,
+    "blockers": [
+      "Saved reviewed initialization specification cannot be read before required Git pin",
+      "Available automation API cannot explicitly set or verify environment binding or start-new-chat OFF"
+    ]
+  },
+  "historical_record": true,
+  "superseded_by": "run/cloud-validation-2026-10-28-result.json"
+}
