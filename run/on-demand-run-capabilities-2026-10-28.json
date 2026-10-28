@@ -10,13 +10,12 @@
   "invoked_during_preparation": false,
   "current_schedule_paused": true,
   "preparation_path": [
-    "On a future explicit trade-now request, inspect the same schedule and actual run state first",
-    "Confirm operator has handled any Claude sender using the same wallet; do not overlap",
-    "If schedule remains paused, do not silently enable it; the API requires enabled status",
-    "After the user's manual activation and explicit immediate-run request, root may open native Run now on this same schedule; the final financial Run now click stays with the user. Do not create another recurring job or enabled one-shot trading automation.",
-    "Inspect returned run identity and peek run_details, correlate run/result IDs and timestamps; unavailable history cannot prove completion or no overlap"
+    "On future explicit immediate-run request verify this actual durable task, metadata, saved prompt, user-selected state and no overlapping wallet sender.",
+    "Prepare a separate PAUSED one-time TIMER continuation from this durable task using a fresh imminent UTC time; preserve existing UTC09/15 recurring schedule.",
+    "User manually enables the final one-shot. Never automatically enable financial execution, never use web Run now, and never create overlapping wallet senders.",
+    "Observe actual timer turn tools/runtime and genuine run results. No exact next-minute dispatch or completion guarantee."
   ],
-  "completion_visibility": "peek schema supports last_run status/id/timestamps and latest_result; current schedule has null run details and no recorded run. Future availability not guaranteed.",
+  "completion_visibility": "Web Run now metadata contains matching run/result and ChatGPT chat_ref; successful timer peek has null per-run details. Timer evidence comes from actual durable-task turn output.",
   "overlap_visibility": "No global wallet overlap API or host serialization guarantee established. In-progress can be reported when run_details exists; absence cannot prove no active sender elsewhere.",
   "timing": {
     "utc": [
@@ -35,16 +34,17 @@
   },
   "cadence_hours_usage": "Only copied into wake status and report output by planner/wake.cjs:169 and planner/report.cjs:139; no operational scheduler use found.",
   "operator_ui_guidance": {
-    "verified_by": "Root directly observed web UI",
-    "path": "Scheduled \u2192 R3 daily trading \u2014 PAUSED \u2192 More task actions",
+    "superseded": true,
     "observed_actions": [
       "Resume",
       "Run now",
       "Edit"
     ],
-    "instructions": "After the operator enables this same schedule, use native Run now for one extra execution without changing the 09:00/15:00 UTC recurrence. Confirm this task and every sender for this wallet are idle first. Never trigger while another wallet sender is running. No temporary recurring schedule or enabled one-shot job is needed.",
-    "financial_click": "Root may open the control on a future trade-now request; the final financial Run now click stays with the user.",
-    "limitations": "Acceptance is not completed execution or a completed trade, and no exact next-minute start is promised. Native API requires the schedule to be enabled.",
-    "invoked": false
-  }
+    "current_instruction": "Manual Resume may enable existing timer recurrence; do not use web Run now. For future immediate execution prepare a paused one-time timer from this actual durable task for USER final enablement. No trading one-shot created now.",
+    "reason": "Observed web Run now routed to ChatGPT chat 6ae21558-900c-83eb-9610-6faf93c4a3a3 without metadata/permission tools."
+  },
+  "guidance_status": "Prior native web Run now advice superseded by observed wrong routing",
+  "native_api_supported_for_this_bot": false,
+  "native_api_note": "API exists but observed manual route reached ordinary Chat without required cloud tools; do not use for this bot.",
+  "successful_timer_evidence": "run/runtime-routing-diagnosis-2026-10-28.json"
 }

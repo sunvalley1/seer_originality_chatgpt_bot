@@ -1,0 +1,12 @@
+{
+  "scope": "Nontrading CSV update workflow only; no automatic ingestion and no change performed by this record",
+  "steps": [
+    "Upload the replacement CSV into this exact durable cloud task 01a182e2-df18-71ca-b51b-4accee2140b1; never upload credentials.",
+    "Copy it to a fresh run/<fresh-update-id>/input.csv inside /workspace/seer_originality_chatgpt_bot. Preserve original forecasts; never change inputs/ or supply an out-of-repository absolute path.",
+    "After the normal metadata/Git pin/permission checks, use the reviewed nontrading C preparation and D --supply run/<fresh-update-id>/input.csv preview/matching flow; inspect mismatches/counts without trading.",
+    "Present the preview to the user. Only on explicit continue acceptance use the reviewed D --continue acceptance flow.",
+    "Explicitly review, commit and push the new immutable run/csv/ version, run/csv/current.json pointer and acceptance/update evidence to the exact approved origin. Verify remote commit and immutable/pointer consistency; preserve previous versions.",
+    "CSV upload alone changes no forecast; do not auto-ingest and do not run trade/wake/signer during the update."
+  ],
+  "executed": false
+}
