@@ -1035,7 +1035,7 @@
    "effects_diffs": []
   },
   "dual-buy:DefiLlama/DefiLlama-Adapters": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:51:30.831Z",
    "txs": [
     {
@@ -1055,8 +1055,41 @@
      "nonce": 2827,
      "hash": "0x1188a7bfadfabda51e58a84ea66cf9b82278eca04bb04464e5429057d4d21a9e",
      "block": 158803765
+    },
+    {
+     "idx": 135,
+     "nonce": 2828,
+     "hash": "0xe64cd537c8cec18c63193d2af16c2c60275fd9a17b247ca2b785abce4ffa8a01",
+     "block": 158803769
     }
-   ]
+   ],
+   "ended_at": "2026-10-28T16:51:56.786Z",
+   "effects_diffs": []
+  },
+  "simple-buy:DefiLlama/chainlist:UP": {
+   "status": "done",
+   "started_at": "2026-10-28T16:51:57.503Z",
+   "txs": [
+    {
+     "idx": 136,
+     "nonce": 2829,
+     "hash": "0x47cc7c411cac5e9be0ab18644c5fe893bf704decf83d70f221a9dcda90306c9b",
+     "block": 158803772
+    },
+    {
+     "idx": 137,
+     "nonce": 2830,
+     "hash": "0xd57e48cbbc496c2239d124683a15f6420c1fc9c058c07c7343d797b67102f188",
+     "block": 158803776
+    }
+   ],
+   "ended_at": "2026-10-28T16:52:10.461Z",
+   "effects_diffs": []
+  },
+  "complex-buy:Certora/CertoraProver:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:52:11.231Z",
+   "txs": []
   }
  },
  "stop": null,
