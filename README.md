@@ -168,16 +168,14 @@ setup checks; you control account logins, wallet funding, secret entry and tradi
    count as passed; fix their cause before proceeding.
 5. Persist the approved configuration, forecast store and setup evidence to the chosen trading repository.
    Exclude keys, passwords, environment dumps and the active lock.
-6. Configure the chosen cloud environment's network and credentials. If that platform cannot provide the required
-   controls, leave it unconfigured rather than substituting the other route or a laptop workflow.
-7. Create a paused schedule using a supported management surface for the chosen route. Verify its fixed prompt,
+6. Create a paused schedule using a supported management surface for the chosen route. Verify its fixed prompt,
    exact code pin, tool permissions, repository access, timeout and prevention of overlapping runs. An ordinary
    chat's shell test does not prove a scheduled task has the same capabilities.
-8. Record the passing cloud self-test and clearance against that install's exact paths and hashes. Explain the
+7. Record the passing cloud self-test and clearance against that install's exact paths and hashes. Explain the
    full-balance strategy and obtain the explicit standing trading and signer authorizations before enabling the
    schedule. These checks and authorizations replace a required first live run; they do not prove future trades
    will succeed or earn money.
-9. Inspect the first authorized scheduled run's report and saved records. Confirm what happened from the report,
+8. Inspect the first authorized scheduled run's report and saved records. Confirm what happened from the report,
    rather than the scheduler's success indicator alone.
 
 `steps/I-setup.md` defines the wallet, signer, authorization and setup checks. The ChatGPT route's current evidence
