@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:58:18.955Z",
+ "generated_at": "2026-10-28T16:58:59.026Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -741,6 +741,1540 @@
    "tx_hash": "0x67effa46c3c4d2aee5a96890e21263ec72e029f73fe12ea537b776a101e1a409",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "shazow/whatsabi",
+   "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 18.3280834704487,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "partial",
+   "error": "half-done group (one transaction per signer call): 6 of 7 transactions landed; pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "shazow/whatsabi",
+   "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 79.471120202772,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "TrueBlocks/trueblocks-core",
+   "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 13.8035698497753,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "TrueBlocks/trueblocks-core",
+   "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 44.7164921545346,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "TrueBlocks/trueblocks-core",
+   "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.8833891139495,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "EspressoSystems/jellyfish",
+   "address": "0x72e12907d277199d7a44fde21d7dd981150b0f1a",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 52.5984252223484,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "a16z/halmos",
+   "address": "0x293a1858e689c117708e509770b283f281bbf6cb",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.0817177879653,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/op-succinct",
+   "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 2.9227150067148,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/op-succinct",
+   "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 51.6910888270614,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/op-succinct",
+   "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 19.0115783239073,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/sp1",
+   "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 21.5312226791417,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/sp1",
+   "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 22.2799609102072,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "otterscan/otterscan",
+   "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 18.2468853995998,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "otterscan/otterscan",
+   "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 7.72553049587408,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "lambdaclass/ethrex",
+   "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 53.2223597610662,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "lambdaclass/ethrex",
+   "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.22329600629755,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "NethermindEth/juno",
+   "address": "0x6aa9ba4a89cc1f5d854b898ed34f4370a3857585",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 18.9249754952447,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "NethermindEth/juno",
+   "address": "0x6aa9ba4a89cc1f5d854b898ed34f4370a3857585",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.4350071070034,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "Commit-Boost/commit-boost-client",
+   "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 46.0058933700213,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "Commit-Boost/commit-boost-client",
+   "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.46677292668726,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "Cyfrin/aderyn",
+   "address": "0x8717e0e2733acb24ac964667e2252bc118fb2249",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 30.5838385894956,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "0xMiden/miden-vm",
+   "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 23.0127115319095,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "0xMiden/miden-vm",
+   "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 51.2195115828813,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "holiman/goevmlab",
+   "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 21.2739363969654,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "holiman/goevmlab",
+   "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 64.819919600977,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "edb-rs/edb",
+   "address": "0x73918952494d08ed3eb5c2bf82eb056f51274639",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 68.7347159344786,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "edb-rs/edb",
+   "address": "0x73918952494d08ed3eb5c2bf82eb056f51274639",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.62733860879269,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "evmts/tevm-monorepo",
+   "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 8.10182121885013,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "evmts/tevm-monorepo",
+   "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 13.5775091044258,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "evmts/tevm-monorepo",
+   "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 9.72994409910703,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/rsp",
+   "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 25.3937724265126,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/rsp",
+   "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 23.0006585311424,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "succinctlabs/rsp",
+   "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 24.2518711583953,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "OffchainLabs/stylus-sdk-rs",
+   "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 82.0331211757131,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethstaker/ethstaker-deposit-cli",
+   "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 7.81723324496026,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethstaker/ethstaker-deposit-cli",
+   "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 22.117657285293,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "dl-solarity/solidity-lib",
+   "address": "0x4b62af2f270b59ec49230d3a06b63752964a4311",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 48.9774289281858,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "risc0/risc0-ethereum",
+   "address": "0x1c3486fec53da0d19a4b0253b83748df31e10178",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 17.6038842431321,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "risc0/risc0-ethereum",
+   "address": "0x1c3486fec53da0d19a4b0253b83748df31e10178",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 31.1676750735437,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "risc0/risc0-ethereum",
+   "address": "0x1c3486fec53da0d19a4b0253b83748df31e10178",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 26.9739534455395,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "powdr-labs/powdr",
+   "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 62.5280498029119,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "powdr-labs/powdr",
+   "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.51666363420877,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "axiom-crypto/snark-verifier",
+   "address": "0x52634d6c3fb85d5f4566550e0a85bed365524c39",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 6.69809613728339,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "swiss-knife-xyz/swiss-knife",
+   "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 25.5948789847907,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "swiss-knife-xyz/swiss-knife",
+   "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 4.88879037646719,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "a16z/helios",
+   "address": "0x842cf887862213513895e1aa1714723009512932",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 28.184621342016,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "alloy-rs/alloy",
+   "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 15.5161492087171,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "alloy-rs/alloy",
+   "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 66.6894452822633,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "apeworx/ape",
+   "address": "0x34e4762227c29fb484c79cdc0a2a305fdd39ba56",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 16.8389553222183,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "consensys/teku",
+   "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 32.1059702788934,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "consensys/teku",
+   "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.53007182990233,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "erigontech/erigon",
+   "address": "0x87a54a3ad188dfea96aa128922351fdc12da80e3",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 14.2000510040521,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "eth-infinitism/account-abstraction",
+   "address": "0xcb8ab4238ae037096e274486c4892d843e769dde",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 34.32497144114,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "eth-infinitism/account-abstraction",
+   "address": "0xcb8ab4238ae037096e274486c4892d843e769dde",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.95319622619212,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum-lists/chains",
+   "address": "0xddd9d1a6ace5dca0432719b05691bb2cc7e0b9dd",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 30.2175560404428,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum-lists/chains",
+   "address": "0xddd9d1a6ace5dca0432719b05691bb2cc7e0b9dd",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.48852889371253,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum/consensus-specs",
+   "address": "0x7cae39d3c40b0db913ba38f61f18173be8105852",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 13.4147683462712,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum/eips",
+   "address": "0x238910d606c68d7198a51377c079812be40f4d99",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 19.9592651128327,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ipsilon/evmone",
+   "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 16.2245872833622,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ipsilon/evmone",
+   "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 59.6810005061659,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum/execution-apis",
+   "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 14.3894023895454,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum/execution-apis",
+   "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 39.1514472703052,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethereum/execution-apis",
+   "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.7807526992829,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/fe",
+   "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 28.9234928719259,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/fe",
+   "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 44.9509710323184,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "remix-project-org/remix-project",
+   "address": "0x9de9aaa9c3beb5226a0acedfa3515c5a3c658b1d",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 20.8047070039709,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "remix-project-org/remix-project",
+   "address": "0x9de9aaa9c3beb5226a0acedfa3515c5a3c658b1d",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 36.8805869104567,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "remix-project-org/remix-project",
+   "address": "0x9de9aaa9c3beb5226a0acedfa3515c5a3c658b1d",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 9.51385503154427,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/solidity",
+   "address": "0x38a9dc84c9f940262b548856c1869f992ee80ba4",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 24.7251368975194,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/solidity",
+   "address": "0x38a9dc84c9f940262b548856c1869f992ee80ba4",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 20.8129900458159,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/sourcify",
+   "address": "0x5c4a21e1a101c3aff192d2d307ad9bbe3d761b1e",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 29.2913955617523,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethers-io/ethers.js",
+   "address": "0x7fa95b23093b66d4b4fd0e89717b7e7883c888bc",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 11.2634260399305,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethers-io/ethers.js",
+   "address": "0x7fa95b23093b66d4b4fd0e89717b7e7883c888bc",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.96424454984648,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "foundry-rs/foundry",
+   "address": "0xa1cc3bd62aea7b21547f327ed20e18d8b92d89d4",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 12.9999098288117,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "grandinetech/grandine",
+   "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 40.3133154288359,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "hyperledger-web3j/web3j",
+   "address": "0x15607f6d09dd27d174d6d76ebbcc708da5a56646",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 19.5606175544462,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "hyperledger/besu",
+   "address": "0x5a56ecb388369c2a92b51ca1e08c32f233baf178",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 29.9302597283967,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "hyperledger/besu",
+   "address": "0x5a56ecb388369c2a92b51ca1e08c32f233baf178",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.9889801409728,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "nethereum/nethereum",
+   "address": "0x49837e744bb14fab9b256785ab050352c3340aff",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 11.6170891465132,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "nethermindeth/nethermind",
+   "address": "0x84e989e3dd24b2d8448d2a90e72eab1202083f59",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 23.7095015259433,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "nethermindeth/nethermind",
+   "address": "0x84e989e3dd24b2d8448d2a90e72eab1202083f59",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.64534571493247,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "nomicfoundation/hardhat",
+   "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 17.683371578656,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "nomicfoundation/hardhat",
+   "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 40.8124519774364,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "openzeppelin/openzeppelin-contracts",
+   "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 38.0477063836069,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "openzeppelin/openzeppelin-contracts",
+   "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 26.6401515079484,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "openzeppelin/openzeppelin-contracts",
+   "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 1.99626498339091,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "OffchainLabs/prysm",
+   "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 33.6017763544408,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "OffchainLabs/prysm",
+   "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.27894982472231,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "safe-global/safe-smart-account",
+   "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 125.713213231093,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "safe-global/safe-smart-account",
+   "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 5.20873167586956,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "scaffold-eth/scaffold-eth-2",
+   "address": "0x09790fb4115e57367f47c82244cce088583e503f",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 6.81169650421925,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "scaffold-eth/scaffold-eth-2",
+   "address": "0x09790fb4115e57367f47c82244cce088583e503f",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 10.4551737341441,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "sigp/lighthouse",
+   "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 15.9978758600909,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "sigp/lighthouse",
+   "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.65875209413377,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "status-im/nimbus-eth2",
+   "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 13.9183816338733,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "status-im/nimbus-eth2",
+   "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 22.2734078734827,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "status-im/nimbus-eth2",
+   "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.6961741399035,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "vyperlang/titanoboa",
+   "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 32.8881566502606,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "vyperlang/titanoboa",
+   "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 2.30851323112585,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "vyperlang/vyper",
+   "address": "0x845468b87b4821fae1d42f250c382b7a3a85bdb1",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 14.0060752022586,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "wevm/viem",
+   "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 12.5238810696189,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "wevm/viem",
+   "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 43.6256972908608,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "wevm/viem",
+   "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.13489012848529,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/hevm",
+   "address": "0xdfb022190820d74babd62379fe53b45f0ac1cc67",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 47.0350018016523,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethdebug/format",
+   "address": "0x4b2b2d4e947c9e33e3ae18979562e752606127ac",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 65.6916801968637,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "argotorg/act",
+   "address": "0x0d91d33dc1bbe47469f5aef3dc113ed706ebabcb",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 24.3483497585295,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 9.37949918564457,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 43.6209669484945,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 28.6256819082673,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-helm-charts",
+   "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 30.6737231206068,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-helm-charts",
+   "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 20.7509628978163,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/ethereum-helm-charts",
+   "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 14.8901665992242,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/checkpointz",
+   "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 42.1573528533531,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "ethpandaops/checkpointz",
+   "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 54.6883137249674,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "lambdaclass/lambda_ethereum_consensus",
+   "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 26.9977169078612,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "lambdaclass/lambda_ethereum_consensus",
+   "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 3.02200444029847,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "erigontech/silkworm",
+   "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 62.6617155706923,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "market": "erigontech/silkworm",
+   "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.02230656826688,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
   }
  ],
  "totals": {
@@ -748,5 +2282,546 @@
   "spent_unit": "sUSDS",
   "positions_opened": 42
  },
- "retained_legs": []
+ "retained_legs": [
+  {
+   "token": "0xe0d849F471037A9bE5dB2bDf21f9abaaBaD9F25c",
+   "amount": 130.921944906964,
+   "why": "parent Invalid; bounds the parent merge; sources: PARENT-MINT mint split-parent"
+  },
+  {
+   "token": "0x22DE5F831d7d61698dd56D7fD5B3d4a4B8710b83",
+   "amount": 130.921944906964,
+   "why": "middle-A Invalid; bounds the middle-A merge; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x27CA6b333E5E0f7BA5635B72F8E03c40a84A68A3",
+   "amount": 130.921944906964,
+   "why": "middle-B Invalid; bounds the middle-B merge; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xf91A162f24d2DeF43AD939e52fcF5CF9Fb8aaf6c",
+   "amount": 130.921944906964,
+   "why": "middle-C Invalid; bounds the middle-C merge; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xc9335b722174a667c6c7d69ee85412dc41332b4c",
+   "amount": 100.43786524016079,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, ethereum/py_ecc set buy-and-merge"
+  },
+  {
+   "token": "0xdc5d24ef28bcd21b75ec891efd56696e0ce7f6c8",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x9657c41ff217dff4d12440c8f90fb35727b8cc58",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xae62d632ca2cf25c84cbf343c833f11aee44ff79",
+   "amount": 128.81593848706805,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x9f2ab3d59aa30e63b8698538b5c0990d32d5f93d",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x3da35d4535502f5e9f0d42ef81b8dd1b2f73ac64",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, arkworks-rs/algebra set buy-and-merge"
+  },
+  {
+   "token": "0x959b8e01b52b0c0db1f6bb09472fbd01cb7eb898",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xcdd7945aa385dbdcbfa7341c7f51533581aacf1e",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, protofire/solhint set buy-and-merge"
+  },
+  {
+   "token": "0xd989451a073eb66d3f67006d3180c2f6d7c3de26",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, l2beat/l2beat set buy-and-merge"
+  },
+  {
+   "token": "0xb383ca42f8dfd4877bcc59cc5504421d14bf436f",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x8c4bc88cce543c173faac9aaf9137fe89f022568",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xe7e63c87ded7510de737693575573a9ad00e96b6",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, taikoxyz/taiko-mono set buy-and-merge"
+  },
+  {
+   "token": "0x29d9ef12cd83fc988a22cb3c2985eb535e8ceb36",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, flashbots/mev-boost set buy-and-merge"
+  },
+  {
+   "token": "0x131e612c62d1e9a81cb363dfab986e28833dda97",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x556eb58d13e2628507d13a3d54d45d7ba503023f",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x571d94278a274abbb904011d31a3e34a42114a20",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, libp2p/libp2p set buy-and-merge"
+  },
+  {
+   "token": "0x736f833ca8d46912d00696c107be1e31ada850e1",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, supranational/blst set buy-and-merge"
+  },
+  {
+   "token": "0xa9e1b0be4b73e99cac245eb0416667177f0f4031",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xd81974ede39ce3d512a58f67af191c9e36cfae13",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x4f68190347793cc9e1f21bb0cebb0f9f8c1269d9",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x6f7b1d0411f5e3d1908fa09b1cec4e9968b03095",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x88c5f00c75d20d89b9deaee70aa5951c2b3a8e46",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x8671f584409b8672aff2c7eda4104fcd6e5b2649",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xafd9706a0ef6e4238b5dc01c9e76b5bc45bd8fdd",
+   "amount": 130.61472675706568,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x35fddb246dd89f01c2f769b3b73dd4fc3765360c",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x0822bc2d29ca68c316bdf8d91c622e5a42af215a",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, dappnode/DAppNode set buy-and-merge"
+  },
+  {
+   "token": "0x5ed357484aff3957614381a8c506755b2f4a76c5",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xc52ac4cd416bc1777d6fb1ce0478fc8f571f8f9c",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, lambdaclass/lambdaworks set buy-and-merge"
+  },
+  {
+   "token": "0x6e360b9643d3483737be154a0816a9b7e6cdd351",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, smartcontracts/simple-optimism-node set buy-and-merge"
+  },
+  {
+   "token": "0x0fb41f0653c7c682748ba4adff1a5ffe0e1c6692",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x8223d38cd03a88a08f2d03d635e39ee971f665bc",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, shazow/whatsabi set buy-and-merge"
+  },
+  {
+   "token": "0xf77035e68764552c03f9c9753b72ac7b930e3ea7",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xa26d64530e6666df346812fdd19c487f0e3bc7c5",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x65b1380266291da3e6101c5a7f066fcbe1e74370",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x38180d18d25429832e6a83675d9a7cb256980795",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x20b0c27ab29cef1493f035c3edf107f1b34ac1de",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x63716ceabd3a1ced5a01edf18ea66cc46f7cfb84",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x16e52dd5c973293da885a995d59f2ffee932b52a",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x17e635fa17505fe52dee1e51223661d5b665fad6",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x31f154fcb1ddcbb00b90721c94052dc7907fe7bb",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x3ce18c72148fda70bb17443e6feab258483fc593",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x39dbc18c06ab8ee04828d37cf5e464edbc53e9aa",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x0e36e7eef8d0646c1590598e6b6f38167a9e3109",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x3f5b2e23bc1301b968bb50773d3639c3b20e100b",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x0819d02842ba743e55cdb3963a52c16a772ede9b",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x6c234f12e3455a9848c48f4f9a4dbedae715ea48",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xd7232c484d5471dc25446eabf0b7dd5c6de3c6c1",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xfb858c0532aee44defc243cc2ce627531603a444",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x9ce41ddbae0a0a87b6806c88d99c37ea87b969dc",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x368e7ea451a5aa750b0bbcacc0016942c56f93ad",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x4c50544e596f1c222aa7f7589ea3658f92dc726d",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x325532a7abad17fcdcdb5e3b810175ff8a48c675",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xccf8ad49acd7a708ce362ac04777389de96fe986",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x90d3dcc0f981ec79f647b50d7bfe09af01eb855c",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xd73749038f49d285077cc5a98115c8bd804c22e8",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x9664e2fc602c98cb93b1c459fc9b72c68eba9a84",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x83145e3924d19c0a9a3a587887fb8599a5610c21",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x91b585db7686823cf03e85c1d789793fd3888b0f",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x424fe875e8617a4c0f0357afcefb017faf197de6",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x81f1d2106983e161fc8c987026933061ebd78a25",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xd8110b587211d99d0af10a28e94379293ae64e6c",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x44d5c6d8b7cb997d420799e8a89ecb2f540abf08",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x511cbb66babbe2235d1fdb13f13b0a923d240a93",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x5de6940bae90620ceeb70932ce5224bca8ab89c5",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xcdc838866c609feb9afae8e1ad7037507a01f3a9",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xa77b1b1a34e549b95436249da457ac152cb2da22",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x41a0a1f31daffb38780994c92c80e9af2a527336",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x44a4e9f87045c87b78e4c143db9adfff940780bb",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x3ea620d590b5636666262a38d19fefe32bb6ee7e",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x87ef78931586966064ce42f0137e65f9e5e95ef9",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x2070db21df0906e65657ce9059bdc16b8b117c62",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xd6581faa139e8b120aa19f4cf867057ce9831439",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x139a9bfca52ccfc41e9815bed51db5b9059e1f65",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x6f9b72ec82fc63de2d7f7cba433994c8f6a96a90",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xce2008a64723f38aef1569d704f428471ed481ff",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x80cb93cc7e7eb1e2dc42d298a9124f0bb73dab05",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x60828e159bd00aa44005b77e70cb6b670d4078cc",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x588237ecd315c83889de66618dd53d0a44c376d0",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x73a69a78d90b6e498b751913f455bd60233f741a",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x389d0b026e15fdcd5d8e263d2a7ddc33e32bc722",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x88d3d4265bf6535067cd05d77c026866a6598a21",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x8fbd8162ba195cdc9e56186f1b7685522cba8da4",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x211584a361b9a920945c02a52e3eb62981d57859",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x89c7abce9ae68f5584c4bb86b84cda15d01f9935",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x14f3d97396ca0c8caa8447d944c60e635eaa3e6b",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xba1df6263fbfd5babbf08ce673ef0437db26fb34",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x92858d91e4c89d3e5f3d93b1898b60e2e5f3aba8",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x3edfa369dfaf28b23eb18b1b5368a838e020bb45",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x4db187e536951f37e7b7ed346c879cf31e85229d",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xd59ac75ecae4737a7b84996a4a74a6c088a361fe",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xecb37fc746f8ed208403c033424ea21122da9cb2",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x1bb4d5e1038ca721fa88ebd4191f7b458d43e7fd",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x925957c3a67984c132a3fcb40e31fabb816aac77",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xbf9956578716fd906fdeba46664830a264aa8a13",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xa27009015686115acb57e2c81ed859cf9a5718cf",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x99d2eed578f3ccc54a02b27d1b8261bda877efc6",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xae366d275fc93660068533ab9743853628d3bb5f",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x3dd51352377760f44d8b0d1e8af501c315dd4ed4",
+   "amount": 130.921944906964,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x9105595722a7a718cc2969e184790882d9235b9f",
+   "amount": 101.577749960002,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: herumi/mcl UP complex-buy"
+  },
+  {
+   "token": "0x455ccb757bf3dc77b88d6d826c521a3d7cb0c6af",
+   "amount": 38.141534286724,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Consensys/gnark-crypto UP complex-buy"
+  },
+  {
+   "token": "0x9551c6ea0bbc16d1468c8ab313b5136c855cf3fb",
+   "amount": 12.7754438913388,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum/js-ethereum-cryptography DOWN complex-buy"
+  },
+  {
+   "token": "0x24e430172b3260b485439a48669bb00fee82bcd9",
+   "amount": 50.7232842281866,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Certora/CertoraProver UP complex-buy"
+  },
+  {
+   "token": "0x862cfd3f2a6b41e5325f1fb29cf80fadde8956e5",
+   "amount": 22.5141833552113,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: wealdtech/ethdo UP complex-buy"
+  },
+  {
+   "token": "0x904dc9d92a928476407670afd5d537b2335efdd1",
+   "amount": 43.142607555215,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: skalenetwork/libBLS UP complex-buy"
+  }
+ ]
 }

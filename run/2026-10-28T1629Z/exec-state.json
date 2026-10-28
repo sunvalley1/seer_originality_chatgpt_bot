@@ -1513,7 +1513,7 @@
    "effects_diffs": []
   },
   "merge-arb:shazow/whatsabi": {
-   "status": "in-progress",
+   "status": "stopped",
    "started_at": "2026-10-28T16:58:19.697Z",
    "txs": [
     {
@@ -1545,11 +1545,376 @@
      "nonce": 2890,
      "hash": "0x83d5da1ebe630e60c9ba6150696ff163dbe172c2ca49589f7f02ade64bb57cc3",
      "block": 158803976
+    },
+    {
+     "hash": "0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda",
+     "block": 158803980,
+     "recorded_at": "landed before the stop; its row was not written"
     }
-   ]
+   ],
+   "reason": "pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:shazow/whatsabi:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:TrueBlocks/trueblocks-core": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:TrueBlocks/trueblocks-core": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:EspressoSystems/jellyfish:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:a16z/halmos:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:succinctlabs/op-succinct": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:succinctlabs/op-succinct": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:succinctlabs/sp1": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:succinctlabs/sp1:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:otterscan/otterscan": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:otterscan/otterscan:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:lambdaclass/ethrex": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:NethermindEth/juno": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:NethermindEth/juno:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:Commit-Boost/commit-boost-client": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:Cyfrin/aderyn:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:0xMiden/miden-vm": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:0xMiden/miden-vm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:holiman/goevmlab": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:holiman/goevmlab:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:edb-rs/edb": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:evmts/tevm-monorepo": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:evmts/tevm-monorepo": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:succinctlabs/rsp": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:succinctlabs/rsp": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:OffchainLabs/stylus-sdk-rs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethstaker/ethstaker-deposit-cli": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:dl-solarity/solidity-lib:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:risc0/risc0-ethereum": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:risc0/risc0-ethereum": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:powdr-labs/powdr": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:axiom-crypto/snark-verifier:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:swiss-knife-xyz/swiss-knife": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:swiss-knife-xyz/swiss-knife:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:a16z/helios:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:alloy-rs/alloy": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:alloy-rs/alloy:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:apeworx/ape:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:consensys/teku": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:erigontech/erigon:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:eth-infinitism/account-abstraction": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethereum-lists/chains": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:ethereum/consensus-specs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ethereum/eips": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ipsilon/evmone": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:ipsilon/evmone:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ethereum/execution-apis": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethereum/execution-apis": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:argotorg/fe": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:argotorg/fe:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:remix-project-org/remix-project": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:remix-project-org/remix-project": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:argotorg/solidity": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:argotorg/solidity:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:argotorg/sourcify:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethers-io/ethers.js": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:foundry-rs/foundry:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:grandinetech/grandine:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:hyperledger-web3j/web3j:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:hyperledger/besu": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:hyperledger/besu:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:nethereum/nethereum:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:nethermindeth/nethermind": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:nomicfoundation/hardhat": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:nomicfoundation/hardhat:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:openzeppelin/openzeppelin-contracts": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:openzeppelin/openzeppelin-contracts": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:OffchainLabs/prysm": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:safe-global/safe-smart-account": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:scaffold-eth/scaffold-eth-2": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:sigp/lighthouse": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:status-im/nimbus-eth2": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:status-im/nimbus-eth2": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:vyperlang/titanoboa": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:vyperlang/vyper:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:wevm/viem": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:wevm/viem": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "complex-buy:argotorg/hevm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:ethdebug/format:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:argotorg/act": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ethpandaops/ethereum-package": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethpandaops/ethereum-package": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ethpandaops/ethereum-helm-charts": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:ethpandaops/ethereum-helm-charts": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "merge-arb:ethpandaops/checkpointz": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "simple-buy:ethpandaops/checkpointz:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:lambdaclass/lambda_ethereum_consensus": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  "dual-buy:erigontech/silkworm": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
   }
  },
- "stop": null,
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892",
+  "at": "2026-10-28T16:58:58.260Z",
+  "exit": 4,
+  "group": "merge-arb:shazow/whatsabi",
+  "fields": {}
+ },
  "invocations": [
   {
    "started_at": "2026-10-28T16:36:40.172Z",

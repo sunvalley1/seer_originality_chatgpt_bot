@@ -3562,5 +3562,23 @@
   "cost_wei": "52143305495",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-28T16:58:57.899Z",
+  "source": "entry",
+  "group": "merge-arb:shazow/whatsabi",
+  "idx": 198,
+  "label": "approve child Invalid -> Router (q)",
+  "nonce": 2891,
+  "tx_hash": "0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda",
+  "block": 158803980,
+  "to": "0x520b48bd947ae495bccd35bcef1d938931675e39",
+  "gas_limit": "58802",
+  "gas_used": "49001",
+  "effective_gas_price": "1000315",
+  "l1_fee": "3079747577",
+  "cost_wei": "52096182892",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]
