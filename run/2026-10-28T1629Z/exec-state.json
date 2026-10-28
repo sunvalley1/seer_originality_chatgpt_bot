@@ -63,7 +63,7 @@
    "effects_diffs": []
   },
   "mint-middle-C": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-28T16:37:24.693Z",
    "txs": [
     {
@@ -71,6 +71,32 @@
      "nonce": 2699,
      "hash": "0x6132c2f1ca100ffbc4d58bd90cf31065080ac56d4bd91006ffc8e938aa4f69f6",
      "block": 158803336
+    },
+    {
+     "idx": 7,
+     "nonce": 2700,
+     "hash": "0xe1ff4811ba8b31d7ce5d855bdb10aeafc3e3e4f6c9fbb233c64dbed1d052b051",
+     "block": 158803339
+    }
+   ],
+   "ended_at": "2026-10-28T16:37:37.414Z",
+   "effects_diffs": []
+  },
+  "merge-arb:ethereum/py_ecc": {
+   "status": "in-progress",
+   "started_at": "2026-10-28T16:37:38.156Z",
+   "txs": [
+    {
+     "idx": 8,
+     "nonce": 2701,
+     "hash": "0x7f70a0e0eebd50cc19ee54967bca50877be48b2233b685b9b208d691ba4db747",
+     "block": 158803342
+    },
+    {
+     "idx": 9,
+     "nonce": 2702,
+     "hash": "0xf83b442561fbe1a391be5d51ff32f5473d0371646cd1cf9e2c73a15e3d2add03",
+     "block": 158803346
     }
    ]
   }
