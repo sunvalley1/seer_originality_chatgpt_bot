@@ -6,7 +6,7 @@
   "_owner": "Your own address, the only one the signer's supervised sweeps can ever send to. Must differ from signerAddress.",
   "allowlistFile": "setup/r3-allowlist.json",
   "allowlistSha256": "0000000000000000000000000000000000000000000000000000000000000000",
-  "_allowlist": "The signer's policy file, built once with `node <signer path> allowlist-init` (operator-run), committed in your private copy, and its sha256.",
+  "_allowlist": "The signer's nonsecret policy file, built once with `node <signer path> allowlist-init` (operator-run), committed to your approved records repository, and its sha256.",
   "planner": {
     "rpcGapMs": 120,
     "parallel": 1

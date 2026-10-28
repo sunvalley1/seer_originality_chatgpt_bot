@@ -56,8 +56,39 @@ The schedule UI showed **Completed**. A final `automations.peek` confirmed the m
 `last_run_time` of `2026-10-28T10:22:52.316923Z`, with the one-time schedule disabled and no next run. Per-run
 ID/result details were absent; the separate task output supplies the command evidence. This demonstrates hosted
 continuation in this specific named environment. The observed start was about 3 minutes 26 seconds late; it is
-not a guarantee of future start times, recurring reliability, long-running bot execution, credential delivery or
-authenticated GitHub writes.
+not a guarantee of future start times, recurring reliability, long-running bot execution or credential delivery.
+That continuation did not test authenticated GitHub writes; the later manual checks below did.
+
+Later manual turns in the same named cloud task installed `ethers@6.17.0` with `--ignore-scripts` in an isolated
+validation dependency directory. Its `package-lock.json` remains there; no transitive dependency lock was added
+to the repository. Offline version/unit-conversion assertions, the 98-entry table and 33/33/32 bundle checks,
+and chain-helper syntax checks passed. Pure `d.cjs`/`table.cjs` draft CSV parsing/matching found 98 rows and 98
+matches, with zero unmatched rows, duplicates, errors or missing entries. Source bytes were unchanged; the CSV
+has **not** been formally accepted through D's report/`--continue` flow.
+
+An authenticated cloud push saved the nonsecret `diagnostics/cloud-record-probe.json` at commit
+`d320a371748f237bc0a437683b8d57b82d323b85`. A subsequent cloud turn fetched the same origin and exact commit,
+verified marker `NONTRADING_CLOUD_RECORD_CAPABILITY_PROBE`, timestamp `2026-10-28T10:35:15Z` and blob
+`427c656e31e2e30223e4e4b70bc3180476fede5a`, and passed the content comparison with exit code 0. This demonstrates
+authenticated GitHub save and retrieval across manual cloud executions for the approved repository. It does not
+establish that the eventual scheduled adapter performs those steps correctly.
+
+Initial network checks found `mainnet.optimism.io` and `deep.seer.pm` blocked by the environment policy. The
+updated environment was published as version `6ae1d1593d5c819087d0b67aa9b6a9b7`, adding only those two hosts
+alongside the package-manager preset, with all-public-internet disabled, Only me sharing and no credentials.
+The setup runtime then reported both hosts in its current, enforced restricted policy. Bounded probes returned
+HTTP 200: Optimism `eth_chainId` was `0xa`; Seer returned 98 markets, 98 market-data entries, four parent wrapped
+tokens and three middle markets. These are endpoint capability checks, not full planner/RPC validation. The
+earlier validation task retained its older policy; recheck the selected task after publishing an update. These
+checks invoked no signer and sent no transactions.
+
+The cloud home directory `/home/agent` was read-only. Public configuration now places the tools, signer, keys
+and state under separate `/workspace/r3-runtime/` directories outside the checkout. With the allowlist absent,
+the existing installer provisioned tools and reached the expected pending-allowlist exit 4, before its credential
+handling branch. It emitted the operator-only allowlist command; no signer was executed. The tested task has no
+`cast` executable, and a supported private, human-controlled cloud terminal remains unverified. Wallet import,
+credential-access restrictions, allowlist creation, formal CSV acceptance, signer checks, nonempty clearance
+and live schedule activation are still incomplete. Do not present the capability checks as trading readiness.
 
 The web schedule interface was observed with instructions, repeat, time, time zone, start-new-chat, model and
 reasoning-effort controls.
@@ -66,10 +97,10 @@ to the ordinary web schedule controls; the hosted continuation above was created
 and retained its target thread. Do not assume that every web schedule uses a selected Codex Cloud environment,
 or that the missing selector prevents the demonstrated continuation route.
 
-The bot targets Node 22, now observed in the named cloud task's hosted continuation. The runtime probes do not
-validate the full bot, its dependencies, signer or RPC access. Cloud preparation uses signer checks and simulated
-clearance that send no transactions. A completed live trading run is not a prerequisite. Keep the planner's guard
-against supervised sends when cloud key environment variables are present; setup never needs to bypass it.
+The bot targets Node 22, now observed in the named cloud task's hosted continuation. The runtime and offline
+dependency checks do not validate the full bot, signer or RPC access. Cloud preparation uses signer checks and
+simulated clearance that send no transactions. A completed live trading run is not a prerequisite. Keep the planner's
+guard against supervised sends when cloud key environment variables are present; setup never needs to bypass it.
 
 ## Private credential settings are separate from a web schedule
 
@@ -126,15 +157,14 @@ unavailable after those checks; do not hand routine UI inspection back to the op
    its Node 22 runtime and checkout. For further bounded diagnostics, confirm the target thread, environment,
    saved instructions, repeat, time zone and whether the schedule starts a new chat. Keep diagnostics separate
    from any eventual live trading schedule.
-2. Verify the required dependency/network support in the actual scheduled context, and recheck the runtime and
-   environment identity when the schedule target or configuration changes. Use only harmless
+2. Complete required network checks and verify the tested dependencies in the actual scheduled context. Recheck
+   the runtime and environment identity when the schedule target or configuration changes. Use only harmless
    runtime and filesystem checks, read-only network checks to the required hosts, and nonsecret probes for this
    capability diagnostic. No bot trading entry point, signer invocation, `cast`, `allowlist-init`, key access,
    environment dump or wallet transaction belongs in it. Neither runtime probe is full-bot validation.
-3. Public read access to the approved repository has passed. Verify the authenticated GitHub identity without
-   printing tokens, and any private-repository access if applicable. Read access does not establish write access.
-   If authorized, test saving a clearly identified nonsecret probe to that repository and retrieving it in a
-   subsequent execution. No secret or real trading record is needed for this test.
+3. Authenticated GitHub save and subsequent retrieval have passed in manual cloud turns. Verify those operations
+   in the eventual scheduled adapter with a clearly identified nonsecret probe, and verify permissions again if
+   the destination changes. No secret or real trading record is needed for this test.
 4. Establish the platform's supported credential-entry mechanism, which values its child commands can use, its
    network/tool boundaries, command-duration limit, and how a task resumes or reports interruption. The operator
    alone enters secrets in private settings after the mechanism is understood; never put them in chat, prompts,
@@ -175,6 +205,7 @@ uploaded context and connected tools; it does not promise a persistent project f
 [Codex Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments) describes separate
 workspaces for new tasks and saved files when an existing task resumes. Its default VM-state recovery window is
 up to seven days after the last turn starts or the task resumes. That is not a permanent shared transaction store,
-and ordinary task changes do not update the reusable environment. GitHub is the proposed durable record store
-for this integration. Recheck official guidance when validating a new platform capability; documentation and observed UI are
-evidence, not proof that this particular bot has passed its checks.
+and ordinary task changes do not update the reusable environment. GitHub save/retrieval has been tested as the
+durable record store; its scheduled integration still needs validation. Recheck official guidance when validating
+a new platform capability; documentation and observed UI are evidence, not proof that this particular bot has
+passed its checks.
