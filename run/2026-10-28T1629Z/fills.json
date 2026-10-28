@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:50:09.263Z",
+ "generated_at": "2026-10-28T16:50:36.286Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -442,12 +442,38 @@
    "tx_hash": "0x53565598d89a1247df2f76462f1472047c7b73ba2f536ee66097c13c91fec537",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "supranational/blst",
+   "address": "0x74a00a7a338f0fa8ce7afedb27279a30cf24df85",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 43.4397203383998,
+   "filled": 50.32571683962819,
+   "fill_price": 0.8631714174450436,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xf63b78605f8a22ff335411483110e42a0c943221db2560c97fcf196306e74a15",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "supranational/blst",
+   "address": "0x74a00a7a338f0fa8ce7afedb27279a30cf24df85",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 4.10792465628424,
+   "filled": 39.8240921186018,
+   "fill_price": 0.10315174653700208,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xd15c8e5ca3d5822cf88a7ab10b1c6259e79fe189a598230e446b7037c6f2787d",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 130.921944906964,
   "spent_unit": "sUSDS",
-  "positions_opened": 22
+  "positions_opened": 24
  },
  "retained_legs": []
 }
