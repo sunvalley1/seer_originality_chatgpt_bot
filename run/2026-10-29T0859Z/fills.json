@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:37:57.273Z",
+ "generated_at": "2026-10-29T09:38:11.128Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -819,12 +819,25 @@
    "tx_hash": "0xacbe5b115ab80b477a1eb7b48a431f932230cc8854f2dc00b2822ef252dede07",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "nethermindeth/nethermind",
+   "address": "0x84e989e3dd24b2d8448d2a90e72eab1202083f59",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 13.6810909534955,
+   "filled": 18.515673631240816,
+   "fill_price": 0.7388924230340665,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xb387f2c7db98c7a4de9865222d1f660ecbbbb37b203546e5755fad06cbc05837",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 58
+  "positions_opened": 59
  },
  "retained_legs": []
 }
