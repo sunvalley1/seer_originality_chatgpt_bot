@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:06:40.320Z",
+ "generated_at": "2026-10-29T09:06:54.542Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -65,12 +65,25 @@
    "tx_hash": "0x378529022ae774c10da64f47a7ac4b372a7ab9e4daa5923f35e055a2e5259476",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "herumi/mcl",
+   "address": "0xc7846582934c4c1d1156ddf44d988f6857b0f743",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 51.2636906418646,
+   "filled": 59.91437462776236,
+   "fill_price": 0.8556158845078002,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x2e30f82cf7a6f31184c3d46b8cc8ab302c09f9c9be8e4ccd4889dd316affd66e",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 1
+  "positions_opened": 2
  },
  "retained_legs": []
 }
