@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:44:42.021Z",
+ "generated_at": "2026-10-29T09:45:02.464Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -1001,6 +1001,19 @@
    "tx_hash": "0xc4e6309d3f2c6d6df4f12cab91ad7d185bed957af89c542465c7cdcf76e96e6c",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 33.1639691692229,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "partial",
+   "error": "half-done group (one transaction per signer call): 3 of 6 transactions landed; stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
   }
  ],
  "totals": {

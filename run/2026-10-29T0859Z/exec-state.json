@@ -2717,7 +2717,7 @@
    "effects_diffs": []
   },
   "set-sell:ethpandaops/ethereum-package": {
-   "status": "in-progress",
+   "status": "stopped",
    "started_at": "2026-10-29T09:44:42.791Z",
    "txs": [
     {
@@ -2725,11 +2725,31 @@
      "nonce": 3831,
      "hash": "0x7740c2ddabbfe6477f075897b4d48d4e0b3e814ca906679dbc2dcf09c65f5828",
      "block": 158834155
+    },
+    {
+     "idx": 352,
+     "nonce": 3832,
+     "hash": "0x4f8e4d5c324ef563a9fad203ecd6b9ff09d8583942586f1a48e2a5410d4f0ffd",
+     "block": 158834158
+    },
+    {
+     "idx": 353,
+     "nonce": 3833,
+     "hash": "0x5e9102ae8078c6a52f580b8b375007254520c389cd892dc1e0ed426202c8ca43",
+     "block": 158834161
     }
-   ]
+   ],
+   "reason": "stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
   }
  },
- "stop": null,
+ "stop": {
+  "kind": "stale-floor",
+  "notes": "set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827",
+  "at": "2026-10-29T09:45:02.462Z",
+  "exit": 3,
+  "group": "set-sell:ethpandaops/ethereum-package",
+  "fields": {}
+ },
  "invocations": [
   {
    "started_at": "2026-10-29T09:05:04.625Z",

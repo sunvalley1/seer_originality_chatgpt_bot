@@ -6334,5 +6334,41 @@
   "cost_wei": "49594311361",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:44:54.619Z",
+  "source": "entry",
+  "group": "set-sell:ethpandaops/ethereum-package",
+  "idx": 352,
+  "label": "Router.splitPosition(sUSDS, child, q)",
+  "nonce": 3832,
+  "tx_hash": "0x4f8e4d5c324ef563a9fad203ecd6b9ff09d8583942586f1a48e2a5410d4f0ffd",
+  "block": 158834158,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "738108",
+  "gas_used": "492072",
+  "effective_gas_price": "1000295",
+  "l1_fee": "700234170",
+  "cost_wei": "492917395410",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:45:00.875Z",
+  "source": "entry",
+  "group": "set-sell:ethpandaops/ethereum-package",
+  "idx": 353,
+  "label": "approve UP -> SwapRouter02 (q)",
+  "nonce": 3833,
+  "tx_hash": "0x5e9102ae8078c6a52f580b8b375007254520c389cd892dc1e0ed426202c8ca43",
+  "block": 158834161,
+  "to": "0x84dd0d0ac0fb8aee366c76453cd78a82ed6105ce",
+  "gas_limit": "58802",
+  "gas_used": "49001",
+  "effective_gas_price": "1000295",
+  "l1_fee": "628794411",
+  "cost_wei": "49644249706",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]
