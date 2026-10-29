@@ -2309,7 +2309,7 @@
    "effects_diffs": []
   },
   "complex-buy:openzeppelin/openzeppelin-contracts:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:38:52.586Z",
    "txs": [
     {
@@ -2341,6 +2341,32 @@
      "nonce": 3783,
      "hash": "0xb6cf66ba90b98273c5694e359b2bd1639b2cd6e56685806c626cb83a0acf45a5",
      "block": 158833993
+    },
+    {
+     "idx": 304,
+     "nonce": 3784,
+     "hash": "0x094a7c122fb7048d3475e7b0450372f02f16ab8d312dece2ac6e17903737830c",
+     "block": 158833996
+    }
+   ],
+   "ended_at": "2026-10-29T09:39:32.430Z",
+   "effects_diffs": []
+  },
+  "complex-buy:OffchainLabs/prysm:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:39:33.190Z",
+   "txs": [
+    {
+     "idx": 305,
+     "nonce": 3785,
+     "hash": "0x855f526dc4dd2ba962eeba90076736cea61653261da6766fc3fe8dfcfa158f4a",
+     "block": 158834000
+    },
+    {
+     "idx": 306,
+     "nonce": 3786,
+     "hash": "0xb249e3a12c21ef6372bbb87de4febe9826db98471742224bb68b598fe53ceea5",
+     "block": 158834003
     }
    ]
   }
