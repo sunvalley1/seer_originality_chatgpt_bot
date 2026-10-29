@@ -63,9 +63,36 @@
    "effects_diffs": []
   },
   "mint-middle-C": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:05:46.309Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 6,
+     "nonce": 3486,
+     "hash": "0xfaf1681511d268819a942360af0a2024deefa6062e41cb5b872d3f954b43b379",
+     "block": 158832987
+    },
+    {
+     "idx": 7,
+     "nonce": 3487,
+     "hash": "0xad1d20ff7671e60f190bea26d363f908739f1d3e4d4cb07ea0824f592a65c2a8",
+     "block": 158832990
+    }
+   ],
+   "ended_at": "2026-10-29T09:05:58.887Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ethereum/py_ecc:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:05:59.615Z",
+   "txs": [
+    {
+     "idx": 8,
+     "nonce": 3488,
+     "hash": "0x2456dec8f7e808e84b8bd6960ee4915fed715ed5378425b081794831598c8aee",
+     "block": 158832993
+    }
+   ]
   }
  },
  "stop": null,
