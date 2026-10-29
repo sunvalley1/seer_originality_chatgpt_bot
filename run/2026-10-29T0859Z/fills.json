@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:12:08.402Z",
+ "generated_at": "2026-10-29T09:12:48.707Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -195,12 +195,25 @@
    "tx_hash": "0xc4a9d608c18aa35de7f09813932cef22190f80b83c83681e96397b6510e0d46e",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "shazow/whatsabi",
+   "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 51.3596976231711,
+   "filled": 65.6651118219569,
+   "fill_price": 0.782145894496103,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x531ad20f84ab2340594c5687262207703be5b27806bb7298cd89fc4cf4c052ff",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 11
+  "positions_opened": 12
  },
  "retained_legs": []
 }

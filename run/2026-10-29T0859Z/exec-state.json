@@ -495,7 +495,7 @@
    "effects_diffs": []
   },
   "complex-buy:shazow/whatsabi:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:12:09.134Z",
    "txs": [
     {
@@ -515,8 +515,28 @@
      "nonce": 3544,
      "hash": "0x5051a97bccf8caa9aeaaa0e96b4c335ee5eb2c3048b9f3ecf6e8b2593489a595",
      "block": 158833184
+    },
+    {
+     "idx": 65,
+     "nonce": 3545,
+     "hash": "0xdadaca8f5d39cc4efed5d47c1cef17c8dd4289f1c985af8a680815b255625d3c",
+     "block": 158833188
+    },
+    {
+     "idx": 66,
+     "nonce": 3546,
+     "hash": "0x336746a3414bfcefcab1d784011d8b26127c9db6bedbc75c952009edcc87843e",
+     "block": 158833191
+    },
+    {
+     "idx": 67,
+     "nonce": 3547,
+     "hash": "0x531ad20f84ab2340594c5687262207703be5b27806bb7298cd89fc4cf4c052ff",
+     "block": 158833195
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:12:48.707Z",
+   "effects_diffs": []
   }
  },
  "stop": null,
