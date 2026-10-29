@@ -1693,7 +1693,7 @@
    "effects_diffs": []
   },
   "complex-buy:consensys/teku:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:29:45.103Z",
    "txs": [
     {
@@ -1713,8 +1713,33 @@
      "nonce": 3701,
      "hash": "0x960aea5e632c1fae7640933d10b64ac70dd39d81adbb3da823c900ce99adc9c3",
      "block": 158833713
+    },
+    {
+     "idx": 222,
+     "nonce": 3702,
+     "hash": "0xb323033bb3d4c5618e9b24cd1ef6e7b5335d8543c74deb17d38670b9194bea38",
+     "block": 158833716
+    },
+    {
+     "idx": 223,
+     "nonce": 3703,
+     "hash": "0xb7dd105f952a7c10de58bb568625a26c3aa28474010ff8e523c6e7f7ee9320c5",
+     "block": 158833720
+    },
+    {
+     "idx": 224,
+     "nonce": 3704,
+     "hash": "0x3f77cbbe2545d8095e2b17d85987aa488329f178ee07a3afa232346682212b48",
+     "block": 158833723
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:30:26.222Z",
+   "effects_diffs": []
+  },
+  "complex-buy:erigontech/erigon:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:30:26.987Z",
+   "txs": []
   }
  },
  "stop": null,

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:29:44.350Z",
+ "generated_at": "2026-10-29T09:30:26.222Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -611,12 +611,25 @@
    "tx_hash": "0x16d7e3beaf44fe38fbbce6665f58171eb6b0c958c852f5b7735addbf94e7fea5",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "consensys/teku",
+   "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 15.2276741628141,
+   "filled": 19.539822937550582,
+   "fill_price": 0.7793148490383899,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x3f77cbbe2545d8095e2b17d85987aa488329f178ee07a3afa232346682212b48",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 42
+  "positions_opened": 43
  },
  "retained_legs": []
 }
