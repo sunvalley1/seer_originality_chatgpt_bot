@@ -1165,7 +1165,7 @@
    "effects_diffs": []
   },
   "set-sell:ethstaker/ethstaker-deposit-cli": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:21:36.143Z",
    "txs": [
     {
@@ -1197,6 +1197,32 @@
      "nonce": 3631,
      "hash": "0x13c4a571b9e275a84b8b5f6c3d44e31b917ff488e836e0c6fd4cadba220d097f",
      "block": 158833474
+    },
+    {
+     "idx": 152,
+     "nonce": 3632,
+     "hash": "0x3440d7f84890afc7fe09a81354e46686b2ed308ef284976b76d9302ad040e0a7",
+     "block": 158833478
+    }
+   ],
+   "ended_at": "2026-10-29T09:22:14.775Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ethstaker/ethstaker-deposit-cli:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:22:15.568Z",
+   "txs": [
+    {
+     "idx": 153,
+     "nonce": 3633,
+     "hash": "0x82029a0b9e7c04c33c93ef43eeba436258a3269f5771905d3e9f7aa0e7326844",
+     "block": 158833481
+    },
+    {
+     "idx": 154,
+     "nonce": 3634,
+     "hash": "0x32101cc79a4ff288d8fe9e8ce1c6711411ca23a59cdaf66312d42f0fcab4cd96",
+     "block": 158833484
     }
    ]
   }
