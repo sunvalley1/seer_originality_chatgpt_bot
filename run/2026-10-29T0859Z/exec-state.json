@@ -683,7 +683,7 @@
    "effects_diffs": []
   },
   "complex-buy:lambdaclass/ethrex:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:14:38.554Z",
    "txs": [
     {
@@ -709,6 +709,32 @@
      "nonce": 3567,
      "hash": "0x48cfa5df7440d58b3be5b9eb8f2a2b9a8088b36cd759a8b0748275cdb6ed4fa3",
      "block": 158833262
+    },
+    {
+     "idx": 88,
+     "nonce": 3568,
+     "hash": "0x0c6424902dd85f8bc9f2a61bf8e1effd96cb481d19d23f751de1723f97387c21",
+     "block": 158833266
+    },
+    {
+     "idx": 89,
+     "nonce": 3569,
+     "hash": "0x2912e726d5c0a84bd90f71c6d4fc2ab5d6185a9d0a9a6cdba338782077f8ebc7",
+     "block": 158833270
+    }
+   ],
+   "ended_at": "2026-10-29T09:15:18.864Z",
+   "effects_diffs": []
+  },
+  "simple-buy:NethermindEth/juno:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:15:19.602Z",
+   "txs": [
+    {
+     "idx": 90,
+     "nonce": 3570,
+     "hash": "0xfdb5c77c6e085e21e3d1bbdc61311815ebd33a920e47bc296baafb44558ef180",
+     "block": 158833273
     }
    ]
   }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:14:37.683Z",
+ "generated_at": "2026-10-29T09:15:18.864Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -286,12 +286,25 @@
    "tx_hash": "0x088a905704c2a1e21acc43673d75ee4c407debb8758bf9a57b95e02448ef5d85",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "lambdaclass/ethrex",
+   "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 20.0550183441626,
+   "filled": 26.510863048496663,
+   "fill_price": 0.7564830427238712,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x2912e726d5c0a84bd90f71c6d4fc2ab5d6185a9d0a9a6cdba338782077f8ebc7",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 18
+  "positions_opened": 19
  },
  "retained_legs": []
 }
