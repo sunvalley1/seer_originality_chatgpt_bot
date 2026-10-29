@@ -1607,7 +1607,32 @@
   "complex-buy:alloy-rs/alloy:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:28:23.602Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 207,
+     "nonce": 3687,
+     "hash": "0x635d5ef3fa96647dae67ab49f62853fc5b716f367c5f91f194afbdb3011f8b2f",
+     "block": 158833665
+    },
+    {
+     "idx": 208,
+     "nonce": 3688,
+     "hash": "0xae6b13b7df937e90b75b14791a1a3c61f89a0de37db3a7070ba0a0b857997d48",
+     "block": 158833668
+    },
+    {
+     "idx": 209,
+     "nonce": 3689,
+     "hash": "0x955365faee8d2d7b9534c46f59fdec8a4038c655e95e8a9d3914c029ca20aa5c",
+     "block": 158833672
+    },
+    {
+     "idx": 210,
+     "nonce": 3690,
+     "hash": "0xad309b3ca6ea9124e0069d6e0610dfaff45f2691374458f743a1779993eca79a",
+     "block": 158833675
+    }
+   ]
   }
  },
  "stop": null,
