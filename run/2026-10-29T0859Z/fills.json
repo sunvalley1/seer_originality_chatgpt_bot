@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:42:27.086Z",
+ "generated_at": "2026-10-29T09:43:06.641Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -923,12 +923,25 @@
    "tx_hash": "0x6f8454acbd836e0783e0687100cf13f688fe4989c8519a2d58d21ace265f78c1",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "status-im/nimbus-eth2",
+   "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 14.5308466146583,
+   "filled": 14.5308466146583,
+   "fill_price": 1.0246326090559637,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc9af4dfed51077ed39aee88bda5290c21fa4012523667f287e4d6fd7b3f9fd75",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 66
+  "positions_opened": 67
  },
  "retained_legs": []
 }
