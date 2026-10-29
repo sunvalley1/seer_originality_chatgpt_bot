@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:43:06.641Z",
+ "generated_at": "2026-10-29T09:43:20.437Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -936,12 +936,25 @@
    "tx_hash": "0xc9af4dfed51077ed39aee88bda5290c21fa4012523667f287e4d6fd7b3f9fd75",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "vyperlang/titanoboa",
+   "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 27.1799596069805,
+   "filled": 37.31423459754719,
+   "fill_price": 0.7284072660240803,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x1c74ec36c768fdad70267cd1fa7f2fecac542ac442dc866fed8df76a37c98fe4",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 67
+  "positions_opened": 68
  },
  "retained_legs": []
 }

@@ -2593,9 +2593,36 @@
    "effects_diffs": []
   },
   "simple-buy:vyperlang/titanoboa:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:43:07.378Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 337,
+     "nonce": 3817,
+     "hash": "0x9baa206132f23a20d9caec61a6563bf22d1e44b8c640cb34df9b33dae3468bb0",
+     "block": 158834107
+    },
+    {
+     "idx": 338,
+     "nonce": 3818,
+     "hash": "0x1c74ec36c768fdad70267cd1fa7f2fecac542ac442dc866fed8df76a37c98fe4",
+     "block": 158834111
+    }
+   ],
+   "ended_at": "2026-10-29T09:43:20.437Z",
+   "effects_diffs": []
+  },
+  "simple-buy:vyperlang/vyper:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:43:21.183Z",
+   "txs": [
+    {
+     "idx": 339,
+     "nonce": 3819,
+     "hash": "0x5addedef1cdc6737c69c8d2f6e5751ce2391e242a87ad4a9f0cbab736deafc90",
+     "block": 158834114
+    }
+   ]
   }
  },
  "stop": null,
