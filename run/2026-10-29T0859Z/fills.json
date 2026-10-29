@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:16:53.241Z",
+ "generated_at": "2026-10-29T09:17:48.194Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -338,12 +338,38 @@
    "tx_hash": "0xf0c709a668d555ad108973ba73045d1694b9bea39b15c548544949908a8c6ba5",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "Cyfrin/aderyn",
+   "address": "0x8717e0e2733acb24ac964667e2252bc118fb2249",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 30.5838385894956,
+   "filled": 45.26912356125666,
+   "fill_price": 0.6756004133393608,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x1a6fde07cbf602da2317346c6d0f36f580039c348a355290087e267f3cd22f7e",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "0xMiden/miden-vm",
+   "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 51.2195115828813,
+   "filled": 63.391483776088435,
+   "fill_price": 0.8079872647215357,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x97c383ac8222a0ec50d9f9a438207c6ce008b4074fa9fe1dcc558d7e075bb443",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 22
+  "positions_opened": 24
  },
  "retained_legs": []
 }
