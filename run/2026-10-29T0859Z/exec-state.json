@@ -1145,7 +1145,7 @@
    "effects_diffs": []
   },
   "simple-buy:OffchainLabs/stylus-sdk-rs:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:21:22.342Z",
    "txs": [
     {
@@ -1153,6 +1153,32 @@
      "nonce": 3625,
      "hash": "0x68e637cc97eb71b0f513d9a045f1ca18e43e6f518b87b78695516783c46cd334",
      "block": 158833455
+    },
+    {
+     "idx": 146,
+     "nonce": 3626,
+     "hash": "0x0818544f68cd056a0de7402a2d8ca0909fd4246a0a7a328e12f49ffe69f48cb4",
+     "block": 158833458
+    }
+   ],
+   "ended_at": "2026-10-29T09:21:35.404Z",
+   "effects_diffs": []
+  },
+  "set-sell:ethstaker/ethstaker-deposit-cli": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:21:36.143Z",
+   "txs": [
+    {
+     "idx": 147,
+     "nonce": 3627,
+     "hash": "0x82731e827ba1ad88d6920f12c76b322ca5a32c845a5e14c7faffa4e4b5f440fe",
+     "block": 158833461
+    },
+    {
+     "idx": 148,
+     "nonce": 3628,
+     "hash": "0x20202bc3d8d343c5a7f8b1cdb34ef3901a738747780effdb208dd174cad5d465",
+     "block": 158833465
     }
    ]
   }

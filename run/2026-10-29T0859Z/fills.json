@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:21:21.609Z",
+ "generated_at": "2026-10-29T09:21:35.404Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -442,12 +442,25 @@
    "tx_hash": "0xbef1db1f03311ee5211340d06e7c745fd9f356fd74f5e31291991cd83b13e7ae",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "OffchainLabs/stylus-sdk-rs",
+   "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 57.2759407044023,
+   "filled": 76.05659599234652,
+   "fill_price": 0.7530699994799388,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x0818544f68cd056a0de7402a2d8ca0909fd4246a0a7a328e12f49ffe69f48cb4",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 29
+  "positions_opened": 30
  },
  "retained_legs": []
 }
