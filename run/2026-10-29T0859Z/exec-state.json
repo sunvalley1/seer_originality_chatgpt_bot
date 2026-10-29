@@ -1095,7 +1095,7 @@
    "effects_diffs": []
   },
   "merge-arb:OffchainLabs/stylus-sdk-rs": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:20:36.731Z",
    "txs": [
     {
@@ -1127,6 +1127,32 @@
      "nonce": 3622,
      "hash": "0x2a466ffc5278b4dc918b09348c8449824941bff3bd0187d16918555d2373a8a5",
      "block": 158833445
+    },
+    {
+     "idx": 143,
+     "nonce": 3623,
+     "hash": "0xa8c6e65f175961fa45acfe82a79e15112076ca2c9782d215dea571883cd814de",
+     "block": 158833448
+    },
+    {
+     "idx": 144,
+     "nonce": 3624,
+     "hash": "0xbef1db1f03311ee5211340d06e7c745fd9f356fd74f5e31291991cd83b13e7ae",
+     "block": 158833451
+    }
+   ],
+   "ended_at": "2026-10-29T09:21:21.609Z",
+   "effects_diffs": []
+  },
+  "simple-buy:OffchainLabs/stylus-sdk-rs:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:21:22.342Z",
+   "txs": [
+    {
+     "idx": 145,
+     "nonce": 3625,
+     "hash": "0x68e637cc97eb71b0f513d9a045f1ca18e43e6f518b87b78695516783c46cd334",
+     "block": 158833455
     }
    ]
   }
