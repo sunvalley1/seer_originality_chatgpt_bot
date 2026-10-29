@@ -1827,7 +1827,26 @@
   "complex-buy:ethereum-lists/chains:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:31:48.820Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 237,
+     "nonce": 3717,
+     "hash": "0x7c95697c2536d24d2c3759c917bc66e8dcad30b3eba986d271bf54a1bd17a6b3",
+     "block": 158833768
+    },
+    {
+     "idx": 238,
+     "nonce": 3718,
+     "hash": "0xb99f99c60d0a0cab98c6b3bc1936d1e8681afefedade9a118b90e12a61199b9f",
+     "block": 158833771
+    },
+    {
+     "idx": 239,
+     "nonce": 3719,
+     "hash": "0xf9d765e212845963cd96547c98ee5a54168dc574d7ecc22269ba769b4fd43ea3",
+     "block": 158833774
+    }
+   ]
   }
  },
  "stop": null,
