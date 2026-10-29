@@ -1695,7 +1695,26 @@
   "complex-buy:consensys/teku:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:29:45.103Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 219,
+     "nonce": 3699,
+     "hash": "0x0b94164569714f1ebf1ef538672d1aeef109af378ed368a9ea60959d5705cc50",
+     "block": 158833706
+    },
+    {
+     "idx": 220,
+     "nonce": 3700,
+     "hash": "0x721385f05584413d59e99e78f534d72989ec3ad924981fdb23547163cfbe208f",
+     "block": 158833709
+    },
+    {
+     "idx": 221,
+     "nonce": 3701,
+     "hash": "0x960aea5e632c1fae7640933d10b64ac70dd39d81adbb3da823c900ce99adc9c3",
+     "block": 158833713
+    }
+   ]
   }
  },
  "stop": null,
