@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:25:40.024Z",
+ "generated_at": "2026-10-29T09:26:21.211Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -533,12 +533,25 @@
    "tx_hash": "0xc906a87ba99a76e410722e8792c7c248f87329d74e0b07471d706ca9f7b91d74",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "axiom-crypto/snark-verifier",
+   "address": "0x52634d6c3fb85d5f4566550e0a85bed365524c39",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 3.27703153094835,
+   "filled": 9.921069737502261,
+   "fill_price": 0.3303103009709696,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xe59361718df81322a29ff72ae2a666712bf1b901ca61c5f3cfe4d57edaace1fe",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 36
+  "positions_opened": 37
  },
  "retained_legs": []
 }

@@ -1429,7 +1429,7 @@
    "effects_diffs": []
   },
   "complex-buy:axiom-crypto/snark-verifier:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:25:40.817Z",
    "txs": [
     {
@@ -1455,6 +1455,32 @@
      "nonce": 3666,
      "hash": "0xf7bc64b9af7620f0e4a81068264121c7421afcf0e718189c7b9dbbb316462992",
      "block": 158833594
+    },
+    {
+     "idx": 187,
+     "nonce": 3667,
+     "hash": "0x012427129e0050e72040d3e6ca292199574349836c900d11f11a1503b4880c23",
+     "block": 158833598
+    },
+    {
+     "idx": 188,
+     "nonce": 3668,
+     "hash": "0xe59361718df81322a29ff72ae2a666712bf1b901ca61c5f3cfe4d57edaace1fe",
+     "block": 158833601
+    }
+   ],
+   "ended_at": "2026-10-29T09:26:21.211Z",
+   "effects_diffs": []
+  },
+  "complex-buy:swiss-knife-xyz/swiss-knife:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:26:22.062Z",
+   "txs": [
+    {
+     "idx": 189,
+     "nonce": 3669,
+     "hash": "0x449b095576619207be47f47401c645d903a3f66be8285ab12cacebb96bbb3c53",
+     "block": 158833605
     }
    ]
   }
