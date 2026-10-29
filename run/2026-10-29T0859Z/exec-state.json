@@ -1341,7 +1341,7 @@
    "effects_diffs": []
   },
   "complex-buy:risc0/risc0-ethereum:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:24:17.809Z",
    "txs": [
     {
@@ -1367,6 +1367,32 @@
      "nonce": 3654,
      "hash": "0x2765d658c2964e6af2f662a4fe0f42ba26adf8b43bbd512b438b77d310ed98f6",
      "block": 158833552
+    },
+    {
+     "idx": 175,
+     "nonce": 3655,
+     "hash": "0x409adba18bfdce76c010419ae53f2433ebfe04af75d202c44dca0f32dcfa0a22",
+     "block": 158833556
+    },
+    {
+     "idx": 176,
+     "nonce": 3656,
+     "hash": "0xa5fa9db82812401e7fd9bd8c26bfbe6c040b065566a77e86fc9db1534a50df27",
+     "block": 158833559
+    }
+   ],
+   "ended_at": "2026-10-29T09:24:58.452Z",
+   "effects_diffs": []
+  },
+  "complex-buy:powdr-labs/powdr:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:24:59.214Z",
+   "txs": [
+    {
+     "idx": 177,
+     "nonce": 3657,
+     "hash": "0x0ec8cfb912191d399a61fc6dfe3167bba8e0d3c44e11bc44596e51147571e50c",
+     "block": 158833563
     }
    ]
   }
