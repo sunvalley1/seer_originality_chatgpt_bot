@@ -1825,7 +1825,7 @@
    "effects_diffs": []
   },
   "complex-buy:ethereum-lists/chains:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:31:48.820Z",
    "txs": [
     {
@@ -1845,8 +1845,28 @@
      "nonce": 3719,
      "hash": "0xf9d765e212845963cd96547c98ee5a54168dc574d7ecc22269ba769b4fd43ea3",
      "block": 158833774
+    },
+    {
+     "idx": 240,
+     "nonce": 3720,
+     "hash": "0x74dba73cb2ff2e778c29fe7b3b435ffcd4cd365834b36794f92cb4eae4b3e6fa",
+     "block": 158833778
+    },
+    {
+     "idx": 241,
+     "nonce": 3721,
+     "hash": "0x678b78b624ff95ae17b90632782bec3d2249f113d683d88e9a2089b37afbf391",
+     "block": 158833782
+    },
+    {
+     "idx": 242,
+     "nonce": 3722,
+     "hash": "0xf56769133989c47d53dc912b5b0e7f1eb86fc325acdfffdba491bf5c30b87232",
+     "block": 158833785
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:32:29.425Z",
+   "effects_diffs": []
   }
  },
  "stop": null,
