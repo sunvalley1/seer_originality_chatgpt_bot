@@ -28,6 +28,39 @@
        "nonce": 3834,
        "calldata_hash": "0xcdffd753aa3e2bbb0448b4aa2f498772a98ea2caca9017331651c4287a104717",
        "signer_input_file": "run/2026-10-29T0859Z/recovery-tx/set-sell_ethpandaops_ethereum-package-a1-n3834.json",
+       "tx_hash": "0x77ef464b878f0aee99d5280f2364462eb683c024fa11936faac7e26bdb8c7209",
+       "row": true
+      },
+      {
+       "label": "approve UP -> Router (S, merge-back)",
+       "role": "merge-back",
+       "plan_idx": null,
+       "side": null,
+       "nonce": 3835,
+       "calldata_hash": "0xcdffd753aa3e2bbb0448b4aa2f498772a98ea2caca9017331651c4287a104717",
+       "signer_input_file": "run/2026-10-29T0859Z/recovery-tx/set-sell_ethpandaops_ethereum-package-a1-n3835.json",
+       "tx_hash": "0xa20fdb966339c435999a416ec359ba78d08ff9b2982bcdb206b8f5f6bdafc144",
+       "row": true
+      },
+      {
+       "label": "approve child Invalid -> Router (S, merge-back)",
+       "role": "merge-back",
+       "plan_idx": null,
+       "side": null,
+       "nonce": 3836,
+       "calldata_hash": "0xcdffd753aa3e2bbb0448b4aa2f498772a98ea2caca9017331651c4287a104717",
+       "signer_input_file": "run/2026-10-29T0859Z/recovery-tx/set-sell_ethpandaops_ethereum-package-a1-n3836.json",
+       "tx_hash": "0x4ee3d69b67d5b3ccb163e892190fb0ef38ed40dae9712d849997a937bb82291b",
+       "row": true
+      },
+      {
+       "label": "Router.mergePositions(sUSDS, child, S) (merge-back)",
+       "role": "merge-back",
+       "plan_idx": null,
+       "side": null,
+       "nonce": 3837,
+       "calldata_hash": "0xfd991242f15222a742e05607e3d3a82298b358572c355ddffa58b1328ad90c93",
+       "signer_input_file": "run/2026-10-29T0859Z/recovery-tx/set-sell_ethpandaops_ethereum-package-a1-n3837.json",
        "tx_hash": null
       }
      ],
