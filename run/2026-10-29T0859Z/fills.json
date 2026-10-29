@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:33:10.458Z",
+ "generated_at": "2026-10-29T09:33:51.119Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -676,12 +676,25 @@
    "tx_hash": "0x58c4347f1efe910a18340f6aa4f4f220707f27cb5fc46b3b6a13533e2798fee1",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ipsilon/evmone",
+   "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 44.2053696742243,
+   "filled": 56.63396763954251,
+   "fill_price": 0.7805451660314116,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa697905e2d612202cbfd37fcf5167f597f9f7dd03911ef3a305b014f47934aad",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 47
+  "positions_opened": 48
  },
  "retained_legs": []
 }
