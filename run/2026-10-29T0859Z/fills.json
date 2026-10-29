@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:13:29.560Z",
+ "generated_at": "2026-10-29T09:14:23.932Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -247,12 +247,38 @@
    "tx_hash": "0x00a8ddd42d80ba9718ed3e2d918f7717dad0a38b6b3c36b885b93ae0c4810695",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "succinctlabs/op-succinct",
+   "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 21.3738304450852,
+   "filled": 35.994503373249124,
+   "fill_price": 0.5938081774166133,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xad9bf4a4337427056a93e56c1bcca89d96d872ecd5139db9b586fbe75b6634ed",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "succinctlabs/sp1",
+   "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 22.2799609102072,
+   "filled": 30.477230843279955,
+   "fill_price": 0.7310362619483127,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x0d8c412e7a9989b537dd17f5bf56ba02ef72cb803fae4754df79e5c5ac2c8574",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 15
+  "positions_opened": 17
  },
  "retained_legs": []
 }

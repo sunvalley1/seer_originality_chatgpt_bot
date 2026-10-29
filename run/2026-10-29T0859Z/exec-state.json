@@ -599,7 +599,7 @@
    "effects_diffs": []
   },
   "complex-buy:succinctlabs/op-succinct:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:13:30.291Z",
    "txs": [
     {
@@ -631,8 +631,41 @@
      "nonce": 3558,
      "hash": "0x2f6f038acbb38495f64ea63be2fa7026a98397666b1aa8e9d4a543d590086705",
      "block": 158833232
+    },
+    {
+     "idx": 79,
+     "nonce": 3559,
+     "hash": "0xad9bf4a4337427056a93e56c1bcca89d96d872ecd5139db9b586fbe75b6634ed",
+     "block": 158833235
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:14:10.156Z",
+   "effects_diffs": []
+  },
+  "simple-buy:succinctlabs/sp1:UP": {
+   "status": "done",
+   "started_at": "2026-10-29T09:14:10.879Z",
+   "txs": [
+    {
+     "idx": 80,
+     "nonce": 3560,
+     "hash": "0x274811deb3619862bbaa59a209cc2dc42570103e3ec1f9efcd9b8414f4836e0b",
+     "block": 158833239
+    },
+    {
+     "idx": 81,
+     "nonce": 3561,
+     "hash": "0x0d8c412e7a9989b537dd17f5bf56ba02ef72cb803fae4754df79e5c5ac2c8574",
+     "block": 158833242
+    }
+   ],
+   "ended_at": "2026-10-29T09:14:23.932Z",
+   "effects_diffs": []
+  },
+  "simple-buy:otterscan/otterscan:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:14:24.702Z",
+   "txs": []
   }
  },
  "stop": null,
