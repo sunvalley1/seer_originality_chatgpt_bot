@@ -1519,7 +1519,32 @@
   "complex-buy:a16z/helios:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:27:03.360Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 195,
+     "nonce": 3675,
+     "hash": "0xa50d881121c88316ee718eea8536c662b82502e55bb632f03c669779177c80ba",
+     "block": 158833625
+    },
+    {
+     "idx": 196,
+     "nonce": 3676,
+     "hash": "0x82bbfdc5af272d0c449caea0286917fb531e8cfc73283c0b6ebe30b08cc806b7",
+     "block": 158833628
+    },
+    {
+     "idx": 197,
+     "nonce": 3677,
+     "hash": "0xcbb6b7882928b3a74e9b4e2ef035ff07a25bfebda073452a661949c2e2a050ad",
+     "block": 158833631
+    },
+    {
+     "idx": 198,
+     "nonce": 3678,
+     "hash": "0x04094040c0bf271db939ff38e69e0716f12781e5ea7ff7fffec33579f70632fd",
+     "block": 158833635
+    }
+   ]
   }
  },
  "stop": null,
