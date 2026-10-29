@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:12:48.707Z",
+ "generated_at": "2026-10-29T09:13:02.300Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -208,12 +208,25 @@
    "tx_hash": "0x531ad20f84ab2340594c5687262207703be5b27806bb7298cd89fc4cf4c052ff",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "TrueBlocks/trueblocks-core",
+   "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 26.3884637725804,
+   "filled": 31.841880632025816,
+   "fill_price": 0.8287344606787924,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xaa5a6405f8400f655370b813dcbabb033c5a410062b377488f2f83530af7ff28",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 12
+  "positions_opened": 13
  },
  "retained_legs": []
 }

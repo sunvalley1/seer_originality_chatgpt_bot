@@ -537,6 +537,31 @@
    ],
    "ended_at": "2026-10-29T09:12:48.707Z",
    "effects_diffs": []
+  },
+  "simple-buy:TrueBlocks/trueblocks-core:UP": {
+   "status": "done",
+   "started_at": "2026-10-29T09:12:49.450Z",
+   "txs": [
+    {
+     "idx": 68,
+     "nonce": 3548,
+     "hash": "0xceb8bc430f2f3ac66ece75bc9189979a88cebfd58aeade0686a9fd9477d7832e",
+     "block": 158833198
+    },
+    {
+     "idx": 69,
+     "nonce": 3549,
+     "hash": "0xaa5a6405f8400f655370b813dcbabb033c5a410062b377488f2f83530af7ff28",
+     "block": 158833201
+    }
+   ],
+   "ended_at": "2026-10-29T09:13:02.300Z",
+   "effects_diffs": []
+  },
+  "simple-buy:EspressoSystems/jellyfish:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:13:03.043Z",
+   "txs": []
   }
  },
  "stop": null,
