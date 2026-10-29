@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:08:15.706Z",
+ "generated_at": "2026-10-29T09:08:56.837Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -104,12 +104,25 @@
    "tx_hash": "0x42bd121f057739f35652abcd501241c18d22d84f60a271d284c53d8d0ed6d4a9",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ethereum/js-ethereum-cryptography",
+   "address": "0x018a386a46949fbc8781b1254636b3a76e60a57c",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 11.8447429030788,
+   "filled": 26.081482218942035,
+   "fill_price": 0.45414377923952465,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa8f802cd446591c6d6f9707a9021efef96a1972e29db545f09ff3b43302c64b3",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 4
+  "positions_opened": 5
  },
  "retained_legs": []
 }
