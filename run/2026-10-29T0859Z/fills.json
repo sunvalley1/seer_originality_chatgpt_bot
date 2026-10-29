@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:45:32.767Z",
+ "generated_at": "2026-10-29T09:49:18.379Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -1079,6 +1079,19 @@
    "tx_hash": null,
    "status": "skipped",
    "error": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  {
+   "market": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 178.02405713134917,
+   "filled": 178.02405713134917,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x540c99fa784adc55ab9e20e9041276620178d523309e0c55c22ab17669b9c5ab",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
