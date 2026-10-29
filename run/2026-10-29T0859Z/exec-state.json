@@ -901,7 +901,26 @@
   "complex-buy:holiman/goevmlab:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:17:48.930Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 112,
+     "nonce": 3592,
+     "hash": "0x976741e3ee4cb88563515553c52fa7668ffe2df972f63574d267238f945a9db0",
+     "block": 158833348
+    },
+    {
+     "idx": 113,
+     "nonce": 3593,
+     "hash": "0x55f9fd5c8451e325d36f08043f1ae6f6433e5d392714e9a6974d0afb9b756631",
+     "block": 158833351
+    },
+    {
+     "idx": 114,
+     "nonce": 3594,
+     "hash": "0x17f2538d98b8fb6e626e0aef44457becca11e25156b8fff0d5cc49e06b75432c",
+     "block": 158833354
+    }
+   ]
   }
  },
  "stop": null,
