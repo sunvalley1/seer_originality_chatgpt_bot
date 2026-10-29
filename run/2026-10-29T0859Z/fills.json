@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:49:18.379Z",
+ "generated_at": "2026-10-29T09:52:34.330Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -1090,6 +1090,19 @@
    "fill_price": 0,
    "slippage_vs_quote": 0,
    "tx_hash": "0x540c99fa784adc55ab9e20e9041276620178d523309e0c55c22ab17669b9c5ab",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+   "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 246.49520773591362,
+   "filled": 246.49520773591362,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x8c080ccc2df0e59163c1d352821b0351c06a4b6db3fcd2d5038a9b6c2c28069c",
    "status": "filled",
    "error": null
   }
