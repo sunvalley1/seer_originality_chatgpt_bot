@@ -2353,7 +2353,7 @@
    "effects_diffs": []
   },
   "complex-buy:OffchainLabs/prysm:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:39:33.190Z",
    "txs": [
     {
@@ -2385,6 +2385,32 @@
      "nonce": 3789,
      "hash": "0x07a55ac5a202dbaccaf901ffad3e8999f7b61643925b0c77695df86f8917a6d7",
      "block": 158834014
+    },
+    {
+     "idx": 310,
+     "nonce": 3790,
+     "hash": "0xb5220444343fa971d55f87f96bbc92d883b5867a0a35319677d882593b4768fa",
+     "block": 158834017
+    }
+   ],
+   "ended_at": "2026-10-29T09:40:13.356Z",
+   "effects_diffs": []
+  },
+  "set-sell:safe-global/safe-smart-account": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:40:14.128Z",
+   "txs": [
+    {
+     "idx": 311,
+     "nonce": 3791,
+     "hash": "0xbc52ed72e88e03b227298f8998fe5d7b0927615343cac50d3c2b550966f3ac13",
+     "block": 158834020
+    },
+    {
+     "idx": 312,
+     "nonce": 3792,
+     "hash": "0x63030fc1030f4b7f5c4bd47ec853c18f9b1c132ffbdff0f8656ddace46fd90b8",
+     "block": 158834024
     }
    ]
   }

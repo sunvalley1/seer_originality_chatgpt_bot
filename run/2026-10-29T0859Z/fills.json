@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:39:32.429Z",
+ "generated_at": "2026-10-29T09:40:13.356Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -858,12 +858,25 @@
    "tx_hash": "0x094a7c122fb7048d3475e7b0450372f02f16ab8d312dece2ac6e17903737830c",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "OffchainLabs/prysm",
+   "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 20.3021000880042,
+   "filled": 26.088932263119613,
+   "fill_price": 0.7781882325902651,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xb5220444343fa971d55f87f96bbc92d883b5867a0a35319677d882593b4768fa",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 61
+  "positions_opened": 62
  },
  "retained_legs": []
 }
