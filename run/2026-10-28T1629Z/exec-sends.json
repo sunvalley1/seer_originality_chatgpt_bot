@@ -3580,5 +3580,23 @@
   "cost_wei": "52096182892",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T08:59:56.525Z",
+  "source": "recovery",
+  "group": "merge-arb:shazow/whatsabi",
+  "idx": null,
+  "label": "Router.mergePositions(sUSDS, child, q)",
+  "nonce": 3479,
+  "tx_hash": "0x7ca227a169b14555b904f2c5d9350a9c44685d28c2dcde8bb29a2eea2e593afe",
+  "block": 158832809,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "739923",
+  "gas_used": "493282",
+  "effective_gas_price": "1000288",
+  "l1_fee": "853753144",
+  "cost_wei": "494277818360",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]

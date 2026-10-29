@@ -1,0 +1,42 @@
+{
+ "groups": {
+  "merge-arb:shazow/whatsabi": {
+   "outcome": "completed",
+   "effects": {
+    "completed_idx": [
+     6
+    ],
+    "merged_back": "0",
+    "sold": {},
+    "approved_P": null
+   },
+   "attempts": [
+    {
+     "at": "2026-10-29T08:59:48.242Z",
+     "by": "the start-of-run repair of 2026-10-29T0859Z",
+     "trigger": "start-of-run repair",
+     "landed": 6,
+     "of": 7,
+     "failed": "Router.mergePositions(sUSDS, child, q) (plan nonce 2892)",
+     "decision": "complete",
+     "outcome": "completed",
+     "why": "completed at fresh quotes, its floors cleared",
+     "txs": [
+      {
+       "label": "Router.mergePositions(sUSDS, child, q)",
+       "role": "complete",
+       "plan_idx": 6,
+       "side": null,
+       "nonce": 3479,
+       "calldata_hash": "0xd65837669dcef60167da12ceb8fdfaf1812e75fa0d32cb1a07806c7d36ad9c0d",
+       "signer_input_file": "run/2026-10-28T1629Z/recovery-tx/merge-arb_shazow_whatsabi-a1-n3479.json",
+       "tx_hash": "0x7ca227a169b14555b904f2c5d9350a9c44685d28c2dcde8bb29a2eea2e593afe",
+       "row": true
+      }
+     ],
+     "rows": 1
+    }
+   ]
+  }
+ }
+}

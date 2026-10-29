@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T16:58:59.026Z",
+ "generated_at": "2026-10-29T08:59:57.265Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -2275,6 +2275,19 @@
    "tx_hash": null,
    "status": "skipped",
    "error": "not started: the run stopped at group merge-arb:shazow/whatsabi: pending-transaction: approve child Invalid -> Router (q) (nonce 2891): landed (0x3cddcd535f220cfcfafbcad2a9fbfc6196b31257771dd2dca232508a709a9fda), but after its receipt latest 2892 pending 2891, expected 2892"
+  },
+  {
+   "slippage_vs_quote": 0,
+   "status": "filled",
+   "market": "shazow/whatsabi",
+   "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+   "tx_hash": "0x7ca227a169b14555b904f2c5d9350a9c44685d28c2dcde8bb29a2eea2e593afe",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 18.3280834704487,
+   "filled": 19.000354025364533,
+   "fill_price": 0.9694410884771707,
+   "error": "recovery of group merge-arb:shazow/whatsabi (the start-of-run repair of 2026-10-29T0859Z): the completing merge; the legs bought before this recovery taken at their amountInMaximum, a ceiling; the failed transaction: Router.mergePositions(sUSDS, child, q) (plan nonce 2892)"
   }
  ],
  "totals": {
