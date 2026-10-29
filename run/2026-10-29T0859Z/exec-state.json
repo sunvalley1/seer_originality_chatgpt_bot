@@ -1563,7 +1563,26 @@
   "set-sell:alloy-rs/alloy": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:27:44.028Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 201,
+     "nonce": 3681,
+     "hash": "0x1f1c150aad2eb3b54f1c6fd20369b636ac322bb3cdff1b8ac69ca69fe972f9bd",
+     "block": 158833645
+    },
+    {
+     "idx": 202,
+     "nonce": 3682,
+     "hash": "0x78003382a84ea5a53cbda562e87abebc919247570cff484d4860b2bdc316f5ec",
+     "block": 158833649
+    },
+    {
+     "idx": 203,
+     "nonce": 3683,
+     "hash": "0x0ea2462eb947edf7efc7e3e2a9107bfe02bfb47e1b485a1898bb2bf088b85014",
+     "block": 158833652
+    }
+   ]
   }
  },
  "stop": null,
