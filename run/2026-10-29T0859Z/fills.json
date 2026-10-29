@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:27:02.536Z",
+ "generated_at": "2026-10-29T09:27:43.284Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -559,12 +559,25 @@
    "tx_hash": "0xe3df1c503858467f4469c6e7ef671452ff1719b2de189c38d62688361382b2c6",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "a16z/helios",
+   "address": "0x842cf887862213513895e1aa1714723009512932",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 14.3750245281005,
+   "filled": 18.56709846363316,
+   "fill_price": 0.7742202992167271,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x8bcb9970003450cf55ea17d9ac42cbb799e2c09554cbb2b5c24f08d8ab5e330c",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 38
+  "positions_opened": 39
  },
  "retained_legs": []
 }

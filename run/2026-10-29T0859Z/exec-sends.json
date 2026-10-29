@@ -3580,5 +3580,41 @@
   "cost_wei": "134615095418",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:27:35.770Z",
+  "source": "entry",
+  "group": "complex-buy:a16z/helios:UP",
+  "idx": 199,
+  "label": "approve repo -> SwapRouter02 (P, quoted proceeds)",
+  "nonce": 3679,
+  "tx_hash": "0xa6ce2d793e441e66e78612ab9c4ed27a2f8ac8f2524cbdab3471630a449cd18b",
+  "block": 158833639,
+  "to": "0xd73749038f49d285077cc5a98115c8bd804c22e8",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000291",
+  "l1_fee": "581037606",
+  "cost_wei": "49584293405",
+  "rebuilt": true,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:27:42.463Z",
+  "source": "entry",
+  "group": "complex-buy:a16z/helios:UP",
+  "idx": 200,
+  "label": "buy UP with the proceeds (min 99.5% of quote at P)",
+  "nonce": 3680,
+  "tx_hash": "0x8bcb9970003450cf55ea17d9ac42cbb799e2c09554cbb2b5c24f08d8ab5e330c",
+  "block": 158833642,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "144975",
+  "gas_used": "116012",
+  "effective_gas_price": "1000291",
+  "l1_fee": "911709546",
+  "cost_wei": "116957469038",
+  "rebuilt": true,
+  "settled_via": null
  }
 ]
