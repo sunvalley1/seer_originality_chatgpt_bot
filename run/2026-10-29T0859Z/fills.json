@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:13:15.909Z",
+ "generated_at": "2026-10-29T09:13:29.560Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -234,12 +234,25 @@
    "tx_hash": "0xf088aa9f56bd474c3873e617e5a9df4926e21c9e2cbc1e3ca587a186e96fd29a",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "a16z/halmos",
+   "address": "0x293a1858e689c117708e509770b283f281bbf6cb",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.0817177879653,
+   "filled": 34.328350845932604,
+   "fill_price": 0.7306415009719905,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x00a8ddd42d80ba9718ed3e2d918f7717dad0a38b6b3c36b885b93ae0c4810695",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 14
+  "positions_opened": 15
  },
  "retained_legs": []
 }
