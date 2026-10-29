@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:35:40.493Z",
+ "generated_at": "2026-10-29T09:36:21.441Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -741,12 +741,25 @@
    "tx_hash": "0xcf4aa39f4c8067a1fb3384291c149bcbce7b981d5a811b7cdae9703b785ef209",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "foundry-rs/foundry",
+   "address": "0xa1cc3bd62aea7b21547f327ed20e18d8b92d89d4",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 12.9999098288117,
+   "filled": 15.566052034452328,
+   "fill_price": 0.8351449551908867,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x20c9407134b7ce2dc04f92c08d9e1d7b5607c7db91e877c553ac902243a64cd2",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 52
+  "positions_opened": 53
  },
  "retained_legs": []
 }

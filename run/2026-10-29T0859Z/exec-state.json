@@ -2085,7 +2085,7 @@
    "effects_diffs": []
   },
   "complex-buy:foundry-rs/foundry:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:35:41.284Z",
    "txs": [
     {
@@ -2111,6 +2111,32 @@
      "nonce": 3754,
      "hash": "0x5d1512a17281af1a170d5daec45e48ecf9734447ec72f083f3fc86b114525371",
      "block": 158833894
+    },
+    {
+     "idx": 275,
+     "nonce": 3755,
+     "hash": "0x154925663d226544c3ac7ced8c58268275350c2d6fed963808b11a1c3c93cd91",
+     "block": 158833898
+    },
+    {
+     "idx": 276,
+     "nonce": 3756,
+     "hash": "0x20c9407134b7ce2dc04f92c08d9e1d7b5607c7db91e877c553ac902243a64cd2",
+     "block": 158833901
+    }
+   ],
+   "ended_at": "2026-10-29T09:36:21.441Z",
+   "effects_diffs": []
+  },
+  "dual-buy:grandinetech/grandine": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:36:22.194Z",
+   "txs": [
+    {
+     "idx": 277,
+     "nonce": 3757,
+     "hash": "0x61b3ea309beaeea511f888b7b2a451a6b6bfebfabc6961dc34c0c2cf439d71dd",
+     "block": 158833905
     }
    ]
   }
