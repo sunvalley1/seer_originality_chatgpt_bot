@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:19:02.788Z",
+ "generated_at": "2026-10-29T09:19:16.361Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -390,12 +390,25 @@
    "tx_hash": "0xc30b8b29b1c04a676b761d34a997d441dfe2fc3a5b89aa5b6d84fd0fc7de4097",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "evmts/tevm-monorepo",
+   "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 3.87565930203272,
+   "filled": 11.657555321787575,
+   "fill_price": 0.3324590100627054,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc52498072cb8fecae0656d3f9c003552bb690e7e6f50a2fdea68ad4951062891",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 26
+  "positions_opened": 27
  },
  "retained_legs": []
 }

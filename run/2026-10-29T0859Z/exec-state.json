@@ -987,9 +987,36 @@
    "effects_diffs": []
   },
   "simple-buy:evmts/tevm-monorepo:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:19:03.524Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 124,
+     "nonce": 3604,
+     "hash": "0x3128398334380cec6367204dcd886d5b8a4200b2a67d361e962b739381eec253",
+     "block": 158833385
+    },
+    {
+     "idx": 125,
+     "nonce": 3605,
+     "hash": "0xc52498072cb8fecae0656d3f9c003552bb690e7e6f50a2fdea68ad4951062891",
+     "block": 158833388
+    }
+   ],
+   "ended_at": "2026-10-29T09:19:16.361Z",
+   "effects_diffs": []
+  },
+  "set-sell:succinctlabs/rsp": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:19:17.077Z",
+   "txs": [
+    {
+     "idx": 126,
+     "nonce": 3606,
+     "hash": "0x6d22d5d9dae4f6b1ef193cd6e5e0eab37a0dbadaf722c7ed84fa438969582759",
+     "block": 158833392
+    }
+   ]
   }
  },
  "stop": null,
