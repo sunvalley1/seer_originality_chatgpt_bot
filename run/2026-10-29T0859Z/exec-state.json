@@ -2551,7 +2551,26 @@
   "set-sell:status-im/nimbus-eth2": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:42:27.859Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 331,
+     "nonce": 3811,
+     "hash": "0x6856538997934813f2a557d41c68f0157024b721ad5835ed40913b6cbb144ca5",
+     "block": 158834087
+    },
+    {
+     "idx": 332,
+     "nonce": 3812,
+     "hash": "0x1b2ff3864c46270ebce0773c99a97768bb9068c81019279f360e2bdaa5b56b44",
+     "block": 158834091
+    },
+    {
+     "idx": 333,
+     "nonce": 3813,
+     "hash": "0x2a1813fe60a5bfe33d009a4f28a11ddf88ae99d586d372fed5b6fe809eb1a2e6",
+     "block": 158834094
+    }
+   ]
   }
  },
  "stop": null,
