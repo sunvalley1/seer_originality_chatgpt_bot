@@ -1781,7 +1781,7 @@
    "effects_diffs": []
   },
   "complex-buy:eth-infinitism/account-abstraction:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:31:07.808Z",
    "txs": [
     {
@@ -1801,8 +1801,33 @@
      "nonce": 3713,
      "hash": "0x78929435fcd06047e4783a11baeebd307efeba3dfb815e95d52c24e3f66926ed",
      "block": 158833754
+    },
+    {
+     "idx": 234,
+     "nonce": 3714,
+     "hash": "0x8f072d1af2aa8d0467cdd89451be57daff176872328e755edd26f60cf7db7d0a",
+     "block": 158833757
+    },
+    {
+     "idx": 235,
+     "nonce": 3715,
+     "hash": "0xa67377ca9cc0daaaea17e557d4e1e64745c2a8d9cdcbe6eb0a9d455bab72db42",
+     "block": 158833761
+    },
+    {
+     "idx": 236,
+     "nonce": 3716,
+     "hash": "0xed31bcf8956b2214a795bbee391fb938ea333881a1b9fc278f04b6d33e4e00b4",
+     "block": 158833764
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:31:48.041Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ethereum-lists/chains:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:31:48.820Z",
+   "txs": []
   }
  },
  "stop": null,
