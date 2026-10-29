@@ -663,9 +663,36 @@
    "effects_diffs": []
   },
   "simple-buy:otterscan/otterscan:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:14:24.702Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 82,
+     "nonce": 3562,
+     "hash": "0xb07a58e56c5f3e29216a6fcde5b038efe204e677802bec7ddf5a37c6d20e00ca",
+     "block": 158833246
+    },
+    {
+     "idx": 83,
+     "nonce": 3563,
+     "hash": "0x088a905704c2a1e21acc43673d75ee4c407debb8758bf9a57b95e02448ef5d85",
+     "block": 158833249
+    }
+   ],
+   "ended_at": "2026-10-29T09:14:37.683Z",
+   "effects_diffs": []
+  },
+  "complex-buy:lambdaclass/ethrex:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:14:38.554Z",
+   "txs": [
+    {
+     "idx": 84,
+     "nonce": 3564,
+     "hash": "0x03cb0915279ed7871f5ef742813a73a2a36678fb49f75e367956d067a5ded933",
+     "block": 158833253
+    }
+   ]
   }
  },
  "stop": null,

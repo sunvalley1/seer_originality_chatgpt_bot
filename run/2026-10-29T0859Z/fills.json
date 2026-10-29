@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:14:23.932Z",
+ "generated_at": "2026-10-29T09:14:37.683Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -273,12 +273,25 @@
    "tx_hash": "0x0d8c412e7a9989b537dd17f5bf56ba02ef72cb803fae4754df79e5c5ac2c8574",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "otterscan/otterscan",
+   "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 7.72553049587408,
+   "filled": 27.962175388103223,
+   "fill_price": 0.27628503106954194,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x088a905704c2a1e21acc43673d75ee4c407debb8758bf9a57b95e02448ef5d85",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 17
+  "positions_opened": 18
  },
  "retained_legs": []
 }
