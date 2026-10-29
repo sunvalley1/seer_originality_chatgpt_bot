@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:40:13.356Z",
+ "generated_at": "2026-10-29T09:40:52.825Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -871,12 +871,25 @@
    "tx_hash": "0xb5220444343fa971d55f87f96bbc92d883b5867a0a35319677d882593b4768fa",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "safe-global/safe-smart-account",
+   "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 57.2414168544166,
+   "filled": 57.2414168544166,
+   "fill_price": 1.06674950382048,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xe5a9ab46a7bc3677935e4d512b8478dfc6981ab53f283b1c3e6409820470b81c",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 62
+  "positions_opened": 63
  },
  "retained_legs": []
 }

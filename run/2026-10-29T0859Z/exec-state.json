@@ -2397,7 +2397,7 @@
    "effects_diffs": []
   },
   "set-sell:safe-global/safe-smart-account": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:40:14.128Z",
    "txs": [
     {
@@ -2429,6 +2429,32 @@
      "nonce": 3795,
      "hash": "0xe8c372f0551027a8fa4de1beee050350a0d323e42396f2cf31369606e6adb55c",
      "block": 158834033
+    },
+    {
+     "idx": 316,
+     "nonce": 3796,
+     "hash": "0xe5a9ab46a7bc3677935e4d512b8478dfc6981ab53f283b1c3e6409820470b81c",
+     "block": 158834037
+    }
+   ],
+   "ended_at": "2026-10-29T09:40:52.826Z",
+   "effects_diffs": []
+  },
+  "complex-buy:safe-global/safe-smart-account:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:40:53.569Z",
+   "txs": [
+    {
+     "idx": 317,
+     "nonce": 3797,
+     "hash": "0xef5539577d0e06d79d9a6e29198a23f3d14219bbc5c68c067599f9a0ae885f81",
+     "block": 158834040
+    },
+    {
+     "idx": 318,
+     "nonce": 3798,
+     "hash": "0xd3b34ec7c85008233f352c750de68308772cdf02ae204daee011d2e29bafc91d",
+     "block": 158834043
     }
    ]
   }
