@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:22:14.775Z",
+ "generated_at": "2026-10-29T09:22:55.700Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -468,12 +468,25 @@
    "tx_hash": "0x3440d7f84890afc7fe09a81354e46686b2ed308ef284976b76d9302ad040e0a7",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "ethstaker/ethstaker-deposit-cli",
+   "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 12.9560222050741,
+   "filled": 32.917374609005456,
+   "fill_price": 0.3935922095539668,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x9fdfc03ea45560b8a2f761bed7d068b0596bfe9fe82f74e6561975a88ffbc50f",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 31
+  "positions_opened": 32
  },
  "retained_legs": []
 }
