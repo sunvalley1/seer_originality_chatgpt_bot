@@ -83,7 +83,7 @@
    "effects_diffs": []
   },
   "complex-buy:ethereum/py_ecc:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:05:59.615Z",
    "txs": [
     {
@@ -109,6 +109,32 @@
      "nonce": 3491,
      "hash": "0x9c887c6f84e22480ce17c6a80f1d7f06671f1bd781baa3e98c9a8be1f22d71a9",
      "block": 158833003
+    },
+    {
+     "idx": 12,
+     "nonce": 3492,
+     "hash": "0xfaa2d5c30684156e9bef9732337b70ec899c81fa26db6518db4f7b2dc6d788a5",
+     "block": 158833007
+    },
+    {
+     "idx": 13,
+     "nonce": 3493,
+     "hash": "0x378529022ae774c10da64f47a7ac4b372a7ab9e4daa5923f35e055a2e5259476",
+     "block": 158833010
+    }
+   ],
+   "ended_at": "2026-10-29T09:06:40.321Z",
+   "effects_diffs": []
+  },
+  "simple-buy:herumi/mcl:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:06:41.130Z",
+   "txs": [
+    {
+     "idx": 14,
+     "nonce": 3494,
+     "hash": "0x553e9b5837b4e1e535dddaf8bc15a5aa603d87112ccaf3b6fa3c0132acf0605e",
+     "block": 158833014
     }
    ]
   }
