@@ -3,9 +3,36 @@
  "plan_built_at": "2026-10-29T09:05:00.927Z",
  "groups": {
   "mint-parent": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:05:06.627Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 0,
+     "nonce": 3480,
+     "hash": "0x26e9550c5417712a886bf2f24bc5527d2f9827a256e9f76b12eacdd6d6866e1d",
+     "block": 158832967
+    },
+    {
+     "idx": 1,
+     "nonce": 3481,
+     "hash": "0x5a2805322c6f3d3d4ef43c11e95d2ea9870efd8e55fea7beff7ee9b2f5c1c0be",
+     "block": 158832970
+    }
+   ],
+   "ended_at": "2026-10-29T09:05:19.085Z",
+   "effects_diffs": []
+  },
+  "mint-middle-A": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:05:19.793Z",
+   "txs": [
+    {
+     "idx": 2,
+     "nonce": 3482,
+     "hash": "0xcad845684ae28ce15e6c60d51e1006a7a9a9a71e63e94f797938daead21489da",
+     "block": 158832973
+    }
+   ]
   }
  },
  "stop": null,

@@ -1,0 +1,24 @@
+{
+ "generated_at": "2026-10-29T09:05:19.085Z",
+ "runs": [
+  {
+   "market": "PARENT-MINT",
+   "address": "0x37ab5cbeee3a32289430e5d38b914ec7f580fd87",
+   "side": "mint",
+   "route": "split-parent",
+   "requested": 140.324473992044,
+   "filled": 140.324473992044,
+   "fill_price": 1,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x5a2805322c6f3d3d4ef43c11e95d2ea9870efd8e55fea7beff7ee9b2f5c1c0be",
+   "status": "filled",
+   "error": null
+  }
+ ],
+ "totals": {
+  "spent": 140.324473992044,
+  "spent_unit": "sUSDS",
+  "positions_opened": 0
+ },
+ "retained_legs": []
+}
