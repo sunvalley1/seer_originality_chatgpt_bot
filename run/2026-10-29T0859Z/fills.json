@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:37:16.394Z",
+ "generated_at": "2026-10-29T09:37:57.273Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -806,12 +806,25 @@
    "tx_hash": "0xc622ef6e2192348939c3e5591f136e588b925b07bf1c6b4f96bee253128944a5",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "nethereum/nethereum",
+   "address": "0x49837e744bb14fab9b256785ab050352c3340aff",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 11.6170891465132,
+   "filled": 14.154436344165681,
+   "fill_price": 0.8207383794058072,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xacbe5b115ab80b477a1eb7b48a431f932230cc8854f2dc00b2822ef252dede07",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 57
+  "positions_opened": 58
  },
  "retained_legs": []
 }

@@ -5218,5 +5218,41 @@
   "cost_wei": "49679357362",
   "rebuilt": true,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:37:56.514Z",
+  "source": "entry",
+  "group": "complex-buy:nethereum/nethereum:UP",
+  "idx": 290,
+  "label": "buy UP with the proceeds (min 99.5% of quote at P)",
+  "nonce": 3770,
+  "tx_hash": "0xacbe5b115ab80b477a1eb7b48a431f932230cc8854f2dc00b2822ef252dede07",
+  "block": 158833949,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "144598",
+  "gas_used": "115698",
+  "effective_gas_price": "1000293",
+  "l1_fee": "980129305",
+  "cost_wei": "116712028819",
+  "rebuilt": true,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:38:03.591Z",
+  "source": "entry",
+  "group": "simple-buy:nethermindeth/nethermind:UP",
+  "idx": 291,
+  "label": "approve repo -> SwapRouter02 (stake)",
+  "nonce": 3771,
+  "tx_hash": "0xd5cfe2acd8ca66c8124e4f8d48a17989894b129257848b17912a1ab07dab0ec1",
+  "block": 158833952,
+  "to": "0x73a69a78d90b6e498b751913f455bd60233f741a",
+  "gas_limit": "38267",
+  "gas_used": "31889",
+  "effective_gas_price": "1000293",
+  "l1_fee": "626275103",
+  "cost_wei": "32524618580",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]
