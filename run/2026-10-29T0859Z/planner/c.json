@@ -1,0 +1,266 @@
+{
+ "subcommand": "c",
+ "run_id": "2026-10-29T0859Z",
+ "started_at": "2026-10-29T08:59:57.268Z",
+ "finished_at": "2026-10-29T09:00:15.265Z",
+ "summary": {
+  "subcommand": "c",
+  "run_id": "2026-10-29T0859Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "source": "body",
+  "body_refused": null,
+  "candidates": 98,
+  "tradeable": 98,
+  "not_tradeable": 0,
+  "bundle_split": "33 / 33 / 32",
+  "reason_counts": {
+   "body_not_open": 0,
+   "pool_null": 0,
+   "liq_zero": 0,
+   "payoutReported": 0,
+   "pending": 0,
+   "decided_unreported": 0,
+   "middle_settled": 0,
+   "future_finalize": 0
+  },
+  "not_tradeable_rows": [],
+  "freshness": "196/196 exact",
+  "diagnostics_failed": [],
+  "block_timestamp": 1793264413,
+  "multicall_blocks": {
+   "reads.json": 158832815,
+   "reads-p1.json": 158832816,
+   "reads-p2a.json": 158832816,
+   "reads-p2b.json": 158832817,
+   "reads-x1.json": 158832817,
+   "reads-b1.json": 158832818,
+   "reads-b2.json": 158832818
+  },
+  "artifacts": [
+   "run/2026-10-29T0859Z/candidates.json",
+   "run/2026-10-29T0859Z/r3-data.json",
+   "run/2026-10-29T0859Z/reads.json",
+   "run/2026-10-29T0859Z/reads-p1.json",
+   "run/2026-10-29T0859Z/reads-p2a.json",
+   "run/2026-10-29T0859Z/reads-p2b.json",
+   "run/2026-10-29T0859Z/reads-x1.json",
+   "run/2026-10-29T0859Z/reads-b1.json",
+   "run/2026-10-29T0859Z/reads-b2.json"
+  ]
+ },
+ "detail": {
+  "checks": [
+   {
+    "id": "shape",
+    "desc": "every projected row carries id, slot, collateral, status and wrappedTokens; the header carries parentWrappedTokens and middleMarkets",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.1",
+    "desc": "markets.length === 98 (data-rows total, and rows read)",
+    "pass": true,
+    "detail": "total 98, rows 98"
+   },
+   {
+    "id": "2.2",
+    "desc": "markets[i].id lowercased === table[i].address",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.3",
+    "desc": "markets[i].parentOutcome === table[i].slot (strict ===)",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.4",
+    "desc": "markets[i].collateralToken lowercased === table[i].repo_token",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.5",
+    "desc": "parentWrappedTokens === [A, B, C, parent Invalid] in order, the first three the bundle-token headers",
+    "pass": true,
+    "detail": "[\"0x8d883809de718baf9fcad72133007b6115f77f6d\",\"0x9f26c46b5d70e5d9ce2b499f7f3d520f34add353\",\"0xa6ebc6002acb875a31922c37d2a9d5bb319d2b06\",\"0xe0d849f471037a9be5db2bdf21f9abaabad9f25c\"]"
+   },
+   {
+    "id": "2.6",
+    "desc": "middleMarkets.length === 3 and ids === the middle headers A, B, C in order",
+    "pass": true,
+    "detail": "[\"0xc217920a91f1b3d56276393aa5345f01a848ecf0\",\"0xf0638b8999aaa0de3f5d02048a385a64e7a63aec\",\"0x99a941135226813037e15e34956fdd79761307d3\"]"
+   },
+   {
+    "id": "x.bodyRows",
+    "desc": "the raw body carries every table repo by its own address, pool fields typed as C expects",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "x.rawVsRows",
+    "desc": "diagnostic, never a refusal: the data-rows projection equals the raw body for all 98 rows",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.7",
+    "desc": "wrappedOutcome(k) onchain === markets[i].wrappedTokens[k] for all 294",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "2.8",
+    "desc": "pool gate on all 196 pools: getPool(onchain outcome token, repo token, 100) nonzero; token0() and fee() === body token0 and feeTier \"100\"",
+    "pass": true,
+    "detail": "196/196"
+   },
+   {
+    "id": "x.freshness",
+    "desc": "diagnostic, never a stop: body tick and liquidity vs onchain slot0 and liquidity",
+    "pass": true,
+    "detail": "196/196 exact"
+   },
+   {
+    "id": "x.priceTick",
+    "desc": "diagnostic: outcome price from the onchain tick (token order corrected) within 5% of the body price, all 196",
+    "pass": true,
+    "detail": "0 outside"
+   },
+   {
+    "id": "x.repoToken",
+    "desc": "middle.wrappedOutcome(slot) === table repo token, all 98",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "x.parentMarket",
+    "desc": "child.parentMarket() === its middle, all 98",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "x.parentOutcome",
+    "desc": "child.parentOutcome() === slot, all 98",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "x.middles",
+    "desc": "each middle: Invalid token, parentMarket() === parent, parentOutcome() === bundle index",
+    "pass": true,
+    "detail": "[{\"inv\":\"0x22de5f831d7d61698dd56d7fd5b3d4a4b8710b83\",\"pm\":\"0x37ab5cbeee3a32289430e5d38b914ec7f580fd87\",\"po\":0},{\"inv\":\"0x27ca6b333e5e0f7ba5635b72f8e03c40a84a68a3\",\"pm\":\"0x37ab5cbeee3a32289430e5d38b914ec7f580fd87\",\"po\":1},{\"inv\":\"0xf91a162f24d2def43ad939e52fcf5cf9fb8aaf6c\",\"pm\":\"0x37ab5cbeee3a32289430e5d38b914ec7f580fd87\",\"po\":2}]"
+   },
+   {
+    "id": "x.parentWrapped",
+    "desc": "parent.wrappedOutcome(0..3) === [A, B, C, parent Invalid]",
+    "pass": true,
+    "detail": "[\"0x8d883809de718baf9fcad72133007b6115f77f6d\",\"0x9f26c46b5d70e5d9ce2b499f7f3d520f34add353\",\"0xa6ebc6002acb875a31922c37d2a9d5bb319d2b06\",\"0xe0d849f471037a9be5db2bdf21f9abaabad9f25c\"]"
+   },
+   {
+    "id": "4.qids",
+    "desc": "every child has a questionsIds() entry (exactly one expected)",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "4.opening",
+    "desc": "getOpeningTS(questionsIds()[0]) nonzero for all 98 (a zero is a failed read)",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "id": "7.self",
+    "desc": "candidates.json self-check (contract shape, identity, types, split 33/33/32)",
+    "pass": true,
+    "detail": ""
+   }
+  ],
+  "blocks": {
+   "reads.json": 158832815,
+   "reads-p1.json": 158832816,
+   "reads-p2a.json": 158832816,
+   "reads-p2b.json": 158832817,
+   "reads-x1.json": 158832817,
+   "reads-b1.json": 158832818,
+   "reads-b2.json": 158832818
+  },
+  "data": {
+   "status": 200,
+   "bytes": 119127,
+   "sha256": "d29b97ffd4f5c41ce0f19a72a578a11ad03833e09d64666a30c27802caa20b19",
+   "content_type": "text/plain;charset=UTF-8",
+   "written": true,
+   "path": "run/2026-10-29T0859Z/r3-data.json",
+   "usable": true,
+   "json_valid": true,
+   "has_error_field": false,
+   "shape_ok": true,
+   "markets": 98,
+   "parent_wrapped_tokens": 4,
+   "middle_markets": 3,
+   "markets_data_keys": 98,
+   "markets_missing_fields": 0,
+   "slots": {
+    "min": 0,
+    "max": 32,
+    "distinct": 33
+   },
+   "markets_open": 98,
+   "pools_null": 0
+  },
+  "freshness_differences": [],
+  "not_tradeable": [],
+  "reason_counts": {
+   "body_not_open": 0,
+   "pool_null": 0,
+   "liq_zero": 0,
+   "payoutReported": 0,
+   "pending": 0,
+   "decided_unreported": 0,
+   "middle_settled": 0,
+   "future_finalize": 0
+  },
+  "body_refused": null,
+  "source": "body",
+  "block_timestamp": 1793264413
+ },
+ "log": [
+  "2026-10-29T09:00:07.064Z PASS shape every projected row carries id, slot, collateral, status and wrappedTokens; the header carries parentWrappedTokens and middleMarkets",
+  "2026-10-29T09:00:07.064Z PASS 2.1 markets.length === 98 (data-rows total, and rows read) :: total 98, rows 98",
+  "2026-10-29T09:00:07.064Z PASS 2.2 markets[i].id lowercased === table[i].address",
+  "2026-10-29T09:00:07.064Z PASS 2.3 markets[i].parentOutcome === table[i].slot (strict ===)",
+  "2026-10-29T09:00:07.064Z PASS 2.4 markets[i].collateralToken lowercased === table[i].repo_token",
+  "2026-10-29T09:00:07.064Z PASS 2.5 parentWrappedTokens === [A, B, C, parent Invalid] in order, the first three the bundle-token headers :: [\"0x8d883809de718baf9fcad72133007b6115f77f6d\",\"0x9f26c46b5d70e5d9ce2b499f7f3d520f34add353\",\"0xa6ebc6002acb875a31922c37d2a9d5bb319d2b06\",\"0xe0d849f471037a9be5db2bdf21f9abaabad9f25c\"]",
+  "2026-10-29T09:00:07.064Z PASS 2.6 middleMarkets.length === 3 and ids === the middle headers A, B, C in order :: [\"0xc217920a91f1b3d56276393aa5345f01a848ecf0\",\"0xf0638b8999aaa0de3f5d02048a385a64e7a63aec\",\"0x99a941135226813037e15e34956fdd79761307d3\"]",
+  "2026-10-29T09:00:07.065Z PASS x.bodyRows the raw body carries every table repo by its own address, pool fields typed as C expects",
+  "2026-10-29T09:00:07.065Z PASS x.rawVsRows diagnostic, never a refusal: the data-rows projection equals the raw body for all 98 rows",
+  "2026-10-29T09:00:08.352Z multicall reads.json: 294 reads, block 158832815, 1 attempt(s)",
+  "2026-10-29T09:00:08.352Z PASS 2.7 wrappedOutcome(k) onchain === markets[i].wrappedTokens[k] for all 294",
+  "2026-10-29T09:00:09.363Z multicall reads-p1.json: 196 reads, block 158832816, 1 attempt(s)",
+  "2026-10-29T09:00:10.688Z multicall reads-p2a.json: 392 reads, block 158832816, 1 attempt(s)",
+  "2026-10-29T09:00:12.054Z multicall reads-p2b.json: 392 reads, block 158832817, 1 attempt(s)",
+  "2026-10-29T09:00:12.054Z PASS 2.8 pool gate on all 196 pools: getPool(onchain outcome token, repo token, 100) nonzero; token0() and fee() === body token0 and feeTier \"100\" :: 196/196",
+  "2026-10-29T09:00:12.054Z PASS x.freshness diagnostic, never a stop: body tick and liquidity vs onchain slot0 and liquidity :: 196/196 exact",
+  "2026-10-29T09:00:12.054Z PASS x.priceTick diagnostic: outcome price from the onchain tick (token order corrected) within 5% of the body price, all 196 :: 0 outside",
+  "2026-10-29T09:00:13.213Z multicall reads-x1.json: 307 reads, block 158832817, 1 attempt(s)",
+  "2026-10-29T09:00:13.213Z PASS x.repoToken middle.wrappedOutcome(slot) === table repo token, all 98",
+  "2026-10-29T09:00:13.213Z PASS x.parentMarket child.parentMarket() === its middle, all 98",
+  "2026-10-29T09:00:13.213Z PASS x.parentOutcome child.parentOutcome() === slot, all 98",
+  "2026-10-29T09:00:13.214Z PASS x.middles each middle: Invalid token, parentMarket() === parent, parentOutcome() === bundle index :: [{\"inv\":\"0x22de5f831d7d61698dd56d7fd5b3d4a4b8710b83\",\"pm\":\"0x37ab5cbeee3a32289430e5d38b914ec7f580fd87\",\"po\":0},{\"inv\":\"0x27ca6b333e5e0f7ba5635b72f8e03c40a84a68a3\",\"pm\":\"0x37ab5cbeee3a32289430e5d38b914ec7f580fd87\",\"po\":1},{\"inv\":\"0xf91a162f24d2def43ad939e52fcf5cf9fb8aaf6c\",\"pm\":\"0x37ab5cbeee3a3228943...",
+  "2026-10-29T09:00:13.214Z PASS x.parentWrapped parent.wrappedOutcome(0..3) === [A, B, C, parent Invalid] :: [\"0x8d883809de718baf9fcad72133007b6115f77f6d\",\"0x9f26c46b5d70e5d9ce2b499f7f3d520f34add353\",\"0xa6ebc6002acb875a31922c37d2a9d5bb319d2b06\",\"0xe0d849f471037a9be5db2bdf21f9abaabad9f25c\"]",
+  "2026-10-29T09:00:13.837Z multicall reads-b1.json: 199 reads, block 158832818, 1 attempt(s)",
+  "2026-10-29T09:00:13.837Z PASS 4.qids every child has a questionsIds() entry (exactly one expected)",
+  "2026-10-29T09:00:15.261Z multicall reads-b2.json: 494 reads, block 158832818, 1 attempt(s)",
+  "2026-10-29T09:00:15.262Z PASS 4.opening getOpeningTS(questionsIds()[0]) nonzero for all 98 (a zero is a failed read)",
+  "2026-10-29T09:00:15.264Z PASS 7.self candidates.json self-check (contract shape, identity, types, split 33/33/32)"
+ ],
+ "tool_calls": {
+  "helperCalls": 12,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}
