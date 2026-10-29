@@ -2507,7 +2507,26 @@
   "set-sell:sigp/lighthouse": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:41:48.013Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 325,
+     "nonce": 3805,
+     "hash": "0x92e232b8b924608d2b43c0d87e8cb5b82ff96e4e09a35604eb133d7585141dd9",
+     "block": 158834067
+    },
+    {
+     "idx": 326,
+     "nonce": 3806,
+     "hash": "0xa514318bd9a201d7c9f5e50789d088013c2cc3c75c1c5869e038bdf1778a19dc",
+     "block": 158834071
+    },
+    {
+     "idx": 327,
+     "nonce": 3807,
+     "hash": "0x0b94fde9e715d58107ef45a1200439c05a1b1266eeed928498c239ad02a82426",
+     "block": 158834074
+    }
+   ]
   }
  },
  "stop": null,
