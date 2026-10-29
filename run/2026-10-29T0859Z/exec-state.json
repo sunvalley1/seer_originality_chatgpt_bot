@@ -387,7 +387,7 @@
    "effects_diffs": []
   },
   "complex-buy:wealdtech/ethdo:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:10:31.910Z",
    "txs": [
     {
@@ -419,6 +419,32 @@
      "nonce": 3532,
      "hash": "0xea2253e111db4a7b2f0a21b577493317646ac4bcc246a7385d960257a773cc4f",
      "block": 158833144
+    },
+    {
+     "idx": 53,
+     "nonce": 3533,
+     "hash": "0x9de86a591d04455694f492e60f608e9027184338a2882351b0eaa822726d0e56",
+     "block": 158833147
+    }
+   ],
+   "ended_at": "2026-10-29T09:11:13.773Z",
+   "effects_diffs": []
+  },
+  "complex-buy:lambdaclass/lambdaworks:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:11:14.520Z",
+   "txs": [
+    {
+     "idx": 54,
+     "nonce": 3534,
+     "hash": "0x0224befafc7b9152ea1056af9812cf0c278f8597688d392f68da8532782f28b7",
+     "block": 158833151
+    },
+    {
+     "idx": 55,
+     "nonce": 3535,
+     "hash": "0xe75acd860a6a4848e181b31d87c0d4a98df3764eb7ff00d9cd9f61732570a9d6",
+     "block": 158833154
     }
    ]
   }
