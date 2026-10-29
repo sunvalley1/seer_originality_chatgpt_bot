@@ -3796,5 +3796,41 @@
   "cost_wei": "206044777615",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:28:56.175Z",
+  "source": "entry",
+  "group": "complex-buy:alloy-rs/alloy:UP",
+  "idx": 211,
+  "label": "approve repo -> SwapRouter02 (P, quoted proceeds)",
+  "nonce": 3691,
+  "tx_hash": "0x5b84b37dc4b713b32847fcbf6c14c5eaf153b8d7890b49c3b87fa2bf32b92482",
+  "block": 158833679,
+  "to": "0x9664e2fc602c98cb93b1c459fc9b72c68eba9a84",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000291",
+  "l1_fee": "615830346",
+  "cost_wei": "49619086145",
+  "rebuilt": true,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:29:02.868Z",
+  "source": "entry",
+  "group": "complex-buy:alloy-rs/alloy:UP",
+  "idx": 212,
+  "label": "buy UP with the proceeds (min 99.5% of quote at P)",
+  "nonce": 3692,
+  "tx_hash": "0x3b873a444dec21f80532a98a2b01866d78afb6daa5da384bfa2cba8b78e80edb",
+  "block": 158833682,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "144984",
+  "gas_used": "116020",
+  "effective_gas_price": "1000291",
+  "l1_fee": "963783114",
+  "cost_wei": "117017544934",
+  "rebuilt": true,
+  "settled_via": null
  }
 ]

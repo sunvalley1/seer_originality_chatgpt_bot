@@ -1605,7 +1605,7 @@
    "effects_diffs": []
   },
   "complex-buy:alloy-rs/alloy:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:28:23.602Z",
    "txs": [
     {
@@ -1631,8 +1631,27 @@
      "nonce": 3690,
      "hash": "0xad309b3ca6ea9124e0069d6e0610dfaff45f2691374458f743a1779993eca79a",
      "block": 158833675
+    },
+    {
+     "idx": 211,
+     "nonce": 3691,
+     "hash": "0x5b84b37dc4b713b32847fcbf6c14c5eaf153b8d7890b49c3b87fa2bf32b92482",
+     "block": 158833679
+    },
+    {
+     "idx": 212,
+     "nonce": 3692,
+     "hash": "0x3b873a444dec21f80532a98a2b01866d78afb6daa5da384bfa2cba8b78e80edb",
+     "block": 158833682
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:29:03.655Z",
+   "effects_diffs": []
+  },
+  "complex-buy:apeworx/ape:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:29:04.381Z",
+   "txs": []
   }
  },
  "stop": null,

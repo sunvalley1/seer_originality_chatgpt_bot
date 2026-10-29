@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:28:22.840Z",
+ "generated_at": "2026-10-29T09:29:03.655Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -585,12 +585,25 @@
    "tx_hash": "0x6194b78236704974b8ce22b03f660dd83d9322bdcc728be9b2b1c7dc6475ed56",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "alloy-rs/alloy",
+   "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 34.17240291316,
+   "filled": 41.75749346733866,
+   "fill_price": 0.8183537869649319,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x3b873a444dec21f80532a98a2b01866d78afb6daa5da384bfa2cba8b78e80edb",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 40
+  "positions_opened": 41
  },
  "retained_legs": []
 }
