@@ -2129,7 +2129,7 @@
    "effects_diffs": []
   },
   "dual-buy:grandinetech/grandine": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:36:22.194Z",
    "txs": [
     {
@@ -2137,8 +2137,33 @@
      "nonce": 3757,
      "hash": "0x61b3ea309beaeea511f888b7b2a451a6b6bfebfabc6961dc34c0c2cf439d71dd",
      "block": 158833905
+    },
+    {
+     "idx": 278,
+     "nonce": 3758,
+     "hash": "0x0b240c50bdf230ceabbdbb395d557c6bc654e041209549c29c0d78afa4b9011e",
+     "block": 158833908
+    },
+    {
+     "idx": 279,
+     "nonce": 3759,
+     "hash": "0x2678a6a10125b92aa8328431b8d6dad852f6024272c380eabc8143232a6259e8",
+     "block": 158833911
+    },
+    {
+     "idx": 280,
+     "nonce": 3760,
+     "hash": "0x7dcfc6f15da2fe02ff6a9a08a4a5170b07eed4fb319ae7f6262d50dcecf51fe9",
+     "block": 158833914
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:36:48.348Z",
+   "effects_diffs": []
+  },
+  "simple-buy:hyperledger-web3j/web3j:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:36:49.076Z",
+   "txs": []
   }
  },
  "stop": null,

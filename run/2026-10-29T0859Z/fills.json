@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:36:21.441Z",
+ "generated_at": "2026-10-29T09:36:48.348Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -754,12 +754,38 @@
    "tx_hash": "0x20c9407134b7ce2dc04f92c08d9e1d7b5607c7db91e877c553ac902243a64cd2",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "grandinetech/grandine",
+   "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+   "side": "UP",
+   "route": "dual-buy",
+   "requested": 40.3133154288359,
+   "filled": 52.5387061224503,
+   "fill_price": 0.7673069705005472,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x0b240c50bdf230ceabbdbb395d557c6bc654e041209549c29c0d78afa4b9011e",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "grandinetech/grandine",
+   "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+   "side": "DOWN",
+   "route": "dual-buy",
+   "requested": 1.98558661153239,
+   "filled": 8.029883101718,
+   "fill_price": 0.24727465971547918,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x7dcfc6f15da2fe02ff6a9a08a4a5170b07eed4fb319ae7f6262d50dcecf51fe9",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 53
+  "positions_opened": 55
  },
  "retained_legs": []
 }
