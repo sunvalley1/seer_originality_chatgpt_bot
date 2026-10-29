@@ -899,7 +899,7 @@
    "effects_diffs": []
   },
   "complex-buy:holiman/goevmlab:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:17:48.930Z",
    "txs": [
     {
@@ -919,8 +919,33 @@
      "nonce": 3594,
      "hash": "0x17f2538d98b8fb6e626e0aef44457becca11e25156b8fff0d5cc49e06b75432c",
      "block": 158833354
+    },
+    {
+     "idx": 115,
+     "nonce": 3595,
+     "hash": "0x609f923a71c4bbcbaa46de5ed79cb59fbc736e4b245558b9042035a6967239b4",
+     "block": 158833357
+    },
+    {
+     "idx": 116,
+     "nonce": 3596,
+     "hash": "0x7a14772f425395cd7756a4887600688a1db09aee929b067e10a448b0a92ca8c9",
+     "block": 158833360
+    },
+    {
+     "idx": 117,
+     "nonce": 3597,
+     "hash": "0xc8c2b4125fb8cf12bf25952c2b8baab7ebedabca9434c074f990e424714751b1",
+     "block": 158833364
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:18:26.742Z",
+   "effects_diffs": []
+  },
+  "complex-buy:edb-rs/edb:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:18:27.478Z",
+   "txs": []
   }
  },
  "stop": null,

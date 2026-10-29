@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:17:48.194Z",
+ "generated_at": "2026-10-29T09:18:26.742Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -364,12 +364,25 @@
    "tx_hash": "0x97c383ac8222a0ec50d9f9a438207c6ce008b4074fa9fe1dcc558d7e075bb443",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "holiman/goevmlab",
+   "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 46.6969099371488,
+   "filled": 61.855452044677214,
+   "fill_price": 0.7549360386764349,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc8c2b4125fb8cf12bf25952c2b8baab7ebedabca9434c074f990e424714751b1",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 24
+  "positions_opened": 25
  },
  "retained_legs": []
 }
