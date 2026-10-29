@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:08:56.837Z",
+ "generated_at": "2026-10-29T09:09:10.762Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -117,12 +117,25 @@
    "tx_hash": "0xa8f802cd446591c6d6f9707a9021efef96a1972e29db545f09ff3b43302c64b3",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "DefiLlama/chainlist",
+   "address": "0x4b8bda295e28375ed17abc8d1472e9cccadc93aa",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 2.81276169577135,
+   "filled": 9.605911160209857,
+   "fill_price": 0.2928157099164657,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa2ca6858ed522c8d519e4113745a15bf73b579e5985222b34cdca6cdc636a5ac",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 5
+  "positions_opened": 6
  },
  "retained_legs": []
 }
