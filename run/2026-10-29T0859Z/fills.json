@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:13:02.300Z",
+ "generated_at": "2026-10-29T09:13:15.909Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -221,12 +221,25 @@
    "tx_hash": "0xaa5a6405f8400f655370b813dcbabb033c5a410062b377488f2f83530af7ff28",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "EspressoSystems/jellyfish",
+   "address": "0x72e12907d277199d7a44fde21d7dd981150b0f1a",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 52.5984252223484,
+   "filled": 85.89576509530349,
+   "fill_price": 0.612351786656643,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xf088aa9f56bd474c3873e617e5a9df4926e21c9e2cbc1e3ca587a186e96fd29a",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 13
+  "positions_opened": 14
  },
  "retained_legs": []
 }

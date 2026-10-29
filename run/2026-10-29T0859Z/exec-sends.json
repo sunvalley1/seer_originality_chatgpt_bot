@@ -1276,5 +1276,41 @@
   "cost_wei": "49794388718",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:13:15.178Z",
+  "source": "entry",
+  "group": "simple-buy:EspressoSystems/jellyfish:UP",
+  "idx": 71,
+  "label": "buy UP (exactInput, min 99.5% of quote)",
+  "nonce": 3551,
+  "tx_hash": "0xf088aa9f56bd474c3873e617e5a9df4926e21c9e2cbc1e3ca587a186e96fd29a",
+  "block": 158833208,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "210911",
+  "gas_used": "170959",
+  "effective_gas_price": "1000322",
+  "l1_fee": "1209574711",
+  "cost_wei": "172223623509",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:13:22.148Z",
+  "source": "entry",
+  "group": "simple-buy:a16z/halmos:UP",
+  "idx": 72,
+  "label": "approve repo -> SwapRouter02 (stake)",
+  "nonce": 3552,
+  "tx_hash": "0x435f0e02efc002b2863e6d3abd282362833ed7b568e9680e6cc930746d2fce44",
+  "block": 158833212,
+  "to": "0x65b1380266291da3e6101c5a7f066fcbe1e74370",
+  "gas_limit": "58802",
+  "gas_used": "49001",
+  "effective_gas_price": "1000322",
+  "l1_fee": "764709530",
+  "cost_wei": "49781487852",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]

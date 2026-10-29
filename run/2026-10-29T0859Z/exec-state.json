@@ -559,9 +559,36 @@
    "effects_diffs": []
   },
   "simple-buy:EspressoSystems/jellyfish:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:13:03.043Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 70,
+     "nonce": 3550,
+     "hash": "0xaa8d3b7d098f9785548467e1d8d88420aa72f4ed6017047eec206bdb09758dcc",
+     "block": 158833205
+    },
+    {
+     "idx": 71,
+     "nonce": 3551,
+     "hash": "0xf088aa9f56bd474c3873e617e5a9df4926e21c9e2cbc1e3ca587a186e96fd29a",
+     "block": 158833208
+    }
+   ],
+   "ended_at": "2026-10-29T09:13:15.909Z",
+   "effects_diffs": []
+  },
+  "simple-buy:a16z/halmos:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:13:16.646Z",
+   "txs": [
+    {
+     "idx": 72,
+     "nonce": 3552,
+     "hash": "0x435f0e02efc002b2863e6d3abd282362833ed7b568e9680e6cc930746d2fce44",
+     "block": 158833212
+    }
+   ]
   }
  },
  "stop": null,
