@@ -1739,7 +1739,26 @@
   "complex-buy:erigontech/erigon:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:30:26.987Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 225,
+     "nonce": 3705,
+     "hash": "0xb8e603bfff87923483ae830fb6cbc764e8a30889841697806492d33b3b34535c",
+     "block": 158833727
+    },
+    {
+     "idx": 226,
+     "nonce": 3706,
+     "hash": "0x0383806f0f4323b0d3ef3957fe3c04d5617173c08df245a1ced080df9b68a873",
+     "block": 158833730
+    },
+    {
+     "idx": 227,
+     "nonce": 3707,
+     "hash": "0xc9dd323fabac9d6f4cab6428cbb402b17d10a4b06f98091460ee57ad8b83ab17",
+     "block": 158833733
+    }
+   ]
   }
  },
  "stop": null,
