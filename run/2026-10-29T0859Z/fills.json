@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:30:26.222Z",
+ "generated_at": "2026-10-29T09:31:07.048Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -624,12 +624,25 @@
    "tx_hash": "0x3f77cbbe2545d8095e2b17d85987aa488329f178ee07a3afa232346682212b48",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "erigontech/erigon",
+   "address": "0x87a54a3ad188dfea96aa128922351fdc12da80e3",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 16.2055445307528,
+   "filled": 22.244512108534508,
+   "fill_price": 0.7285187668618387,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc5a7ce395ccf67ad40663448071698b33a832f7301b36505fb1147fb4bcd2d50",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 43
+  "positions_opened": 44
  },
  "retained_legs": []
 }

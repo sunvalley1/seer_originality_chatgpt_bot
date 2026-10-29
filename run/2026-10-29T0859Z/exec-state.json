@@ -1737,7 +1737,7 @@
    "effects_diffs": []
   },
   "complex-buy:erigontech/erigon:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:30:26.987Z",
    "txs": [
     {
@@ -1757,8 +1757,33 @@
      "nonce": 3707,
      "hash": "0xc9dd323fabac9d6f4cab6428cbb402b17d10a4b06f98091460ee57ad8b83ab17",
      "block": 158833733
+    },
+    {
+     "idx": 228,
+     "nonce": 3708,
+     "hash": "0x51e9d2b9271d7c03c7224175e5aa80a810587bd2bd2b568189cba8c84ff45b86",
+     "block": 158833737
+    },
+    {
+     "idx": 229,
+     "nonce": 3709,
+     "hash": "0x642c2b3cb7090bbc0c96be85ed3d5c106566ccb7adb4b0757b4def0433235a9f",
+     "block": 158833740
+    },
+    {
+     "idx": 230,
+     "nonce": 3710,
+     "hash": "0xc5a7ce395ccf67ad40663448071698b33a832f7301b36505fb1147fb4bcd2d50",
+     "block": 158833744
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:31:07.048Z",
+   "effects_diffs": []
+  },
+  "complex-buy:eth-infinitism/account-abstraction:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:31:07.808Z",
+   "txs": []
   }
  },
  "stop": null,
