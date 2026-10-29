@@ -727,7 +727,7 @@
    "effects_diffs": []
   },
   "simple-buy:NethermindEth/juno:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:15:19.602Z",
    "txs": [
     {
@@ -735,6 +735,32 @@
      "nonce": 3570,
      "hash": "0xfdb5c77c6e085e21e3d1bbdc61311815ebd33a920e47bc296baafb44558ef180",
      "block": 158833273
+    },
+    {
+     "idx": 91,
+     "nonce": 3571,
+     "hash": "0x61ad05d5a412b28be0d2b0f0f5f7c099da55dbbae1528c667e7ca93f1042353a",
+     "block": 158833277
+    }
+   ],
+   "ended_at": "2026-10-29T09:15:32.572Z",
+   "effects_diffs": []
+  },
+  "set-sell:Commit-Boost/commit-boost-client": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:15:33.311Z",
+   "txs": [
+    {
+     "idx": 92,
+     "nonce": 3572,
+     "hash": "0x205d03f03f0579b416b8cdd23b692460831232fa05e2a6ac2c15d241ac972070",
+     "block": 158833280
+    },
+    {
+     "idx": 93,
+     "nonce": 3573,
+     "hash": "0x160d48b69375a2d8715456a6e645b2e54348220e9cb2d58dbbdc7ab492392b36",
+     "block": 158833283
     }
    ]
   }

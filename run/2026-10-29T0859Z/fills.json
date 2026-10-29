@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:15:18.864Z",
+ "generated_at": "2026-10-29T09:15:32.571Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -299,12 +299,25 @@
    "tx_hash": "0x2912e726d5c0a84bd90f71c6d4fc2ab5d6185a9d0a9a6cdba338782077f8ebc7",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "NethermindEth/juno",
+   "address": "0x6aa9ba4a89cc1f5d854b898ed34f4370a3857585",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.4350071070034,
+   "filled": 34.82127992502418,
+   "fill_price": 0.7304443478748933,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x61ad05d5a412b28be0d2b0f0f5f7c099da55dbbae1528c667e7ca93f1042353a",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 19
+  "positions_opened": 20
  },
  "retained_legs": []
 }
