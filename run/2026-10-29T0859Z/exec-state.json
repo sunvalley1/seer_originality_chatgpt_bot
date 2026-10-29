@@ -2265,7 +2265,7 @@
    "effects_diffs": []
   },
   "complex-buy:nomicfoundation/hardhat:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:38:11.890Z",
    "txs": [
     {
@@ -2297,6 +2297,32 @@
      "nonce": 3777,
      "hash": "0xc5c121c6df0bbe4a4d8d1b38d774354edcb94c534fa21eab0a3bfcaa3e6d43c0",
      "block": 158833973
+    },
+    {
+     "idx": 298,
+     "nonce": 3778,
+     "hash": "0x8c37cc8e4612c23deb2b8cd85cffe99578dfc9139cd3633b0cacb46db8abf9da",
+     "block": 158833976
+    }
+   ],
+   "ended_at": "2026-10-29T09:38:51.847Z",
+   "effects_diffs": []
+  },
+  "complex-buy:openzeppelin/openzeppelin-contracts:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:38:52.586Z",
+   "txs": [
+    {
+     "idx": 299,
+     "nonce": 3779,
+     "hash": "0xde8807e2db43fafe0960ff84e1497ce7bfcd07d1de241a3aa41284e8dd72039e",
+     "block": 158833980
+    },
+    {
+     "idx": 300,
+     "nonce": 3780,
+     "hash": "0x7aeffd3a7ceff6c7ad008888fcfb40604aaa5953580cb6860f8c8b18b6b5c3db",
+     "block": 158833983
     }
    ]
   }

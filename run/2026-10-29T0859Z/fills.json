@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:38:11.128Z",
+ "generated_at": "2026-10-29T09:38:51.847Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -832,12 +832,25 @@
    "tx_hash": "0xb387f2c7db98c7a4de9865222d1f660ecbbbb37b203546e5755fad06cbc05837",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "nomicfoundation/hardhat",
+   "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 20.35523164661,
+   "filled": 26.641138695216892,
+   "fill_price": 0.7640526134967552,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x8c37cc8e4612c23deb2b8cd85cffe99578dfc9139cd3633b0cacb46db8abf9da",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 59
+  "positions_opened": 60
  },
  "retained_legs": []
 }
