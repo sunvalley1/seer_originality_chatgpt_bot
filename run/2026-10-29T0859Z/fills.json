@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:43:20.437Z",
+ "generated_at": "2026-10-29T09:43:47.802Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -949,12 +949,38 @@
    "tx_hash": "0x1c74ec36c768fdad70267cd1fa7f2fecac542ac442dc866fed8df76a37c98fe4",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "vyperlang/vyper",
+   "address": "0x845468b87b4821fae1d42f250c382b7a3a85bdb1",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 14.0060752022586,
+   "filled": 17.752285732062273,
+   "fill_price": 0.7889730603514526,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x5dc094ede116e1f03665e69ca7af1096cb889a70617ac25dedf713a4a1f7cd9c",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "wevm/viem",
+   "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 30.0038527649706,
+   "filled": 38.65397965931307,
+   "fill_price": 0.7762163955540251,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x8392cc783e20fcf7492567226b62cbe9980b1f199a7bf507dad50e18cd98522f",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 68
+  "positions_opened": 70
  },
  "retained_legs": []
 }

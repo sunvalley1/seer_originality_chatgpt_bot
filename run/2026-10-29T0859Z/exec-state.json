@@ -2613,7 +2613,7 @@
    "effects_diffs": []
   },
   "simple-buy:vyperlang/vyper:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:43:21.183Z",
    "txs": [
     {
@@ -2621,8 +2621,41 @@
      "nonce": 3819,
      "hash": "0x5addedef1cdc6737c69c8d2f6e5751ce2391e242a87ad4a9f0cbab736deafc90",
      "block": 158834114
+    },
+    {
+     "idx": 340,
+     "nonce": 3820,
+     "hash": "0x5dc094ede116e1f03665e69ca7af1096cb889a70617ac25dedf713a4a1f7cd9c",
+     "block": 158834117
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:43:34.183Z",
+   "effects_diffs": []
+  },
+  "simple-buy:wevm/viem:UP": {
+   "status": "done",
+   "started_at": "2026-10-29T09:43:34.923Z",
+   "txs": [
+    {
+     "idx": 341,
+     "nonce": 3821,
+     "hash": "0xb7f413a73f4edd86a49042c297f6bc308af0323d1491efc5803e3798cc2409d3",
+     "block": 158834121
+    },
+    {
+     "idx": 342,
+     "nonce": 3822,
+     "hash": "0x8392cc783e20fcf7492567226b62cbe9980b1f199a7bf507dad50e18cd98522f",
+     "block": 158834124
+    }
+   ],
+   "ended_at": "2026-10-29T09:43:47.804Z",
+   "effects_diffs": []
+  },
+  "complex-buy:argotorg/hevm:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:43:48.556Z",
+   "txs": []
   }
  },
  "stop": null,
