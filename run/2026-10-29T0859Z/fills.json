@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:19:16.361Z",
+ "generated_at": "2026-10-29T09:19:55.479Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -403,12 +403,25 @@
    "tx_hash": "0xc52498072cb8fecae0656d3f9c003552bb690e7e6f50a2fdea68ad4951062891",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "succinctlabs/rsp",
+   "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 30.9587422971578,
+   "filled": 30.9587422971578,
+   "fill_price": 1.0575280680961128,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xfd80ccc4199529b953b8369eba85795680222ffae16e4649a386b0ca62f90919",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 27
+  "positions_opened": 28
  },
  "retained_legs": []
 }

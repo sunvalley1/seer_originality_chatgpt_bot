@@ -1007,7 +1007,7 @@
    "effects_diffs": []
   },
   "set-sell:succinctlabs/rsp": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:19:17.077Z",
    "txs": [
     {
@@ -1039,6 +1039,32 @@
      "nonce": 3610,
      "hash": "0x9c0a9edb992410e1ab2c117680600eea29dc223371403352a5bbb13b5103ba7b",
      "block": 158833405
+    },
+    {
+     "idx": 131,
+     "nonce": 3611,
+     "hash": "0xfd80ccc4199529b953b8369eba85795680222ffae16e4649a386b0ca62f90919",
+     "block": 158833408
+    }
+   ],
+   "ended_at": "2026-10-29T09:19:55.480Z",
+   "effects_diffs": []
+  },
+  "complex-buy:succinctlabs/rsp:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:19:56.203Z",
+   "txs": [
+    {
+     "idx": 132,
+     "nonce": 3612,
+     "hash": "0x199a6dea32de07f19bcecbad90c7ed6ef4b58c78003d4c69a672b700957c2f43",
+     "block": 158833412
+    },
+    {
+     "idx": 133,
+     "nonce": 3613,
+     "hash": "0x9419b8ff9cbbee43ab37c2b830ffa7b9dbbf9156305e761ea78180488ee659d5",
+     "block": 158833415
     }
    ]
   }
