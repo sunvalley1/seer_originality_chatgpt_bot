@@ -1561,7 +1561,7 @@
    "effects_diffs": []
   },
   "set-sell:alloy-rs/alloy": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:27:44.028Z",
    "txs": [
     {
@@ -1581,8 +1581,33 @@
      "nonce": 3683,
      "hash": "0x0ea2462eb947edf7efc7e3e2a9107bfe02bfb47e1b485a1898bb2bf088b85014",
      "block": 158833652
+    },
+    {
+     "idx": 204,
+     "nonce": 3684,
+     "hash": "0x5c479eb50b95ab8e851415156e3e5ecbfe845e29e416884a752bb0dffc8f7948",
+     "block": 158833655
+    },
+    {
+     "idx": 205,
+     "nonce": 3685,
+     "hash": "0xbc709de414731b6db7991786d6ef084f723bf7478bcd6b02d34b79b6ebc7f921",
+     "block": 158833658
+    },
+    {
+     "idx": 206,
+     "nonce": 3686,
+     "hash": "0x6194b78236704974b8ce22b03f660dd83d9322bdcc728be9b2b1c7dc6475ed56",
+     "block": 158833662
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:28:22.840Z",
+   "effects_diffs": []
+  },
+  "complex-buy:alloy-rs/alloy:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:28:23.602Z",
+   "txs": []
   }
  },
  "stop": null,
