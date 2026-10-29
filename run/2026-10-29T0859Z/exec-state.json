@@ -1783,7 +1783,26 @@
   "complex-buy:eth-infinitism/account-abstraction:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:31:07.808Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 231,
+     "nonce": 3711,
+     "hash": "0x8d45d7eba8a60d3fee26815f6f667f28b65ac3c75b628b837495a5296941f4ae",
+     "block": 158833747
+    },
+    {
+     "idx": 232,
+     "nonce": 3712,
+     "hash": "0x7a0a3725367bfe822e8acf57e5b377f214ccc182c9a27a17d597a24e6d9d22e3",
+     "block": 158833750
+    },
+    {
+     "idx": 233,
+     "nonce": 3713,
+     "hash": "0x78929435fcd06047e4783a11baeebd307efeba3dfb815e95d52c24e3f66926ed",
+     "block": 158833754
+    }
+   ]
   }
  },
  "stop": null,
