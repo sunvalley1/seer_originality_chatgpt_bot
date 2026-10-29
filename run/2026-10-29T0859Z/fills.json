@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:11:13.773Z",
+ "generated_at": "2026-10-29T09:12:08.402Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -169,12 +169,38 @@
    "tx_hash": "0x9de86a591d04455694f492e60f608e9027184338a2882351b0eaa822726d0e56",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "lambdaclass/lambdaworks",
+   "address": "0xd756f4a29de73f261f32185d0982c8e454db3356",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 19.0889676957962,
+   "filled": 23.18555311334168,
+   "fill_price": 0.8233130174846603,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa7df5e5fb0b3817d0fee3be60319af7c47cddb8cdac60847b43a5b4e9b98ecfd",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "skalenetwork/libBLS",
+   "address": "0x5ba02d2373096140102b6d552e62f9d0f7c7c39d",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 18.1361512387072,
+   "filled": 24.65846510221208,
+   "fill_price": 0.7354939232239653,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc4a9d608c18aa35de7f09813932cef22190f80b83c83681e96397b6510e0d46e",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 9
+  "positions_opened": 11
  },
  "retained_legs": []
 }

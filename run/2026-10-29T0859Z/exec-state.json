@@ -431,7 +431,7 @@
    "effects_diffs": []
   },
   "complex-buy:lambdaclass/lambdaworks:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:11:14.520Z",
    "txs": [
     {
@@ -463,8 +463,36 @@
      "nonce": 3538,
      "hash": "0xf1aa370fde9d745d7c2783871c46d2015d5acce79eaddbb5362d228c81524515",
      "block": 158833164
+    },
+    {
+     "idx": 59,
+     "nonce": 3539,
+     "hash": "0xa7df5e5fb0b3817d0fee3be60319af7c47cddb8cdac60847b43a5b4e9b98ecfd",
+     "block": 158833168
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:11:54.772Z",
+   "effects_diffs": []
+  },
+  "simple-buy:skalenetwork/libBLS:UP": {
+   "status": "done",
+   "started_at": "2026-10-29T09:11:55.528Z",
+   "txs": [
+    {
+     "idx": 60,
+     "nonce": 3540,
+     "hash": "0x80a203e177f1a79da19ea9d8ed368cac105a8ff7a98ce677d2a81bc0ae5d9054",
+     "block": 158833171
+    },
+    {
+     "idx": 61,
+     "nonce": 3541,
+     "hash": "0xc4a9d608c18aa35de7f09813932cef22190f80b83c83681e96397b6510e0d46e",
+     "block": 158833175
+    }
+   ],
+   "ended_at": "2026-10-29T09:12:08.402Z",
+   "effects_diffs": []
   }
  },
  "stop": null,
