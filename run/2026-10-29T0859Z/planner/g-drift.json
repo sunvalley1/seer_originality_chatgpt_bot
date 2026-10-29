@@ -1,0 +1,17 @@
+{
+ "pools_compared": 138,
+ "pools_moved": 0,
+ "markets_moved": [],
+ "moved": [],
+ "f_pins": {
+  "min": 158832820,
+  "max": 158832822,
+  "distinct": 3
+ },
+ "g_pins": {
+  "min": 158832897,
+  "max": 158832898,
+  "distinct": 2
+ },
+ "note": "G section 8, The head moves: a moved pool is reported, never stale by itself; each call carries its own floor and the pre-send re-check decides"
+}
