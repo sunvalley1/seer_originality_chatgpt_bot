@@ -2441,7 +2441,7 @@
    "effects_diffs": []
   },
   "complex-buy:safe-global/safe-smart-account:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:40:53.569Z",
    "txs": [
     {
@@ -2473,8 +2473,41 @@
      "nonce": 3801,
      "hash": "0x3909a47acc7881294236efce883ba1ca233cbd92d9518185288bc5fb9eda5c16",
      "block": 158834054
+    },
+    {
+     "idx": 322,
+     "nonce": 3802,
+     "hash": "0xea6101575217c85ea8892a5eccac75931fbef62dfab85fdf697ec4eee6276751",
+     "block": 158834057
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:41:33.555Z",
+   "effects_diffs": []
+  },
+  "simple-buy:scaffold-eth/scaffold-eth-2:DOWN": {
+   "status": "done",
+   "started_at": "2026-10-29T09:41:34.298Z",
+   "txs": [
+    {
+     "idx": 323,
+     "nonce": 3803,
+     "hash": "0x9012844d4e15b4c626ec88640bc861e579459a56789f56752b7485aec779ed28",
+     "block": 158834061
+    },
+    {
+     "idx": 324,
+     "nonce": 3804,
+     "hash": "0xf08849c68338a69542e8f985f8467cb20c73a7b1fec0e6efeff636ff505f1d1e",
+     "block": 158834064
+    }
+   ],
+   "ended_at": "2026-10-29T09:41:47.177Z",
+   "effects_diffs": []
+  },
+  "set-sell:sigp/lighthouse": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:41:48.013Z",
+   "txs": []
   }
  },
  "stop": null,

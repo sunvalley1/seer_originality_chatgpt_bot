@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:40:52.825Z",
+ "generated_at": "2026-10-29T09:41:47.176Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -884,12 +884,38 @@
    "tx_hash": "0xe5a9ab46a7bc3677935e4d512b8478dfc6981ab53f283b1c3e6409820470b81c",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "safe-global/safe-smart-account",
+   "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 83.0830571376267,
+   "filled": 115.40124736338092,
+   "fill_price": 0.7199493856076861,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xea6101575217c85ea8892a5eccac75931fbef62dfab85fdf697ec4eee6276751",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "scaffold-eth/scaffold-eth-2",
+   "address": "0x09790fb4115e57367f47c82244cce088583e503f",
+   "side": "DOWN",
+   "route": "simple-buy",
+   "requested": 7.24307994986923,
+   "filled": 21.554563060353825,
+   "fill_price": 0.3360346451741218,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xf08849c68338a69542e8f985f8467cb20c73a7b1fec0e6efeff636ff505f1d1e",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 63
+  "positions_opened": 65
  },
  "retained_legs": []
 }
