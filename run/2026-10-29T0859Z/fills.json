@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:09:10.762Z",
+ "generated_at": "2026-10-29T09:09:50.313Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -130,12 +130,25 @@
    "tx_hash": "0xa2ca6858ed522c8d519e4113745a15bf73b579e5985222b34cdca6cdc636a5ac",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "Certora/CertoraProver",
+   "address": "0x45dc37854a86f647cf45890f7167c0adc19814f2",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 19.6242302828567,
+   "filled": 19.6242302828567,
+   "fill_price": 1.0282172151349984,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x5ca25db326738889b5483ee5995d38ab9e5f64e31e8f67471ae2f84770a44ca7",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 6
+  "positions_opened": 7
  },
  "retained_legs": []
 }

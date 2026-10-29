@@ -299,7 +299,7 @@
    "effects_diffs": []
   },
   "set-sell:Certora/CertoraProver": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:09:11.568Z",
    "txs": [
     {
@@ -331,6 +331,32 @@
      "nonce": 3520,
      "hash": "0x8587e5141f3f899cfb7607c769ef61462f55ec769524428b6def1cad26d47396",
      "block": 158833102
+    },
+    {
+     "idx": 41,
+     "nonce": 3521,
+     "hash": "0x5ca25db326738889b5483ee5995d38ab9e5f64e31e8f67471ae2f84770a44ca7",
+     "block": 158833105
+    }
+   ],
+   "ended_at": "2026-10-29T09:09:50.313Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ChainSafe/bls:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:09:51.078Z",
+   "txs": [
+    {
+     "idx": 42,
+     "nonce": 3522,
+     "hash": "0xda422e621df4cb15f6a52b733ac882bcb2b320435e35ee1a1e6cd55c23a9bfa9",
+     "block": 158833109
+    },
+    {
+     "idx": 43,
+     "nonce": 3523,
+     "hash": "0xd40482e7275b2e1b04687bad445f5b3428519101cae205abac2103419123f0f1",
+     "block": 158833112
     }
    ]
   }
