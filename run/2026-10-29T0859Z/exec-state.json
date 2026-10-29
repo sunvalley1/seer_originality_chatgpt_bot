@@ -1867,6 +1867,30 @@
    ],
    "ended_at": "2026-10-29T09:32:29.425Z",
    "effects_diffs": []
+  },
+  "complex-buy:ethereum/consensus-specs:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:32:30.206Z",
+   "txs": [
+    {
+     "idx": 243,
+     "nonce": 3723,
+     "hash": "0xd37d14834bf594284ca634bf29d0f78b15ab98b3e7b29d6aa2493fbb5418e3de",
+     "block": 158833789
+    },
+    {
+     "idx": 244,
+     "nonce": 3724,
+     "hash": "0x592cc15396a1839bf22d226cef592b180796fc7e923c925fb3856689ecc440d6",
+     "block": 158833792
+    },
+    {
+     "idx": 245,
+     "nonce": 3725,
+     "hash": "0x9f71f0d69eaa6acb98d754db97144e96cca16b56c6abaf9b178afa415e1ea83e",
+     "block": 158833795
+    }
+   ]
   }
  },
  "stop": null,
