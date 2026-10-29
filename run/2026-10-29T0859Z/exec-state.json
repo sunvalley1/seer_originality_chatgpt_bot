@@ -945,7 +945,26 @@
   "complex-buy:edb-rs/edb:UP": {
    "status": "in-progress",
    "started_at": "2026-10-29T09:18:27.478Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 118,
+     "nonce": 3598,
+     "hash": "0x8718edef48697a08948ce6d528fd41435c588e35708ac126e074a29c961ef42c",
+     "block": 158833367
+    },
+    {
+     "idx": 119,
+     "nonce": 3599,
+     "hash": "0x314cf448e7695879a99eed45717b9914c6268bdc3e8e68963b554ffe79faf575",
+     "block": 158833370
+    },
+    {
+     "idx": 120,
+     "nonce": 3600,
+     "hash": "0xfcb5b065ca720a68d4da5fae858800fe8624ce25f20c39e935b92979b3a6eefd",
+     "block": 158833373
+    }
+   ]
   }
  },
  "stop": null,
