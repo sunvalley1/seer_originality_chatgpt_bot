@@ -147,7 +147,7 @@
    "effects_diffs": []
   },
   "complex-buy:Consensys/gnark-crypto:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:06:55.265Z",
    "txs": [
     {
@@ -179,6 +179,32 @@
      "nonce": 3500,
      "hash": "0x80165ffe6fefadd981a3e2972e7aef89c81b233ae3cfdb86c771fdbfd5b94f89",
      "block": 158833034
+    },
+    {
+     "idx": 21,
+     "nonce": 3501,
+     "hash": "0x1a61d8849d19943550a84555fe5cda5d5a2531d58b1cc54cb0c6212adc82878e",
+     "block": 158833038
+    }
+   ],
+   "ended_at": "2026-10-29T09:07:34.791Z",
+   "effects_diffs": []
+  },
+  "complex-buy:taikoxyz/taiko-mono:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:07:35.514Z",
+   "txs": [
+    {
+     "idx": 22,
+     "nonce": 3502,
+     "hash": "0x60fbcca6d2755dab495564f890771eb28cb51713af442059f3a2c492768a69ed",
+     "block": 158833041
+    },
+    {
+     "idx": 23,
+     "nonce": 3503,
+     "hash": "0x836641e747384b805825030de3829779cf2472aa6a1bca4bc18d58506ee55058",
+     "block": 158833044
     }
    ]
   }
