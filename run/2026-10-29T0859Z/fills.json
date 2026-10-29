@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:24:58.452Z",
+ "generated_at": "2026-10-29T09:25:40.024Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -520,12 +520,25 @@
    "tx_hash": "0xa5fa9db82812401e7fd9bd8c26bfbe6c040b065566a77e86fc9db1534a50df27",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "powdr-labs/powdr",
+   "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 54.3616415714511,
+   "filled": 69.03763685510033,
+   "fill_price": 0.7874203702184658,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc906a87ba99a76e410722e8792c7c248f87329d74e0b07471d706ca9f7b91d74",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 35
+  "positions_opened": 36
  },
  "retained_legs": []
 }

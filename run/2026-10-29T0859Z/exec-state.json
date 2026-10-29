@@ -1385,7 +1385,7 @@
    "effects_diffs": []
   },
   "complex-buy:powdr-labs/powdr:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:24:59.214Z",
    "txs": [
     {
@@ -1411,6 +1411,32 @@
      "nonce": 3660,
      "hash": "0x1daf86099d1b754e876f13a7c9661db740947834e012020416cbe69769e24fd3",
      "block": 158833573
+    },
+    {
+     "idx": 181,
+     "nonce": 3661,
+     "hash": "0x4644da147704d02770f754bcfb76399403c1346a4dd57df88464e95110b84d24",
+     "block": 158833577
+    },
+    {
+     "idx": 182,
+     "nonce": 3662,
+     "hash": "0xc906a87ba99a76e410722e8792c7c248f87329d74e0b07471d706ca9f7b91d74",
+     "block": 158833580
+    }
+   ],
+   "ended_at": "2026-10-29T09:25:40.025Z",
+   "effects_diffs": []
+  },
+  "complex-buy:axiom-crypto/snark-verifier:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:25:40.817Z",
+   "txs": [
+    {
+     "idx": 183,
+     "nonce": 3663,
+     "hash": "0x297f54d09a02a645058dc1298c947444f97c1f50c3a848fbd9f6862697163173",
+     "block": 158833584
     }
    ]
   }
