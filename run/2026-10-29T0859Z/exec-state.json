@@ -1869,7 +1869,7 @@
    "effects_diffs": []
   },
   "complex-buy:ethereum/consensus-specs:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:32:30.206Z",
    "txs": [
     {
@@ -1901,6 +1901,32 @@
      "nonce": 3727,
      "hash": "0xd31d63233b90c9735b3a8bb1fec78f34837215cc9d71d5d770cb245f96d4289b",
      "block": 158833802
+    },
+    {
+     "idx": 248,
+     "nonce": 3728,
+     "hash": "0x58c4347f1efe910a18340f6aa4f4f220707f27cb5fc46b3b6a13533e2798fee1",
+     "block": 158833806
+    }
+   ],
+   "ended_at": "2026-10-29T09:33:10.459Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ipsilon/evmone:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:33:11.203Z",
+   "txs": [
+    {
+     "idx": 249,
+     "nonce": 3729,
+     "hash": "0x6acc7f64e65f5f1d233ed8e1faa15b5d34298739f46e137db1de2613816eaf9b",
+     "block": 158833809
+    },
+    {
+     "idx": 250,
+     "nonce": 3730,
+     "hash": "0xdeb5d9a22e43f156cc0a72f7fc6dd50bea70e69d746d438e4282baa8e911d3bc",
+     "block": 158833812
     }
    ]
   }
