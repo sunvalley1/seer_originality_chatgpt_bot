@@ -191,7 +191,7 @@
    "effects_diffs": []
   },
   "complex-buy:taikoxyz/taiko-mono:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:07:35.514Z",
    "txs": [
     {
@@ -217,6 +217,32 @@
      "nonce": 3505,
      "hash": "0xa47631f1bcac1a196891a1cad8a0e8caa19ff6f6ff0d58a3dfed304a61dce987",
      "block": 158833051
+    },
+    {
+     "idx": 26,
+     "nonce": 3506,
+     "hash": "0xa07d845cc6a3377550c5587cf019a340b3774b3d4209d3459ea5a74916ad0838",
+     "block": 158833055
+    },
+    {
+     "idx": 27,
+     "nonce": 3507,
+     "hash": "0x42bd121f057739f35652abcd501241c18d22d84f60a271d284c53d8d0ed6d4a9",
+     "block": 158833058
+    }
+   ],
+   "ended_at": "2026-10-29T09:08:15.706Z",
+   "effects_diffs": []
+  },
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:08:16.435Z",
+   "txs": [
+    {
+     "idx": 28,
+     "nonce": 3508,
+     "hash": "0xc61a189846edeee85f44dc5b692a6e251c4028e3d765e555a12a310dade6263a",
+     "block": 158833062
     }
    ]
   }
