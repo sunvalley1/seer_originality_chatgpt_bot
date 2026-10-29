@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:34:59.861Z",
+ "generated_at": "2026-10-29T09:35:40.493Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -728,12 +728,25 @@
    "tx_hash": "0x4e64f50c057d93ea4bd0624258ca78f0290ed7576ffcdb3f2912bf921928ec72",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "argotorg/sourcify",
+   "address": "0x5c4a21e1a101c3aff192d2d307ad9bbe3d761b1e",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 18.08645020454,
+   "filled": 18.08645020454,
+   "fill_price": 1.0244718833095963,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xcf4aa39f4c8067a1fb3384291c149bcbce7b981d5a811b7cdae9703b785ef209",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 51
+  "positions_opened": 52
  },
  "retained_legs": []
 }

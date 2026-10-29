@@ -2041,7 +2041,7 @@
    "effects_diffs": []
   },
   "set-sell:argotorg/sourcify": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:35:00.608Z",
    "txs": [
     {
@@ -2067,6 +2067,32 @@
      "nonce": 3748,
      "hash": "0xdbb65d8901ad4aa879ffd5662b0390ab2237462569ea6a67c014227ce8b55d1b",
      "block": 158833873
+    },
+    {
+     "idx": 269,
+     "nonce": 3749,
+     "hash": "0x4becb0745efaf923371ebafb97c272ba13e4c1877420b38a9a9995b83a4e4d93",
+     "block": 158833877
+    },
+    {
+     "idx": 270,
+     "nonce": 3750,
+     "hash": "0xcf4aa39f4c8067a1fb3384291c149bcbce7b981d5a811b7cdae9703b785ef209",
+     "block": 158833881
+    }
+   ],
+   "ended_at": "2026-10-29T09:35:40.493Z",
+   "effects_diffs": []
+  },
+  "complex-buy:foundry-rs/foundry:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:35:41.284Z",
+   "txs": [
+    {
+     "idx": 271,
+     "nonce": 3751,
+     "hash": "0x332a979f1579f99ffed30f4430682957bce3c6513aac2ff1986219553fa3e7b1",
+     "block": 158833884
     }
    ]
   }
