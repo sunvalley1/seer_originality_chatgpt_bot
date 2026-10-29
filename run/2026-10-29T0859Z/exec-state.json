@@ -1957,7 +1957,7 @@
    "effects_diffs": []
   },
   "complex-buy:ethereum/execution-apis:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:33:51.852Z",
    "txs": [
     {
@@ -1989,8 +1989,41 @@
      "nonce": 3739,
      "hash": "0x4f0f4f251514766e85bc2c549d374eccfa92c5b967041c30a1a99495bf563a57",
      "block": 158833843
+    },
+    {
+     "idx": 260,
+     "nonce": 3740,
+     "hash": "0xe50317cb12e3711909530692c49b34d2d6358643d76666fc7bb733996f5b7c42",
+     "block": 158833846
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:34:32.145Z",
+   "effects_diffs": []
+  },
+  "simple-buy:argotorg/fe:UP": {
+   "status": "done",
+   "started_at": "2026-10-29T09:34:32.896Z",
+   "txs": [
+    {
+     "idx": 261,
+     "nonce": 3741,
+     "hash": "0x6c0b9ed4e558bea20ff5a61ab362f8ac09e1f9be6c44a51730051d46486fea21",
+     "block": 158833850
+    },
+    {
+     "idx": 262,
+     "nonce": 3742,
+     "hash": "0x1d341c1e0f6afed8a81c9bdde4240a64578b9af3d7e059a931c9537e2eeac535",
+     "block": 158833853
+    }
+   ],
+   "ended_at": "2026-10-29T09:34:46.018Z",
+   "effects_diffs": []
+  },
+  "simple-buy:argotorg/solidity:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:34:46.774Z",
+   "txs": []
   }
  },
  "stop": null,
