@@ -2653,7 +2653,7 @@
    "effects_diffs": []
   },
   "complex-buy:argotorg/hevm:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:43:48.556Z",
    "txs": [
     {
@@ -2673,8 +2673,33 @@
      "nonce": 3825,
      "hash": "0x3f7155e1808b52dfcc23695991ba2b9d4bc0b40012a173d8563de97ab36f76e5",
      "block": 158834134
+    },
+    {
+     "idx": 346,
+     "nonce": 3826,
+     "hash": "0x75fdf99cd0100b3b7a5f5884d7b8ada2a3b2133d9d062ded50bdf1c05d31c688",
+     "block": 158834137
+    },
+    {
+     "idx": 347,
+     "nonce": 3827,
+     "hash": "0x665f1ca1038ca1421c816bd2d8f71b57530697bb3ca5be74cce5ed2523c426f6",
+     "block": 158834141
+    },
+    {
+     "idx": 348,
+     "nonce": 3828,
+     "hash": "0xca3f730a5f225432126f44d4f36bdf1f7e61514e04d8e9e21eebd9420ab1d61d",
+     "block": 158834144
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:44:28.193Z",
+   "effects_diffs": []
+  },
+  "simple-buy:ethdebug/format:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:44:28.911Z",
+   "txs": []
   }
  },
  "stop": null,

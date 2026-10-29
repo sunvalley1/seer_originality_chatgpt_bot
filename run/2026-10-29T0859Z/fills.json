@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:43:47.802Z",
+ "generated_at": "2026-10-29T09:44:28.193Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -975,12 +975,25 @@
    "tx_hash": "0x8392cc783e20fcf7492567226b62cbe9980b1f199a7bf507dad50e18cd98522f",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "argotorg/hevm",
+   "address": "0xdfb022190820d74babd62379fe53b45f0ac1cc67",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 45.058448010624,
+   "filled": 59.55475125166752,
+   "fill_price": 0.7565886358959878,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xca3f730a5f225432126f44d4f36bdf1f7e61514e04d8e9e21eebd9420ab1d61d",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 70
+  "positions_opened": 71
  },
  "retained_legs": []
 }
