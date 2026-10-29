@@ -2697,9 +2697,36 @@
    "effects_diffs": []
   },
   "simple-buy:ethdebug/format:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:44:28.911Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 349,
+     "nonce": 3829,
+     "hash": "0x6e117762c1c32c0e58fbbeaecc6c026982b1cabd2185e377b0f64caa28aa56d8",
+     "block": 158834148
+    },
+    {
+     "idx": 350,
+     "nonce": 3830,
+     "hash": "0xc4e6309d3f2c6d6df4f12cab91ad7d185bed957af89c542465c7cdcf76e96e6c",
+     "block": 158834151
+    }
+   ],
+   "ended_at": "2026-10-29T09:44:42.021Z",
+   "effects_diffs": []
+  },
+  "set-sell:ethpandaops/ethereum-package": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:44:42.791Z",
+   "txs": [
+    {
+     "idx": 351,
+     "nonce": 3831,
+     "hash": "0x7740c2ddabbfe6477f075897b4d48d4e0b3e814ca906679dbc2dcf09c65f5828",
+     "block": 158834155
+    }
+   ]
   }
  },
  "stop": null,
