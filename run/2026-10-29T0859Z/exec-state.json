@@ -1473,7 +1473,7 @@
    "effects_diffs": []
   },
   "complex-buy:swiss-knife-xyz/swiss-knife:DOWN": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:26:22.062Z",
    "txs": [
     {
@@ -1499,8 +1499,27 @@
      "nonce": 3672,
      "hash": "0xbdcaeab45df1e9625af7986974379e4f7553b21a3b4fd99e6a5dfbf604bf8e1f",
      "block": 158833614
+    },
+    {
+     "idx": 193,
+     "nonce": 3673,
+     "hash": "0x86efc945ebcb28ac904015bf8d6aeb35603bedad3f37565309e308dfbf06851e",
+     "block": 158833618
+    },
+    {
+     "idx": 194,
+     "nonce": 3674,
+     "hash": "0xe3df1c503858467f4469c6e7ef671452ff1719b2de189c38d62688361382b2c6",
+     "block": 158833621
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:27:02.536Z",
+   "effects_diffs": []
+  },
+  "complex-buy:a16z/helios:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:27:03.360Z",
+   "txs": []
   }
  },
  "stop": null,

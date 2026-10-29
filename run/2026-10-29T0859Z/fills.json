@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:26:21.211Z",
+ "generated_at": "2026-10-29T09:27:02.536Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -546,12 +546,25 @@
    "tx_hash": "0xe59361718df81322a29ff72ae2a666712bf1b901ca61c5f3cfe4d57edaace1fe",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "swiss-knife-xyz/swiss-knife",
+   "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 4.88879037646719,
+   "filled": 18.708255666924018,
+   "fill_price": 0.2613172742293936,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xe3df1c503858467f4469c6e7ef671452ff1719b2de189c38d62688361382b2c6",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 37
+  "positions_opened": 38
  },
  "retained_legs": []
 }
