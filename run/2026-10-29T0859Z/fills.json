@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:15:32.571Z",
+ "generated_at": "2026-10-29T09:16:14.587Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -312,12 +312,25 @@
    "tx_hash": "0x61ad05d5a412b28be0d2b0f0f5f7c099da55dbbae1528c667e7ca93f1042353a",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "Commit-Boost/commit-boost-client",
+   "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 16.6755939519819,
+   "filled": 16.6755939519819,
+   "fill_price": 1.0363760112836746,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x88b20272c9f0dfed14543c3ccde99f2228eb6ee996d61154d0d86683b7195766",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 20
+  "positions_opened": 21
  },
  "retained_legs": []
 }

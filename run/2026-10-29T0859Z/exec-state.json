@@ -747,7 +747,7 @@
    "effects_diffs": []
   },
   "set-sell:Commit-Boost/commit-boost-client": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:15:33.311Z",
    "txs": [
     {
@@ -779,6 +779,32 @@
      "nonce": 3576,
      "hash": "0x70b2cf231e20decf763a3710de24ff68633bdf3c5860feae95e8e1774ecba7de",
      "block": 158833294
+    },
+    {
+     "idx": 97,
+     "nonce": 3577,
+     "hash": "0x88b20272c9f0dfed14543c3ccde99f2228eb6ee996d61154d0d86683b7195766",
+     "block": 158833298
+    }
+   ],
+   "ended_at": "2026-10-29T09:16:14.587Z",
+   "effects_diffs": []
+  },
+  "complex-buy:Commit-Boost/commit-boost-client:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:16:15.333Z",
+   "txs": [
+    {
+     "idx": 98,
+     "nonce": 3578,
+     "hash": "0xab5e44762ed4c03cc5ae4833b17590d62f44798db96eb0d01e9b3ef7a42a00c4",
+     "block": 158833301
+    },
+    {
+     "idx": 99,
+     "nonce": 3579,
+     "hash": "0x294fc42d9a8375b4d63745021e5ee12ec96ab28659e31f24eaf7cabef0af91d0",
+     "block": 158833304
     }
    ]
   }
