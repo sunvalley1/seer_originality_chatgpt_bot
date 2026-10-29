@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:45:02.464Z",
+ "generated_at": "2026-10-29T09:45:32.767Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -1014,6 +1014,71 @@
    "tx_hash": null,
    "status": "partial",
    "error": "half-done group (one transaction per signer call): 3 of 6 transactions landed; stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  {
+   "slippage_vs_quote": 0,
+   "status": "filled",
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "tx_hash": "0x87ccd3fac2e30bd073d951f3842c7029f583254197c557cf4044a504237f115f",
+   "side": "set",
+   "route": "buy-and-merge",
+   "requested": 33.1639691692229,
+   "filled": 33.1639691692229,
+   "fill_price": 0,
+   "error": "recovery of group set-sell:ethpandaops/ethereum-package (exec of run 2026-10-29T0859Z, the run that stopped): the merge-back of the split (exact); the failed transaction: sell q UP -> repo (floor) (plan nonce 3834), stale-floor"
+  },
+  {
+   "market": "ethpandaops/ethereum-package",
+   "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+   "side": "DOWN",
+   "route": "complex-buy",
+   "requested": 7.67559298261755,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  {
+   "market": "ethpandaops/checkpointz",
+   "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 49.1715120263896,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  {
+   "market": "lambdaclass/lambda_ethereum_consensus",
+   "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 16.2730147853545,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  {
+   "market": "erigontech/silkworm",
+   "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 51.8535380235052,
+   "filled": 0,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "skipped",
+   "error": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
   }
  ],
  "totals": {
@@ -1021,5 +1086,726 @@
   "spent_unit": "sUSDS",
   "positions_opened": 72
  },
- "retained_legs": []
+ "retained_legs": [
+  {
+   "token": "0xe0d849F471037A9bE5dB2bDf21f9abaaBaD9F25c",
+   "amount": 140.324473992044,
+   "why": "parent Invalid; bounds the parent merge; sources: PARENT-MINT mint split-parent"
+  },
+  {
+   "token": "0x22DE5F831d7d61698dd56D7fD5B3d4a4B8710b83",
+   "amount": 200.5044672229944,
+   "why": "middle-A Invalid; bounds the middle-A merge; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x27CA6b333E5E0f7BA5635B72F8E03c40a84A68A3",
+   "amount": 258.38920329416635,
+   "why": "middle-B Invalid; bounds the middle-B merge; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xf91A162f24d2DeF43AD939e52fcF5CF9Fb8aaf6c",
+   "amount": 140.324473992044,
+   "why": "middle-C Invalid; bounds the middle-C merge; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xc9335b722174a667c6c7d69ee85412dc41332b4c",
+   "amount": 179.4122970348504,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xdc5d24ef28bcd21b75ec891efd56696e0ce7f6c8",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x9657c41ff217dff4d12440c8f90fb35727b8cc58",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xae62d632ca2cf25c84cbf343c833f11aee44ff79",
+   "amount": 178.02405713134917,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x9f2ab3d59aa30e63b8698538b5c0990d32d5f93d",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x3da35d4535502f5e9f0d42ef81b8dd1b2f73ac64",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x959b8e01b52b0c0db1f6bb09472fbd01cb7eb898",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xcdd7945aa385dbdcbfa7341c7f51533581aacf1e",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xd989451a073eb66d3f67006d3180c2f6d7c3de26",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xb383ca42f8dfd4877bcc59cc5504421d14bf436f",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x8c4bc88cce543c173faac9aaf9137fe89f022568",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xe7e63c87ded7510de737693575573a9ad00e96b6",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x29d9ef12cd83fc988a22cb3c2985eb535e8ceb36",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x131e612c62d1e9a81cb363dfab986e28833dda97",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x556eb58d13e2628507d13a3d54d45d7ba503023f",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x571d94278a274abbb904011d31a3e34a42114a20",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x736f833ca8d46912d00696c107be1e31ada850e1",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xa9e1b0be4b73e99cac245eb0416667177f0f4031",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xd81974ede39ce3d512a58f67af191c9e36cfae13",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x4f68190347793cc9e1f21bb0cebb0f9f8c1269d9",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x6f7b1d0411f5e3d1908fa09b1cec4e9968b03095",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x88c5f00c75d20d89b9deaee70aa5951c2b3a8e46",
+   "amount": 201.05820835074454,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent, Certora/CertoraProver set set-sell"
+  },
+  {
+   "token": "0x8671f584409b8672aff2c7eda4104fcd6e5b2649",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xafd9706a0ef6e4238b5dc01c9e76b5bc45bd8fdd",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x35fddb246dd89f01c2f769b3b73dd4fc3765360c",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x0822bc2d29ca68c316bdf8d91c622e5a42af215a",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x5ed357484aff3957614381a8c506755b2f4a76c5",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xc52ac4cd416bc1777d6fb1ce0478fc8f571f8f9c",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x6e360b9643d3483737be154a0816a9b7e6cdd351",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x0fb41f0653c7c682748ba4adff1a5ffe0e1c6692",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x8223d38cd03a88a08f2d03d635e39ee971f665bc",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xf77035e68764552c03f9c9753b72ac7b930e3ea7",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0xa26d64530e6666df346812fdd19c487f0e3bc7c5",
+   "amount": 200.5044672229944,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xc217920a91f1b3d56276393aa5345f01a848ecf0 mint split-parent"
+  },
+  {
+   "token": "0x65b1380266291da3e6101c5a7f066fcbe1e74370",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x38180d18d25429832e6a83675d9a7cb256980795",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x20b0c27ab29cef1493f035c3edf107f1b34ac1de",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x63716ceabd3a1ced5a01edf18ea66cc46f7cfb84",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x16e52dd5c973293da885a995d59f2ffee932b52a",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x17e635fa17505fe52dee1e51223661d5b665fad6",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x31f154fcb1ddcbb00b90721c94052dc7907fe7bb",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, Commit-Boost/commit-boost-client set set-sell"
+  },
+  {
+   "token": "0x3ce18c72148fda70bb17443e6feab258483fc593",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x39dbc18c06ab8ee04828d37cf5e464edbc53e9aa",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x0e36e7eef8d0646c1590598e6b6f38167a9e3109",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x3f5b2e23bc1301b968bb50773d3639c3b20e100b",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x0819d02842ba743e55cdb3963a52c16a772ede9b",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x6c234f12e3455a9848c48f4f9a4dbedae715ea48",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, succinctlabs/rsp set set-sell"
+  },
+  {
+   "token": "0xd7232c484d5471dc25446eabf0b7dd5c6de3c6c1",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xfb858c0532aee44defc243cc2ce627531603a444",
+   "amount": 256.1804539449557,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, OffchainLabs/stylus-sdk-rs set buy-and-merge"
+  },
+  {
+   "token": "0x9ce41ddbae0a0a87b6806c88d99c37ea87b969dc",
+   "amount": 246.49520773591362,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, ethstaker/ethstaker-deposit-cli set set-sell"
+  },
+  {
+   "token": "0x368e7ea451a5aa750b0bbcacc0016942c56f93ad",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x4c50544e596f1c222aa7f7589ea3658f92dc726d",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, risc0/risc0-ethereum set set-sell"
+  },
+  {
+   "token": "0x325532a7abad17fcdcdb5e3b810175ff8a48c675",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xccf8ad49acd7a708ce362ac04777389de96fe986",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x90d3dcc0f981ec79f647b50d7bfe09af01eb855c",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xd73749038f49d285077cc5a98115c8bd804c22e8",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x9664e2fc602c98cb93b1c459fc9b72c68eba9a84",
+   "amount": 246.64844155183343,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent, alloy-rs/alloy set set-sell"
+  },
+  {
+   "token": "0x83145e3924d19c0a9a3a587887fb8599a5610c21",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x91b585db7686823cf03e85c1d789793fd3888b0f",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x424fe875e8617a4c0f0357afcefb017faf197de6",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x81f1d2106983e161fc8c987026933061ebd78a25",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xd8110b587211d99d0af10a28e94379293ae64e6c",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x44d5c6d8b7cb997d420799e8a89ecb2f540abf08",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x511cbb66babbe2235d1fdb13f13b0a923d240a93",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x5de6940bae90620ceeb70932ce5224bca8ab89c5",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xcdc838866c609feb9afae8e1ad7037507a01f3a9",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0xa77b1b1a34e549b95436249da457ac152cb2da22",
+   "amount": 258.38920329416635,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec mint split-parent"
+  },
+  {
+   "token": "0x41a0a1f31daffb38780994c92c80e9af2a527336",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x44a4e9f87045c87b78e4c143db9adfff940780bb",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x3ea620d590b5636666262a38d19fefe32bb6ee7e",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x87ef78931586966064ce42f0137e65f9e5e95ef9",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x2070db21df0906e65657ce9059bdc16b8b117c62",
+   "amount": 140.76708349093434,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent, argotorg/sourcify set set-sell"
+  },
+  {
+   "token": "0xd6581faa139e8b120aa19f4cf867057ce9831439",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x139a9bfca52ccfc41e9815bed51db5b9059e1f65",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x6f9b72ec82fc63de2d7f7cba433994c8f6a96a90",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xce2008a64723f38aef1569d704f428471ed481ff",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x80cb93cc7e7eb1e2dc42d298a9124f0bb73dab05",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x60828e159bd00aa44005b77e70cb6b670d4078cc",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x588237ecd315c83889de66618dd53d0a44c376d0",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x73a69a78d90b6e498b751913f455bd60233f741a",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x389d0b026e15fdcd5d8e263d2a7ddc33e32bc722",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x88d3d4265bf6535067cd05d77c026866a6598a21",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x8fbd8162ba195cdc9e56186f1b7685522cba8da4",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x211584a361b9a920945c02a52e3eb62981d57859",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x89c7abce9ae68f5584c4bb86b84cda15d01f9935",
+   "amount": 61.062253027430856,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent, safe-global/safe-smart-account set set-sell"
+  },
+  {
+   "token": "0x14f3d97396ca0c8caa8447d944c60e635eaa3e6b",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xba1df6263fbfd5babbf08ce673ef0437db26fb34",
+   "amount": 140.87815251474746,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent, sigp/lighthouse set set-sell"
+  },
+  {
+   "token": "0x92858d91e4c89d3e5f3d93b1898b60e2e5f3aba8",
+   "amount": 140.68240665595505,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent, status-im/nimbus-eth2 set set-sell"
+  },
+  {
+   "token": "0x3edfa369dfaf28b23eb18b1b5368a838e020bb45",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x4db187e536951f37e7b7ed346c879cf31e85229d",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xd59ac75ecae4737a7b84996a4a74a6c088a361fe",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xecb37fc746f8ed208403c033424ea21122da9cb2",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x1bb4d5e1038ca721fa88ebd4191f7b458d43e7fd",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x925957c3a67984c132a3fcb40e31fabb816aac77",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xbf9956578716fd906fdeba46664830a264aa8a13",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent, ethpandaops/ethereum-package set set-sell, ethpandaops/ethereum-package set buy-and-merge"
+  },
+  {
+   "token": "0xa27009015686115acb57e2c81ed859cf9a5718cf",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x99d2eed578f3ccc54a02b27d1b8261bda877efc6",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xae366d275fc93660068533ab9743853628d3bb5f",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0x3dd51352377760f44d8b0d1e8af501c315dd4ed4",
+   "amount": 140.324473992044,
+   "why": "unspent repo token (m_X less this run's net spend beyond what it held, plus set-sell proceeds and merge-arb returns); no sUSDS pool; middle merge or resolution; sources: 0x99a941135226813037e15e34956fdd79761307d3 mint split-parent"
+  },
+  {
+   "token": "0xbda0cdc6e46cbc9b44baf8f26db6c71f16411dbc",
+   "amount": 21.092170188144,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum/py_ecc UP complex-buy"
+  },
+  {
+   "token": "0x455ccb757bf3dc77b88d6d826c521a3d7cb0c6af",
+   "amount": 20.4453505273064,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Consensys/gnark-crypto UP complex-buy"
+  },
+  {
+   "token": "0x6d2a2584369361827fb41f26186e9f85e92e481e",
+   "amount": 11.8926651669903,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: taikoxyz/taiko-mono UP complex-buy"
+  },
+  {
+   "token": "0x9551c6ea0bbc16d1468c8ab313b5136c855cf3fb",
+   "amount": 11.8447429030788,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum/js-ethereum-cryptography DOWN complex-buy"
+  },
+  {
+   "token": "0x24e430172b3260b485439a48669bb00fee82bcd9",
+   "amount": 19.6242302828567,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Certora/CertoraProver set set-sell"
+  },
+  {
+   "token": "0x66d5f2c69d099ac0d78e94be8e2e0df0edab32b3",
+   "amount": 19.705493422179,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ChainSafe/bls DOWN complex-buy"
+  },
+  {
+   "token": "0x862cfd3f2a6b41e5325f1fb29cf80fadde8956e5",
+   "amount": 9.81717031991269,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: wealdtech/ethdo UP complex-buy"
+  },
+  {
+   "token": "0x0899c2493cea1cc3e11a35703dd6ad13f9374a5f",
+   "amount": 19.0889676957962,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: lambdaclass/lambdaworks UP complex-buy"
+  },
+  {
+   "token": "0x520b48bd947ae495bccd35bcef1d938931675e39",
+   "amount": 51.3596976231711,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: shazow/whatsabi UP complex-buy"
+  },
+  {
+   "token": "0x495e106988465e15f882310ad4a404159392e376",
+   "amount": 21.3738304450852,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: succinctlabs/op-succinct UP complex-buy"
+  },
+  {
+   "token": "0x80a015424a2cc38c103250feb2f59d42b2f6f6a5",
+   "amount": 20.0550183441626,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: lambdaclass/ethrex UP complex-buy"
+  },
+  {
+   "token": "0xd6387c64916598f6e377ca375cc7f2543081b72c",
+   "amount": 67.5456223977576,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Commit-Boost/commit-boost-client set set-sell, Commit-Boost/commit-boost-client UP complex-buy"
+  },
+  {
+   "token": "0x576d02c8763d8f6e2f9288a168809110bb3b6525",
+   "amount": 30.5838385894956,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: Cyfrin/aderyn UP complex-buy"
+  },
+  {
+   "token": "0xfc6b34b0d43cb81a889fdf0ac3476b561a26dc74",
+   "amount": 46.6969099371488,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: holiman/goevmlab UP complex-buy"
+  },
+  {
+   "token": "0xa4b70dc48b0dc0837ef4da934945422e89fd58b0",
+   "amount": 44.1618101295087,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: edb-rs/edb UP complex-buy"
+  },
+  {
+   "token": "0x7f17afbe43300ca6916291f994b820388371d414",
+   "amount": 42.9078821358932,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: succinctlabs/rsp set set-sell, succinctlabs/rsp DOWN complex-buy"
+  },
+  {
+   "token": "0x99712e89d4618fffe3dced38e08ed46b0af24f93",
+   "amount": 39.0293956063903,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethstaker/ethstaker-deposit-cli set set-sell, ethstaker/ethstaker-deposit-cli DOWN complex-buy"
+  },
+  {
+   "token": "0xd6028b62d30554a3c3fdead42f787423f9a66cad",
+   "amount": 14.1338155127716,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: dl-solarity/solidity-lib UP complex-buy"
+  },
+  {
+   "token": "0xf4f0b0bd3cd2c2c5c2720aa17a5b671b9a02b0de",
+   "amount": 37.69190436046308,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: risc0/risc0-ethereum set set-sell, risc0/risc0-ethereum DOWN complex-buy"
+  },
+  {
+   "token": "0xe8590cbaa06a700fff4b2589a1d62964a25e592e",
+   "amount": 54.3616415714511,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: powdr-labs/powdr UP complex-buy"
+  },
+  {
+   "token": "0xebbe5bc4dce9910bf9a483bed4436d53ed5f4a32",
+   "amount": 3.27703153094835,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: axiom-crypto/snark-verifier DOWN complex-buy"
+  },
+  {
+   "token": "0x612c30287b21f9e69f8a296d2963500472f69f0f",
+   "amount": 4.88879037646719,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: swiss-knife-xyz/swiss-knife DOWN complex-buy"
+  },
+  {
+   "token": "0xa00dc8cc750e6cbe968aa3427bdee3b412cf5f35",
+   "amount": 14.3750245281005,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: a16z/helios UP complex-buy"
+  },
+  {
+   "token": "0xee131cc608a9e48fbc1c150e9a0025f9fe2ad56b",
+   "amount": 56.9979896781945,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: alloy-rs/alloy set set-sell, alloy-rs/alloy UP complex-buy"
+  },
+  {
+   "token": "0x772f8d74c8c3222dea409ab1c74f597de7f6cce6",
+   "amount": 16.8389553222183,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: apeworx/ape UP complex-buy"
+  },
+  {
+   "token": "0x4b4acccfb30a800b4aaf662136220b31b32e6b77",
+   "amount": 15.2276741628141,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: consensys/teku UP complex-buy"
+  },
+  {
+   "token": "0x4b9d681bd076baac23673e0683b858ed64edda52",
+   "amount": 16.2055445307528,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: erigontech/erigon UP complex-buy"
+  },
+  {
+   "token": "0x4bc9362dc700376354f6775507936f9ae57ab90e",
+   "amount": 12.7800025843296,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: eth-infinitism/account-abstraction UP complex-buy"
+  },
+  {
+   "token": "0x328456fd5c2957fb0af2e66180c226dfad891b04",
+   "amount": 21.3299553412624,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum-lists/chains UP complex-buy"
+  },
+  {
+   "token": "0x4e14208fd770ba11250f584c18900311db47fa8f",
+   "amount": 13.4147683462712,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum/consensus-specs UP complex-buy"
+  },
+  {
+   "token": "0x018c7202a415442e404177499fcd8da8c54f552a",
+   "amount": 44.2053696742243,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ipsilon/evmone UP complex-buy"
+  },
+  {
+   "token": "0xf6a07a4c8547fb01475a1afe6af49af71f289b9e",
+   "amount": 24.4619160522295,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: ethereum/execution-apis UP complex-buy"
+  },
+  {
+   "token": "0xcfa10d47147195deb1741b60d073a6f949f41be6",
+   "amount": 18.08645020454,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: argotorg/sourcify set set-sell"
+  },
+  {
+   "token": "0xaad5b3a9b035bd862763f2dcb2d64c76443c5398",
+   "amount": 12.9999098288117,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: foundry-rs/foundry UP complex-buy"
+  },
+  {
+   "token": "0x937f4d7127c6db5c50730fa42eba07f91390f4c7",
+   "amount": 11.6170891465132,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: nethereum/nethereum UP complex-buy"
+  },
+  {
+   "token": "0xbd7fd8cbfd5e2890a19b55e10b59f79b066bed2c",
+   "amount": 20.35523164661,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: nomicfoundation/hardhat UP complex-buy"
+  },
+  {
+   "token": "0xd48f3bd4d93d96bed7dc1fc59b682bb1e2d68d9b",
+   "amount": 17.057018381577,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: openzeppelin/openzeppelin-contracts UP complex-buy"
+  },
+  {
+   "token": "0x4a2ec6194bf76e497b082d2605178b6cd2608ef4",
+   "amount": 20.3021000880042,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: OffchainLabs/prysm UP complex-buy"
+  },
+  {
+   "token": "0x93df73cd273b45cfa938a91c46310f829181f0ba",
+   "amount": 140.3244739920433,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: safe-global/safe-smart-account set set-sell, safe-global/safe-smart-account UP complex-buy"
+  },
+  {
+   "token": "0x2a69a6fea227bc38f24193956e78f353463504a2",
+   "amount": 18.7626853385075,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: sigp/lighthouse set set-sell"
+  },
+  {
+   "token": "0x29086527504779e976468c838dd0b059639ed6eb",
+   "amount": 14.5308466146583,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: status-im/nimbus-eth2 set set-sell"
+  },
+  {
+   "token": "0x24072115a9d321928119b3e993b8e6b2512f2c2f",
+   "amount": 45.058448010624,
+   "why": "child Invalid minted by a complex-buy or set-sell split; no pool; sources: argotorg/hevm UP complex-buy"
+  }
+ ]
 }

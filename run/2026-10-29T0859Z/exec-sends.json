@@ -6424,5 +6424,23 @@
   "cost_wei": "49636792881",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:45:30.840Z",
+  "source": "recovery",
+  "group": "set-sell:ethpandaops/ethereum-package",
+  "idx": null,
+  "label": "Router.mergePositions(sUSDS, child, S) (merge-back)",
+  "nonce": 3837,
+  "tx_hash": "0x87ccd3fac2e30bd073d951f3842c7029f583254197c557cf4044a504237f115f",
+  "block": 158834176,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "757395",
+  "gas_used": "504930",
+  "effective_gas_price": "1000295",
+  "l1_fee": "678122712",
+  "cost_wei": "505757077062",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]

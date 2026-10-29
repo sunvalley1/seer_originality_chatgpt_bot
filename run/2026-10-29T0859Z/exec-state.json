@@ -2740,6 +2740,22 @@
     }
    ],
    "reason": "stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  "complex-buy:ethpandaops/ethereum-package:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  "complex-buy:ethpandaops/checkpointz:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  "complex-buy:lambdaclass/lambda_ethereum_consensus:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+  },
+  "simple-buy:erigontech/silkworm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group set-sell:ethpandaops/ethereum-package: stale-floor: set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
   }
  },
  "stop": {

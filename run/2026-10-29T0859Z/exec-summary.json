@@ -1,0 +1,61 @@
+{
+ "outcome": "stopped",
+ "stop": {
+  "kind": "stale-floor",
+  "notes": "set-sell:ethpandaops/ethereum-package idx 354: fresh quote 23114658567554759520 < amountOutMinimum 23595389853951923827"
+ },
+ "mode": "wrapper",
+ "groups_total": 81,
+ "groups_done": 76,
+ "transactions_total": 377,
+ "transactions_sent": 354,
+ "sent_this_invocation": 358,
+ "first_tx": "0x26e9550c5417712a886bf2f24bc5527d2f9827a256e9f76b12eacdd6d6866e1d",
+ "last_tx": "0x5e9102ae8078c6a52f580b8b375007254520c389cd892dc1e0ed426202c8ca43",
+ "gas_cost_eth_receipts": "0.000063941264720285",
+ "nonce_pinning": false,
+ "signer_env_dropped": [],
+ "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+ "tx_hash_file": "run/2026-10-29T0859Z/exec-sends.json",
+ "retained_legs": 144,
+ "consumed_rows": 58,
+ "unattributed_consumption": [
+  {
+   "token": "0x8d883809de718baf9fcad72133007b6115f77f6d",
+   "amount": "60.179993230950414475"
+  },
+  {
+   "token": "0x9f26c46b5d70e5d9ce2b499f7f3d520f34add353",
+   "amount": "118.064729302122323006"
+  },
+  {
+   "token": "0xe0b0043aa7ed8be18ae9881ffe94d94dbc6ebeb5",
+   "amount": "20.29442643395440475",
+   "what": "child Invalid a merge-arb consumed that no earlier run of this arm retained"
+  }
+ ],
+ "half_done": null,
+ "recovery": {
+  "group": "set-sell:ethpandaops/ethereum-package",
+  "outcome": "unwound",
+  "decision": "merge-back",
+  "why": "completing it does not simulate clean (all_success false (failed_count 2, first failed index 0: [{\"index\":0,\"group\":0,\"to\":\"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45\",\"status\":\"0x0\",\"error\":\"execution reverted: Too little received\",\"revert_reason\":\"Too little received\"},{\"index\":2,\"group\":0,\"to\":\"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc...); unwound (merge-back)",
+  "txs": [
+   "0x77ef464b878f0aee99d5280f2364462eb683c024fa11936faac7e26bdb8c7209",
+   "0xa20fdb966339c435999a416ec359ba78d08ff9b2982bcdb206b8f5f6bdafc144",
+   "0x4ee3d69b67d5b3ccb163e892190fb0ef38ed40dae9712d849997a937bb82291b",
+   "0x87ccd3fac2e30bd073d951f3842c7029f583254197c557cf4044a504237f115f"
+  ],
+  "rows": 1,
+  "keep_aborted": false,
+  "pending_nonce": null
+ },
+ "skipped_groups": [
+  "complex-buy:ethpandaops/ethereum-package:DOWN",
+  "complex-buy:ethpandaops/checkpointz:UP",
+  "complex-buy:lambdaclass/lambda_ethereum_consensus:UP",
+  "simple-buy:erigontech/silkworm:UP"
+ ],
+ "skipped_count": 4,
+ "eth_after": "0.005304621612836868"
+}

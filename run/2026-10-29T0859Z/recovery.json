@@ -1,10 +1,10 @@
 {
  "groups": {
   "set-sell:ethpandaops/ethereum-package": {
-   "outcome": "sending",
+   "outcome": "unwound",
    "effects": {
     "completed_idx": [],
-    "merged_back": "0",
+    "merged_back": "33163969169222900000",
     "sold": {},
     "approved_P": null
    },
@@ -17,8 +17,8 @@
      "of": 6,
      "failed": "sell q UP -> repo (floor) (plan nonce 3834), stale-floor",
      "decision": "merge-back",
-     "outcome": "sending",
-     "why": null,
+     "outcome": "unwound",
+     "why": "completing it does not simulate clean (all_success false (failed_count 2, first failed index 0: [{\"index\":0,\"group\":0,\"to\":\"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45\",\"status\":\"0x0\",\"error\":\"execution reverted: Too little received\",\"revert_reason\":\"Too little received\"},{\"index\":2,\"group\":0,\"to\":\"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc...); unwound (merge-back)",
      "txs": [
       {
        "label": "approve DOWN -> Router (S, merge-back)",
@@ -61,10 +61,11 @@
        "nonce": 3837,
        "calldata_hash": "0xfd991242f15222a742e05607e3d3a82298b358572c355ddffa58b1328ad90c93",
        "signer_input_file": "run/2026-10-29T0859Z/recovery-tx/set-sell_ethpandaops_ethereum-package-a1-n3837.json",
-       "tx_hash": null
+       "tx_hash": "0x87ccd3fac2e30bd073d951f3842c7029f583254197c557cf4044a504237f115f",
+       "row": true
       }
      ],
-     "rows": 0
+     "rows": 1
     }
    ]
   }
