@@ -1,0 +1,26 @@
+{
+ "subcommand": "report",
+ "run_id": "2026-10-29T0859Z",
+ "started_at": "2026-10-29T09:56:21.983Z",
+ "finished_at": "2026-10-29T09:56:21.992Z",
+ "summary": {
+  "subcommand": "report",
+  "run_id": "2026-10-29T0859Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "report": "run/2026-10-29T0859Z/report.md",
+  "lines": 521,
+  "wake_status": {
+   "path": "run/2026-10-29T0859Z/wake-status.json",
+   "status": "traded"
+  }
+ },
+ "detail": {},
+ "log": [],
+ "tool_calls": {
+  "helperCalls": 0,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}

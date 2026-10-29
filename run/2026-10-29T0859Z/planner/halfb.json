@@ -1,0 +1,1161 @@
+{
+ "subcommand": "halfb",
+ "run_id": "2026-10-29T0859Z",
+ "started_at": "2026-10-29T09:45:33.257Z",
+ "finished_at": "2026-10-29T09:56:16.263Z",
+ "summary": {
+  "subcommand": "halfb",
+  "run_id": "2026-10-29T0859Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "mode": "wrapper",
+  "run_ids_holding_fills": 2,
+  "processed": [
+   "2026-10-28T1629Z",
+   "2026-10-29T0859Z"
+  ],
+  "skipped_live": [],
+  "not_final": [],
+  "record_run": "2026-10-29T0859Z",
+  "held_children": 92,
+  "settled_children": [],
+  "middles_resolved": [],
+  "parent_resolved": false,
+  "answer_watch": {
+   "compared_with": "2026-10-28T1629Z",
+   "new_answers": [],
+   "questions": 98,
+   "read_at_block": 158834179,
+   "timestamp": 1793267135
+  },
+  "decided_but_unreported": [],
+  "resize_schedule": null,
+  "merge_bounds_at_read": {
+   "z_A": {
+    "z": "178.024057131349176037",
+    "scarcest": "herumi/mcl",
+    "zero_balances": 0
+   },
+   "z_B": {
+    "z": "246.495207735913636559",
+    "scarcest": "ethstaker/ethstaker-deposit-cli",
+    "zero_balances": 0
+   },
+   "z_C": {
+    "z": "61.062253027430857835",
+    "scarcest": "safe-global/safe-smart-account",
+    "zero_balances": 0
+   },
+   "y": {
+    "y": "0",
+    "scarcest": "bundle A"
+   }
+  },
+  "actionable": [
+   {
+    "level": 2,
+    "groups": [
+     {
+      "id": "middle-merge:A",
+      "kind": "middle-merge",
+      "book": "2026-10-29T0859Z",
+      "txs": 35,
+      "amount": "178024057131349176037"
+     },
+     {
+      "id": "middle-merge:B",
+      "kind": "middle-merge",
+      "book": "2026-10-29T0859Z",
+      "txs": 35,
+      "amount": "246495207735913636559"
+     },
+     {
+      "id": "middle-merge:C",
+      "kind": "middle-merge",
+      "book": "2026-10-29T0859Z",
+      "txs": 34,
+      "amount": "61062253027430857835"
+     }
+    ],
+    "simulation_clean": true,
+    "problems": []
+   },
+   {
+    "level": 3,
+    "groups": [
+     {
+      "id": "parent-merge",
+      "kind": "parent-merge",
+      "book": "2026-10-29T0859Z",
+      "txs": 5,
+      "amount": "61062253027430857835"
+     }
+    ],
+    "simulation_clean": true,
+    "problems": []
+   }
+  ],
+  "sent": [
+   {
+    "id": "middle-merge:A",
+    "book": "2026-10-29T0859Z",
+    "txs": [
+     "0x1bf12d9d0c618c7c799ee5cdb93fd13991d52cd1e92670bc7cd309e3297a4870",
+     "0x9da2d80d2d1f408c7d70e76616acca184b76709c36a0f7ecda6f0e25ad304e2a",
+     "0x233ddc33a46737f7462792bbaeb57e3af41e37194cdc69c7b09eea4936f629c4",
+     "0x94b89b0ffdb6e508b14ea25459fe958cbc2139c7213f8a9e862d902bc84b2a26",
+     "0x6f9aa586f74f275f7e1faf990ada1ebb5673c1925087e9ef794876164c696529",
+     "0x76f53b7ec87cc1d4b52e3cef98d309607fd874e235a0b3d9d3fbff2c31733c5d",
+     "0xc8496937c0b6a15440fee8df5df17641a45afa127687025bd4bb5316a07c98b7",
+     "0x8979d4064f47d922db3e51f2c14ac5e8b56e883fa489b8fee5a38c6cc245bc0d",
+     "0xd0ad0b9c98e350acde3ec2904c20834b4913be38ef15c40167e8db5bf2f8ea70",
+     "0x3d58c882037862ccb3cac49e651f90caa1c4a5a17686bfdb634dbcc24e38bc23",
+     "0x9f6a9f655c0392c5ed399ed02849f8e23a3fd8ee5ef20613cda374fc750ff127",
+     "0x912ed80fd228333f9829f3413c55db21b95b16787c1189f8e913333d24399e38",
+     "0x9656c79bd2d8b0b1a60b93c7e1af1c838411ed36def24740b0f0c9e6df884391",
+     "0xb079dd7a3f956a5e5b48174dab1bab2c91a355bb36d2494e94eedd9fe96d07da",
+     "0xc3a49e2f082b587ecfa17c8ef4a3b126f2b99f431d38bd56d8adab13ae3b4e8d",
+     "0x7aba93fecb16e287ea3e99859e317efdcf9537d053faa1057aa12d6b345305eb",
+     "0xb8aeac455768725cc3d1099586a9413705b8edba95e06327a05461b0346f2470",
+     "0x913d86ec9a53a0a598cb30ac84ac8896bd72f20f46834073d1a4195c6fc832c8",
+     "0xc86c47253a3cdcdcb70c29526ff95a9a6a28ecd82c73a6f1720b3e10514e9f11",
+     "0xcad40ea39be156a7557d3188e368c950eae34df70fb9a3eb99b6af71800ac733",
+     "0x52299b327890bea995a980971bb7eaf9e31ab85632b48b2ca62e8146b4fa6e79",
+     "0x60910a6b8add081b0e1138b8dfd3550178adfba1eddf6cad42e574f6a18e6089",
+     "0xe11f1c43d61d3e66e0485489f97eb4586bb2d50fcaa5308e4a2baa84e05c27e2",
+     "0x5fe2da92850a4e877dc974fcff6fa6cb84e40907f75350a2c54849890de94489",
+     "0xfc8dff4e217b3e9cd232fd7d0152bc15f79106f66dac88c1da96a06467c71a9e",
+     "0x283153f594dec9214b275867f3b174c46b86817c29926acb69c18a6198ae59b2",
+     "0xbb754efbf0a271e120c32b923bc0a52c48e3fc1493ea04012abff3fefa045eaf",
+     "0x73c29b5be2e6f1890d3a9e9ca4f0a5c9feb8d8ecafea7017f34893f478ae3720",
+     "0x022090e2798b758f6ac718dbb7599d2146f6e2281400d9007414f692b905ef03",
+     "0xd365d54e02d90e17db98387083a05b037b9f34fafc70fd38cafc26c7c05ec417",
+     "0x4c9538dd5463497dfb99d992c51bfe7d01e08c4314572ac530409d1d7d47e741",
+     "0x464f4ae94593205ea0ebef56b0288df3c8a555cfcddd245790ef3ab4e5db1ee5",
+     "0x7aefbd532bc8947c163dbd3087c7d7f981a4040d4d1d476bd1eeb8804fdcc6df",
+     "0x11a9ba18772d54458f4fd05e53e950ce758ee068229ef1deca8a1c7ee40dcac7",
+     "0x540c99fa784adc55ab9e20e9041276620178d523309e0c55c22ab17669b9c5ab"
+    ]
+   },
+   {
+    "id": "middle-merge:B",
+    "book": "2026-10-29T0859Z",
+    "txs": [
+     "0xea312a1fe8a40d55bb502d28218ee91550f6792087a5aac8c4723a76164c38fd",
+     "0xeec77631106048a1096fde245e6b3abb969c94a6522ed5ac6787b77d2803a3d3",
+     "0xf405f84c88a07683338587b2ae4b272a68c11ad4d2c908b6285fa14180dd66cd",
+     "0x4478f0f8f0a7cc6ed2e6ca5c3f84fa39eaf7e82a412644a3e375892db278d8ba",
+     "0x8a659f6e16c6522ceab767fb83db42c8d3fbe16e4c241e66e038de18b62d9330",
+     "0x043ab4d4d3347f0105e0bc28f6528b6b8d1bce1656acbe1881af689d175a61e2",
+     "0x75f946956bcff92a3d3fe1a8ea29e247e1eaa9908a58b5cf30cbe44c52471bc2",
+     "0x90fc319963ed58ecf05aee3fce87784e89ec230972796dd1e4c316593c655073",
+     "0xb6e7dd0a0c45271048c8adc407d4e1032054954b0b07332f65cfe282696eadd3",
+     "0xdfab1c5dd4c4db85ab451803c0a46bb7c0a23f8663fd30742af410a1595a50de",
+     "0xb97e26678acdde886a3a1eb1caf801f53be7eae930574d3a47ed81bee4c11413",
+     "0x3234cf3fe260752fb0b479eb76f5c289bb340f80f29bbc4390bc6d5a1ffdd52f",
+     "0xf07b4d0287c3f2f5feb6e0b812c95da46f3c9f4975d2ed6af43f785aafb8b963",
+     "0x575fcecfc81e8604aa8b3febe2f86d74fb6339334cfa96db2280f158a4aec7a9",
+     "0xb701a5ad84bab5d0ce7c1aa8cec992d1c89446d50fe28ebce17b13decbd27e0c",
+     "0x21d8bba045df0d2307effe7232eecf0cef4afca0ccea9ac448d643c0a651f8b5",
+     "0x2bd2a1172fabba7f2c2373498d183be3e76b8de1ef22edcffc508ed2a6cc2f1c",
+     "0xd58cf2197e503c10a543576f5797674c514e77954143476a3f17cfb3cf0df8dd",
+     "0xb617797f6b36c337f96a317d35174065cc9e605af446870042763c6457bf4749",
+     "0x750e2f6a96b23a8f02879c48fd95b2136f755e2efee6e246f680c30032439732",
+     "0x5159817dd2ba3695e78e5bd6b7fed29a622ea5d196bb5c0fd1825596aac1fc0b",
+     "0x2ed1b7a85bac7764a9e386212b949e2336f02324f3857237f27404414d959ea0",
+     "0x7ee02df965983b5629e29e858ef874a630232874515c8e6f93db318b65f8b79d",
+     "0x8a7ae7a690d2b23420efcd44d13d94001f8839fc9ef8f791b57532a1cd342a1c",
+     "0xfc76bc522d6bd4c7db4881f6cd86f12645a0e94e8cf89c4bf4760b96e4973d2f",
+     "0x1225e2e12d879290d9f3271c8c976ee068595a33e9fc58856d21725ae87b1cfa",
+     "0x7a9331ddb10072e913b8d96efea76c0bf98ab0951fa47b4b51c18a94b05f4818",
+     "0x146fdabfeff15fe02f349da5be4a32d3e5335454f394a97be52a33cd4f53df19",
+     "0xdd383840a2bb896c1324bd0eff3f770036faf6a53ea56172bb3ad8132407950a",
+     "0x92441c8c1ace1f5eced53abd409a2eb8de617a5e37930bf3fdeebcde15ca7030",
+     "0xe591a364e0a85db688ea52ba3e82729c607ecfee95012918531fad9eed8d4290",
+     "0x273a39562bf17bfedaf9bcb14b3f4c8259b6e8912ac548bad146b8e3ed658aef",
+     "0x580e8b97becabdd78d54692cfc612c4966324c0de6c2d0d426c4da77f2568d5f",
+     "0x092bc8cf5dca65414797114d2c1bf183134b1fbdcbca75bb575b899c9c8c12ff",
+     "0x8c080ccc2df0e59163c1d352821b0351c06a4b6db3fcd2d5038a9b6c2c28069c"
+    ]
+   },
+   {
+    "id": "middle-merge:C",
+    "book": "2026-10-29T0859Z",
+    "txs": [
+     "0x3fbe6c96e79a670e1ca17a77d8689e229c4949b171ba0319add505275d64736b",
+     "0xad9b9b26a498baf63694497e450918e62e11983bf5752f349c578078fcde5b08",
+     "0xa1ff04e03a018b1e41a2af9efb5e8506abdad73ea96732de7d1cef3b4fe82dca",
+     "0x12a5e68182b94dc7962326c2769d5485288ee113707cd3808478182d0040f0dc",
+     "0xdc2e118ab1aa01efb253ef57fdd66a475336dd3fbdcd55e22b07344b4854a7fa",
+     "0xe38a132bfdd61e47aefa964cab615c55c5634bb0f2b8e6acf807de7d182ea404",
+     "0x1526a5af511fcb8478dce7e37912b3217f6a01d7a24bf5a949886aa398eee87e",
+     "0x859ba19e26c708965c5865107cfe4dfbf70dd1f610669308ae24e39777063aa1",
+     "0x8f849063303055b4dff97fc14a0402b72562f3dbf917dfde98d5a5d08f7ff048",
+     "0xb31b8ca0bfca600dbff007a619a3fd326b5ef96aada349b6c24cee80a5068049",
+     "0x3bc5cc52b49a3c0cebdafb859ffe0152633d4b78e7a8120be106b189a788f4c3",
+     "0x1b44cf9056b63b655e812c5b11d0687da2b2c538e02b575a9066bc1a819e47d4",
+     "0x43a33c94b5e457f837b066d94f9859b9c003be5b8d078c03f15713ddaea652b2",
+     "0x5418fd5f09c4215653df35ef0dc1f7c32f5903320a947a76b4f4254b0a0fae77",
+     "0x74b94cb7d762cce8603558996d5a6589a873b783f947be7161a498c4af2d441e",
+     "0x9bb34b4f3a02c4d3a80b2df602797ead1c25a46ec5dea0df1c4497f605e8f12d",
+     "0x618a1b59ac310c01947cb322ab79d28e8cad9bac775701ffb216a69cce27c1bf",
+     "0xa026131357a310db8af4b488efddd1ea5f912d604178b5509830a79712d2d906",
+     "0x2c85fd6b2002835cb49680a216793d05c9f6239a28797f25b7ed1bb28f4c3995",
+     "0x2c1499b7380ad5fa1325fa14efd4188c15234832371f50278f647fd4fbd652f6",
+     "0x02ed5fb36747944cb7a1bb53f419d5b987b7cfd1257500f5619893af0f377b35",
+     "0xdb7fa0299a70526c95a3553cf2b57515eba822a2596bc56ce71a48c5fcea07f8",
+     "0x5a19434f2d42625488280d0051080c9c10011c65368c268d59649e74839cfe9c",
+     "0x3525f69210b06bff0d94070de220f443db91e9795ba9a6ebb6d8e65c28630fb3",
+     "0x7df46f47d09489d62d08a1ec349b66bb332901d138b58cd451599a49cfd000a6",
+     "0x0847a3ac102229082203be22031cd8e02ab09d4aff49bf9464d22c8020198a1c",
+     "0x518228163ca295a1d04866bc13bab81dc1d22bb72892290169ec422a2d9a9d38",
+     "0x5120a769174818a2979bd12c12cccc9da0177325cacb72cfcae3326a50363b94",
+     "0x975a6a2e6bc9270a4655db1e3edbbd93f1d907adb6e6af6398a767152300452a",
+     "0x24d7218a07ab11968dafbc32277694f3d0ae7dc0489a0097e364c531b54198e9",
+     "0x26ac733fd7c7d0114715afa4dd03e7d92b770a28f0f5d5df1200bbba2160c5c0",
+     "0x3b5cefccfb579696af59f7ecacce59d863327647d8bda61ac63a5a0218b98019",
+     "0x70abb63bbe978a91356eb428b9fc87bebf38c29cc2e1329ed0a9a40af2bdb3e0",
+     "0xd841ab6019a7a509194ea60eac46535b6ab679ef6c9a63dd9978434391187e45"
+    ]
+   },
+   {
+    "id": "parent-merge",
+    "book": "2026-10-29T0859Z",
+    "txs": [
+     "0x50285bf9520f7cfffc733da94abae4c8173e919740caf891e3b2e04bef677d7c",
+     "0xe4cf929748264bb79f2c3e470c9da7d47ad18a5bb948ab5a7a9785382e4aae1a",
+     "0xcdffb5acd8e3389e3803469e8ec5c0ddc07031952ce8a7681816b790496c83d5",
+     "0xae4d5a622494cd020fad75689a966acc8304630e3730556afeb0f4c4219acd0e",
+     "0x6f44ce8e6b32f6ec4cd312f866812aeac22b5c0100a2076ac8340ab4ddd1f67e"
+    ]
+   }
+  ],
+  "skipped": [],
+  "half_done": [],
+  "notes": [],
+  "artifacts": [
+   "run/2026-10-29T0859Z/halfb-sim-l2-main.json",
+   "run/2026-10-29T0859Z/halfb-sim-l3-main.json",
+   "run/2026-10-29T0859Z/halfb-tx/ (109 files)"
+  ],
+  "sends_this_invocation": 109,
+  "keep_aborted": false,
+  "budget_exhausted": false
+ },
+ "detail": {
+  "answer_watch_state": {
+   "0x2c4fd3a23c08187f9d20df21ecda01b4b21d7334cfbf6c89c84a23ce462c0170": {
+    "kind": "child",
+    "market": "ethereum/py_ecc",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc2c0bd87a5165e7c27e68e8b7ad474ba057c1bd34f9b11a7f11b7d71dbd6b94c": {
+    "kind": "child",
+    "market": "blockscout/blockscout",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x89fe7baccbd9a7e296f156d14c04f873cddf3a5b1ccf859e753e8d4d40351a49": {
+    "kind": "child",
+    "market": "LFDT-web3j/web3j",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xfd61b08c5398c50b2199c32dc8612dbdbe5737edb80744897f46a4503bcaa784": {
+    "kind": "child",
+    "market": "herumi/mcl",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf0b568de0c02eb278872f74f940d187e6739914d1270636779fab63cffecbc66": {
+    "kind": "child",
+    "market": "paulmillr/noble-curves",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x077d2c89919991b8e7d02c7e527ba3145c3108fe315a2dcfce66913897ee4c33": {
+    "kind": "child",
+    "market": "arkworks-rs/algebra",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc596d907c6ebf75fd421db81fa19fb22d8156a8b7457c9655cc50917ee1d4781": {
+    "kind": "child",
+    "market": "flashbots/rbuilder",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x39580f3a8e91e54fc6cd05820543c9bcad354593ff7ccda886772924959fed12": {
+    "kind": "child",
+    "market": "protofire/solhint",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6bb6f7601ff6c2acb7edcdc14e93dfc6e78bec1754790d5062c92f2ef05f0044": {
+    "kind": "child",
+    "market": "l2beat/l2beat",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x51bee56a63a81206c59d91dbed051ecacf8d092accc9fc76d6ffd598eac7fc47": {
+    "kind": "child",
+    "market": "Consensys/gnark-crypto",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x5bfad4595c4c3a58a0cc6beb9b198f12e26dd29bbbee3674f03802b888ddb749": {
+    "kind": "child",
+    "market": "taikoxyz/taiko-mono",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9a6deb668ec98e52ec8c20e607f21d84bf36e317f83008ff50277eab837b7b0d": {
+    "kind": "child",
+    "market": "flashbots/mev-boost",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb678fbf10adbad49f194042f135eb6fb82c3270fa3b1e156d3f176303b009e58": {
+    "kind": "child",
+    "market": "flashbots/mev-boost-relay",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x39eaf5631314ae73bee70b816bc65e94044c765c191371009d1ddf9516854d35": {
+    "kind": "child",
+    "market": "ethereum/js-ethereum-cryptography",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6c964ab55fe53fa514843f4c48985d6ef572219e30955cea3394e9c9dc00fa9f": {
+    "kind": "child",
+    "market": "libp2p/libp2p",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2b153e6c9c2705eb519a5d7b0bb51bf819dd4b1eebbd027142f3fdf910bb9e37": {
+    "kind": "child",
+    "market": "supranational/blst",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x567ee3ec95bf83548e7081db5ae7e6acdc5defd05119a883104711fdb5a9427f": {
+    "kind": "child",
+    "market": "wighawag/hardhat-deploy",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2f4ecb0bbeeff18b8b5617e7a07604b6a8e9dea70ba8d27d70938db3a3045cef": {
+    "kind": "child",
+    "market": "ethstaker/eth-docker",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xefa0e7df029465f6712ea62a12a67ee6128bdd780f614829fae597daa2f618c1": {
+    "kind": "child",
+    "market": "DefiLlama/DefiLlama-Adapters",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x25fba365bf5f9ca2a3c26a0048c9dbddb66edba71a7d4aa1427e15646fff172e": {
+    "kind": "child",
+    "market": "DefiLlama/chainlist",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc7b18949a134796a86fe3b7d2420c524a88e2394c62484489c3e8fd747a94fda": {
+    "kind": "child",
+    "market": "Certora/CertoraProver",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb892b192bfabad8bdd736b959c55df6d5ae905ef3d291475e1feb73ff50f0065": {
+    "kind": "child",
+    "market": "Plonky3/Plonky3",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x34873cd876eb7a90da3c550bf4431d8500b7ec256f215403ef08b41ec35122d4": {
+    "kind": "child",
+    "market": "ChainSafe/bls",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x97d468c84244982649e8b7a246fa9a87c94285a93b8a0eaa2a705823d5df2773": {
+    "kind": "child",
+    "market": "intellij-solidity/intellij-solidity",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x4f280b06a6f7b8a98c431e7a8048c63a18a3269c9d743ef547407e4bed6826fe": {
+    "kind": "child",
+    "market": "dappnode/DAppNode",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x34945c40402251cba02eb890adafab58874be0f95349aa3ddb479e486ce503f8": {
+    "kind": "child",
+    "market": "wealdtech/ethdo",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdbbd4df1b4b04665067fe19a4b33fcc3d08657df126cc12d676aee70aa85f3ea": {
+    "kind": "child",
+    "market": "lambdaclass/lambdaworks",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf5cccfd12c143d12ed112326d29de04d121447d86be2fecb6c617d8fc48f5d8c": {
+    "kind": "child",
+    "market": "smartcontracts/simple-optimism-node",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x8224e08c9d670b6d7c518c4b9bb3719e7861d4749ff7fd08265c8892f212f297": {
+    "kind": "child",
+    "market": "skalenetwork/libBLS",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x52b3be4be8cacf749ed0530b7c0f30d6ee72a796afa1d9934930547cce9968a5": {
+    "kind": "child",
+    "market": "shazow/whatsabi",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x3c3ceeb85ada7ae751ac7f827b7333dfe22ff17587f0ac6647e7b4c902599a6e": {
+    "kind": "child",
+    "market": "TrueBlocks/trueblocks-core",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9d91f0832bc30aad1053c6061d96c32ee4fd13e99cb0e601746e46909a0c7d36": {
+    "kind": "child",
+    "market": "EspressoSystems/jellyfish",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x59ca3c449321386dcfbf6834c94b9de97b4ef7f617a18f91f65cd206d9c79087": {
+    "kind": "child",
+    "market": "a16z/halmos",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdef540d9dadff41f3eb21effe224775cab174360e63b0359e1c1f3bf070a6d83": {
+    "kind": "child",
+    "market": "succinctlabs/op-succinct",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd28c7befd448509920478d3b2a7712e4bb50a7282d9398cb58cd58274565cc9e": {
+    "kind": "child",
+    "market": "succinctlabs/sp1",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x02e663ccb5a9743577c171032034dd6edec741a781983244a41f2f082eff9fd0": {
+    "kind": "child",
+    "market": "otterscan/otterscan",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x56098951593dd29df4722edc720f392d1951d1282ba10ba8b846c39f6510adcc": {
+    "kind": "child",
+    "market": "lambdaclass/ethrex",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdf04ee28b557580d9427ae408a86ecabfaa78a5719cfc6b7fb73031728d7c094": {
+    "kind": "child",
+    "market": "NethermindEth/juno",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xe0fbd2c0ac7a339973add1d7ed0cae47e5190503c7e48009e9c64ff7db2c57bc": {
+    "kind": "child",
+    "market": "Commit-Boost/commit-boost-client",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7619910613af3843cd997d9faff123435e2f259f8a729064b3a94601373c431d": {
+    "kind": "child",
+    "market": "Cyfrin/aderyn",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x8930d814289deb13cd041d57f26a7883a488debc946a627dcb352529545e3971": {
+    "kind": "child",
+    "market": "0xMiden/miden-vm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x589bd43805da304ad8cedac6f865a3897fa03e7b02f869864fe79f043e722484": {
+    "kind": "child",
+    "market": "holiman/goevmlab",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd701ec3d9b576ef9d66cbbcbad82859519d83ff5f00b8b0030a75601a2c9303e": {
+    "kind": "child",
+    "market": "edb-rs/edb",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6f44309f0aee5eece2a30e94c886fa0c2b16f4545e5e4d458228a78ecae6c203": {
+    "kind": "child",
+    "market": "evmts/tevm-monorepo",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x44ae32fbb5915b91e2414a5335d653f3768d6643df110262bf57a976d2c3875c": {
+    "kind": "child",
+    "market": "succinctlabs/rsp",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x150d07c31951d9c5a07114c844050db65a1b02f5e6a1f7aac7e7ee0f08275a45": {
+    "kind": "child",
+    "market": "OffchainLabs/stylus-sdk-rs",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc6a5ecadfa5f69bb92ff5463dee2cffd925e651d88474ce4f32aa6744f4144df": {
+    "kind": "child",
+    "market": "ethstaker/ethstaker-deposit-cli",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x04487052ff8a7ec9794c4d6714d5265bc99f7a72443a4d4168d494c81c3cdd22": {
+    "kind": "child",
+    "market": "dl-solarity/solidity-lib",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x92d9ae6aec9a764ddc3c78cb7fe4dfb00486b24800ac1700a400562c7ba61966": {
+    "kind": "child",
+    "market": "risc0/risc0-ethereum",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x499b91ef4e5cf7b296f9ea7ae65995709ec541ab806a06bc84e5cf772cf5bdcc": {
+    "kind": "child",
+    "market": "powdr-labs/powdr",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xfa1a3dc69be9ef7f0197b797d1ea479dc560d3178f7aa18c3c7a251ae6682a39": {
+    "kind": "child",
+    "market": "axiom-crypto/snark-verifier",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x19b8a515c02b53a5e6bcc2ec8c864feb461c8a1cfe36f56e122856bbc8db4826": {
+    "kind": "child",
+    "market": "swiss-knife-xyz/swiss-knife",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x5d7d649e65072c60e80b81b4526a78e1764fc4aa874b1d61a28534d8d0435ca7": {
+    "kind": "child",
+    "market": "a16z/helios",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x00001ee73c40fdc7ac708354793326118557f048f13cf04d6badde5364937802": {
+    "kind": "child",
+    "market": "alloy-rs/alloy",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xebd6da0fbcfd271666fbbc60961e874d8c42bdb32e61926d9328784e1f8eb0a4": {
+    "kind": "child",
+    "market": "apeworx/ape",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf89d69ebc71d4139a8ab155730799896a766e616f10c0ac9ad5bc49f7f15eadc": {
+    "kind": "child",
+    "market": "consensys/teku",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb00534e0bc33072aad949a70095405667c4375c56d8534f5afc309633ea2121e": {
+    "kind": "child",
+    "market": "erigontech/erigon",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2650e67eccec78078ae718ae9b99441abc06f9934b33cd254377e4d17cde293b": {
+    "kind": "child",
+    "market": "eth-infinitism/account-abstraction",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc5475ad5628c6fd20ff96b5c1cf23379e55d20186f98952d84af2087780e4ab3": {
+    "kind": "child",
+    "market": "ethereum-lists/chains",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x911d445555ded041f8febd6e9095c4d27cb981732efe794bdb7be5a31886c98b": {
+    "kind": "child",
+    "market": "ethereum/consensus-specs",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb8b37deb846a1a251f6bd75a0262d490f02735d7026b1d69b638085ace3fbe31": {
+    "kind": "child",
+    "market": "ethereum/eips",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xad548f1020c5cdfe5952cfadc73cb6f518f29ab8eb7cedc71f5f9a8f5cb032f3": {
+    "kind": "child",
+    "market": "ipsilon/evmone",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xec811c869f26a7767edf0389845ee826f4f2bb7f1cf10bd9326e1d45f856c883": {
+    "kind": "child",
+    "market": "ethereum/execution-apis",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xded382d4b95520ef31af36503413e2c88fcd90c9612705e550a92528b39cbf1d": {
+    "kind": "child",
+    "market": "argotorg/fe",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xa0aae6c131ef390221880d294963f3b8f85761b71b6f1f0b050f274776fdbf0e": {
+    "kind": "child",
+    "market": "remix-project-org/remix-project",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc91e63784c4dd5fc0b56919c25eeb5df64f93981d95d5b3ab68db7216a56a6dc": {
+    "kind": "child",
+    "market": "argotorg/solidity",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x01251a8bba35a1eb648967a3ca3fae14c730820448ba6b16aae6b0e0b9b4e452": {
+    "kind": "child",
+    "market": "argotorg/sourcify",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7b1793c81599e5720a336a4a67aab6ebcdce55fd6fee3dcea6668613c57186d1": {
+    "kind": "child",
+    "market": "ethers-io/ethers.js",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x70dcbe08df7a81672d9b325386773fced79fe3e7f21c4977536cf0b96f570612": {
+    "kind": "child",
+    "market": "foundry-rs/foundry",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x30b3212a03118951943e2c60dad043fb5f073c8000dcdf1e12ceb9a09e848950": {
+    "kind": "child",
+    "market": "grandinetech/grandine",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb86773c44872c94997070180ed072c99108760331aa54ed7e58eb1ece3690fd0": {
+    "kind": "child",
+    "market": "hyperledger-web3j/web3j",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x298c2d4d1d50e331eb657137071e4dc2becc39144d35986c8e13d344416a8425": {
+    "kind": "child",
+    "market": "hyperledger/besu",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb11a461dc5a260dddf5d29b83063dd371448160d6999e95017dde35db033fdec": {
+    "kind": "child",
+    "market": "nethereum/nethereum",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2ddeef07d5eaf62b5598d242553f26a55d66037b639f4cf4b358e3ccfb8f0003": {
+    "kind": "child",
+    "market": "nethermindeth/nethermind",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x1d04ccdc10b32f2d81aafaeb56316d8cb4838e53a9076a1a6e9497dc9899243b": {
+    "kind": "child",
+    "market": "nomicfoundation/hardhat",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x844f119a5b93eee1946aa2199a7c174e07017d233ab50d00eb3795aac5774430": {
+    "kind": "child",
+    "market": "openzeppelin/openzeppelin-contracts",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xccae0f8119598babded93fa7ace07cbd0c9852efa66f065ed9d024f6b22b8035": {
+    "kind": "child",
+    "market": "OffchainLabs/prysm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x12072068c3621274bb89833b3edb2dfc715d353b62519374da0edda04fb5a345": {
+    "kind": "child",
+    "market": "safe-global/safe-smart-account",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x17c0c6a837e957261c2308491d1d2dfbb97e9ea45cda6c89e8eb808e26091f55": {
+    "kind": "child",
+    "market": "scaffold-eth/scaffold-eth-2",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xa56e4df50c3b7675d102b89673dd0ec8f23f2bf875f748b756c453a1873f1bbd": {
+    "kind": "child",
+    "market": "sigp/lighthouse",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x91e0f6b330a63b59b9315b5dae14df7fbc394c8f3cf9ca56fb7317f706129bbf": {
+    "kind": "child",
+    "market": "status-im/nimbus-eth2",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd3a50dcd91eea5a803a1ad234f046e51f1047d6d090a4047bfc4c2d86167cb4b": {
+    "kind": "child",
+    "market": "vyperlang/titanoboa",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9ff33a6872610dd0d0016aa9e37d92e9530262f511718bc1dc65f9c3d6ffdeb7": {
+    "kind": "child",
+    "market": "vyperlang/vyper",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2f67b475a199e6a46f709c4abcf2c4f4476f7a6b1cafcb41fcae4555cd271188": {
+    "kind": "child",
+    "market": "wevm/viem",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x25e92b14cdbff0128f08a24a52cde77c9db6028af5d5bb0f179d0bebe60b4e7d": {
+    "kind": "child",
+    "market": "argotorg/hevm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7e3744caa01377bb6ea52941427c71dc13f3f230a956c57c982dcc1654829236": {
+    "kind": "child",
+    "market": "ethdebug/format",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xbdbf21c1895eaa6b327bb8cc1c0e4725ab83d63cddcd827411f0f6871fa4db82": {
+    "kind": "child",
+    "market": "argotorg/act",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc064164bf32e0e82f68e044e43254dee4bda7444c1164b033ab16d388bb6e0bc": {
+    "kind": "child",
+    "market": "ethpandaops/ethereum-package",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x4187b712d2b0b1e6eead6a81917eb01e2041b02e2ed9d113e54e1b507f81b5a6": {
+    "kind": "child",
+    "market": "ethpandaops/ethereum-helm-charts",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x311510042456323cbb5ffce2d45e59a569bd24b03b14e31442b662b07da213fc": {
+    "kind": "child",
+    "market": "ethpandaops/checkpointz",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x32319fdff210025c7ab0440f5248a8b13b5a74e4f7ae55f2625a12a1a45dae8e": {
+    "kind": "child",
+    "market": "lambdaclass/lambda_ethereum_consensus",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x245dfb93ffc3778db6d1545e79bdffc9a60054be0c30cabf845174b2300724ab": {
+    "kind": "child",
+    "market": "erigontech/silkworm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x23524106a4b9798604ef29f16728b61a5ef1e165b6d296e0a677156dd0463cf8": {
+    "kind": "middle",
+    "market": "middle A",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd2f6afc6a10ce16ceb33b3f9902a42a6011e25a151652cf108ebedae0cc60820": {
+    "kind": "middle",
+    "market": "middle B",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc45b248d1704159d19edf79e929592ef35cfb44ba8246ea50b8e42fc999fe5ff": {
+    "kind": "middle",
+    "market": "middle C",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x93164bff39e0f3705f529a29b2fe4903b6803952c304a6b3f0705bcaf7c61018": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xca84a3c12e9e8d8a8d03fdde31ee1011d9341246417be7be18e35657cdf7054c": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x70f2e0bb084af2ac7aebaaf709dc5a05dc77cdd8430d4fb29825c35c842bc8e0": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   }
+  }
+ },
+ "log": [
+  "2026-10-29T09:46:07.914Z SEND approve repo ethereum/py_ecc -> Router (z_X) (nonce 3838) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:11.944Z   confirmed 0x1bf12d9d0c618c7c799ee5cdb93fd13991d52cd1e92670bc7cd309e3297a4870 block 158834196 gas 49001 cost 0.000000049578903371 ETH; nonce now 3839",
+  "2026-10-29T09:46:13.441Z SEND approve repo blockscout/blockscout -> Router (z_X) (nonce 3839) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:17.479Z   confirmed 0x9da2d80d2d1f408c7d70e76616acca184b76709c36a0f7ecda6f0e25ad304e2a block 158834199 gas 49001 cost 0.000000049578903371 ETH; nonce now 3840",
+  "2026-10-29T09:46:18.975Z SEND approve repo LFDT-web3j/web3j -> Router (z_X) (nonce 3840) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:22.962Z   confirmed 0x233ddc33a46737f7462792bbaeb57e3af41e37194cdc69c7b09eea4936f629c4 block 158834202 gas 49001 cost 0.000000049578903371 ETH; nonce now 3841",
+  "2026-10-29T09:46:24.474Z SEND approve repo herumi/mcl -> Router (z_X) (nonce 3841) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:28.452Z   confirmed 0x94b89b0ffdb6e508b14ea25459fe958cbc2139c7213f8a9e862d902bc84b2a26 block 158834205 gas 49001 cost 0.000000049578952372 ETH; nonce now 3842",
+  "2026-10-29T09:46:30.001Z SEND approve repo paulmillr/noble-curves -> Router (z_X) (nonce 3842) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:31.851Z   confirmed 0x6f9aa586f74f275f7e1faf990ada1ebb5673c1925087e9ef794876164c696529 block 158834207 gas 49001 cost 0.000000049561929025 ETH; nonce now 3843",
+  "2026-10-29T09:46:33.382Z SEND approve repo arkworks-rs/algebra -> Router (z_X) (nonce 3843) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:37.419Z   confirmed 0x76f53b7ec87cc1d4b52e3cef98d309607fd874e235a0b3d9d3fbff2c31733c5d block 158834209 gas 49001 cost 0.000000049561929025 ETH; nonce now 3844",
+  "2026-10-29T09:46:38.923Z SEND approve repo flashbots/rbuilder -> Router (z_X) (nonce 3844) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:42.937Z   confirmed 0xc8496937c0b6a15440fee8df5df17641a45afa127687025bd4bb5316a07c98b7 block 158834212 gas 49001 cost 0.000000049612756614 ETH; nonce now 3845",
+  "2026-10-29T09:46:44.438Z SEND approve repo protofire/solhint -> Router (z_X) (nonce 3845) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:48.427Z   confirmed 0x8979d4064f47d922db3e51f2c14ac5e8b56e883fa489b8fee5a38c6cc245bc0d block 158834215 gas 49001 cost 0.000000049612756614 ETH; nonce now 3846",
+  "2026-10-29T09:46:49.895Z SEND approve repo l2beat/l2beat -> Router (z_X) (nonce 3846) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:53.881Z   confirmed 0xd0ad0b9c98e350acde3ec2904c20834b4913be38ef15c40167e8db5bf2f8ea70 block 158834217 gas 49001 cost 0.000000049612756614 ETH; nonce now 3847",
+  "2026-10-29T09:46:55.354Z SEND approve repo Consensys/gnark-crypto -> Router (z_X) (nonce 3847) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:46:59.337Z   confirmed 0x3d58c882037862ccb3cac49e651f90caa1c4a5a17686bfdb634dbcc24e38bc23 block 158834220 gas 49001 cost 0.000000049652013357 ETH; nonce now 3848",
+  "2026-10-29T09:47:00.846Z SEND approve repo Vectorized/solady -> Router (z_X) (nonce 3848) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:04.884Z   confirmed 0x9f6a9f655c0392c5ed399ed02849f8e23a3fd8ee5ef20613cda374fc750ff127 block 158834223 gas 49001 cost 0.000000049652013357 ETH; nonce now 3849",
+  "2026-10-29T09:47:06.370Z SEND approve repo taikoxyz/taiko-mono -> Router (z_X) (nonce 3849) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:10.429Z   confirmed 0x912ed80fd228333f9829f3413c55db21b95b16787c1189f8e913333d24399e38 block 158834226 gas 49001 cost 0.000000049658880618 ETH; nonce now 3850",
+  "2026-10-29T09:47:11.954Z SEND approve repo flashbots/mev-boost -> Router (z_X) (nonce 3850) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:15.998Z   confirmed 0x9656c79bd2d8b0b1a60b93c7e1af1c838411ed36def24740b0f0c9e6df884391 block 158834228 gas 49001 cost 0.000000049658880618 ETH; nonce now 3851",
+  "2026-10-29T09:47:17.488Z SEND approve repo flashbots/mev-boost-relay -> Router (z_X) (nonce 3851) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:21.537Z   confirmed 0xb079dd7a3f956a5e5b48174dab1bab2c91a355bb36d2494e94eedd9fe96d07da block 158834231 gas 49001 cost 0.000000049626232918 ETH; nonce now 3852",
+  "2026-10-29T09:47:23.002Z SEND approve repo ethereum/js-ethereum-cryptography -> Router (z_X) (nonce 3852) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:27.058Z   confirmed 0xc3a49e2f082b587ecfa17c8ef4a3b126f2b99f431d38bd56d8adab13ae3b4e8d block 158834234 gas 49001 cost 0.000000049626232918 ETH; nonce now 3853",
+  "2026-10-29T09:47:28.538Z SEND approve repo libp2p/libp2p -> Router (z_X) (nonce 3853) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:32.572Z   confirmed 0x7aba93fecb16e287ea3e99859e317efdcf9537d053faa1057aa12d6b345305eb block 158834237 gas 49001 cost 0.000000049657926341 ETH; nonce now 3854",
+  "2026-10-29T09:47:34.073Z SEND approve repo supranational/blst -> Router (z_X) (nonce 3854) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:38.071Z   confirmed 0xb8aeac455768725cc3d1099586a9413705b8edba95e06327a05461b0346f2470 block 158834240 gas 49001 cost 0.00000004965787734 ETH; nonce now 3855",
+  "2026-10-29T09:47:39.604Z SEND approve repo wighawag/hardhat-deploy -> Router (z_X) (nonce 3855) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:43.709Z   confirmed 0x913d86ec9a53a0a598cb30ac84ac8896bd72f20f46834073d1a4195c6fc832c8 block 158834242 gas 49001 cost 0.000000049644564135 ETH; nonce now 3856",
+  "2026-10-29T09:47:45.192Z SEND approve repo ethstaker/eth-docker -> Router (z_X) (nonce 3856) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:49.211Z   confirmed 0xc86c47253a3cdcdcb70c29526ff95a9a6a28ecd82c73a6f1720b3e10514e9f11 block 158834245 gas 49001 cost 0.000000049644515134 ETH; nonce now 3857",
+  "2026-10-29T09:47:50.689Z SEND approve repo DefiLlama/DefiLlama-Adapters -> Router (z_X) (nonce 3857) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:47:54.713Z   confirmed 0xcad40ea39be156a7557d3188e368c950eae34df70fb9a3eb99b6af71800ac733 block 158834248 gas 49001 cost 0.000000049644515134 ETH; nonce now 3858",
+  "2026-10-29T09:47:56.185Z SEND approve repo DefiLlama/chainlist -> Router (z_X) (nonce 3858) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:00.234Z   confirmed 0x52299b327890bea995a980971bb7eaf9e31ab85632b48b2ca62e8146b4fa6e79 block 158834251 gas 49001 cost 0.000000049644515134 ETH; nonce now 3859",
+  "2026-10-29T09:48:01.693Z SEND approve repo Certora/CertoraProver -> Router (z_X) (nonce 3859) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:05.703Z   confirmed 0x60910a6b8add081b0e1138b8dfd3550178adfba1eddf6cad42e574f6a18e6089 block 158834253 gas 49001 cost 0.000000049644515134 ETH; nonce now 3860",
+  "2026-10-29T09:48:07.229Z SEND approve repo Plonky3/Plonky3 -> Router (z_X) (nonce 3860) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:11.356Z   confirmed 0xe11f1c43d61d3e66e0485489f97eb4586bb2d50fcaa5308e4a2baa84e05c27e2 block 158834256 gas 49001 cost 0.000000049655194861 ETH; nonce now 3861",
+  "2026-10-29T09:48:12.853Z SEND approve repo ChainSafe/bls -> Router (z_X) (nonce 3861) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:16.966Z   confirmed 0x5fe2da92850a4e877dc974fcff6fa6cb84e40907f75350a2c54849890de94489 block 158834259 gas 49001 cost 0.000000049655194861 ETH; nonce now 3862",
+  "2026-10-29T09:48:18.603Z SEND approve repo intellij-solidity/intellij-solidity -> Router (z_X) (nonce 3862) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:22.654Z   confirmed 0xfc8dff4e217b3e9cd232fd7d0152bc15f79106f66dac88c1da96a06467c71a9e block 158834262 gas 49001 cost 0.000000049657787927 ETH; nonce now 3863",
+  "2026-10-29T09:48:24.217Z SEND approve repo dappnode/DAppNode -> Router (z_X) (nonce 3863) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:28.245Z   confirmed 0x283153f594dec9214b275867f3b174c46b86817c29926acb69c18a6198ae59b2 block 158834265 gas 49001 cost 0.000000049657738926 ETH; nonce now 3864",
+  "2026-10-29T09:48:29.885Z SEND approve repo wealdtech/ethdo -> Router (z_X) (nonce 3864) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:33.872Z   confirmed 0xbb754efbf0a271e120c32b923bc0a52c48e3fc1493ea04012abff3fefa045eaf block 158834267 gas 49001 cost 0.000000049657738926 ETH; nonce now 3865",
+  "2026-10-29T09:48:35.357Z SEND approve repo lambdaclass/lambdaworks -> Router (z_X) (nonce 3865) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:39.440Z   confirmed 0x73c29b5be2e6f1890d3a9e9ca4f0a5c9feb8d8ecafea7017f34893f478ae3720 block 158834270 gas 49001 cost 0.000000049618805971 ETH; nonce now 3866",
+  "2026-10-29T09:48:40.932Z SEND approve repo smartcontracts/simple-optimism-node -> Router (z_X) (nonce 3866) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:45.023Z   confirmed 0x022090e2798b758f6ac718dbb7599d2146f6e2281400d9007414f692b905ef03 block 158834273 gas 49001 cost 0.000000049618805971 ETH; nonce now 3867",
+  "2026-10-29T09:48:46.546Z SEND approve repo skalenetwork/libBLS -> Router (z_X) (nonce 3867) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:50.548Z   confirmed 0xd365d54e02d90e17db98387083a05b037b9f34fafc70fd38cafc26c7c05ec417 block 158834276 gas 49001 cost 0.000000049583933083 ETH; nonce now 3868",
+  "2026-10-29T09:48:52.081Z SEND approve repo shazow/whatsabi -> Router (z_X) (nonce 3868) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:48:56.070Z   confirmed 0x4c9538dd5463497dfb99d992c51bfe7d01e08c4314572ac530409d1d7d47e741 block 158834279 gas 49001 cost 0.000000049619496487 ETH; nonce now 3869",
+  "2026-10-29T09:48:57.573Z SEND approve repo TrueBlocks/trueblocks-core -> Router (z_X) (nonce 3869) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:49:01.645Z   confirmed 0x464f4ae94593205ea0ebef56b0288df3c8a555cfcddd245790ef3ab4e5db1ee5 block 158834281 gas 49001 cost 0.000000049619496487 ETH; nonce now 3870",
+  "2026-10-29T09:49:03.128Z SEND approve repo EspressoSystems/jellyfish -> Router (z_X) (nonce 3870) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:49:07.144Z   confirmed 0x7aefbd532bc8947c163dbd3087c7d7f981a4040d4d1d476bd1eeb8804fdcc6df block 158834284 gas 49001 cost 0.000000049619496487 ETH; nonce now 3871",
+  "2026-10-29T09:49:08.622Z SEND approve middle-A Invalid -> Router (z_X) (nonce 3871) gasLimit 58802 calldata_hash 0x0dbef60a0f2ed9e1557f80e5399521cc778b9cf0f3e2ea7c364aa9ab95157819",
+  "2026-10-29T09:49:12.656Z   confirmed 0x11a9ba18772d54458f4fd05e53e950ce758ee068229ef1deca8a1c7ee40dcac7 block 158834287 gas 49001 cost 0.000000049617249969 ETH; nonce now 3872",
+  "2026-10-29T09:49:14.236Z SEND Router.mergePositions(sUSDS, middle A, z_X) (nonce 3872) gasLimit 6432977 calldata_hash 0xcd6f89afe0e1c9c343b738030b6e5a0b495248fd8e8600dae3bf184b2520558d",
+  "2026-10-29T09:49:18.378Z   confirmed 0x540c99fa784adc55ab9e20e9041276620178d523309e0c55c22ab17669b9c5ab block 158834290 gas 4288652 cost 0.000004290561728164 ETH; nonce now 3873",
+  "2026-10-29T09:49:21.505Z SEND approve repo a16z/halmos -> Router (z_X) (nonce 3873) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:25.546Z   confirmed 0xea312a1fe8a40d55bb502d28218ee91550f6792087a5aac8c4723a76164c38fd block 158834293 gas 49001 cost 0.000000049612813015 ETH; nonce now 3874",
+  "2026-10-29T09:49:27.018Z SEND approve repo succinctlabs/op-succinct -> Router (z_X) (nonce 3874) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:30.992Z   confirmed 0xeec77631106048a1096fde245e6b3abb969c94a6522ed5ac6787b77d2803a3d3 block 158834296 gas 49001 cost 0.000000049612813015 ETH; nonce now 3875",
+  "2026-10-29T09:49:32.491Z SEND approve repo succinctlabs/sp1 -> Router (z_X) (nonce 3875) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:36.517Z   confirmed 0xf405f84c88a07683338587b2ae4b272a68c11ad4d2c908b6285fa14180dd66cd block 158834299 gas 49001 cost 0.000000049616551953 ETH; nonce now 3876",
+  "2026-10-29T09:49:38.022Z SEND approve repo otterscan/otterscan -> Router (z_X) (nonce 3876) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:42.008Z   confirmed 0x4478f0f8f0a7cc6ed2e6ca5c3f84fa39eaf7e82a412644a3e375892db278d8ba block 158834301 gas 49001 cost 0.000000049616551953 ETH; nonce now 3877",
+  "2026-10-29T09:49:43.491Z SEND approve repo lambdaclass/ethrex -> Router (z_X) (nonce 3877) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:47.641Z   confirmed 0x8a659f6e16c6522ceab767fb83db42c8d3fbe16e4c241e66e038de18b62d9330 block 158834304 gas 49001 cost 0.000000049607648632 ETH; nonce now 3878",
+  "2026-10-29T09:49:49.145Z SEND approve repo NethermindEth/juno -> Router (z_X) (nonce 3878) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:53.175Z   confirmed 0x043ab4d4d3347f0105e0bc28f6528b6b8d1bce1656acbe1881af689d175a61e2 block 158834307 gas 49001 cost 0.000000049607648632 ETH; nonce now 3879",
+  "2026-10-29T09:49:54.662Z SEND approve repo Commit-Boost/commit-boost-client -> Router (z_X) (nonce 3879) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:49:58.678Z   confirmed 0x75f946956bcff92a3d3fe1a8ea29e247e1eaa9908a58b5cf30cbe44c52471bc2 block 158834310 gas 49001 cost 0.00000004959568538 ETH; nonce now 3880",
+  "2026-10-29T09:50:00.170Z SEND approve repo Cyfrin/aderyn -> Router (z_X) (nonce 3880) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:04.207Z   confirmed 0x90fc319963ed58ecf05aee3fce87784e89ec230972796dd1e4c316593c655073 block 158834313 gas 49001 cost 0.00000004959568538 ETH; nonce now 3881",
+  "2026-10-29T09:50:05.701Z SEND approve repo 0xMiden/miden-vm -> Router (z_X) (nonce 3881) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:09.738Z   confirmed 0xb6e7dd0a0c45271048c8adc407d4e1032054954b0b07332f65cfe282696eadd3 block 158834315 gas 49001 cost 0.000000049564287624 ETH; nonce now 3882",
+  "2026-10-29T09:50:11.245Z SEND approve repo holiman/goevmlab -> Router (z_X) (nonce 3882) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:15.253Z   confirmed 0xdfab1c5dd4c4db85ab451803c0a46bb7c0a23f8663fd30742af410a1595a50de block 158834318 gas 49001 cost 0.000000049564287624 ETH; nonce now 3883",
+  "2026-10-29T09:50:16.774Z SEND approve repo edb-rs/edb -> Router (z_X) (nonce 3883) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:20.788Z   confirmed 0xb97e26678acdde886a3a1eb1caf801f53be7eae930574d3a47ed81bee4c11413 block 158834321 gas 49001 cost 0.000000049610029009 ETH; nonce now 3884",
+  "2026-10-29T09:50:22.306Z SEND approve repo evmts/tevm-monorepo -> Router (z_X) (nonce 3884) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:26.378Z   confirmed 0x3234cf3fe260752fb0b479eb76f5c289bb340f80f29bbc4390bc6d5a1ffdd52f block 158834324 gas 49001 cost 0.000000049610029009 ETH; nonce now 3885",
+  "2026-10-29T09:50:27.941Z SEND approve repo succinctlabs/rsp -> Router (z_X) (nonce 3885) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:32.015Z   confirmed 0xf07b4d0287c3f2f5feb6e0b812c95da46f3c9f4975d2ed6af43f785aafb8b963 block 158834326 gas 49001 cost 0.000000049610029009 ETH; nonce now 3886",
+  "2026-10-29T09:50:33.591Z SEND approve repo aestus-relay/mev-boost-relay -> Router (z_X) (nonce 3886) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:37.897Z   confirmed 0x575fcecfc81e8604aa8b3febe2f86d74fb6339334cfa96db2280f158a4aec7a9 block 158834329 gas 49001 cost 0.000000049613912175 ETH; nonce now 3887",
+  "2026-10-29T09:50:39.370Z SEND approve repo OffchainLabs/stylus-sdk-rs -> Router (z_X) (nonce 3887) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:43.436Z   confirmed 0xb701a5ad84bab5d0ce7c1aa8cec992d1c89446d50fe28ebce17b13decbd27e0c block 158834332 gas 49001 cost 0.000000049613912175 ETH; nonce now 3888",
+  "2026-10-29T09:50:44.901Z SEND approve repo ethstaker/ethstaker-deposit-cli -> Router (z_X) (nonce 3888) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:48.923Z   confirmed 0x21d8bba045df0d2307effe7232eecf0cef4afca0ccea9ac448d643c0a651f8b5 block 158834335 gas 49001 cost 0.000000049625774251 ETH; nonce now 3889",
+  "2026-10-29T09:50:50.383Z SEND approve repo dl-solarity/solidity-lib -> Router (z_X) (nonce 3889) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:54.441Z   confirmed 0x2bd2a1172fabba7f2c2373498d183be3e76b8de1ef22edcffc508ed2a6cc2f1c block 158834338 gas 49001 cost 0.000000049625774251 ETH; nonce now 3890",
+  "2026-10-29T09:50:55.966Z SEND approve repo risc0/risc0-ethereum -> Router (z_X) (nonce 3890) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:50:59.980Z   confirmed 0xd58cf2197e503c10a543576f5797674c514e77954143476a3f17cfb3cf0df8dd block 158834340 gas 49001 cost 0.000000049613336519 ETH; nonce now 3891",
+  "2026-10-29T09:51:01.464Z SEND approve repo powdr-labs/powdr -> Router (z_X) (nonce 3891) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:05.546Z   confirmed 0xb617797f6b36c337f96a317d35174065cc9e605af446870042763c6457bf4749 block 158834343 gas 49001 cost 0.000000049613336519 ETH; nonce now 3892",
+  "2026-10-29T09:51:07.073Z SEND approve repo axiom-crypto/snark-verifier -> Router (z_X) (nonce 3892) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:11.096Z   confirmed 0x750e2f6a96b23a8f02879c48fd95b2136f755e2efee6e246f680c30032439732 block 158834346 gas 49001 cost 0.000000049609371359 ETH; nonce now 3893",
+  "2026-10-29T09:51:12.568Z SEND approve repo swiss-knife-xyz/swiss-knife -> Router (z_X) (nonce 3893) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:16.575Z   confirmed 0x5159817dd2ba3695e78e5bd6b7fed29a622ea5d196bb5c0fd1825596aac1fc0b block 158834349 gas 49001 cost 0.000000049609371359 ETH; nonce now 3894",
+  "2026-10-29T09:51:18.036Z SEND approve repo a16z/helios -> Router (z_X) (nonce 3894) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:22.020Z   confirmed 0x2ed1b7a85bac7764a9e386212b949e2336f02324f3857237f27404414d959ea0 block 158834351 gas 49001 cost 0.00000004959935586 ETH; nonce now 3895",
+  "2026-10-29T09:51:23.493Z SEND approve repo alloy-rs/alloy -> Router (z_X) (nonce 3895) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:27.648Z   confirmed 0x7ee02df965983b5629e29e858ef874a630232874515c8e6f93db318b65f8b79d block 158834354 gas 49001 cost 0.00000004959935586 ETH; nonce now 3896",
+  "2026-10-29T09:51:29.218Z SEND approve repo apeworx/ape -> Router (z_X) (nonce 3896) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:33.368Z   confirmed 0x8a7ae7a690d2b23420efcd44d13d94001f8839fc9ef8f791b57532a1cd342a1c block 158834357 gas 49001 cost 0.000000049641248486 ETH; nonce now 3897",
+  "2026-10-29T09:51:34.863Z SEND approve repo chainsafe/lodestar -> Router (z_X) (nonce 3897) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:38.897Z   confirmed 0xfc76bc522d6bd4c7db4881f6cd86f12645a0e94e8cf89c4bf4760b96e4973d2f block 158834360 gas 49001 cost 0.000000049641248486 ETH; nonce now 3898",
+  "2026-10-29T09:51:40.377Z SEND approve repo consensys/teku -> Router (z_X) (nonce 3898) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:44.413Z   confirmed 0x1225e2e12d879290d9f3271c8c976ee068595a33e9fc58856d21725ae87b1cfa block 158834363 gas 49001 cost 0.000000049646112656 ETH; nonce now 3899",
+  "2026-10-29T09:51:45.888Z SEND approve repo erigontech/erigon -> Router (z_X) (nonce 3899) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:49.947Z   confirmed 0x7a9331ddb10072e913b8d96efea76c0bf98ab0951fa47b4b51c18a94b05f4818 block 158834365 gas 49001 cost 0.000000049646112656 ETH; nonce now 3900",
+  "2026-10-29T09:51:51.436Z SEND approve repo eth-infinitism/account-abstraction -> Router (z_X) (nonce 3900) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:51:55.471Z   confirmed 0x146fdabfeff15fe02f349da5be4a32d3e5335454f394a97be52a33cd4f53df19 block 158834368 gas 49001 cost 0.000000049646112656 ETH; nonce now 3901",
+  "2026-10-29T09:51:56.973Z SEND approve repo ethereum-lists/chains -> Router (z_X) (nonce 3901) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:00.996Z   confirmed 0xdd383840a2bb896c1324bd0eff3f770036faf6a53ea56172bb3ad8132407950a block 158834371 gas 49001 cost 0.000000049644371474 ETH; nonce now 3902",
+  "2026-10-29T09:52:02.497Z SEND approve repo ethereum/consensus-specs -> Router (z_X) (nonce 3902) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:06.563Z   confirmed 0x92441c8c1ace1f5eced53abd409a2eb8de617a5e37930bf3fdeebcde15ca7030 block 158834374 gas 49001 cost 0.000000049644371474 ETH; nonce now 3903",
+  "2026-10-29T09:52:08.052Z SEND approve repo ethereum/eips -> Router (z_X) (nonce 3903) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:12.130Z   confirmed 0xe591a364e0a85db688ea52ba3e82729c607ecfee95012918531fad9eed8d4290 block 158834377 gas 49001 cost 0.000000049652197407 ETH; nonce now 3904",
+  "2026-10-29T09:52:13.686Z SEND approve repo ipsilon/evmone -> Router (z_X) (nonce 3904) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:17.700Z   confirmed 0x273a39562bf17bfedaf9bcb14b3f4c8259b6e8912ac548bad146b8e3ed658aef block 158834379 gas 49001 cost 0.000000049652197407 ETH; nonce now 3905",
+  "2026-10-29T09:52:19.200Z SEND approve repo ethereum/execution-apis -> Router (z_X) (nonce 3905) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:23.194Z   confirmed 0x580e8b97becabdd78d54692cfc612c4966324c0de6c2d0d426c4da77f2568d5f block 158834382 gas 49001 cost 0.000000049595437007 ETH; nonce now 3906",
+  "2026-10-29T09:52:24.731Z SEND approve middle-B Invalid -> Router (z_X) (nonce 3906) gasLimit 58802 calldata_hash 0x51a8ca0bf6f78582a42bc891544ea70a26d1e400f695edc08d2b32b810370bd7",
+  "2026-10-29T09:52:28.750Z   confirmed 0x092bc8cf5dca65414797114d2c1bf183134b1fbdcbca75bb575b899c9c8c12ff block 158834385 gas 49001 cost 0.000000049595388006 ETH; nonce now 3907",
+  "2026-10-29T09:52:30.233Z SEND Router.mergePositions(sUSDS, middle B, z_X) (nonce 3907) gasLimit 6593249 calldata_hash 0xb351818c5dc346fe14236c79e56fc47a036a328cf8998a6153340e398cc8ee3f",
+  "2026-10-29T09:52:34.329Z   confirmed 0x8c080ccc2df0e59163c1d352821b0351c06a4b6db3fcd2d5038a9b6c2c28069c block 158834388 gas 4395500 cost 0.000004397451646367 ETH; nonce now 3908",
+  "2026-10-29T09:52:37.446Z SEND approve repo argotorg/fe -> Router (z_X) (nonce 3908) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:52:41.435Z   confirmed 0x3fbe6c96e79a670e1ca17a77d8689e229c4949b171ba0319add505275d64736b block 158834391 gas 49001 cost 0.000000049638863088 ETH; nonce now 3909",
+  "2026-10-29T09:52:42.909Z SEND approve repo ethereum/go-ethereum -> Router (z_X) (nonce 3909) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:52:46.981Z   confirmed 0xad9b9b26a498baf63694497e450918e62e11983bf5752f349c578078fcde5b08 block 158834394 gas 49001 cost 0.000000049638863088 ETH; nonce now 3910",
+  "2026-10-29T09:52:48.442Z SEND approve repo remix-project-org/remix-project -> Router (z_X) (nonce 3910) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:52:52.486Z   confirmed 0xa1ff04e03a018b1e41a2af9efb5e8506abdad73ea96732de7d1cef3b4fe82dca block 158834397 gas 49001 cost 0.000000049638863088 ETH; nonce now 3911",
+  "2026-10-29T09:52:53.988Z SEND approve repo argotorg/solidity -> Router (z_X) (nonce 3911) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:52:57.982Z   confirmed 0x12a5e68182b94dc7962326c2769d5485288ee113707cd3808478182d0040f0dc block 158834399 gas 49001 cost 0.000000049638863088 ETH; nonce now 3912",
+  "2026-10-29T09:52:59.460Z SEND approve repo argotorg/sourcify -> Router (z_X) (nonce 3912) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:03.480Z   confirmed 0xdc2e118ab1aa01efb253ef57fdd66a475336dd3fbdcd55e22b07344b4854a7fa block 158834402 gas 49001 cost 0.000000049658892376 ETH; nonce now 3913",
+  "2026-10-29T09:53:04.954Z SEND approve repo ethereum/web3.py -> Router (z_X) (nonce 3913) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:09.020Z   confirmed 0xe38a132bfdd61e47aefa964cab615c55c5634bb0f2b8e6acf807de7d182ea404 block 158834405 gas 49001 cost 0.000000049658892376 ETH; nonce now 3914",
+  "2026-10-29T09:53:10.504Z SEND approve repo ethers-io/ethers.js -> Router (z_X) (nonce 3914) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:14.525Z   confirmed 0x1526a5af511fcb8478dce7e37912b3217f6a01d7a24bf5a949886aa398eee87e block 158834408 gas 49001 cost 0.000000049644291111 ETH; nonce now 3915",
+  "2026-10-29T09:53:16.000Z SEND approve repo foundry-rs/foundry -> Router (z_X) (nonce 3915) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:19.979Z   confirmed 0x859ba19e26c708965c5865107cfe4dfbf70dd1f610669308ae24e39777063aa1 block 158834410 gas 49001 cost 0.000000049644291111 ETH; nonce now 3916",
+  "2026-10-29T09:53:21.451Z SEND approve repo grandinetech/grandine -> Router (z_X) (nonce 3916) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:25.499Z   confirmed 0x8f849063303055b4dff97fc14a0402b72562f3dbf917dfde98d5a5d08f7ff048 block 158834413 gas 49001 cost 0.000000049639481384 ETH; nonce now 3917",
+  "2026-10-29T09:53:27.055Z SEND approve repo hyperledger-web3j/web3j -> Router (z_X) (nonce 3917) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:31.212Z   confirmed 0xb31b8ca0bfca600dbff007a619a3fd326b5ef96aada349b6c24cee80a5068049 block 158834416 gas 49001 cost 0.000000049639481384 ETH; nonce now 3918",
+  "2026-10-29T09:53:32.696Z SEND approve repo hyperledger/besu -> Router (z_X) (nonce 3918) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:36.714Z   confirmed 0x3bc5cc52b49a3c0cebdafb859ffe0152633d4b78e7a8120be106b189a788f4c3 block 158834419 gas 49001 cost 0.000000049611015141 ETH; nonce now 3919",
+  "2026-10-29T09:53:38.227Z SEND approve repo nethereum/nethereum -> Router (z_X) (nonce 3919) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:42.227Z   confirmed 0x1b44cf9056b63b655e812c5b11d0687da2b2c538e02b575a9066bc1a819e47d4 block 158834422 gas 49001 cost 0.000000049611015141 ETH; nonce now 3920",
+  "2026-10-29T09:53:43.713Z SEND approve repo nethermindeth/nethermind -> Router (z_X) (nonce 3920) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:47.692Z   confirmed 0x43a33c94b5e457f837b066d94f9859b9c003be5b8d078c03f15713ddaea652b2 block 158834424 gas 49001 cost 0.000000049624028124 ETH; nonce now 3921",
+  "2026-10-29T09:53:49.137Z SEND approve repo nomicfoundation/hardhat -> Router (z_X) (nonce 3921) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:53.131Z   confirmed 0x5418fd5f09c4215653df35ef0dc1f7c32f5903320a947a76b4f4254b0a0fae77 block 158834427 gas 49001 cost 0.000000049623979123 ETH; nonce now 3922",
+  "2026-10-29T09:53:54.593Z SEND approve repo openzeppelin/openzeppelin-contracts -> Router (z_X) (nonce 3922) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:53:58.586Z   confirmed 0x74b94cb7d762cce8603558996d5a6589a873b783f947be7161a498c4af2d441e block 158834430 gas 49001 cost 0.000000049619059282 ETH; nonce now 3923",
+  "2026-10-29T09:54:00.086Z SEND approve repo paradigmxyz/reth -> Router (z_X) (nonce 3923) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:04.094Z   confirmed 0x9bb34b4f3a02c4d3a80b2df602797ead1c25a46ec5dea0df1c4497f605e8f12d block 158834433 gas 49001 cost 0.000000049619010281 ETH; nonce now 3924",
+  "2026-10-29T09:54:05.593Z SEND approve repo OffchainLabs/prysm -> Router (z_X) (nonce 3924) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:09.644Z   confirmed 0x618a1b59ac310c01947cb322ab79d28e8cad9bac775701ffb216a69cce27c1bf block 158834435 gas 49001 cost 0.000000049628207394 ETH; nonce now 3925",
+  "2026-10-29T09:54:11.152Z SEND approve repo safe-global/safe-smart-account -> Router (z_X) (nonce 3925) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:15.166Z   confirmed 0xa026131357a310db8af4b488efddd1ea5f912d604178b5509830a79712d2d906 block 158834438 gas 49001 cost 0.000000049628207394 ETH; nonce now 3926",
+  "2026-10-29T09:54:16.661Z SEND approve repo scaffold-eth/scaffold-eth-2 -> Router (z_X) (nonce 3926) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:20.684Z   confirmed 0x2c85fd6b2002835cb49680a216793d05c9f6239a28797f25b7ed1bb28f4c3995 block 158834441 gas 49001 cost 0.000000049596867679 ETH; nonce now 3927",
+  "2026-10-29T09:54:22.167Z SEND approve repo sigp/lighthouse -> Router (z_X) (nonce 3927) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:26.163Z   confirmed 0x2c1499b7380ad5fa1325fa14efd4188c15234832371f50278f647fd4fbd652f6 block 158834444 gas 49001 cost 0.000000049596867679 ETH; nonce now 3928",
+  "2026-10-29T09:54:27.682Z SEND approve repo status-im/nimbus-eth2 -> Router (z_X) (nonce 3928) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:31.694Z   confirmed 0x02ed5fb36747944cb7a1bb53f419d5b987b7cfd1257500f5619893af0f377b35 block 158834446 gas 49001 cost 0.000000049596867679 ETH; nonce now 3929",
+  "2026-10-29T09:54:33.419Z SEND approve repo vyperlang/titanoboa -> Router (z_X) (nonce 3929) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:37.639Z   confirmed 0xdb7fa0299a70526c95a3553cf2b57515eba822a2596bc56ce71a48c5fcea07f8 block 158834449 gas 49001 cost 0.000000049588897307 ETH; nonce now 3930",
+  "2026-10-29T09:54:39.168Z SEND approve repo vyperlang/vyper -> Router (z_X) (nonce 3930) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:43.173Z   confirmed 0x5a19434f2d42625488280d0051080c9c10011c65368c268d59649e74839cfe9c block 158834452 gas 49001 cost 0.000000049588897307 ETH; nonce now 3931",
+  "2026-10-29T09:54:44.690Z SEND approve repo wevm/viem -> Router (z_X) (nonce 3931) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:48.673Z   confirmed 0x3525f69210b06bff0d94070de220f443db91e9795ba9a6ebb6d8e65c28630fb3 block 158834455 gas 49001 cost 0.00000004957402928 ETH; nonce now 3932",
+  "2026-10-29T09:54:50.141Z SEND approve repo argotorg/hevm -> Router (z_X) (nonce 3932) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:54.152Z   confirmed 0x7df46f47d09489d62d08a1ec349b66bb332901d138b58cd451599a49cfd000a6 block 158834458 gas 49001 cost 0.00000004957402928 ETH; nonce now 3933",
+  "2026-10-29T09:54:55.617Z SEND approve repo ethdebug/format -> Router (z_X) (nonce 3933) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:54:59.630Z   confirmed 0x0847a3ac102229082203be22031cd8e02ab09d4aff49bf9464d22c8020198a1c block 158834460 gas 49001 cost 0.000000049579076082 ETH; nonce now 3934",
+  "2026-10-29T09:55:01.097Z SEND approve repo argotorg/act -> Router (z_X) (nonce 3934) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:05.165Z   confirmed 0x518228163ca295a1d04866bc13bab81dc1d22bb72892290169ec422a2d9a9d38 block 158834463 gas 49001 cost 0.000000049579076082 ETH; nonce now 3935",
+  "2026-10-29T09:55:06.633Z SEND approve repo ethpandaops/ethereum-package -> Router (z_X) (nonce 3935) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:10.652Z   confirmed 0x5120a769174818a2979bd12c12cccc9da0177325cacb72cfcae3326a50363b94 block 158834466 gas 49001 cost 0.000000049543899125 ETH; nonce now 3936",
+  "2026-10-29T09:55:12.135Z SEND approve repo ethpandaops/ethereum-helm-charts -> Router (z_X) (nonce 3936) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:16.161Z   confirmed 0x975a6a2e6bc9270a4655db1e3edbbd93f1d907adb6e6af6398a767152300452a block 158834469 gas 49001 cost 0.000000049543899125 ETH; nonce now 3937",
+  "2026-10-29T09:55:17.657Z SEND approve repo ethpandaops/checkpointz -> Router (z_X) (nonce 3937) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:21.678Z   confirmed 0x24d7218a07ab11968dafbc32277694f3d0ae7dc0489a0097e364c531b54198e9 block 158834471 gas 49001 cost 0.000000049570180538 ETH; nonce now 3938",
+  "2026-10-29T09:55:23.155Z SEND approve repo lambdaclass/lambda_ethereum_consensus -> Router (z_X) (nonce 3938) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:27.293Z   confirmed 0x26ac733fd7c7d0114715afa4dd03e7d92b770a28f0f5d5df1200bbba2160c5c0 block 158834474 gas 49001 cost 0.000000049570180538 ETH; nonce now 3939",
+  "2026-10-29T09:55:28.767Z SEND approve repo erigontech/silkworm -> Router (z_X) (nonce 3939) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:32.806Z   confirmed 0x3b5cefccfb579696af59f7ecacce59d863327647d8bda61ac63a5a0218b98019 block 158834477 gas 49001 cost 0.000000049611967047 ETH; nonce now 3940",
+  "2026-10-29T09:55:34.351Z SEND approve middle-C Invalid -> Router (z_X) (nonce 3940) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:38.469Z   confirmed 0x70abb63bbe978a91356eb428b9fc87bebf38c29cc2e1329ed0a9a40af2bdb3e0 block 158834480 gas 49001 cost 0.000000049611967047 ETH; nonce now 3941",
+  "2026-10-29T09:55:39.953Z SEND Router.mergePositions(sUSDS, middle C, z_X) (nonce 3941) gasLimit 6457324 calldata_hash 0x9f064ad6394057466c41d25e57bc150dc74f376980ddefa2ea5157c3f4a96be8",
+  "2026-10-29T09:55:44.085Z   confirmed 0xd841ab6019a7a509194ea60eac46535b6ab679ef6c9a63dd9978434391187e45 block 158834482 gas 4304883 cost 0.000004306770285775 ETH; nonce now 3942",
+  "2026-10-29T09:55:50.061Z SEND approve bundle token -> Router (y) (nonce 3942) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:54.107Z   confirmed 0x50285bf9520f7cfffc733da94abae4c8173e919740caf891e3b2e04bef677d7c block 158834488 gas 49001 cost 0.000000049606411889 ETH; nonce now 3943",
+  "2026-10-29T09:55:55.583Z SEND approve bundle token -> Router (y) (nonce 3943) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:55:59.633Z   confirmed 0xe4cf929748264bb79f2c3e470c9da7d47ad18a5bb948ab5a7a9785382e4aae1a block 158834490 gas 49001 cost 0.000000049626989939 ETH; nonce now 3944",
+  "2026-10-29T09:56:01.163Z SEND approve bundle token -> Router (y) (nonce 3944) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:56:05.242Z   confirmed 0xcdffb5acd8e3389e3803469e8ec5c0ddc07031952ce8a7681816b790496c83d5 block 158834493 gas 49001 cost 0.000000049626989939 ETH; nonce now 3945",
+  "2026-10-29T09:56:06.709Z SEND approve parent Invalid -> Router (y) (nonce 3945) gasLimit 58802 calldata_hash 0x506d8fc0b2adc2488896892df01fca693606d674aeca81ad6266de487670fa60",
+  "2026-10-29T09:56:10.736Z   confirmed 0xae4d5a622494cd020fad75689a966acc8304630e3730556afeb0f4c4219acd0e block 158834496 gas 49001 cost 0.000000049589968252 ETH; nonce now 3946",
+  "2026-10-29T09:56:12.246Z SEND Router.mergePositions(sUSDS, parent, y) (nonce 3946) gasLimit 832427 calldata_hash 0x107fab73423a2aa146cc9751fd38498ac24743d723c63abdeab4213e54f18ea0",
+  "2026-10-29T09:56:16.262Z   confirmed 0x6f44ce8e6b32f6ec4cd312f866812aeac22b5c0100a2076ac8340ab4ddd1f67e block 158834499 gas 554952 cost 0.000000555750368976 ETH; nonce now 3947"
+ ],
+ "tool_calls": {
+  "helperCalls": 682,
+  "helperRetries": 0,
+  "signerCalls": 327
+ }
+}

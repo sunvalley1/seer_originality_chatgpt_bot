@@ -8386,5 +8386,23 @@
   "cost_wei": "49589968252",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:56:15.901Z",
+  "source": "halfb:2026-10-29T0859Z",
+  "group": "parent-merge",
+  "idx": 4,
+  "label": "Router.mergePositions(sUSDS, parent, y)",
+  "nonce": 3946,
+  "tx_hash": "0x6f44ce8e6b32f6ec4cd312f866812aeac22b5c0100a2076ac8340ab4ddd1f67e",
+  "block": 158834499,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "832427",
+  "gas_used": "554952",
+  "effective_gas_price": "1000285",
+  "l1_fee": "640207656",
+  "cost_wei": "555750368976",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]
