@@ -23,7 +23,7 @@
    "effects_diffs": []
   },
   "mint-middle-A": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:05:19.793Z",
    "txs": [
     {
@@ -31,8 +31,41 @@
      "nonce": 3482,
      "hash": "0xcad845684ae28ce15e6c60d51e1006a7a9a9a71e63e94f797938daead21489da",
      "block": 158832973
+    },
+    {
+     "idx": 3,
+     "nonce": 3483,
+     "hash": "0x4280fd523c1980b6780983963ca1dba12f009caae5282dfb0cb657cf817adc44",
+     "block": 158832976
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:05:32.334Z",
+   "effects_diffs": []
+  },
+  "mint-middle-B": {
+   "status": "done",
+   "started_at": "2026-10-29T09:05:33.068Z",
+   "txs": [
+    {
+     "idx": 4,
+     "nonce": 3484,
+     "hash": "0x25b19ed3a1b5d07c8139fb6aae4a8ef172cfb276e45daf840ed91782b88206b7",
+     "block": 158832980
+    },
+    {
+     "idx": 5,
+     "nonce": 3485,
+     "hash": "0x94d25b7035c24afea0022a0789d6c7d23e560de950ecad77fbf25d958f70a570",
+     "block": 158832983
+    }
+   ],
+   "ended_at": "2026-10-29T09:05:45.587Z",
+   "effects_diffs": []
+  },
+  "mint-middle-C": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:05:46.309Z",
+   "txs": []
   }
  },
  "stop": null,

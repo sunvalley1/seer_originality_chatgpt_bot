@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:05:19.085Z",
+ "generated_at": "2026-10-29T09:05:45.587Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -11,6 +11,32 @@
    "fill_price": 1,
    "slippage_vs_quote": 0,
    "tx_hash": "0x5a2805322c6f3d3d4ef43c11e95d2ea9870efd8e55fea7beff7ee9b2f5c1c0be",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "side": "mint",
+   "route": "split-parent",
+   "requested": 200.5044672229944,
+   "filled": 200.5044672229944,
+   "fill_price": 1,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x4280fd523c1980b6780983963ca1dba12f009caae5282dfb0cb657cf817adc44",
+   "status": "filled",
+   "error": null
+  },
+  {
+   "market": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+   "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+   "side": "mint",
+   "route": "split-parent",
+   "requested": 258.38920329416635,
+   "filled": 258.38920329416635,
+   "fill_price": 1,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x94d25b7035c24afea0022a0789d6c7d23e560de950ecad77fbf25d958f70a570",
    "status": "filled",
    "error": null
   }
