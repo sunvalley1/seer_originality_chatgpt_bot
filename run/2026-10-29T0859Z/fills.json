@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:22:55.700Z",
+ "generated_at": "2026-10-29T09:23:36.773Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -481,12 +481,25 @@
    "tx_hash": "0x9fdfc03ea45560b8a2f761bed7d068b0596bfe9fe82f74e6561975a88ffbc50f",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "dl-solarity/solidity-lib",
+   "address": "0x4b62af2f270b59ec49230d3a06b63752964a4311",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 14.1338155127716,
+   "filled": 19.31833485360569,
+   "fill_price": 0.7316270071865733,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xa79aee4bdcedd499970f6a344afb11b67d23b87651ad848116a325a5bf652148",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 32
+  "positions_opened": 33
  },
  "retained_legs": []
 }
