@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:37:02.313Z",
+ "generated_at": "2026-10-29T09:37:16.394Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -793,12 +793,25 @@
    "tx_hash": "0x770f43c376f32956328f73bc914b66905fe644eefbf7ff38a6fb952e65bd5e18",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "hyperledger/besu",
+   "address": "0x5a56ecb388369c2a92b51ca1e08c32f233baf178",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 25.9889801409728,
+   "filled": 33.36318516856321,
+   "fill_price": 0.7789717921015877,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0xc622ef6e2192348939c3e5591f136e588b925b07bf1c6b4f96bee253128944a5",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 56
+  "positions_opened": 57
  },
  "retained_legs": []
 }
