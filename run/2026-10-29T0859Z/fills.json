@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:34:46.018Z",
+ "generated_at": "2026-10-29T09:34:59.861Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -715,12 +715,25 @@
    "tx_hash": "0x1d341c1e0f6afed8a81c9bdde4240a64578b9af3d7e059a931c9537e2eeac535",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "argotorg/solidity",
+   "address": "0x38a9dc84c9f940262b548856c1869f992ee80ba4",
+   "side": "UP",
+   "route": "simple-buy",
+   "requested": 20.8129900458159,
+   "filled": 24.988378452548545,
+   "fill_price": 0.8329067884632266,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x4e64f50c057d93ea4bd0624258ca78f0290ed7576ffcdb3f2912bf921928ec72",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 50
+  "positions_opened": 51
  },
  "retained_legs": []
 }

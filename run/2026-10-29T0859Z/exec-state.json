@@ -2021,9 +2021,36 @@
    "effects_diffs": []
   },
   "simple-buy:argotorg/solidity:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:34:46.774Z",
-   "txs": []
+   "txs": [
+    {
+     "idx": 263,
+     "nonce": 3743,
+     "hash": "0x45a7f3cf6d967a23e939c2add1856a12f069d98a649fc77c0ca287927ed058bd",
+     "block": 158833857
+    },
+    {
+     "idx": 264,
+     "nonce": 3744,
+     "hash": "0x4e64f50c057d93ea4bd0624258ca78f0290ed7576ffcdb3f2912bf921928ec72",
+     "block": 158833860
+    }
+   ],
+   "ended_at": "2026-10-29T09:34:59.862Z",
+   "effects_diffs": []
+  },
+  "set-sell:argotorg/sourcify": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:35:00.608Z",
+   "txs": [
+    {
+     "idx": 265,
+     "nonce": 3745,
+     "hash": "0x54f0e3af1ccf60708707b1eb3c51fd962498cfef848fe40c1619da6a6c62c755",
+     "block": 158833864
+    }
+   ]
   }
  },
  "stop": null,
