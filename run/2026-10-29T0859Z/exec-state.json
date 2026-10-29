@@ -2505,7 +2505,7 @@
    "effects_diffs": []
   },
   "set-sell:sigp/lighthouse": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:41:48.013Z",
    "txs": [
     {
@@ -2525,8 +2525,33 @@
      "nonce": 3807,
      "hash": "0x0b94fde9e715d58107ef45a1200439c05a1b1266eeed928498c239ad02a82426",
      "block": 158834074
+    },
+    {
+     "idx": 328,
+     "nonce": 3808,
+     "hash": "0x6a2ee3e894c7fc0b78c68c5f5b50057b782016f1a89fdaddf999b3a993559dfa",
+     "block": 158834077
+    },
+    {
+     "idx": 329,
+     "nonce": 3809,
+     "hash": "0xdac2f736ef249f6086993da4de5ff501a289b407bdde3274c03031a043804166",
+     "block": 158834080
+    },
+    {
+     "idx": 330,
+     "nonce": 3810,
+     "hash": "0x6f8454acbd836e0783e0687100cf13f688fe4989c8519a2d58d21ace265f78c1",
+     "block": 158834084
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:42:27.086Z",
+   "effects_diffs": []
+  },
+  "set-sell:status-im/nimbus-eth2": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:42:27.859Z",
+   "txs": []
   }
  },
  "stop": null,

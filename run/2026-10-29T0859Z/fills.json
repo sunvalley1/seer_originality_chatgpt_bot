@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:41:47.176Z",
+ "generated_at": "2026-10-29T09:42:27.086Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -910,12 +910,25 @@
    "tx_hash": "0xf08849c68338a69542e8f985f8467cb20c73a7b1fec0e6efeff636ff505f1d1e",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "sigp/lighthouse",
+   "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+   "side": "set",
+   "route": "set-sell",
+   "requested": 18.7626853385075,
+   "filled": 18.7626853385075,
+   "fill_price": 1.0295095564794827,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x6f8454acbd836e0783e0687100cf13f688fe4989c8519a2d58d21ace265f78c1",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 65
+  "positions_opened": 66
  },
  "retained_legs": []
 }
