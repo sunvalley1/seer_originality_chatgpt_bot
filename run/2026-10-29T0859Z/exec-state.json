@@ -1297,7 +1297,7 @@
    "effects_diffs": []
   },
   "set-sell:risc0/risc0-ethereum": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:23:37.493Z",
    "txs": [
     {
@@ -1323,6 +1323,32 @@
      "nonce": 3648,
      "hash": "0x97530debc95fd8c934bac4d8a84647b211f1192996b26bdf87ccbff82276e95e",
      "block": 158833532
+    },
+    {
+     "idx": 169,
+     "nonce": 3649,
+     "hash": "0xecf0932bfa04d7a527f74bc3320e8deab03ce3e1402886efa0b36f3c0b6b31c5",
+     "block": 158833535
+    },
+    {
+     "idx": 170,
+     "nonce": 3650,
+     "hash": "0x12de942a0e736d931d3da2465388dd324f6045f74e3fac68fc4008ab9d43665f",
+     "block": 158833539
+    }
+   ],
+   "ended_at": "2026-10-29T09:24:17.055Z",
+   "effects_diffs": []
+  },
+  "complex-buy:risc0/risc0-ethereum:DOWN": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:24:17.809Z",
+   "txs": [
+    {
+     "idx": 171,
+     "nonce": 3651,
+     "hash": "0x3731c16c30cf16c0ca09b27a02378ca76d43a9001ee7b18cdaac88c6f1c0a7ae",
+     "block": 158833542
     }
    ]
   }
