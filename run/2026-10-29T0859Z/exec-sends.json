@@ -3904,5 +3904,41 @@
   "cost_wei": "146808641801",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:29:36.853Z",
+  "source": "entry",
+  "group": "complex-buy:apeworx/ape:UP",
+  "idx": 217,
+  "label": "approve repo -> SwapRouter02 (P, quoted proceeds)",
+  "nonce": 3697,
+  "tx_hash": "0x650287b5e30a2386b2ece3310de7b57f5d360bca531fdbc39e59171220d5dde0",
+  "block": 158833699,
+  "to": "0x83145e3924d19c0a9a3a587887fb8599a5610c21",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000291",
+  "l1_fee": "607157089",
+  "cost_wei": "49610412888",
+  "rebuilt": true,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-29T09:29:43.548Z",
+  "source": "entry",
+  "group": "complex-buy:apeworx/ape:UP",
+  "idx": 218,
+  "label": "buy UP with the proceeds (min 99.5% of quote at P)",
+  "nonce": 3698,
+  "tx_hash": "0x16d7e3beaf44fe38fbbce6665f58171eb6b0c958c852f5b7735addbf94e7fea5",
+  "block": 158833702,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "145714",
+  "gas_used": "116628",
+  "effective_gas_price": "1000290",
+  "l1_fee": "961913429",
+  "cost_wei": "117623735549",
+  "rebuilt": true,
+  "settled_via": null
  }
 ]

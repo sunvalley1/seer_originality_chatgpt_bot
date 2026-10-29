@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:29:03.655Z",
+ "generated_at": "2026-10-29T09:29:44.350Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -598,12 +598,25 @@
    "tx_hash": "0x3b873a444dec21f80532a98a2b01866d78afb6daa5da384bfa2cba8b78e80edb",
    "status": "filled",
    "error": null
+  },
+  {
+   "market": "apeworx/ape",
+   "address": "0x34e4762227c29fb484c79cdc0a2a305fdd39ba56",
+   "side": "UP",
+   "route": "complex-buy",
+   "requested": 16.8389553222183,
+   "filled": 23.222881648491306,
+   "fill_price": 0.7251018877457982,
+   "slippage_vs_quote": 0,
+   "tx_hash": "0x16d7e3beaf44fe38fbbce6665f58171eb6b0c958c852f5b7735addbf94e7fea5",
+   "status": "filled",
+   "error": null
   }
  ],
  "totals": {
   "spent": 140.324473992044,
   "spent_unit": "sUSDS",
-  "positions_opened": 41
+  "positions_opened": 42
  },
  "retained_legs": []
 }

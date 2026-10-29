@@ -1649,7 +1649,7 @@
    "effects_diffs": []
   },
   "complex-buy:apeworx/ape:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:29:04.381Z",
    "txs": [
     {
@@ -1669,8 +1669,33 @@
      "nonce": 3695,
      "hash": "0x1a18533a5de16109917745f552aa1e86aec593c585fd5fa6db29674e00754f09",
      "block": 158833692
+    },
+    {
+     "idx": 216,
+     "nonce": 3696,
+     "hash": "0x1fad9a1b1448e5c7850f1b2c6856b7bffe40c747412f98f98b85a8c3ba75b7b9",
+     "block": 158833695
+    },
+    {
+     "idx": 217,
+     "nonce": 3697,
+     "hash": "0x650287b5e30a2386b2ece3310de7b57f5d360bca531fdbc39e59171220d5dde0",
+     "block": 158833699
+    },
+    {
+     "idx": 218,
+     "nonce": 3698,
+     "hash": "0x16d7e3beaf44fe38fbbce6665f58171eb6b0c958c852f5b7735addbf94e7fea5",
+     "block": 158833702
     }
-   ]
+   ],
+   "ended_at": "2026-10-29T09:29:44.351Z",
+   "effects_diffs": []
+  },
+  "complex-buy:consensys/teku:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:29:45.103Z",
+   "txs": []
   }
  },
  "stop": null,
