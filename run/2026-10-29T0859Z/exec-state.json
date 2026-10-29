@@ -791,7 +791,7 @@
    "effects_diffs": []
   },
   "complex-buy:Commit-Boost/commit-boost-client:UP": {
-   "status": "in-progress",
+   "status": "done",
    "started_at": "2026-10-29T09:16:15.333Z",
    "txs": [
     {
@@ -823,6 +823,32 @@
      "nonce": 3582,
      "hash": "0x3b6871673f0379fe1ea8b19ad17f26eb1ebe5f77848c8d17d17d925e4364cf8a",
      "block": 158833313
+    },
+    {
+     "idx": 103,
+     "nonce": 3583,
+     "hash": "0xf0c709a668d555ad108973ba73045d1694b9bea39b15c548544949908a8c6ba5",
+     "block": 158833317
+    }
+   ],
+   "ended_at": "2026-10-29T09:16:53.242Z",
+   "effects_diffs": []
+  },
+  "complex-buy:Cyfrin/aderyn:UP": {
+   "status": "in-progress",
+   "started_at": "2026-10-29T09:16:54.017Z",
+   "txs": [
+    {
+     "idx": 104,
+     "nonce": 3584,
+     "hash": "0xef3da9f948935667d492773bea6d592bdb0f3e0e0166e862a5fc636b4fd5799e",
+     "block": 158833320
+    },
+    {
+     "idx": 105,
+     "nonce": 3585,
+     "hash": "0xe807a6bc52c6d7277db5b458929428dfcead1b9aabae1182881b4ad4786529ea",
+     "block": 158833324
     }
    ]
   }
