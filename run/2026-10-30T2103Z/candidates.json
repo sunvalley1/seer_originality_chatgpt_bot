@@ -1,0 +1,3438 @@
+{
+  "generated_at": "2026-10-30T21:04:17.889Z",
+  "chain_id": 10,
+  "contest": "round3",
+  "candidates": [
+    {
+      "market": "ethereum/py_ecc",
+      "address": "0x5d6a571b0f663c33831e6f81dd3c3f554eca188b",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xc9335b722174a667c6c7d69ee85412dc41332b4c",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/py_ecc",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 0
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/py_ecc in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "78852333593821140834",
+          "price": 0.22139106639835854
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1138641802894253378367",
+          "price": 0.8274632938240752
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 0 of 98, slot 0 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "blockscout/blockscout",
+      "address": "0xe263e7febb2ccfe1ebb05f289cf858d3becec83f",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xdc5d24ef28bcd21b75ec891efd56696e0ce7f6c8",
+      "collateral_symbol": "ORIG_R3_REPO:blockscout/blockscout",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 1
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of blockscout/blockscout in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "182247013420993517353",
+          "price": 0.3229223187959666
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1067417305905930597538",
+          "price": 0.6884715136052081
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 1 of 98, slot 1 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "LFDT-web3j/web3j",
+      "address": "0xf799b67f0b8da6ed75d6d31370346e2dd6be187d",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x9657c41ff217dff4d12440c8f90fb35727b8cc58",
+      "collateral_symbol": "ORIG_R3_REPO:LFDT-web3j/web3j",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 2
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of LFDT-web3j/web3j in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "108544594297139468703",
+          "price": 0.21796433509080756
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1120135745382994412562",
+          "price": 0.7998038005185113
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 2 of 98, slot 2 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "herumi/mcl",
+      "address": "0xc7846582934c4c1d1156ddf44d988f6857b0f743",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xae62d632ca2cf25c84cbf343c833f11aee44ff79",
+      "collateral_symbol": "ORIG_R3_REPO:herumi/mcl",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 3
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of herumi/mcl in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "143921502183864750194",
+          "price": 0.17987120252922523
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1095675217539538620240",
+          "price": 0.8331089353725364
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 3 of 98, slot 3 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "paulmillr/noble-curves",
+      "address": "0xf74142573cd11d76501dfd51d5512fc6b8ca7933",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x9f2ab3d59aa30e63b8698538b5c0990d32d5f93d",
+      "collateral_symbol": "ORIG_R3_REPO:paulmillr/noble-curves",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 4
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of paulmillr/noble-curves in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "114591918585123867414",
+          "price": 0.25750087404815825
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1115763034993780435628",
+          "price": 0.7595066160556291
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 4 of 98, slot 4 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "arkworks-rs/algebra",
+      "address": "0xb52c7e58dc48250b6cb4fbe5ed251f617700bf06",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3da35d4535502f5e9f0d42ef81b8dd1b2f73ac64",
+      "collateral_symbol": "ORIG_R3_REPO:arkworks-rs/algebra",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 5
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of arkworks-rs/algebra in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "98569490557268251296",
+          "price": 0.17809935134945562
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126720010527821373478",
+          "price": 0.8431659612312598
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 5 of 98, slot 5 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "flashbots/rbuilder",
+      "address": "0xb44e4ad21d40efb87a87c0692e28c71c90d08d20",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x959b8e01b52b0c0db1f6bb09472fbd01cb7eb898",
+      "collateral_symbol": "ORIG_R3_REPO:flashbots/rbuilder",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 6
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of flashbots/rbuilder in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "186386143820901864979",
+          "price": 0.27479348850655483
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1063969451351437634413",
+          "price": 0.7364715252950498
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 6 of 98, slot 6 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "protofire/solhint",
+      "address": "0x808055e027cada3fb6d2b84104cd46b6685c048e",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xcdd7945aa385dbdcbfa7341c7f51533581aacf1e",
+      "collateral_symbol": "ORIG_R3_REPO:protofire/solhint",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 7
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of protofire/solhint in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "140664918438394497631",
+          "price": 0.2730951241642289
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1097960722794921608522",
+          "price": 0.7429064571913806
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 7 of 98, slot 7 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "l2beat/l2beat",
+      "address": "0x0954b44c816f034c6c30a0b049f0ceb6bda6100a",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd989451a073eb66d3f67006d3180c2f6d7c3de26",
+      "collateral_symbol": "ORIG_R3_REPO:l2beat/l2beat",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 8
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of l2beat/l2beat in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "119416265791161819083",
+          "price": 0.22747249137489148
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1112219615380630400535",
+          "price": 0.788921744822023
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 8 of 98, slot 8 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Consensys/gnark-crypto",
+      "address": "0x9fc615e9a9e2066d3e8dda5c1c5280461489d808",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xb383ca42f8dfd4877bcc59cc5504421d14bf436f",
+      "collateral_symbol": "ORIG_R3_REPO:Consensys/gnark-crypto",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 9
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Consensys/gnark-crypto in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "91798042146434253969",
+          "price": 0.1791711059193255
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1131194981913600996426",
+          "price": 0.8614032439220733
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 9 of 98, slot 9 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Vectorized/solady",
+      "address": "0x1e405c9bcf5038770efc4e5065cd216f93658b80",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x8c4bc88cce543c173faac9aaf9137fe89f022568",
+      "collateral_symbol": "ORIG_R3_REPO:Vectorized/solady",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 10
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Vectorized/solady in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "75876585610144853367",
+          "price": 0.2670460978392591
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1140425897568643664314",
+          "price": 0.7586716598351916
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 10 of 98, slot 10 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "taikoxyz/taiko-mono",
+      "address": "0x6a6a3326d701d464034d141bece8c21a06b7854b",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xe7e63c87ded7510de737693575573a9ad00e96b6",
+      "collateral_symbol": "ORIG_R3_REPO:taikoxyz/taiko-mono",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 11
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of taikoxyz/taiko-mono in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "154359198648971858933",
+          "price": 0.2791136606566649
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1088151763689367970605",
+          "price": 0.7325054952746741
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 11 of 98, slot 11 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "flashbots/mev-boost",
+      "address": "0xc53217f3ca3371921076c4e7ea9457ea3b758317",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x29d9ef12cd83fc988a22cb3c2985eb535e8ceb36",
+      "collateral_symbol": "ORIG_R3_REPO:flashbots/mev-boost",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 12
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of flashbots/mev-boost in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "92116836591115286260",
+          "price": 0.10928574508590834
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1130921389068767327516",
+          "price": 0.8998792193807137
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 12 of 98, slot 12 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "flashbots/mev-boost-relay",
+      "address": "0xfd9f5746c9451fedc03fa9d334d84099b61017ca",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x131e612c62d1e9a81cb363dfab986e28833dda97",
+      "collateral_symbol": "ORIG_R3_REPO:flashbots/mev-boost-relay",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 13
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of flashbots/mev-boost-relay in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "107239824430739002036",
+          "price": 0.21728972556692483
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1121030489997206422783",
+          "price": 0.7998038005185113
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 13 of 98, slot 13 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/js-ethereum-cryptography",
+      "address": "0x018a386a46949fbc8781b1254636b3a76e60a57c",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x556eb58d13e2628507d13a3d54d45d7ba503023f",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/js-ethereum-cryptography",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 14
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/js-ethereum-cryptography in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "145196741512541384229",
+          "price": 0.46155163664481824
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1094618422176757513612",
+          "price": 0.5494321124480843
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 14 of 98, slot 14 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "libp2p/libp2p",
+      "address": "0xde89236ae23777bdf655344858c44fa581c470a3",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x571d94278a274abbb904011d31a3e34a42114a20",
+      "collateral_symbol": "ORIG_R3_REPO:libp2p/libp2p",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 15
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of libp2p/libp2p in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "161377028593100353265",
+          "price": 0.16710873912693508
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1083045174932518809742",
+          "price": 0.8442627348915159
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 15 of 98, slot 15 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "supranational/blst",
+      "address": "0x74a00a7a338f0fa8ce7afedb27279a30cf24df85",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x736f833ca8d46912d00696c107be1e31ada850e1",
+      "collateral_symbol": "ORIG_R3_REPO:supranational/blst",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 16
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of supranational/blst in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "110395760524635812143",
+          "price": 0.11607806649801809
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1118926489151717542883",
+          "price": 0.899789240456668
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 16 of 98, slot 16 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "wighawag/hardhat-deploy",
+      "address": "0xc8db7cdd4bc8006353dd09d87ecab65f84c620e5",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xa9e1b0be4b73e99cac245eb0416667177f0f4031",
+      "collateral_symbol": "ORIG_R3_REPO:wighawag/hardhat-deploy",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 17
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of wighawag/hardhat-deploy in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "245933071848812475055",
+          "price": 0.27761058400096145
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1013351413817309796968",
+          "price": 0.7352206497901976
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 17 of 98, slot 17 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethstaker/eth-docker",
+      "address": "0x9525a58d53bc9d395ef56ec4c11e39370a88a304",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd81974ede39ce3d512a58f67af191c9e36cfae13",
+      "collateral_symbol": "ORIG_R3_REPO:ethstaker/eth-docker",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 18
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethstaker/eth-docker in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "474760853626729507154",
+          "price": 0.41318666781734226
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "815668946000858406285",
+          "price": 0.5966204220748826
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 18 of 98, slot 18 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "DefiLlama/DefiLlama-Adapters",
+      "address": "0xd71b2fe2ff2c91d5d822ce6399c646137723186a",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x4f68190347793cc9e1f21bb0cebb0f9f8c1269d9",
+      "collateral_symbol": "ORIG_R3_REPO:DefiLlama/DefiLlama-Adapters",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 19
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of DefiLlama/DefiLlama-Adapters in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "111632853562222260851",
+          "price": 0.28392730292721263
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1117903092402245173469",
+          "price": 0.7283422984901001
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 19 of 98, slot 19 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "DefiLlama/chainlist",
+      "address": "0x4b8bda295e28375ed17abc8d1472e9cccadc93aa",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x6f7b1d0411f5e3d1908fa09b1cec4e9968b03095",
+      "collateral_symbol": "ORIG_R3_REPO:DefiLlama/chainlist",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 20
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of DefiLlama/chainlist in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "214431207422130153267",
+          "price": 0.256986412655574
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1043009805234393965005",
+          "price": 0.7223223756411876
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 20 of 98, slot 20 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Certora/CertoraProver",
+      "address": "0x45dc37854a86f647cf45890f7167c0adc19814f2",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x88c5f00c75d20d89b9deaee70aa5951c2b3a8e46",
+      "collateral_symbol": "ORIG_R3_REPO:Certora/CertoraProver",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 21
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Certora/CertoraProver in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "124106068016768607941",
+          "price": 0.20181174323058643
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1109586186921348006075",
+          "price": 0.7984453569828222
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 21 of 98, slot 21 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Plonky3/Plonky3",
+      "address": "0x8df828fcba7ec2b014742e202cf091807df939e6",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x8671f584409b8672aff2c7eda4104fcd6e5b2649",
+      "collateral_symbol": "ORIG_R3_REPO:Plonky3/Plonky3",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 22
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Plonky3/Plonky3 in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "141639806869428140016",
+          "price": 0.22381730670120548
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1097300463974857063980",
+          "price": 0.7888428605359694
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 22 of 98, slot 22 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ChainSafe/bls",
+      "address": "0xf8d574d0a7dc92deb6ae61adae9ad1219aac2c73",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xafd9706a0ef6e4238b5dc01c9e76b5bc45bd8fdd",
+      "collateral_symbol": "ORIG_R3_REPO:ChainSafe/bls",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 23
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ChainSafe/bls in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "342643473388798905122",
+          "price": 0.43263619182205054
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "934727174212968307076",
+          "price": 0.5672973664634121
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 23 of 98, slot 23 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "intellij-solidity/intellij-solidity",
+      "address": "0xd413f199fb40a5c85e96b3582dda718570ae7675",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x35fddb246dd89f01c2f769b3b73dd4fc3765360c",
+      "collateral_symbol": "ORIG_R3_REPO:intellij-solidity/intellij-solidity",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 24
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of intellij-solidity/intellij-solidity in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "156494632741811494426",
+          "price": 0.2302645128735023
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1086590257325851058056",
+          "price": 0.7880544513655178
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 24 of 98, slot 24 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "dappnode/DAppNode",
+      "address": "0xdd8e32840a811d26aac9112f530490ee86d89bbc",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x0822bc2d29ca68c316bdf8d91c622e5a42af215a",
+      "collateral_symbol": "ORIG_R3_REPO:dappnode/DAppNode",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 25
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of dappnode/DAppNode in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "190997660626531663486",
+          "price": 0.38390807879379324
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1060977794045936470142",
+          "price": 0.6735586252134403
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 25 of 98, slot 25 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "wealdtech/ethdo",
+      "address": "0x1773e3a7d522e80903e9914a88c815e126fb0f81",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x5ed357484aff3957614381a8c506755b2f4a76c5",
+      "collateral_symbol": "ORIG_R3_REPO:wealdtech/ethdo",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 26
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of wealdtech/ethdo in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "163677865470745326427",
+          "price": 0.2732590222084584
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1081392297550839233992",
+          "price": 0.7386102854856151
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 26 of 98, slot 26 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "lambdaclass/lambdaworks",
+      "address": "0xd756f4a29de73f261f32185d0982c8e454db3356",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xc52ac4cd416bc1777d6fb1ce0478fc8f571f8f9c",
+      "collateral_symbol": "ORIG_R3_REPO:lambdaclass/lambdaworks",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 27
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of lambdaclass/lambdaworks in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99161709142824917427",
+          "price": 0.18996471102176854
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126331981171779470527",
+          "price": 0.8244074891492507
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 27 of 98, slot 27 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "smartcontracts/simple-optimism-node",
+      "address": "0x04f4d33c6aa72320a822bc0fcb32e097a45ae4f9",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x6e360b9643d3483737be154a0816a9b7e6cdd351",
+      "collateral_symbol": "ORIG_R3_REPO:smartcontracts/simple-optimism-node",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 28
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of smartcontracts/simple-optimism-node in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "385745179051836051109",
+          "price": 0.4799068327068517
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "891106148479894384830",
+          "price": 0.5230032545118851
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 28 of 98, slot 28 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "skalenetwork/libBLS",
+      "address": "0x5ba02d2373096140102b6d552e62f9d0f7c7c39d",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x0fb41f0653c7c682748ba4adff1a5ffe0e1c6692",
+      "collateral_symbol": "ORIG_R3_REPO:skalenetwork/libBLS",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 29
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of skalenetwork/libBLS in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "161030209389733531723",
+          "price": 0.2766130324454061
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1082689868808990739423",
+          "price": 0.7372083283209232
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 29 of 98, slot 29 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "shazow/whatsabi",
+      "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x8223d38cd03a88a08f2d03d635e39ee971f665bc",
+      "collateral_symbol": "ORIG_R3_REPO:shazow/whatsabi",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 30
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of shazow/whatsabi in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99186414473955385963",
+          "price": 0.30509238580659853
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126293503671144125525",
+          "price": 0.7799015612187035
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 30 of 98, slot 30 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "TrueBlocks/trueblocks-core",
+      "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xf77035e68764552c03f9c9753b72ac7b930e3ea7",
+      "collateral_symbol": "ORIG_R3_REPO:TrueBlocks/trueblocks-core",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 31
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of TrueBlocks/trueblocks-core in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "71345959059934610548",
+          "price": 0.17890256414399208
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1143998496588707789862",
+          "price": 0.8419022235154714
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 31 of 98, slot 31 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "EspressoSystems/jellyfish",
+      "address": "0x72e12907d277199d7a44fde21d7dd981150b0f1a",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xa26d64530e6666df346812fdd19c487f0e3bc7c5",
+      "collateral_symbol": "ORIG_R3_REPO:EspressoSystems/jellyfish",
+      "parent": {
+        "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+        "outcome_index": 32
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of EspressoSystems/jellyfish in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99135731645002120022",
+          "price": 0.36878180532266797
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126323987267862206322",
+          "price": 0.6448238750177532
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 32 of 98, slot 32 of bundle A's middle market 0xc217920a91f1b3d56276393aa5345f01a848ecf0 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "a16z/halmos",
+      "address": "0x293a1858e689c117708e509770b283f281bbf6cb",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x65b1380266291da3e6101c5a7f066fcbe1e74370",
+      "collateral_symbol": "ORIG_R3_REPO:a16z/halmos",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 0
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of a16z/halmos in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "105500484001200699318",
+          "price": 0.2727948996923523
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1122004275543843613730",
+          "price": 0.7464061604184727
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 33 of 98, slot 0 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "succinctlabs/op-succinct",
+      "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x38180d18d25429832e6a83675d9a7cb256980795",
+      "collateral_symbol": "ORIG_R3_REPO:succinctlabs/op-succinct",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 1
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of succinctlabs/op-succinct in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "145817718356827838818",
+          "price": 0.4211539804499411
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1094236499004832125365",
+          "price": 0.591393456084549
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 34 of 98, slot 1 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "succinctlabs/sp1",
+      "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x20b0c27ab29cef1493f035c3edf107f1b34ac1de",
+      "collateral_symbol": "ORIG_R3_REPO:succinctlabs/sp1",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 2
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of succinctlabs/sp1 in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "245660205434582148102",
+          "price": 0.27777719199850226
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1017417943458664455402",
+          "price": 0.7309689245258021
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 35 of 98, slot 2 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "otterscan/otterscan",
+      "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x63716ceabd3a1ced5a01edf18ea66cc46f7cfb84",
+      "collateral_symbol": "ORIG_R3_REPO:otterscan/otterscan",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 3
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of otterscan/otterscan in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "178420463296256552374",
+          "price": 0.2802883444073924
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1065860784710623337395",
+          "price": 0.7320661457626522
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 36 of 98, slot 3 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "lambdaclass/ethrex",
+      "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x16e52dd5c973293da885a995d59f2ffee932b52a",
+      "collateral_symbol": "ORIG_R3_REPO:lambdaclass/ethrex",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 4
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of lambdaclass/ethrex in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "123309505709423774683",
+          "price": 0.229482981961015
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1109728610165957936900",
+          "price": 0.7757792229034803
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 37 of 98, slot 4 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "NethermindEth/juno",
+      "address": "0x6aa9ba4a89cc1f5d854b898ed34f4370a3857585",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x17e635fa17505fe52dee1e51223661d5b665fad6",
+      "collateral_symbol": "ORIG_R3_REPO:NethermindEth/juno",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 5
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of NethermindEth/juno in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99129174926980076520",
+          "price": 0.27102757124889615
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126337325062838312579",
+          "price": 0.7434266477477749
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 38 of 98, slot 5 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Commit-Boost/commit-boost-client",
+      "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x31f154fcb1ddcbb00b90721c94052dc7907fe7bb",
+      "collateral_symbol": "ORIG_R3_REPO:Commit-Boost/commit-boost-client",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 6
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Commit-Boost/commit-boost-client in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99111553205246108287",
+          "price": 0.30287343137327005
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126373171425965356121",
+          "price": 0.7624743267496533
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 39 of 98, slot 6 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "Cyfrin/aderyn",
+      "address": "0x8717e0e2733acb24ac964667e2252bc118fb2249",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3ce18c72148fda70bb17443e6feab258483fc593",
+      "collateral_symbol": "ORIG_R3_REPO:Cyfrin/aderyn",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 7
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of Cyfrin/aderyn in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "134336564731800468430",
+          "price": 0.31605393207344745
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1102420194805313569034",
+          "price": 0.6838744018363927
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 40 of 98, slot 7 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "0xMiden/miden-vm",
+      "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x39dbc18c06ab8ee04828d37cf5e464edbc53e9aa",
+      "collateral_symbol": "ORIG_R3_REPO:0xMiden/miden-vm",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 8
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of 0xMiden/miden-vm in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "102788751034205930027",
+          "price": 0.22099294080531165
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1123937656929323921541",
+          "price": 0.8022869149854271
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 41 of 98, slot 8 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "holiman/goevmlab",
+      "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x0e36e7eef8d0646c1590598e6b6f38167a9e3109",
+      "collateral_symbol": "ORIG_R3_REPO:holiman/goevmlab",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 9
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of holiman/goevmlab in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "100522932849152272823",
+          "price": 0.3321910915550858
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1125412228372662819470",
+          "price": 0.7455110549511857
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 42 of 98, slot 9 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "edb-rs/edb",
+      "address": "0x73918952494d08ed3eb5c2bf82eb056f51274639",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3f5b2e23bc1301b968bb50773d3639c3b20e100b",
+      "collateral_symbol": "ORIG_R3_REPO:edb-rs/edb",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 10
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of edb-rs/edb in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "185966830983605953733",
+          "price": 0.278416782808584
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1064315416452915475150",
+          "price": 0.7391274678194689
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 43 of 98, slot 10 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "evmts/tevm-monorepo",
+      "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x0819d02842ba743e55cdb3963a52c16a772ede9b",
+      "collateral_symbol": "ORIG_R3_REPO:evmts/tevm-monorepo",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 11
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of evmts/tevm-monorepo in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "130708490574103726580",
+          "price": 0.338732057964838
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1104928803375090161188",
+          "price": 0.6803276617965779
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 44 of 98, slot 11 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "succinctlabs/rsp",
+      "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x6c234f12e3455a9848c48f4f9a4dbedae715ea48",
+      "collateral_symbol": "ORIG_R3_REPO:succinctlabs/rsp",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 12
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of succinctlabs/rsp in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "142911622984431713938",
+          "price": 0.37611846893663725
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1096328106207207790346",
+          "price": 0.6620730502160815
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 45 of 98, slot 12 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "aestus-relay/mev-boost-relay",
+      "address": "0xd264f08e1871926d45f08ba8c19927ba909ed495",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd7232c484d5471dc25446eabf0b7dd5c6de3c6c1",
+      "collateral_symbol": "ORIG_R3_REPO:aestus-relay/mev-boost-relay",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 13
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of aestus-relay/mev-boost-relay in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "55486593217743585644",
+          "price": 0.30781969018023614
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1153330951628259622306",
+          "price": 0.7223223756411876
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 46 of 98, slot 13 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "OffchainLabs/stylus-sdk-rs",
+      "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xfb858c0532aee44defc243cc2ce627531603a444",
+      "collateral_symbol": "ORIG_R3_REPO:OffchainLabs/stylus-sdk-rs",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 14
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of OffchainLabs/stylus-sdk-rs in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "149654385775675398384",
+          "price": 0.2593096129318428
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1091553306338468160245",
+          "price": 0.8024473803912934
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 47 of 98, slot 14 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethstaker/ethstaker-deposit-cli",
+      "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x9ce41ddbae0a0a87b6806c88d99c37ea87b969dc",
+      "collateral_symbol": "ORIG_R3_REPO:ethstaker/ethstaker-deposit-cli",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 15
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethstaker/ethstaker-deposit-cli in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "232770600581292515994",
+          "price": 0.41314535328201407
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1023877565899732123405",
+          "price": 0.5967994261007143
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 48 of 98, slot 15 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "dl-solarity/solidity-lib",
+      "address": "0x4b62af2f270b59ec49230d3a06b63752964a4311",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x368e7ea451a5aa750b0bbcacc0016942c56f93ad",
+      "collateral_symbol": "ORIG_R3_REPO:dl-solarity/solidity-lib",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 16
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of dl-solarity/solidity-lib in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "164846481667121421289",
+          "price": 0.31413196713689245
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1079745335138915480684",
+          "price": 0.7223223756411876
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 49 of 98, slot 16 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "risc0/risc0-ethereum",
+      "address": "0x1c3486fec53da0d19a4b0253b83748df31e10178",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x4c50544e596f1c222aa7f7589ea3658f92dc726d",
+      "collateral_symbol": "ORIG_R3_REPO:risc0/risc0-ethereum",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 17
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of risc0/risc0-ethereum in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "237457955615831880039",
+          "price": 0.30970303448517855
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1024122667315232780659",
+          "price": 0.7087993539602948
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 50 of 98, slot 17 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "powdr-labs/powdr",
+      "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x325532a7abad17fcdcdb5e3b810175ff8a48c675",
+      "collateral_symbol": "ORIG_R3_REPO:powdr-labs/powdr",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 18
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of powdr-labs/powdr in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "159684748355954502792",
+          "price": 0.2301724300901997
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1084273915312666463726",
+          "price": 0.7936692662412543
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 51 of 98, slot 18 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "axiom-crypto/snark-verifier",
+      "address": "0x52634d6c3fb85d5f4566550e0a85bed365524c39",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xccf8ad49acd7a708ce362ac04777389de96fe986",
+      "collateral_symbol": "ORIG_R3_REPO:axiom-crypto/snark-verifier",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 19
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of axiom-crypto/snark-verifier in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "192418745431782409737",
+          "price": 0.3351606386792672
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1059507739323638958180",
+          "price": 0.6768669959503467
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 52 of 98, slot 19 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "swiss-knife-xyz/swiss-knife",
+      "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x90d3dcc0f981ec79f647b50d7bfe09af01eb855c",
+      "collateral_symbol": "ORIG_R3_REPO:swiss-knife-xyz/swiss-knife",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 20
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of swiss-knife-xyz/swiss-knife in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "121870302527881374047",
+          "price": 0.2642040786076857
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1111099133117454031054",
+          "price": 0.7569288072075406
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 53 of 98, slot 20 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "a16z/helios",
+      "address": "0x842cf887862213513895e1aa1714723009512932",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd73749038f49d285077cc5a98115c8bd804c22e8",
+      "collateral_symbol": "ORIG_R3_REPO:a16z/helios",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 21
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of a16z/helios in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "187903673986349528595",
+          "price": 0.2191882980680618
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1063300824926356318498",
+          "price": 0.7812284550694173
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 54 of 98, slot 21 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "alloy-rs/alloy",
+      "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x9664e2fc602c98cb93b1c459fc9b72c68eba9a84",
+      "collateral_symbol": "ORIG_R3_REPO:alloy-rs/alloy",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 22
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of alloy-rs/alloy in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99339615959666969554",
+          "price": 0.2765024148881999
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126244884007856047000",
+          "price": 0.7989245439797854
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 55 of 98, slot 22 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "apeworx/ape",
+      "address": "0x34e4762227c29fb484c79cdc0a2a305fdd39ba56",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x83145e3924d19c0a9a3a587887fb8599a5610c21",
+      "collateral_symbol": "ORIG_R3_REPO:apeworx/ape",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 23
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of apeworx/ape in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "163061207230222383828",
+          "price": 0.28197504518268307
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1081807130011512673422",
+          "price": 0.7305304966336357
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 56 of 98, slot 23 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "chainsafe/lodestar",
+      "address": "0x7c3b8fa85d532f7ed1fd8f32054b0497541db623",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x91b585db7686823cf03e85c1d789793fd3888b0f",
+      "collateral_symbol": "ORIG_R3_REPO:chainsafe/lodestar",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 24
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of chainsafe/lodestar in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "103763006565386225790",
+          "price": 0.20981650305862518
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1123301010660389511635",
+          "price": 0.7901849667617719
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 57 of 98, slot 24 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "consensys/teku",
+      "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x424fe875e8617a4c0f0357afcefb017faf197de6",
+      "collateral_symbol": "ORIG_R3_REPO:consensys/teku",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 25
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of consensys/teku in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99173609140778708005",
+          "price": 0.2349864115203889
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126370147569377797078",
+          "price": 0.7812284550694173
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 58 of 98, slot 25 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "erigontech/erigon",
+      "address": "0x87a54a3ad188dfea96aa128922351fdc12da80e3",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x81f1d2106983e161fc8c987026933061ebd78a25",
+      "collateral_symbol": "ORIG_R3_REPO:erigontech/erigon",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 26
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of erigontech/erigon in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "160267798637740944232",
+          "price": 0.28194685049763335
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1083550464902634548722",
+          "price": 0.7311882371329586
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 59 of 98, slot 26 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "eth-infinitism/account-abstraction",
+      "address": "0xcb8ab4238ae037096e274486c4892d843e769dde",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd8110b587211d99d0af10a28e94379293ae64e6c",
+      "collateral_symbol": "ORIG_R3_REPO:eth-infinitism/account-abstraction",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 27
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of eth-infinitism/account-abstraction in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "255383892464804881195",
+          "price": 0.3451946498651807
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1010588778470868484939",
+          "price": 0.6522817774424837
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 60 of 98, slot 27 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum-lists/chains",
+      "address": "0xddd9d1a6ace5dca0432719b05691bb2cc7e0b9dd",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x44d5c6d8b7cb997d420799e8a89ecb2f540abf08",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum-lists/chains",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 28
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum-lists/chains in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "233799234871576249151",
+          "price": 0.28197504518268307
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1027024445598518479949",
+          "price": 0.7242027632446941
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 61 of 98, slot 28 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/consensus-specs",
+      "address": "0x7cae39d3c40b0db913ba38f61f18173be8105852",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x511cbb66babbe2235d1fdb13f13b0a923d240a93",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/consensus-specs",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 29
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/consensus-specs in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "25092399481196945298",
+          "price": 0.09717095415189955
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1168848413866223450819",
+          "price": 0.8808273388274064
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 62 of 98, slot 29 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/eips",
+      "address": "0x238910d606c68d7198a51377c079812be40f4d99",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x5de6940bae90620ceeb70932ce5224bca8ab89c5",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/eips",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 30
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/eips in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "55446115137572439503",
+          "price": 0.09204472047192853
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1152531150455742954303",
+          "price": 0.9082867099908954
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 63 of 98, slot 30 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ipsilon/evmone",
+      "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xcdc838866c609feb9afae8e1ad7037507a01f3a9",
+      "collateral_symbol": "ORIG_R3_REPO:ipsilon/evmone",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 31
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ipsilon/evmone in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "169762279282218601793",
+          "price": 0.19533908161496732
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1076922208946732282476",
+          "price": 0.7919252002333841
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 64 of 98, slot 31 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/execution-apis",
+      "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xa77b1b1a34e549b95436249da457ac152cb2da22",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/execution-apis",
+      "parent": {
+        "address": "0xf0638b8999aaa0de3f5d02048a385a64e7a63aec",
+        "outcome_index": 32
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/execution-apis in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "42014383027898911806",
+          "price": 0.2291390327116736
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1159585599928290156914",
+          "price": 0.7891584450139109
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 65 of 98, slot 32 of bundle B's middle market 0xf0638b8999aaa0de3f5d02048a385a64e7a63aec under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "argotorg/fe",
+      "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x41a0a1f31daffb38780994c92c80e9af2a527336",
+      "collateral_symbol": "ORIG_R3_REPO:argotorg/fe",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 0
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of argotorg/fe in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "102914694895939092203",
+          "price": 0.262020368869993
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1123602415688127109768",
+          "price": 0.7927967536431947
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 66 of 98, slot 0 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/go-ethereum",
+      "address": "0xecbf7ba97acc47e030ab623fa78f983892254309",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x44a4e9f87045c87b78e4c143db9adfff940780bb",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/go-ethereum",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 1
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/go-ethereum in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "89999289181909901469",
+          "price": 0.1955736174796834
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1132253298118730958897",
+          "price": 0.8024473803912934
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 67 of 98, slot 1 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "remix-project-org/remix-project",
+      "address": "0x9de9aaa9c3beb5226a0acedfa3515c5a3c658b1d",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3ea620d590b5636666262a38d19fefe32bb6ee7e",
+      "collateral_symbol": "ORIG_R3_REPO:remix-project-org/remix-project",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 2
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of remix-project-org/remix-project in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "119924205039018998521",
+          "price": 0.19426771918059824
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1109111298435011325734",
+          "price": 0.8151445816468265
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 68 of 98, slot 2 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "argotorg/solidity",
+      "address": "0x38a9dc84c9f940262b548856c1869f992ee80ba4",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x87ef78931586966064ce42f0137e65f9e5e95ef9",
+      "collateral_symbol": "ORIG_R3_REPO:argotorg/solidity",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 3
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of argotorg/solidity in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "104859988118627102675",
+          "price": 0.17497488217122775
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1122531550315046423904",
+          "price": 0.8447694191887476
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 69 of 98, slot 3 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "argotorg/sourcify",
+      "address": "0x5c4a21e1a101c3aff192d2d307ad9bbe3d761b1e",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x2070db21df0906e65657ce9059bdc16b8b117c62",
+      "collateral_symbol": "ORIG_R3_REPO:argotorg/sourcify",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 4
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of argotorg/sourcify in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "182479772753859821007",
+          "price": 0.2547094947404445
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1066393301448839333711",
+          "price": 0.7455856060566809
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 70 of 98, slot 4 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethereum/web3.py",
+      "address": "0x9ab54e515c12e14048b009a366a4845570c5ee6d",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd6581faa139e8b120aa19f4cf867057ce9831439",
+      "collateral_symbol": "ORIG_R3_REPO:ethereum/web3.py",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 5
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethereum/web3.py in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "184399309313143711094",
+          "price": 0.28787246144037415
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1065636549070948687111",
+          "price": 0.7120671778329761
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 71 of 98, slot 5 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethers-io/ethers.js",
+      "address": "0x7fa95b23093b66d4b4fd0e89717b7e7883c888bc",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x139a9bfca52ccfc41e9815bed51db5b9059e1f65",
+      "collateral_symbol": "ORIG_R3_REPO:ethers-io/ethers.js",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 6
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethers-io/ethers.js in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "62109845184186080042",
+          "price": 0.1352405861954826
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1149422840844851123419",
+          "price": 0.8847113234225165
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 72 of 98, slot 6 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "foundry-rs/foundry",
+      "address": "0xa1cc3bd62aea7b21547f327ed20e18d8b92d89d4",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x6f9b72ec82fc63de2d7f7cba433994c8f6a96a90",
+      "collateral_symbol": "ORIG_R3_REPO:foundry-rs/foundry",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 7
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of foundry-rs/foundry in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "116630842188415128958",
+          "price": 0.14618185408876616
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1114707678033548445134",
+          "price": 0.8356118895872294
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 73 of 98, slot 7 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "grandinetech/grandine",
+      "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xce2008a64723f38aef1569d704f428471ed481ff",
+      "collateral_symbol": "ORIG_R3_REPO:grandinetech/grandine",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 8
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of grandinetech/grandine in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "133708820447666322173",
+          "price": 0.23390801017115248
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1102850458326692552629",
+          "price": 0.7852226971416972
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 74 of 98, slot 8 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "hyperledger-web3j/web3j",
+      "address": "0x15607f6d09dd27d174d6d76ebbcc708da5a56646",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x80cb93cc7e7eb1e2dc42d298a9124f0bb73dab05",
+      "collateral_symbol": "ORIG_R3_REPO:hyperledger-web3j/web3j",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 9
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of hyperledger-web3j/web3j in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "164933909966008453693",
+          "price": 0.27391559861002673
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1080439675684874836004",
+          "price": 0.738241091108569
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 75 of 98, slot 9 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "hyperledger/besu",
+      "address": "0x5a56ecb388369c2a92b51ca1e08c32f233baf178",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x60828e159bd00aa44005b77e70cb6b670d4078cc",
+      "collateral_symbol": "ORIG_R3_REPO:hyperledger/besu",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 10
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of hyperledger/besu in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "130107649043322903492",
+          "price": 0.2245346333274297
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1105376564905217730307",
+          "price": 0.7893162845944981
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 76 of 98, slot 10 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "nethereum/nethereum",
+      "address": "0x49837e744bb14fab9b256785ab050352c3340aff",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x588237ecd315c83889de66618dd53d0a44c376d0",
+      "collateral_symbol": "ORIG_R3_REPO:nethereum/nethereum",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 11
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of nethereum/nethereum in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "92119961727836115466",
+          "price": 0.17278413885610408
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1130914932901569265062",
+          "price": 0.8344429098665476
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 77 of 98, slot 11 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "nethermindeth/nethermind",
+      "address": "0x84e989e3dd24b2d8448d2a90e72eab1202083f59",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x73a69a78d90b6e498b751913f455bd60233f741a",
+      "collateral_symbol": "ORIG_R3_REPO:nethermindeth/nethermind",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 12
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of nethermindeth/nethermind in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "183598916956914943110",
+          "price": 0.2663793497139155
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1066621453996862376981",
+          "price": 0.7451384112242807
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 78 of 98, slot 12 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "nomicfoundation/hardhat",
+      "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x389d0b026e15fdcd5d8e263d2a7ddc33e32bc722",
+      "collateral_symbol": "ORIG_R3_REPO:nomicfoundation/hardhat",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 13
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of nomicfoundation/hardhat in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "99130338726097737268",
+          "price": 0.21586040678308197
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1126340676291309357372",
+          "price": 0.7755465356756059
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 79 of 98, slot 13 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "openzeppelin/openzeppelin-contracts",
+      "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x88d3d4265bf6535067cd05d77c026866a6598a21",
+      "collateral_symbol": "ORIG_R3_REPO:openzeppelin/openzeppelin-contracts",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 14
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of openzeppelin/openzeppelin-contracts in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "103903378731173884822",
+          "price": 0.18998370749287072
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1123268965488422630731",
+          "price": 0.8270496862677018
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 80 of 98, slot 14 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "paradigmxyz/reth",
+      "address": "0xd2652335a8576ff1e61c10aa531aee08d2533cde",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x8fbd8162ba195cdc9e56186f1b7685522cba8da4",
+      "collateral_symbol": "ORIG_R3_REPO:paradigmxyz/reth",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 15
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of paradigmxyz/reth in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "97067676672307269557",
+          "price": 0.19162453076516123
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1127759957364253225419",
+          "price": 0.7901849667617719
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 81 of 98, slot 15 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "OffchainLabs/prysm",
+      "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x211584a361b9a920945c02a52e3eb62981d57859",
+      "collateral_symbol": "ORIG_R3_REPO:OffchainLabs/prysm",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 16
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of OffchainLabs/prysm in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "103648064529190454554",
+          "price": 0.2010664566746735
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1123400683433876323433",
+          "price": 0.7748488926615122
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 82 of 98, slot 16 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "safe-global/safe-smart-account",
+      "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x89c7abce9ae68f5584c4bb86b84cda15d01f9935",
+      "collateral_symbol": "ORIG_R3_REPO:safe-global/safe-smart-account",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 17
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of safe-global/safe-smart-account in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "377075879843043680550",
+          "price": 0.2762260644888291
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "908451552267182626369",
+          "price": 0.7353677012723622
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 83 of 98, slot 17 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "scaffold-eth/scaffold-eth-2",
+      "address": "0x09790fb4115e57367f47c82244cce088583e503f",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x14f3d97396ca0c8caa8447d944c60e635eaa3e6b",
+      "collateral_symbol": "ORIG_R3_REPO:scaffold-eth/scaffold-eth-2",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 18
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of scaffold-eth/scaffold-eth-2 in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "306819961308015533987",
+          "price": 0.34063418336524065
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "965185611337824054814",
+          "price": 0.6692618292609929
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 84 of 98, slot 18 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "sigp/lighthouse",
+      "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xba1df6263fbfd5babbf08ce673ef0437db26fb34",
+      "collateral_symbol": "ORIG_R3_REPO:sigp/lighthouse",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 19
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of sigp/lighthouse in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "74301409970085153760",
+          "price": 0.18257121358117276
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1142207297791709561282",
+          "price": 0.8383738254161641
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 85 of 98, slot 19 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "status-im/nimbus-eth2",
+      "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x92858d91e4c89d3e5f3d93b1898b60e2e5f3aba8",
+      "collateral_symbol": "ORIG_R3_REPO:status-im/nimbus-eth2",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 20
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of status-im/nimbus-eth2 in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "42554521285886114779",
+          "price": 0.1372432058776638
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1160561337663197368655",
+          "price": 0.8840038727537187
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 86 of 98, slot 20 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "vyperlang/titanoboa",
+      "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3edfa369dfaf28b23eb18b1b5368a838e020bb45",
+      "collateral_symbol": "ORIG_R3_REPO:vyperlang/titanoboa",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 21
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of vyperlang/titanoboa in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "151471167726584470682",
+          "price": 0.30046023025455254
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1090059209895781685866",
+          "price": 0.734192112450625
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 87 of 98, slot 21 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "vyperlang/vyper",
+      "address": "0x845468b87b4821fae1d42f250c382b7a3a85bdb1",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x4db187e536951f37e7b7ed346c879cf31e85229d",
+      "collateral_symbol": "ORIG_R3_REPO:vyperlang/vyper",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 22
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of vyperlang/vyper in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "84150161367078549661",
+          "price": 0.2022359719645619
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1136016747435005302554",
+          "price": 0.7998837808985632
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 88 of 98, slot 22 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "wevm/viem",
+      "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xd59ac75ecae4737a7b84996a4a74a6c088a361fe",
+      "collateral_symbol": "ORIG_R3_REPO:wevm/viem",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 23
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of wevm/viem in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "95880147866069204597",
+          "price": 0.23571596313991938
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1128294912660102354638",
+          "price": 0.7943044239260929
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 89 of 98, slot 23 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "argotorg/hevm",
+      "address": "0xdfb022190820d74babd62379fe53b45f0ac1cc67",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xecb37fc746f8ed208403c033424ea21122da9cb2",
+      "collateral_symbol": "ORIG_R3_REPO:argotorg/hevm",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 24
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of argotorg/hevm in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "141904311696634935119",
+          "price": 0.23141866069664482
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1097109614011428387998",
+          "price": 0.7684445817172523
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 90 of 98, slot 24 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethdebug/format",
+      "address": "0x4b2b2d4e947c9e33e3ae18979562e752606127ac",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x1bb4d5e1038ca721fa88ebd4191f7b458d43e7fd",
+      "collateral_symbol": "ORIG_R3_REPO:ethdebug/format",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 25
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethdebug/format in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "140520309523469880110",
+          "price": 0.19747981638012974
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1098054788681914345131",
+          "price": 0.8026881386796346
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 91 of 98, slot 25 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "argotorg/act",
+      "address": "0x0d91d33dc1bbe47469f5aef3dc113ed706ebabcb",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x925957c3a67984c132a3fcb40e31fabb816aac77",
+      "collateral_symbol": "ORIG_R3_REPO:argotorg/act",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 26
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of argotorg/act in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "113818117947264838942",
+          "price": 0.2285440747545125
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1116606515256367008304",
+          "price": 0.7906591962853788
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 92 of 98, slot 26 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethpandaops/ethereum-package",
+      "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xbf9956578716fd906fdeba46664830a264aa8a13",
+      "collateral_symbol": "ORIG_R3_REPO:ethpandaops/ethereum-package",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 27
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethpandaops/ethereum-package in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "189553137231106044295",
+          "price": 0.36184144027953613
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1056965240919617402335",
+          "price": 0.6667902592931144
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 93 of 98, slot 27 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethpandaops/ethereum-helm-charts",
+      "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xa27009015686115acb57e2c81ed859cf9a5718cf",
+      "collateral_symbol": "ORIG_R3_REPO:ethpandaops/ethereum-helm-charts",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 28
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethpandaops/ethereum-helm-charts in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "363603170165978418616",
+          "price": 0.43267945544123276
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "920133285824676221583",
+          "price": 0.5755826874370846
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 94 of 98, slot 28 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "ethpandaops/checkpointz",
+      "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x99d2eed578f3ccc54a02b27d1b8261bda877efc6",
+      "collateral_symbol": "ORIG_R3_REPO:ethpandaops/checkpointz",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 29
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of ethpandaops/checkpointz in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "462517603105092771180",
+          "price": 0.4517798512083326
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "830112443999643376034",
+          "price": 0.5579584247769437
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 95 of 98, slot 29 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "lambdaclass/lambda_ethereum_consensus",
+      "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0xae366d275fc93660068533ab9743853628d3bb5f",
+      "collateral_symbol": "ORIG_R3_REPO:lambdaclass/lambda_ethereum_consensus",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 30
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of lambdaclass/lambda_ethereum_consensus in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "135775541770720957053",
+          "price": 0.2327414472849014
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1101406955052590051995",
+          "price": 0.7736875486145309
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 96 of 98, slot 30 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    },
+    {
+      "market": "erigontech/silkworm",
+      "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+      "kind": "scalar",
+      "outcomes": [
+        "DOWN",
+        "UP",
+        "Invalid"
+      ],
+      "collateral_token": "0x3dd51352377760f44d8b0d1e8af501c315dd4ed4",
+      "collateral_symbol": "ORIG_R3_REPO:erigontech/silkworm",
+      "parent": {
+        "address": "0x99a941135226813037e15e34956fdd79761307d3",
+        "outcome_index": 31
+      },
+      "resolves_on": null,
+      "resolution_source": "Reality.eth question \"What will be the average originality score of erigontech/silkworm in Round 3 of the Deep Funding experiment?\", answered as the mean juror score on the 0-100 scale x 1e18, bounds 0..100e18, so UP pays score/100 repo tokens; Round 2 ratings were published at github.com/deepfunding/oss-evals",
+      "tradeable": true,
+      "pools": [
+        {
+          "outcome": "DOWN",
+          "fee_tier": 100,
+          "liquidity": "124755434415394511117",
+          "price": 0.2814398279746012
+        },
+        {
+          "outcome": "UP",
+          "fee_tier": 100,
+          "liquidity": "1109111265070569664569",
+          "price": 0.7185043845598572
+        }
+      ],
+      "traded": null,
+      "reason_in_scope": "Round 3 Originality market 97 of 98, slot 31 of bundle C's middle market 0x99a941135226813037e15e34956fdd79761307d3 under parent 0x37ab5cbeee3a32289430e5d38b914ec7f580fd87"
+    }
+  ],
+  "skipped": []
+}

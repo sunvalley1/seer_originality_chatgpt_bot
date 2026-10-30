@@ -1,0 +1,38 @@
+{
+ "subcommand": "e",
+ "run_id": "2026-10-30T2103Z",
+ "started_at": "2026-10-30T21:04:17.897Z",
+ "finished_at": "2026-10-30T21:04:17.900Z",
+ "summary": {
+  "subcommand": "e",
+  "run_id": "2026-10-30T2103Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "blends": 98,
+  "priced_from_candidates": 98,
+  "priced_from_saved_body": 0,
+  "null_price": 0,
+  "null_price_rows": [],
+  "negative_third": 84,
+  "fetched": false,
+  "artifacts": [
+   "run/2026-10-30T2103Z/blended.json"
+  ]
+ },
+ "detail": {
+  "unpriced": []
+ },
+ "log": [
+  "2026-10-30T21:04:17.898Z step 1: base-forecast.json: 98 forecasts, price_seen false, every p length 3 summing to 1 within 1e-9",
+  "2026-10-30T21:04:17.898Z step 2: copied own = blended = p verbatim for 98 rows, w = 1.0; no price read yet",
+  "2026-10-30T21:04:17.899Z step 3: every row priced from candidates.json pools[] (DOWN and UP, finite, by outcome name); the data function is not fetched",
+  "2026-10-30T21:04:17.899Z step 5: market_price recorded on 98 rows; null on 0; 84 with a negative third entry (written as is)",
+  "2026-10-30T21:04:17.900Z step 6: wrote run/2026-10-30T2103Z/blended.json: 98 blends, method identity (same order and count as D)"
+ ],
+ "tool_calls": {
+  "helperCalls": 0,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}
