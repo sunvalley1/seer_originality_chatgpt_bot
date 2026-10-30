@@ -1,0 +1,57 @@
+{
+ "outcome": "stopped",
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "approve bundle A -> Router (m_X) (nonce 4347): landed (0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9), but after its receipt latest 4347 pending 4348, expected 4348"
+ },
+ "mode": "wrapper",
+ "groups_total": 75,
+ "groups_done": 1,
+ "transactions_total": 392,
+ "transactions_sent": 3,
+ "sent_this_invocation": 3,
+ "first_tx": "0x37809fea1c0cc328a4711112a85aeba4046fb9a79e32aded24e5f41e19283a00",
+ "last_tx": "0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9",
+ "gas_cost_eth_receipts": "0.000000624425982951",
+ "nonce_pinning": false,
+ "signer_env_dropped": [],
+ "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+ "tx_hash_file": "run/2026-10-30T2103Z/exec-sends.json",
+ "retained_legs": 4,
+ "consumed_rows": 0,
+ "unattributed_consumption": [],
+ "half_done": {
+  "group": "mint-middle-A",
+  "landed": 1,
+  "of": 2,
+  "txs": [
+   "0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9"
+  ],
+  "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+ },
+ "recovery": null,
+ "skipped_groups": [
+  "mint-middle-B",
+  "mint-middle-C",
+  "complex-buy:ethereum/py_ecc:UP",
+  "complex-buy:blockscout/blockscout:UP",
+  "complex-buy:herumi/mcl:UP",
+  "complex-buy:paulmillr/noble-curves:UP",
+  "complex-buy:flashbots/rbuilder:UP",
+  "complex-buy:l2beat/l2beat:UP",
+  "complex-buy:Consensys/gnark-crypto:UP",
+  "complex-buy:taikoxyz/taiko-mono:UP",
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+  "complex-buy:wighawag/hardhat-deploy:UP",
+  "simple-buy:DefiLlama/chainlist:DOWN",
+  "complex-buy:Plonky3/Plonky3:UP",
+  "simple-buy:ChainSafe/bls:DOWN",
+  "complex-buy:intellij-solidity/intellij-solidity:UP",
+  "set-sell:dappnode/DAppNode",
+  "complex-buy:dappnode/DAppNode:UP",
+  "complex-buy:wealdtech/ethdo:UP",
+  "complex-buy:lambdaclass/lambdaworks:UP"
+ ],
+ "skipped_count": 73,
+ "eth_after": "0.005211553760630004"
+}

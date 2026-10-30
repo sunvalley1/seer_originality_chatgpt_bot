@@ -37,3 +37,5 @@ fatal: the remote end hung up unexpectedly
 [2026-10-30T21:03:57.833Z] run 2026-10-30T2103Z: planner wake started
 (node:600) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
 (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-10-30T21:09:36.550Z] run 2026-10-30T2103Z: planner wake exited 4
+[2026-10-30T21:09:36.551Z] run 2026-10-30T2103Z finished, exit 4

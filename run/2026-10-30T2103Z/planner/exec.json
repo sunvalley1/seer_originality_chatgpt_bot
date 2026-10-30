@@ -1,0 +1,88 @@
+{
+ "subcommand": "exec",
+ "run_id": "2026-10-30T2103Z",
+ "started_at": "2026-10-30T21:09:01.720Z",
+ "finished_at": "2026-10-30T21:09:19.202Z",
+ "summary": {
+  "subcommand": "exec",
+  "run_id": "2026-10-30T2103Z",
+  "exit": 4,
+  "ok": false,
+  "stop": {
+   "step": "G",
+   "cause": "pending-transaction",
+   "status": "aborted",
+   "notes": "approve bundle A -> Router (m_X) (nonce 4347): landed (0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9), but after its receipt latest 4347 pending 4348, expected 4348"
+  },
+  "mode": "wrapper",
+  "groups_total": 75,
+  "groups_done": 1,
+  "transactions_total": 392,
+  "transactions_sent": 3,
+  "sent_this_invocation": 3,
+  "first_tx": "0x37809fea1c0cc328a4711112a85aeba4046fb9a79e32aded24e5f41e19283a00",
+  "last_tx": "0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9",
+  "gas_cost_eth_receipts": "0.000000624425982951",
+  "nonce_pinning": false,
+  "signer_env_dropped": [],
+  "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+  "tx_hash_file": "run/2026-10-30T2103Z/exec-sends.json",
+  "retained_legs": 4,
+  "consumed_rows": 0,
+  "unattributed_consumption": [],
+  "half_done": {
+   "group": "mint-middle-A",
+   "landed": 1,
+   "of": 2,
+   "txs": [
+    "0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9"
+   ],
+   "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+  },
+  "recovery": null,
+  "skipped_groups": [
+   "mint-middle-B",
+   "mint-middle-C",
+   "complex-buy:ethereum/py_ecc:UP",
+   "complex-buy:blockscout/blockscout:UP",
+   "complex-buy:herumi/mcl:UP",
+   "complex-buy:paulmillr/noble-curves:UP",
+   "complex-buy:flashbots/rbuilder:UP",
+   "complex-buy:l2beat/l2beat:UP",
+   "complex-buy:Consensys/gnark-crypto:UP",
+   "complex-buy:taikoxyz/taiko-mono:UP",
+   "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+   "complex-buy:wighawag/hardhat-deploy:UP",
+   "simple-buy:DefiLlama/chainlist:DOWN",
+   "complex-buy:Plonky3/Plonky3:UP",
+   "simple-buy:ChainSafe/bls:DOWN",
+   "complex-buy:intellij-solidity/intellij-solidity:UP",
+   "set-sell:dappnode/DAppNode",
+   "complex-buy:dappnode/DAppNode:UP",
+   "complex-buy:wealdtech/ethdo:UP",
+   "complex-buy:lambdaclass/lambdaworks:UP"
+  ],
+  "skipped_count": 73,
+  "eth_after": "0.005211553760630004"
+ },
+ "detail": {},
+ "log": [
+  "2026-10-30T21:09:02.564Z identity ok: chain 10; parent and middles' conditionId equal the skill's constants; 71 children's conditionId and questionsIds()[0] equal the plan",
+  "2026-10-30T21:09:05.481Z GROUP 0 mint-parent (2 tx): affordability ok: ETH 0.005212144311310398 ETH vs the requirement 0.00200174045607102 ETH (0.002 ETH reserve + 2 gas limit(s) x 2 x eth_gasPrice 1000315 wei)",
+  "2026-10-30T21:09:07.372Z SEND approve sUSDS -> Router (M) (nonce 4345) gasLimit 37427 calldata_hash 0x0f4bc2a3bf87170729a4ce6ffb843d96a58b490d80a8b5f95e685112fdc667a0",
+  "2026-10-30T21:09:09.117Z   confirmed 0x37809fea1c0cc328a4711112a85aeba4046fb9a79e32aded24e5f41e19283a00 block 158897886 gas 31189 cost 0.000000033174154754 ETH; nonce now 4346",
+  "2026-10-30T21:09:11.375Z SEND Router.splitPosition(sUSDS, parent, M) (nonce 4346) gasLimit 832527 calldata_hash 0x117c74ece59812599543124bce3d177a2dd071b909372a52741496ac92780fa7",
+  "2026-10-30T21:09:13.150Z   confirmed 0x3839f1fcdd1058ffcbeb890faac51850d99531d56db0dabb8c81dc05e17d2322 block 158897888 gas 555018 cost 0.00000055737652564 ETH; nonce now 4347",
+  "2026-10-30T21:09:13.542Z fills row: PARENT-MINT mint split-parent filled filled 14.8564242378734",
+  "2026-10-30T21:09:13.542Z   group effects vs expected: exact (5 balances)",
+  "2026-10-30T21:09:14.325Z GROUP 1 mint-middle-A (2 tx): affordability ok: ETH 0.005211553760630004 ETH vs the requirement 0.002012255399730572 ETH (0.002 ETH reserve + 2 gas limit(s) x 2 x eth_gasPrice 1000317 wei)",
+  "2026-10-30T21:09:16.321Z SEND approve bundle A -> Router (m_X) (nonce 4347) gasLimit 38282 calldata_hash 0xdcde84f9becce6251ae56f5035f57d95f973e150b16ff886ac2f89a9ccaec129",
+  "2026-10-30T21:09:18.111Z STOP pending-transaction: approve bundle A -> Router (m_X) (nonce 4347): landed (0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9), but after its receipt latest 4347 pending 4348, expected 4348",
+  "2026-10-30T21:09:19.202Z failure: Error: G stop: pending-transaction: approve bundle A -> Router (m_X) (nonce 4347): landed (0xdd78b8d3fb64aa143b1b290dc276943c0b8ab655b263ed6fa30e291a76cb13c9), but after its receipt latest 4347 pending 4348, expected 4348\n    at Object.run (/workspace/r3-runtime/tools/planner/planner/exec.cjs:877:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async step (/workspace/r3-runtime/tools/planner/planner/wake.cjs:197:54)\n    at async halfA (/workspace/r3-runtime/tools/planner/planner/wake.cjs:232:13)\n    at async Object.run (/workspace/r3-runtime/tools/planner/planner/wake.cjs:242:3)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async main (/workspace/r3-runtime/tools/planner/planner.cjs:95:23)"
+ ],
+ "tool_calls": {
+  "helperCalls": 32,
+  "helperRetries": 0,
+  "signerCalls": 6
+ }
+}

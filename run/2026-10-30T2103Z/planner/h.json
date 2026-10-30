@@ -1,0 +1,24 @@
+{
+ "subcommand": "h",
+ "run_id": "2026-10-30T2103Z",
+ "started_at": "2026-10-30T21:09:25.873Z",
+ "finished_at": "2026-10-30T21:09:28.512Z",
+ "summary": {
+  "subcommand": "h",
+  "run_id": "2026-10-30T2103Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "result": "nothing settled yet",
+  "line": "2026-10-30T2103Z: nothing settled yet",
+  "markets_read": 98,
+  "review_written": false
+ },
+ "detail": {},
+ "log": [],
+ "tool_calls": {
+  "helperCalls": 5,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}

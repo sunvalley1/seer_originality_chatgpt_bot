@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T21:09:18.117Z",
+ "generated_at": "2026-10-30T21:09:18.802Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -995,5 +995,26 @@
   "spent_unit": "sUSDS",
   "positions_opened": 0
  },
- "retained_legs": []
+ "retained_legs": [
+  {
+   "token": "0xe0d849F471037A9bE5dB2bDf21f9abaaBaD9F25c",
+   "amount": 14.8564242378734,
+   "why": "parent Invalid; bounds the parent merge; sources: PARENT-MINT mint split-parent"
+  },
+  {
+   "token": "0x8d883809dE718bAF9FCAd72133007B6115f77F6D",
+   "amount": 14.8564242378734,
+   "why": "bundle token A of an unsplit bundle (or its unsplit part); no sUSDS pool; sources: PARENT-MINT mint split-parent"
+  },
+  {
+   "token": "0x9F26c46B5d70E5d9ce2b499F7F3d520f34aDd353",
+   "amount": 14.8564242378734,
+   "why": "bundle token B of an unsplit bundle (or its unsplit part); no sUSDS pool; sources: PARENT-MINT mint split-parent"
+  },
+  {
+   "token": "0xa6Ebc6002ACB875A31922c37d2A9d5bb319d2b06",
+   "amount": 14.8564242378734,
+   "why": "bundle token C of an unsplit bundle (or its unsplit part); no sUSDS pool; sources: PARENT-MINT mint split-parent"
+  }
+ ]
 }
