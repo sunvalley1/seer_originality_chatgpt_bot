@@ -1,0 +1,27 @@
+{
+ "subcommand": "ramp",
+ "run_id": "2026-10-30T0859Z",
+ "started_at": "2026-10-30T09:00:13.188Z",
+ "finished_at": "2026-10-30T09:00:13.647Z",
+ "summary": {
+  "subcommand": "ramp",
+  "run_id": "2026-10-30T0859Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "ran": false,
+  "reason": "USDC and USDS are both 0: no ramp",
+  "susds_before": "477.327500769566790914",
+  "usdc_raw": "0",
+  "usds_raw": "0",
+  "sent": [],
+  "artifacts": []
+ },
+ "detail": {},
+ "log": [],
+ "tool_calls": {
+  "helperCalls": 1,
+  "helperRetries": 0,
+  "signerCalls": 0
+ }
+}
