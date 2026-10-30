@@ -1,0 +1,179 @@
+{
+ "subcommand": "g",
+ "run_id": "2026-10-30T2103Z",
+ "started_at": "2026-10-30T21:06:37.555Z",
+ "finished_at": "2026-10-30T21:09:01.719Z",
+ "summary": {
+  "subcommand": "g",
+  "run_id": "2026-10-30T2103Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "nothing_to_send": false,
+  "groups": 75,
+  "transactions": 392,
+  "by_kind": {
+   "mint": 4,
+   "complex-buy": 53,
+   "simple-buy": 10,
+   "set-sell": 7,
+   "dual-buy": 1
+  },
+  "markets": 64,
+  "rows_in_groups": 72,
+  "skipped_rows": 0,
+  "skipped": [],
+  "mint": {
+   "M": "14.8564242378734",
+   "parent_split": true,
+   "middles": [
+    "A",
+    "B",
+    "C"
+   ],
+   "bundles_with_position": [
+    "A",
+    "B",
+    "C"
+   ]
+  },
+  "ramp_due": false,
+  "cut": null,
+  "nonce": 4345,
+  "first_last_nonce": [
+   4345,
+   4736
+  ],
+  "drift": {
+   "pools_compared": 128,
+   "pools_moved": 0,
+   "markets_moved": [],
+   "fresh_quote_vs_f_max_rel_gap": 8.450057183146271e-15
+  },
+  "simulation": {
+   "requests": 1,
+   "windowed": false,
+   "all_success": true,
+   "sum_gas_used": 70173538,
+   "sum_gas_limit": 97795450,
+   "largest_gas_limit": 6247748,
+   "no_max_used_gas_count": 0
+  },
+  "verify": {
+   "encode_identical": 392,
+   "signer_check_allowed": 392,
+   "end_state": {
+    "probed": 243,
+    "matched": 243,
+    "differ": 0
+   }
+  },
+  "eth": {
+   "holder_eth": "0.005212144311310398",
+   "cost_at_gas_price_eth": "0.000071127407892557",
+   "cost_at_signer_ceiling_eth": "0.000141323120730565",
+   "affordable": true
+  },
+  "route_agreement": [
+   {
+    "market": "dappnode/DAppNode",
+    "agree": true
+   },
+   {
+    "market": "shazow/whatsabi",
+    "agree": true
+   },
+   {
+    "market": "Commit-Boost/commit-boost-client",
+    "agree": true
+   },
+   {
+    "market": "holiman/goevmlab",
+    "agree": true
+   },
+   {
+    "market": "OffchainLabs/stylus-sdk-rs",
+    "agree": true
+   },
+   {
+    "market": "alloy-rs/alloy",
+    "agree": true
+   },
+   {
+    "market": "argotorg/fe",
+    "agree": true
+   }
+  ],
+  "audit": {
+   "failures": 0,
+   "rows_checked": 392,
+   "gas_used_differ": 0
+  },
+  "indep": {
+   "ran": false,
+   "reason": "skipped: the independent second-RPC read is supervised-only (the chain helper pins one RPC and the planner contacts none itself); pass --indep in a supervised session to write the request"
+  },
+  "helper_calls": 458,
+  "seconds": 144,
+  "artifacts": [
+   "run/2026-10-30T2103Z/g-plan.json",
+   "run/2026-10-30T2103Z/gate-print.md",
+   "run/2026-10-30T2103Z/g-tx/ (392 files)",
+   "run/2026-10-30T2103Z/g-sim-main.json",
+   "run/2026-10-30T2103Z/planner/g-drift.json",
+   "run/2026-10-30T2103Z/planner/g-state.json",
+   "run/2026-10-30T2103Z/planner/g-built.json",
+   "run/2026-10-30T2103Z/planner/g-verified.json"
+  ]
+ },
+ "detail": {
+  "timing_s": 144,
+  "quote_stats": {
+   "quotes": 120,
+   "quoteBatches": 3,
+   "revertSplits": 0,
+   "singleReverts": 0,
+   "simulates": 28
+  }
+ },
+ "log": [
+  "2026-10-30T21:06:38.264Z live head 158897810; holder 0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a nonce latest 4345 pending 4345",
+  "2026-10-30T21:06:38.272Z allocation: 72 rows over 64 markets; refused (route, side or market F does not write): 0; bundles with a position: A,B,C",
+  "2026-10-30T21:06:41.059Z onchain identity: wrappedOutcome(0..2) equals F's own read and the data function for all 64 markets; parentOutcome == slot and parentMarket == the bundle's middle; questionsIds()[0] nonzero; the parent's and middles' conditionId equal SKILL.md's",
+  "2026-10-30T21:06:44.598Z pools: 128 (getPool at the candidates.json tier 100), all with liquidity, unlocked, fee() == tier, token0 == the address-sorted token; each market's two pools read in one multicall file (pins 158897812..158897813)",
+  "2026-10-30T21:06:44.599Z pool drift since F sized the plan: 0 of 128 pools moved, on 0 market(s)",
+  "2026-10-30T21:06:45.229Z balances (one multicall, 270 reads, block 158897814): sUSDS 433.705911148178190914, USDC 0, USDS 0, ETH 0.005212144311310398; bundle tokens 165.980359817629975505/232.470666173639732242/43.6215896213886; 255 other token balance(s) above 0 (a record, never a refusal)",
+  "2026-10-30T21:06:45.875Z trading boundary (one multicall, block 158897814, timestamp 1793394405): clear on 64 of 64 children; middles A/B/C and parent payoutDenominator 0/0/0/0 (recorded for the mint groups; a resolved middle or parent refuses nothing by itself)",
+  "2026-10-30T21:06:46.626Z build at live head 158897814; holder nonce unchanged (4345)",
+  "2026-10-30T21:06:46.626Z route mix from fresh slot0: {\"complex-buy\":46,\"simple-buy\":10,\"set-sell+complex-buy\":7,\"dual-buy\":1}; closest sums to 1: erigontech/silkworm 0.999976, argotorg/hevm 0.999900, Cyfrin/aderyn 0.999900",
+  "2026-10-30T21:06:47.167Z phase A: 72 QuoterV2 quotes through the helper multicall; failures 0",
+  "2026-10-30T21:06:47.613Z phase B: 46 complex-buy buy-leg quotes at the quoted sale proceeds",
+  "2026-10-30T21:06:47.615Z mint: M 14.8564242378734; b_X 165.980359817629975505/232.470666173639732242/43.6215896213886; mint-parent, mint-middle-A, mint-middle-B, mint-middle-C",
+  "2026-10-30T21:06:48.534Z post-set probe (dappnode/DAppNode): sell x 28.3786947698731 DOWN -> P 8.984051455855785502 repo; buy UP with P -> 13.554327419325133445 UP; route complex-buy (fresh sum 1.057417), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:49.447Z post-set probe (shazow/whatsabi): sell x 59.6816968920965 DOWN -> P 11.268502910277447899 repo; buy UP with P -> 14.753244883314271826 UP; route complex-buy (fresh sum 1.084973), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:50.352Z post-set probe (Commit-Boost/commit-boost-client): sell x 35.7789289418903 DOWN -> P 7.743736646149815342 repo; buy UP with P -> 10.323334084620495151 UP; route complex-buy (fresh sum 1.065289), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:51.267Z post-set probe (holiman/goevmlab): sell x 47.756352937333 DOWN -> P 10.487972664254391953 repo; buy UP with P -> 14.292011181677211563 UP; route complex-buy (fresh sum 1.077659), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:52.194Z post-set probe (OffchainLabs/stylus-sdk-rs): sell x 15.389239406824 DOWN -> P 3.304055569085617975 repo; buy UP with P -> 4.248799792881004063 UP; route complex-buy (fresh sum 1.061787), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:53.060Z post-set probe (alloy-rs/alloy): sell x 47.375535182059 DOWN -> P 8.726242251760330818 repo; buy UP with P -> 11.172790636927177555 UP; route complex-buy (fresh sum 1.075461), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:53.950Z post-set probe (argotorg/fe): sell x 47.4247031490271 DOWN -> P 8.798985330479983817 repo; buy UP with P -> 11.268513752295872096 UP; route complex-buy (fresh sum 1.054775), post-set sum 1.000100 -> complex-buy (agree)",
+  "2026-10-30T21:06:53.996Z fresh quote vs F's quoted_fill (drift since F's read, not a check): 12 rows, largest relative gap 8.450e-15 (Cyfrin/aderyn UP simple)",
+  "2026-10-30T21:06:53.996Z per-market budget: every market's nominal spend within held_j + m_X; dual-buy legs whose band is cut by the remaining budget: 0",
+  "2026-10-30T21:06:53.996Z built 75 keep-whole groups, 392 single transactions (one call per send); by kind {\"mint\":4,\"complex-buy\":53,\"simple-buy\":10,\"set-sell\":7,\"dual-buy\":1}",
+  "2026-10-30T21:06:55.465Z SIMULATION run/2026-10-30T2103Z/g-sim-main.json: {\"from\":\"0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a\",\"input\":\"groups\",\"entries\":75,\"count\":392,\"all_success\":true,\"failed_count\":0,\"first_failed_index\":null,\"first_failed_group\":null,\"over_cap_count\":0,\"first_over_cap_index\":null,\"clamped_count\":0,\"pending_nonce\":4345,\"gas_limit_rule\":\"ceil(maxUsedGas x 1.2), clamped at 16777216; ceil(gasUsed x 1.5) for a call the RPC gave no maxUsedGas\",\"columns\":[\"index\",\"group\",\"status\",\"gasUsed\",\"maxUsedGas\",\"gas_limit\"]}",
+  "2026-10-30T21:06:55.849Z build finished; holder nonce still 4345; 1 simulate request(s)",
+  "2026-10-30T21:06:56.215Z verify: 392 transactions in 75 groups",
+  "2026-10-30T21:07:45.925Z A. helper encode vs ethers: 392 of 392 calldatas identical (bytes and keccak256)",
+  "2026-10-30T21:08:37.184Z B. signer check (policy only, nothing signed) on each of the 392 signer-input files: allowed 392, refused or error 0",
+  "2026-10-30T21:08:55.026Z C. end-state probe: the simulated end state equals the prediction on 243 of 243 balances (13 simulate request(s))",
+  "2026-10-30T21:09:00.070Z wrote g-plan.json and gate-print.md (247 lines)",
+  "2026-10-30T21:09:00.522Z audit: calldata audit: 75 groups, 392 transactions decoded and re-derived from allocation.json (72 rows: 72 in groups, 0 skipped), kinds {\"mint\":4,\"complex-buy\":53,\"simple-buy\":10,\"set-sell\":7,\"dual-buy\":1}, every approval exact (none near 2^256), every swap recipient the holder, every tier the candidates.json tier, dual-buy inMax = min(stake x 1.005, remaining); failures 0",
+  "2026-10-30T21:09:01.338Z audit: fresh re-simulation of run/2026-10-30T2103Z/g-sim-main.json (sha256 b7b717c6ac789b2d1c9ed4a1be056016e90196778472f66fa81912d3165d8ec6): {\"entries\":75,\"count\":392,\"all_success\":true,\"failed_count\":0,\"over_cap_count\":0,\"clamped_count\":0,\"pending_nonce\":4345,\"overrides_active\":\"absent\",\"no_max_used_gas_count\":0}",
+  "2026-10-30T21:09:01.718Z audit: holder nonce latest/pending before 4345/4345, after 4345/4345 (the plan's 4345); per-call rows of the fresh simulation: 392 checked, every status 0x1 and every fresh peak within the plan's gas_limit; gasUsed equal to the build's on all",
+  "2026-10-30T21:09:01.718Z audit: AUDIT PASSED: every acceptance check holds"
+ ],
+ "tool_calls": {
+  "helperCalls": 458,
+  "helperRetries": 0,
+  "signerCalls": 392
+ }
+}
