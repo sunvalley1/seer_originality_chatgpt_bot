@@ -1,0 +1,1383 @@
+{
+  "generated_at": "2026-10-30T09:02:34Z",
+  "bankroll": 477.327500769566,
+  "bankroll_unit": "sUSDS",
+  "objective": "max-ev",
+  "positions": [
+    {
+      "market": "ethereum/py_ecc",
+      "address": "0x5d6a571b0f663c33831e6f81dd3c3f554eca188b",
+      "stake_unit": "ORIG_R3_REPO:ethereum/py_ecc",
+      "side": "UP",
+      "route": "direct",
+      "stake": 13.9106500630649,
+      "quoted_fill": 0.8387371565221694,
+      "edge_pts": 1.1262843477830575,
+      "ev": 0.18679686850266833,
+      "p_win": 0.85,
+      "worst_case": -13.9106500630649,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "blockscout/blockscout",
+      "address": "0xe263e7febb2ccfe1ebb05f289cf858d3becec83f",
+      "stake_unit": "ORIG_R3_REPO:blockscout/blockscout",
+      "side": "UP",
+      "route": "direct",
+      "stake": 7.30396753073601,
+      "quoted_fill": 0.6942753109962354,
+      "edge_pts": 0.5724689003764549,
+      "ev": 0.060225305357695644,
+      "p_win": 0.7,
+      "worst_case": -7.30396753073601,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "herumi/mcl",
+      "address": "0xc7846582934c4c1d1156ddf44d988f6857b0f743",
+      "stake_unit": "ORIG_R3_REPO:herumi/mcl",
+      "side": "UP",
+      "route": "direct",
+      "stake": 39.3088714791552,
+      "quoted_fill": 0.8659663697686619,
+      "edge_pts": 3.4033630231338097,
+      "ev": 1.5448909373814987,
+      "p_win": 0.9,
+      "worst_case": -39.3088714791552,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "paulmillr/noble-curves",
+      "address": "0xf74142573cd11d76501dfd51d5512fc6b8ca7933",
+      "stake_unit": "ORIG_R3_REPO:paulmillr/noble-curves",
+      "side": "UP",
+      "route": "direct",
+      "stake": 56.2794513857395,
+      "quoted_fill": 0.8034986423087631,
+      "edge_pts": 4.650135769123686,
+      "ev": 3.257094364260519,
+      "p_win": 0.85,
+      "worst_case": -56.2794513857395,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "flashbots/rbuilder",
+      "address": "0xb44e4ad21d40efb87a87c0692e28c71c90d08d20",
+      "stake_unit": "ORIG_R3_REPO:flashbots/rbuilder",
+      "side": "UP",
+      "route": "direct",
+      "stake": 8.31584766355148,
+      "quoted_fill": 0.7432315958642222,
+      "edge_pts": 0.6768404135777839,
+      "ev": 0.07573011969846714,
+      "p_win": 0.75,
+      "worst_case": -8.31584766355148,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "l2beat/l2beat",
+      "address": "0x0954b44c816f034c6c30a0b049f0ceb6bda6100a",
+      "stake_unit": "ORIG_R3_REPO:l2beat/l2beat",
+      "side": "UP",
+      "route": "direct",
+      "stake": 6.81796459794535,
+      "quoted_fill": 0.7945173885417205,
+      "edge_pts": 0.5482611458279552,
+      "ev": 0.04704774416007289,
+      "p_win": 0.8,
+      "worst_case": -6.81796459794535,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "Consensys/gnark-crypto",
+      "address": "0x9fc615e9a9e2066d3e8dda5c1c5280461489d808",
+      "stake_unit": "ORIG_R3_REPO:Consensys/gnark-crypto",
+      "side": "UP",
+      "route": "direct",
+      "stake": 23.2027101583012,
+      "quoted_fill": 0.8805418841844934,
+      "edge_pts": 1.9458115815506605,
+      "ev": 0.5127308871990726,
+      "p_win": 0.9,
+      "worst_case": -23.2027101583012,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "taikoxyz/taiko-mono",
+      "address": "0x6a6a3326d701d464034d141bece8c21a06b7854b",
+      "stake_unit": "ORIG_R3_REPO:taikoxyz/taiko-mono",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.0002471356616,
+      "quoted_fill": 0.7412456906759797,
+      "edge_pts": 0.8754309324020326,
+      "ev": 0.12991585283744497,
+      "p_win": 0.75,
+      "worst_case": -11.0002471356616,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethereum/js-ethereum-cryptography",
+      "address": "0x018a386a46949fbc8781b1254636b3a76e60a57c",
+      "stake_unit": "ORIG_R3_REPO:ethereum/js-ethereum-cryptography",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 9.0333619585142,
+      "quoted_fill": 0.5038627004654065,
+      "edge_pts": 4.613729953459355,
+      "ev": 0.8271597125554389,
+      "p_win": 0.55,
+      "worst_case": -9.0333619585142,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "wighawag/hardhat-deploy",
+      "address": "0xc8db7cdd4bc8006353dd09d87ecab65f84c620e5",
+      "stake_unit": "ORIG_R3_REPO:wighawag/hardhat-deploy",
+      "side": "UP",
+      "route": "direct",
+      "stake": 8.61433212649845,
+      "quoted_fill": 0.7426384299310008,
+      "edge_pts": 0.7361570068999179,
+      "ev": 0.08539150007728713,
+      "p_win": 0.75,
+      "worst_case": -8.61433212649845,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "DefiLlama/chainlist",
+      "address": "0x4b8bda295e28375ed17abc8d1472e9cccadc93aa",
+      "stake_unit": "ORIG_R3_REPO:DefiLlama/chainlist",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 8.74139334859754,
+      "quoted_fill": 0.27767293772344254,
+      "edge_pts": 2.2327062276557506,
+      "ev": 0.7028759636360682,
+      "p_win": 0.30000000000000004,
+      "worst_case": -8.74139334859754,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "Plonky3/Plonky3",
+      "address": "0x8df828fcba7ec2b014742e202cf091807df939e6",
+      "stake_unit": "ORIG_R3_REPO:Plonky3/Plonky3",
+      "side": "UP",
+      "route": "direct",
+      "stake": 6.80058171541932,
+      "quoted_fill": 0.7944570140433629,
+      "edge_pts": 0.5542985956637159,
+      "ev": 0.047448166834958436,
+      "p_win": 0.8,
+      "worst_case": -6.80058171541932,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ChainSafe/bls",
+      "address": "0xf8d574d0a7dc92deb6ae61adae9ad1219aac2c73",
+      "stake_unit": "ORIG_R3_REPO:ChainSafe/bls",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 16.8989535827651,
+      "quoted_fill": 0.4651276965179449,
+      "edge_pts": 3.487230348205511,
+      "ev": 1.2669755903142847,
+      "p_win": 0.5,
+      "worst_case": -16.8989535827651,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "intellij-solidity/intellij-solidity",
+      "address": "0xd413f199fb40a5c85e96b3582dda718570ae7675",
+      "stake_unit": "ORIG_R3_REPO:intellij-solidity/intellij-solidity",
+      "side": "UP",
+      "route": "direct",
+      "stake": 7.27009199143209,
+      "quoted_fill": 0.7940159201890106,
+      "edge_pts": 0.5984079810989473,
+      "ev": 0.05479085444484401,
+      "p_win": 0.8,
+      "worst_case": -7.27009199143209,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "dappnode/DAppNode",
+      "address": "0xdd8e32840a811d26aac9112f530490ee86d89bbc",
+      "stake_unit": "ORIG_R3_REPO:dappnode/DAppNode",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 17.2803942749508,
+      "quoted_fill": 1.0280563001979173,
+      "edge_pts": null,
+      "ev": 0.48482392931639173,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "dappnode/DAppNode",
+      "address": "0xdd8e32840a811d26aac9112f530490ee86d89bbc",
+      "stake_unit": "ORIG_R3_REPO:dappnode/DAppNode",
+      "side": "UP",
+      "route": "direct",
+      "stake": 28.3786947698731,
+      "quoted_fill": 0.6776224041099196,
+      "edge_pts": 2.237759589008037,
+      "ev": 0.9371693727900151,
+      "p_win": 0.7,
+      "worst_case": -28.3786947698731,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "wealdtech/ethdo",
+      "address": "0x1773e3a7d522e80903e9914a88c815e126fb0f81",
+      "stake_unit": "ORIG_R3_REPO:wealdtech/ethdo",
+      "side": "UP",
+      "route": "direct",
+      "stake": 7.08738158486431,
+      "quoted_fill": 0.7443244041848552,
+      "edge_pts": 0.5675595815144763,
+      "ev": 0.054042448477076094,
+      "p_win": 0.75,
+      "worst_case": -7.08738158486431,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "lambdaclass/lambdaworks",
+      "address": "0xd756f4a29de73f261f32185d0982c8e454db3356",
+      "stake_unit": "ORIG_R3_REPO:lambdaclass/lambdaworks",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.7226269337482,
+      "quoted_fill": 0.8371309514006448,
+      "edge_pts": 1.2869048599355226,
+      "ev": 0.24170083519358568,
+      "p_win": 0.85,
+      "worst_case": -15.7226269337482,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "smartcontracts/simple-optimism-node",
+      "address": "0x04f4d33c6aa72320a822bc0fcb32e097a45ae4f9",
+      "stake_unit": "ORIG_R3_REPO:smartcontracts/simple-optimism-node",
+      "side": "UP",
+      "route": "direct",
+      "stake": 16.4032722750192,
+      "quoted_fill": 0.5363491189474195,
+      "edge_pts": 1.36508810525805,
+      "ev": 0.4174876228729849,
+      "p_win": 0.55,
+      "worst_case": -16.4032722750192,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "skalenetwork/libBLS",
+      "address": "0x5ba02d2373096140102b6d552e62f9d0f7c7c39d",
+      "stake_unit": "ORIG_R3_REPO:skalenetwork/libBLS",
+      "side": "UP",
+      "route": "direct",
+      "stake": 8.00480439177216,
+      "quoted_fill": 0.743597411845774,
+      "edge_pts": 0.6402588154226008,
+      "ev": 0.0689236742344745,
+      "p_win": 0.75,
+      "worst_case": -8.00480439177216,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "shazow/whatsabi",
+      "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+      "stake_unit": "ORIG_R3_REPO:shazow/whatsabi",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 20.7974706428569,
+      "quoted_fill": 1.0406887032545327,
+      "edge_pts": null,
+      "ev": 0.8462221114320586,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "shazow/whatsabi",
+      "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+      "stake_unit": "ORIG_R3_REPO:shazow/whatsabi",
+      "side": "UP",
+      "route": "direct",
+      "stake": 59.6816968920965,
+      "quoted_fill": 0.8011485644373116,
+      "edge_pts": 4.885143556268834,
+      "ev": 3.639195898758028,
+      "p_win": 0.85,
+      "worst_case": -59.6816968920965,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "succinctlabs/sp1",
+      "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+      "stake_unit": "ORIG_R3_REPO:succinctlabs/sp1",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.229803730314,
+      "quoted_fill": 0.7404416772914525,
+      "edge_pts": 0.9558322708547506,
+      "ev": 0.1449649463285713,
+      "p_win": 0.75,
+      "worst_case": -11.229803730314,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "otterscan/otterscan",
+      "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+      "stake_unit": "ORIG_R3_REPO:otterscan/otterscan",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 3.26356718809456,
+      "quoted_fill": 0.2899818666809407,
+      "edge_pts": 1.001813331905932,
+      "ev": 0.11274791613784618,
+      "p_win": 0.30000000000000004,
+      "worst_case": -3.26356718809456,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "lambdaclass/ethrex",
+      "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+      "stake_unit": "ORIG_R3_REPO:lambdaclass/ethrex",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.1103131469024,
+      "quoted_fill": 0.7878218881187078,
+      "edge_pts": 1.2178111881292253,
+      "ev": 0.23357447519484603,
+      "p_win": 0.8,
+      "worst_case": -15.1103131469024,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "Commit-Boost/commit-boost-client",
+      "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+      "stake_unit": "ORIG_R3_REPO:Commit-Boost/commit-boost-client",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 15.7931372594097,
+      "quoted_fill": 1.0315514512452457,
+      "edge_pts": null,
+      "ev": 0.49829640024973987,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "Commit-Boost/commit-boost-client",
+      "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+      "stake_unit": "ORIG_R3_REPO:Commit-Boost/commit-boost-client",
+      "side": "UP",
+      "route": "direct",
+      "stake": 35.7789289418903,
+      "quoted_fill": 0.7715901908888491,
+      "edge_pts": 2.8409809111150985,
+      "ev": 1.3173735921520648,
+      "p_win": 0.8,
+      "worst_case": -35.7789289418903,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "Cyfrin/aderyn",
+      "address": "0x8717e0e2733acb24ac964667e2252bc118fb2249",
+      "stake_unit": "ORIG_R3_REPO:Cyfrin/aderyn",
+      "side": "UP",
+      "route": "direct",
+      "stake": 10.6453150976417,
+      "quoted_fill": 0.6919213523868533,
+      "edge_pts": 0.8078647613146694,
+      "ev": 0.12429122053842087,
+      "p_win": 0.7,
+      "worst_case": -10.6453150976417,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "0xMiden/miden-vm",
+      "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+      "stake_unit": "ORIG_R3_REPO:0xMiden/miden-vm",
+      "side": "UP",
+      "route": "direct",
+      "stake": 29.4563168778391,
+      "quoted_fill": 0.8258384958188298,
+      "edge_pts": 2.4161504181170135,
+      "ev": 0.8618015834925614,
+      "p_win": 0.85,
+      "worst_case": -29.4563168778391,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "holiman/goevmlab",
+      "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+      "stake_unit": "ORIG_R3_REPO:holiman/goevmlab",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 17.5316453534451,
+      "quoted_fill": 1.0373249415008416,
+      "edge_pts": null,
+      "ev": 0.6543676372308435,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "holiman/goevmlab",
+      "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+      "stake_unit": "ORIG_R3_REPO:holiman/goevmlab",
+      "side": "UP",
+      "route": "direct",
+      "stake": 47.756352937333,
+      "quoted_fill": 0.7620472892057729,
+      "edge_pts": 3.795271079422713,
+      "ev": 2.3784390775888173,
+      "p_win": 0.8,
+      "worst_case": -47.756352937333,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "edb-rs/edb",
+      "address": "0x73918952494d08ed3eb5c2bf82eb056f51274639",
+      "stake_unit": "ORIG_R3_REPO:edb-rs/edb",
+      "side": "UP",
+      "route": "direct",
+      "stake": 36.8961251084355,
+      "quoted_fill": 0.7689948609751726,
+      "edge_pts": 3.100513902482749,
+      "ev": 1.4876165583392675,
+      "p_win": 0.8,
+      "worst_case": -36.8961251084355,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "succinctlabs/rsp",
+      "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+      "stake_unit": "ORIG_R3_REPO:succinctlabs/rsp",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 2.73974842719056,
+      "quoted_fill": 0.3878758468180894,
+      "edge_pts": 1.2124153181910624,
+      "ev": 0.0856385616264874,
+      "p_win": 0.4,
+      "worst_case": -2.73974842719056,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "OffchainLabs/stylus-sdk-rs",
+      "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+      "stake_unit": "ORIG_R3_REPO:OffchainLabs/stylus-sdk-rs",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 21.4833316728764,
+      "quoted_fill": 1.030118562816779,
+      "edge_pts": null,
+      "ev": 0.647047074503229,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "OffchainLabs/stylus-sdk-rs",
+      "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+      "stake_unit": "ORIG_R3_REPO:OffchainLabs/stylus-sdk-rs",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.389239406824,
+      "quoted_fill": 0.7873905691555013,
+      "edge_pts": 1.2609430844498726,
+      "ev": 0.24644637318669715,
+      "p_win": 0.8,
+      "worst_case": -15.389239406824,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethstaker/ethstaker-deposit-cli",
+      "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+      "stake_unit": "ORIG_R3_REPO:ethstaker/ethstaker-deposit-cli",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 6.52584751483277,
+      "quoted_fill": 0.4311941340693136,
+      "edge_pts": 1.8805865930686338,
+      "ev": 0.2846147564436028,
+      "p_win": 0.44999999999999996,
+      "worst_case": -6.52584751483277,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "dl-solarity/solidity-lib",
+      "address": "0x4b62af2f270b59ec49230d3a06b63752964a4311",
+      "stake_unit": "ORIG_R3_REPO:dl-solarity/solidity-lib",
+      "side": "UP",
+      "route": "direct",
+      "stake": 17.3975331597095,
+      "quoted_fill": 0.7360467539566311,
+      "edge_pts": 1.3953246043368894,
+      "ev": 0.3298052187855985,
+      "p_win": 0.75,
+      "worst_case": -17.3975331597095,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "powdr-labs/powdr",
+      "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+      "stake_unit": "ORIG_R3_REPO:powdr-labs/powdr",
+      "side": "UP",
+      "route": "direct",
+      "stake": 33.6925370490503,
+      "quoted_fill": 0.8213527820843415,
+      "edge_pts": 2.8647217915658496,
+      "ev": 1.1751314076348118,
+      "p_win": 0.85,
+      "worst_case": -33.6925370490503,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "axiom-crypto/snark-verifier",
+      "address": "0x52634d6c3fb85d5f4566550e0a85bed365524c39",
+      "stake_unit": "ORIG_R3_REPO:axiom-crypto/snark-verifier",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 2.42864623844491,
+      "quoted_fill": 0.3425332916717034,
+      "edge_pts": 0.7466708328296601,
+      "ev": 0.052940819289656306,
+      "p_win": 0.35,
+      "worst_case": -2.42864623844491,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "swiss-knife-xyz/swiss-knife",
+      "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+      "stake_unit": "ORIG_R3_REPO:swiss-knife-xyz/swiss-knife",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 4.10668505104253,
+      "quoted_fill": 0.2815442193597825,
+      "edge_pts": 1.8455780640217523,
+      "ev": 0.2692013305506638,
+      "p_win": 0.30000000000000004,
+      "worst_case": -4.10668505104253,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "a16z/helios",
+      "address": "0x842cf887862213513895e1aa1714723009512932",
+      "stake_unit": "ORIG_R3_REPO:a16z/helios",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.1497039084928,
+      "quoted_fill": 0.7906215630880697,
+      "edge_pts": 0.9378436911930299,
+      "ev": 0.13225897138964743,
+      "p_win": 0.8,
+      "worst_case": -11.1497039084928,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "alloy-rs/alloy",
+      "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+      "stake_unit": "ORIG_R3_REPO:alloy-rs/alloy",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 20.0570641754805,
+      "quoted_fill": 1.0363058142852217,
+      "edge_pts": null,
+      "ev": 0.7281880470617688,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "alloy-rs/alloy",
+      "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+      "stake_unit": "ORIG_R3_REPO:alloy-rs/alloy",
+      "side": "UP",
+      "route": "direct",
+      "stake": 47.375535182059,
+      "quoted_fill": 0.8112198892610154,
+      "edge_pts": 3.8780110738984575,
+      "ev": 2.2647725049647653,
+      "p_win": 0.85,
+      "worst_case": -47.375535182059,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "apeworx/ape",
+      "address": "0x34e4762227c29fb484c79cdc0a2a305fdd39ba56",
+      "stake_unit": "ORIG_R3_REPO:apeworx/ape",
+      "side": "UP",
+      "route": "direct",
+      "stake": 12.1982793825382,
+      "quoted_fill": 0.7402353281647965,
+      "edge_pts": 0.9764671835203464,
+      "ev": 0.16091125428979158,
+      "p_win": 0.75,
+      "worst_case": -12.1982793825382,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "consensys/teku",
+      "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+      "stake_unit": "ORIG_R3_REPO:consensys/teku",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.8201241638604,
+      "quoted_fill": 0.7906143536822879,
+      "edge_pts": 0.9385646317712104,
+      "ev": 0.14032063080658183,
+      "p_win": 0.8,
+      "worst_case": -11.8201241638604,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "erigontech/erigon",
+      "address": "0x87a54a3ad188dfea96aa128922351fdc12da80e3",
+      "stake_unit": "ORIG_R3_REPO:erigontech/erigon",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.7605511076306,
+      "quoted_fill": 0.7406008745397025,
+      "edge_pts": 0.939912546029753,
+      "ev": 0.14925569107862952,
+      "p_win": 0.75,
+      "worst_case": -11.7605511076306,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "eth-infinitism/account-abstraction",
+      "address": "0xcb8ab4238ae037096e274486c4892d843e769dde",
+      "stake_unit": "ORIG_R3_REPO:eth-infinitism/account-abstraction",
+      "side": "UP",
+      "route": "direct",
+      "stake": 29.2618842183558,
+      "quoted_fill": 0.6757754833567774,
+      "edge_pts": 2.422451664322256,
+      "ev": 1.048950455761605,
+      "p_win": 0.7,
+      "worst_case": -29.2618842183558,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethereum-lists/chains",
+      "address": "0xddd9d1a6ace5dca0432719b05691bb2cc7e0b9dd",
+      "stake_unit": "ORIG_R3_REPO:ethereum-lists/chains",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.4152266187609,
+      "quoted_fill": 0.7370019546286645,
+      "edge_pts": 1.2998045371335532,
+      "ev": 0.2718687701459717,
+      "p_win": 0.75,
+      "worst_case": -15.4152266187609,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethereum/consensus-specs",
+      "address": "0x7cae39d3c40b0db913ba38f61f18173be8105852",
+      "stake_unit": "ORIG_R3_REPO:ethereum/consensus-specs",
+      "side": "UP",
+      "route": "direct",
+      "stake": 11.8368205157056,
+      "quoted_fill": 0.8903932517610187,
+      "edge_pts": 0.9606748238981333,
+      "ev": 0.12771138417714983,
+      "p_win": 0.9,
+      "worst_case": -11.8368205157056,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ipsilon/evmone",
+      "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+      "stake_unit": "ORIG_R3_REPO:ipsilon/evmone",
+      "side": "UP",
+      "route": "direct",
+      "stake": 34.4617244754088,
+      "quoted_fill": 0.8204987498846791,
+      "edge_pts": 2.95012501153209,
+      "ev": 1.239080441374472,
+      "p_win": 0.85,
+      "worst_case": -34.4617244754088,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethereum/execution-apis",
+      "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+      "stake_unit": "ORIG_R3_REPO:ethereum/execution-apis",
+      "side": "UP",
+      "route": "direct",
+      "stake": 6.97367857972644,
+      "quoted_fill": 0.7946212372219837,
+      "edge_pts": 0.5378762778016299,
+      "ev": 0.04720458126895506,
+      "p_win": 0.8,
+      "worst_case": -6.97367857972644,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "argotorg/fe",
+      "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+      "stake_unit": "ORIG_R3_REPO:argotorg/fe",
+      "side": "set",
+      "route": "set-sell",
+      "stake": 15.3170122096805,
+      "quoted_fill": 1.0266213282036496,
+      "edge_pts": null,
+      "ev": 0.4077592091332166,
+      "p_win": null,
+      "worst_case": 0,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "argotorg/fe",
+      "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+      "stake_unit": "ORIG_R3_REPO:argotorg/fe",
+      "side": "UP",
+      "route": "direct",
+      "stake": 47.4247031490271,
+      "quoted_fill": 0.8110883448898514,
+      "edge_pts": 3.89116551101486,
+      "ev": 2.2751821108793435,
+      "p_win": 0.85,
+      "worst_case": -47.4247031490271,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethers-io/ethers.js",
+      "address": "0x7fa95b23093b66d4b4fd0e89717b7e7883c888bc",
+      "stake_unit": "ORIG_R3_REPO:ethers-io/ethers.js",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 1.21356427998259,
+      "quoted_fill": 0.14243295612732573,
+      "edge_pts": 0.756704387267429,
+      "ev": 0.06447309947516326,
+      "p_win": 0.15000000000000002,
+      "worst_case": -1.21356427998259,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "foundry-rs/foundry",
+      "address": "0xa1cc3bd62aea7b21547f327ed20e18d8b92d89d4",
+      "stake_unit": "ORIG_R3_REPO:foundry-rs/foundry",
+      "side": "UP",
+      "route": "direct",
+      "stake": 8.68020564968272,
+      "quoted_fill": 0.8428211187573647,
+      "edge_pts": 0.7178881242635327,
+      "ev": 0.0739352208124522,
+      "p_win": 0.85,
+      "worst_case": -8.68020564968272,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "grandinetech/grandine",
+      "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+      "stake_unit": "ORIG_R3_REPO:grandinetech/grandine",
+      "side": "UP",
+      "route": "direct",
+      "stake": 9.14841916883771,
+      "quoted_fill": 0.7925808747164901,
+      "edge_pts": 0.7419125283509964,
+      "ev": 0.08563576301781087,
+      "p_win": 0.8,
+      "worst_case": -9.14841916883771,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "hyperledger-web3j/web3j",
+      "address": "0x15607f6d09dd27d174d6d76ebbcc708da5a56646",
+      "stake_unit": "ORIG_R3_REPO:hyperledger-web3j/web3j",
+      "side": "UP",
+      "route": "direct",
+      "stake": 7.34220999018152,
+      "quoted_fill": 0.7441151527664698,
+      "edge_pts": 0.5884847233530222,
+      "ev": 0.05806599151768433,
+      "p_win": 0.75,
+      "worst_case": -7.34220999018152,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "nethereum/nethereum",
+      "address": "0x49837e744bb14fab9b256785ab050352c3340aff",
+      "stake_unit": "ORIG_R3_REPO:nethereum/nethereum",
+      "side": "UP",
+      "route": "direct",
+      "stake": 9.54553473922463,
+      "quoted_fill": 0.8422185940823127,
+      "edge_pts": 0.7781405917687279,
+      "ev": 0.0881928765633876,
+      "p_win": 0.85,
+      "worst_case": -9.54553473922463,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "nomicfoundation/hardhat",
+      "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+      "stake_unit": "ORIG_R3_REPO:nomicfoundation/hardhat",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.478929531749,
+      "quoted_fill": 0.7877087958411725,
+      "edge_pts": 1.2291204158827562,
+      "ev": 0.24152920982894918,
+      "p_win": 0.8,
+      "worst_case": -15.478929531749,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "openzeppelin/openzeppelin-contracts",
+      "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+      "stake_unit": "ORIG_R3_REPO:openzeppelin/openzeppelin-contracts",
+      "side": "UP",
+      "route": "direct",
+      "stake": 14.0024173845785,
+      "quoted_fill": 0.8385076986370962,
+      "edge_pts": 1.14923013629038,
+      "ev": 0.19191237081579413,
+      "p_win": 0.85,
+      "worst_case": -14.0024173845785,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "OffchainLabs/prysm",
+      "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+      "stake_unit": "ORIG_R3_REPO:OffchainLabs/prysm",
+      "side": "UP",
+      "route": "direct",
+      "stake": 15.8376603320413,
+      "quoted_fill": 0.78739102979705,
+      "edge_pts": 1.2608970202950043,
+      "ev": 0.2536180622512616,
+      "p_win": 0.8,
+      "worst_case": -15.8376603320413,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "OffchainLabs/prysm",
+      "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+      "stake_unit": "ORIG_R3_REPO:OffchainLabs/prysm",
+      "side": "DOWN",
+      "route": "direct",
+      "stake": 1.62911463763312,
+      "quoted_fill": 0.20812951704215993,
+      "edge_pts": -0.8129517042159973,
+      "ev": -0.06363304637654049,
+      "p_win": 0.19999999999999996,
+      "worst_case": -1.62911463763312,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "safe-global/safe-smart-account",
+      "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+      "stake_unit": "ORIG_R3_REPO:safe-global/safe-smart-account",
+      "side": "UP",
+      "route": "direct",
+      "stake": 58.4780138592619,
+      "quoted_fill": 0.7906557576463122,
+      "edge_pts": 5.934424235368773,
+      "ev": 4.389183779748999,
+      "p_win": 0.85,
+      "worst_case": -58.4780138592619,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "sigp/lighthouse",
+      "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+      "stake_unit": "ORIG_R3_REPO:sigp/lighthouse",
+      "side": "UP",
+      "route": "direct",
+      "stake": 7.16904309124962,
+      "quoted_fill": 0.8442136592214383,
+      "edge_pts": 0.578634077856166,
+      "ev": 0.04913747358745722,
+      "p_win": 0.85,
+      "worst_case": -7.16904309124962,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "status-im/nimbus-eth2",
+      "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+      "stake_unit": "ORIG_R3_REPO:status-im/nimbus-eth2",
+      "side": "UP",
+      "route": "direct",
+      "stake": 9.76120604854244,
+      "quoted_fill": 0.8920212488385196,
+      "edge_pts": 0.7978751161480391,
+      "ev": 0.08730984177637703,
+      "p_win": 0.9,
+      "worst_case": -9.76120604854244,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "vyperlang/titanoboa",
+      "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+      "stake_unit": "ORIG_R3_REPO:vyperlang/titanoboa",
+      "side": "UP",
+      "route": "direct",
+      "stake": 9.93603558877062,
+      "quoted_fill": 0.7421064572447528,
+      "edge_pts": 0.7893542755247229,
+      "ev": 0.1056863485985695,
+      "p_win": 0.75,
+      "worst_case": -9.93603558877062,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "argotorg/hevm",
+      "address": "0xdfb022190820d74babd62379fe53b45f0ac1cc67",
+      "stake_unit": "ORIG_R3_REPO:argotorg/hevm",
+      "side": "UP",
+      "route": "direct",
+      "stake": 19.4902339357212,
+      "quoted_fill": 0.784111228890091,
+      "edge_pts": 1.588877110990905,
+      "ev": 0.3949386955235945,
+      "p_win": 0.8,
+      "worst_case": -19.4902339357212,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethdebug/format",
+      "address": "0x4b2b2d4e947c9e33e3ae18979562e752606127ac",
+      "stake_unit": "ORIG_R3_REPO:ethdebug/format",
+      "side": "UP",
+      "route": "direct",
+      "stake": 28.5774476315702,
+      "quoted_fill": 0.8260068552362775,
+      "edge_pts": 2.3993144763722496,
+      "ev": 0.830093398929276,
+      "p_win": 0.85,
+      "worst_case": -28.5774476315702,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethpandaops/ethereum-helm-charts",
+      "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+      "stake_unit": "ORIG_R3_REPO:ethpandaops/ethereum-helm-charts",
+      "side": "UP",
+      "route": "direct",
+      "stake": 14.6438468730037,
+      "quoted_fill": 0.5876729730143212,
+      "edge_pts": 1.232702698567878,
+      "ev": 0.30716929970721113,
+      "p_win": 0.6,
+      "worst_case": -14.6438468730037,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "ethpandaops/checkpointz",
+      "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+      "stake_unit": "ORIG_R3_REPO:ethpandaops/checkpointz",
+      "side": "UP",
+      "route": "direct",
+      "stake": 49.1489239783115,
+      "quoted_fill": 0.6022677339716095,
+      "edge_pts": 4.7732266028390535,
+      "ev": 3.89526016755282,
+      "p_win": 0.65,
+      "worst_case": -49.1489239783115,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "lambdaclass/lambda_ethereum_consensus",
+      "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+      "stake_unit": "ORIG_R3_REPO:lambdaclass/lambda_ethereum_consensus",
+      "side": "UP",
+      "route": "direct",
+      "stake": 16.3116988575034,
+      "quoted_fill": 0.7867543078214233,
+      "edge_pts": 1.324569217857674,
+      "ev": 0.27462161926309325,
+      "p_win": 0.8,
+      "worst_case": -16.3116988575034,
+      "limited_by": "marginal-ev-zero"
+    },
+    {
+      "market": "erigontech/silkworm",
+      "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+      "stake_unit": "ORIG_R3_REPO:erigontech/silkworm",
+      "side": "UP",
+      "route": "direct",
+      "stake": 51.8035380235052,
+      "quoted_fill": 0.758225853731002,
+      "edge_pts": 4.1774146268998,
+      "ev": 2.854094942815351,
+      "p_win": 0.8,
+      "worst_case": -51.8035380235052,
+      "limited_by": "marginal-ev-zero"
+    }
+  ],
+  "skipped": [
+    {
+      "market": "ethereum/py_ecc",
+      "reason": "spot sum 1.048926; set-sell dropped by step 7 (limited_by gas): ev 0.3172 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "blockscout/blockscout",
+      "reason": "spot sum 1.011427; set-sell dropped by step 7 (limited_by gas): ev 0.0210 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "LFDT-web3j/web3j",
+      "reason": "spot sum 1.017839; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0507 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "herumi/mcl",
+      "reason": "spot sum 1.012991; set-sell dropped by step 7 (limited_by gas): ev 0.0343 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "paulmillr/noble-curves",
+      "reason": "spot sum 1.016967; set-sell dropped by step 7 (limited_by gas): ev 0.0417 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "arkworks-rs/algebra",
+      "reason": "spot sum 1.021214; p = [0.15000000000000002, 0.85, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0784 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0168 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "flashbots/rbuilder",
+      "reason": "spot sum 1.011233; set-sell dropped by step 7 (limited_by gas): ev 0.0229 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "protofire/solhint",
+      "reason": "spot sum 1.016018; p = [0.25, 0.75, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0402 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0209 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "l2beat/l2beat",
+      "reason": "spot sum 1.016469; set-sell dropped by step 7 (limited_by gas): ev 0.0442 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "Consensys/gnark-crypto",
+      "reason": "spot sum 1.040597; set-sell dropped by step 7 (limited_by gas): ev 0.2779 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "Vectorized/solady",
+      "reason": "spot sum 1.025751; p = [0.25, 0.75, 0]; neither side clears p(1-f) > price; set-sell dropped by step 7 (limited_by gas): ev 0.0706 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "taikoxyz/taiko-mono",
+      "reason": "spot sum 1.011656; set-sell dropped by step 7 (limited_by gas): ev 0.0220 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "flashbots/mev-boost",
+      "reason": "spot sum 1.009110; p = [0.09999999999999998, 0.9, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0178 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "flashbots/mev-boost-relay",
+      "reason": "spot sum 1.017142; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0466 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "ethereum/js-ethereum-cryptography",
+      "reason": "spot sum 1.010987; set-sell dropped by step 7 (limited_by gas): ev 0.0118 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "libp2p/libp2p",
+      "reason": "spot sum 1.011280; p = [0.15000000000000002, 0.85, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0276 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0114 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "supranational/blst",
+      "reason": "spot sum 1.015914; p = [0.09999999999999998, 0.9, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0564 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "wighawag/hardhat-deploy",
+      "reason": "spot sum 1.012903; set-sell dropped by step 7 (limited_by gas): ev 0.0339 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethstaker/eth-docker",
+      "reason": "spot sum 1.009855; p = [0.4, 0.6, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0213 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0048 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "DefiLlama/DefiLlama-Adapters",
+      "reason": "spot sum 1.012289; p = [0.30000000000000004, 0.7, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0197 repo tokens vs gas 0.3268; directional DOWN dropped by step 7 (limited_by gas): ev 0.0460 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "DefiLlama/chainlist",
+      "reason": "spot sum 0.979233; merge-arb dropped by step 7 (limited_by gas): ev 0.0881 repo tokens vs gas 0.3268; pair dropped by step 7 (limited_by gas): gain 0.0881 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "Certora/CertoraProver",
+      "reason": "spot sum 1.000325; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0008 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "Plonky3/Plonky3",
+      "reason": "spot sum 1.012673; set-sell dropped by step 7 (limited_by gas): ev 0.0288 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ChainSafe/bls",
+      "reason": "spot sum 0.999900; merge-arb dropped by step 7 (limited_by volume-min): ev 0.0000 repo tokens vs VOLUME_MIN 0.01; pair dropped by step 7 (limited_by volume-min): gain 0.0000 repo tokens vs VOLUME_MIN 0.01"
+    },
+    {
+      "market": "intellij-solidity/intellij-solidity",
+      "reason": "spot sum 1.018264; set-sell dropped by step 7 (limited_by gas): ev 0.0619 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "wealdtech/ethdo",
+      "reason": "spot sum 1.011874; set-sell dropped by step 7 (limited_by gas): ev 0.0240 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "lambdaclass/lambdaworks",
+      "reason": "spot sum 1.014355; set-sell dropped by step 7 (limited_by gas): ev 0.0343 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "smartcontracts/simple-optimism-node",
+      "reason": "spot sum 1.002937; set-sell dropped by step 7 (limited_by gas): ev 0.0016 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "skalenetwork/libBLS",
+      "reason": "spot sum 1.013773; set-sell dropped by step 7 (limited_by gas): ev 0.0317 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "TrueBlocks/trueblocks-core",
+      "reason": "spot sum 1.020882; p = [0.15000000000000002, 0.85, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0637 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0233 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "EspressoSystems/jellyfish",
+      "reason": "spot sum 1.013597; p = [0.35, 0.65, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0170 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0142 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "a16z/halmos",
+      "reason": "spot sum 1.019144; p = [0.25, 0.75, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0480 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0055 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "succinctlabs/op-succinct",
+      "reason": "spot sum 1.012455; p = [0.4, 0.6, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0168 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0442 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "succinctlabs/sp1",
+      "reason": "spot sum 1.008709; set-sell dropped by step 7 (limited_by gas): ev 0.0154 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "otterscan/otterscan",
+      "reason": "spot sum 1.012342; set-sell dropped by step 7 (limited_by gas): ev 0.0266 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "lambdaclass/ethrex",
+      "reason": "spot sum 1.005222; set-sell dropped by step 7 (limited_by gas): ev 0.0044 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "NethermindEth/juno",
+      "reason": "spot sum 1.014402; p = [0.25, 0.75, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0260 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0186 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "Cyfrin/aderyn",
+      "reason": "spot sum 0.999900; merge-arb dropped by step 7 (limited_by volume-min): ev -0.0000 repo tokens vs VOLUME_MIN 0.01; pair dropped by step 7 (limited_by volume-min): gain -0.0000 repo tokens vs VOLUME_MIN 0.01"
+    },
+    {
+      "market": "0xMiden/miden-vm",
+      "reason": "spot sum 1.023276; set-sell dropped by step 7 (limited_by gas): ev 0.0832 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "edb-rs/edb",
+      "reason": "spot sum 1.017561; set-sell dropped by step 7 (limited_by gas): ev 0.0556 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "evmts/tevm-monorepo",
+      "reason": "spot sum 1.018984; p = [0.35, 0.65, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0450 repo tokens vs gas 0.3268; directional DOWN dropped by step 7 (limited_by gas): ev 0.0206 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "succinctlabs/rsp",
+      "reason": "spot sum 1.038103; set-sell dropped by step 7 (limited_by gas): ev 0.1771 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "aestus-relay/mev-boost-relay",
+      "reason": "spot sum 1.030153; p = [0.30000000000000004, 0.7, 0]; neither side clears p(1-f) > price; set-sell dropped by step 7 (limited_by gas): ev 0.0649 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethstaker/ethstaker-deposit-cli",
+      "reason": "spot sum 1.009929; set-sell dropped by step 7 (limited_by gas): ev 0.0153 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "dl-solarity/solidity-lib",
+      "reason": "spot sum 1.036407; set-sell dropped by step 7 (limited_by gas): ev 0.2071 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "risc0/risc0-ethereum",
+      "reason": "spot sum 1.018448; p = [0.30000000000000004, 0.7, 0]; neither side clears p(1-f) > price; set-sell dropped by step 7 (limited_by gas): ev 0.0651 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "powdr-labs/powdr",
+      "reason": "spot sum 1.023744; set-sell dropped by step 7 (limited_by gas): ev 0.1058 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "axiom-crypto/snark-verifier",
+      "reason": "spot sum 1.012085; set-sell dropped by step 7 (limited_by gas): ev 0.0236 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "swiss-knife-xyz/swiss-knife",
+      "reason": "spot sum 1.021147; set-sell dropped by step 7 (limited_by gas): ev 0.0661 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "a16z/helios",
+      "reason": "spot sum 1.000450; set-sell dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "apeworx/ape",
+      "reason": "spot sum 1.012497; set-sell dropped by step 7 (limited_by gas): ev 0.0259 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "chainsafe/lodestar",
+      "reason": "spot sum 0.999959; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; sum within [1-f, 1/(1-f)] so neither 3a nor 3b applies; directional UP dropped by step 7 (limited_by gas): ev 0.0380 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "consensys/teku",
+      "reason": "spot sum 1.016237; set-sell dropped by step 7 (limited_by gas): ev 0.0376 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "erigontech/erigon",
+      "reason": "spot sum 1.013218; set-sell dropped by step 7 (limited_by gas): ev 0.0288 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "eth-infinitism/account-abstraction",
+      "reason": "spot sum 0.997549; merge-arb dropped by step 7 (limited_by volume-min): ev -0.0000 repo tokens vs VOLUME_MIN 0.01; pair dropped by step 7 (limited_by gas): gain 0.0010 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "ethereum-lists/chains",
+      "reason": "spot sum 1.006129; set-sell dropped by step 7 (limited_by gas): ev 0.0074 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethereum/consensus-specs",
+      "reason": "spot sum 0.977967; merge-arb dropped by step 7 (limited_by gas): ev 0.0600 repo tokens vs gas 0.3268; pair dropped by step 7 (limited_by gas): gain 0.0600 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "ethereum/eips",
+      "reason": "spot sum 1.000321; p = [0.09999999999999998, 0.9, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.3268; directional DOWN dropped by step 7 (limited_by gas): ev 0.0300 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "ipsilon/evmone",
+      "reason": "spot sum 0.987291; merge-arb dropped by step 7 (limited_by gas): ev 0.0339 repo tokens vs gas 0.3268; pair dropped by step 7 (limited_by gas): gain 0.0339 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "ethereum/execution-apis",
+      "reason": "spot sum 1.018336; set-sell dropped by step 7 (limited_by gas): ev 0.0266 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethereum/go-ethereum",
+      "reason": "spot sum 0.998073; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; pair dropped by step 7 (limited_by gas): gain 0.0005 repo tokens vs gas 0.0934; directional DOWN dropped by step 7 (limited_by gas): ev 0.0050 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "remix-project-org/remix-project",
+      "reason": "spot sum 1.009397; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0158 repo tokens vs gas 0.3268; directional DOWN dropped by step 7 (limited_by gas): ev 0.0112 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "argotorg/solidity",
+      "reason": "spot sum 1.019757; p = [0.15000000000000002, 0.85, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0707 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0095 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "argotorg/sourcify",
+      "reason": "spot sum 1.000246; p = [0.25, 0.75, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0000 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0080 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "ethereum/web3.py",
+      "reason": "spot sum 0.999932; p = [0.30000000000000004, 0.7, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; sum within [1-f, 1/(1-f)] so neither 3a nor 3b applies; directional DOWN dropped by step 7 (limited_by gas): ev 0.0429 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "ethers-io/ethers.js",
+      "reason": "spot sum 1.019910; set-sell dropped by step 7 (limited_by gas): ev 0.0658 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "foundry-rs/foundry",
+      "reason": "spot sum 0.981792; merge-arb dropped by step 7 (limited_by volume-min): ev 0.0000 repo tokens vs VOLUME_MIN 0.01; pair dropped by step 7 (limited_by gas): gain 0.0694 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "grandinetech/grandine",
+      "reason": "spot sum 1.019068; set-sell dropped by step 7 (limited_by gas): ev 0.0619 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "hyperledger-web3j/web3j",
+      "reason": "spot sum 1.012124; set-sell dropped by step 7 (limited_by gas): ev 0.0250 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "hyperledger/besu",
+      "reason": "spot sum 1.013892; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0331 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0435 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "nethereum/nethereum",
+      "reason": "spot sum 1.007205; set-sell dropped by step 7 (limited_by gas): ev 0.0087 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "nethermindeth/nethermind",
+      "reason": "spot sum 1.011608; p = [0.25, 0.75, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0247 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0092 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "nomicfoundation/hardhat",
+      "reason": "spot sum 0.991394; merge-arb dropped by step 7 (limited_by gas): ev 0.0111 repo tokens vs gas 0.3268; pair dropped by step 7 (limited_by gas): gain 0.0111 repo tokens vs gas 0.0934"
+    },
+    {
+      "market": "openzeppelin/openzeppelin-contracts",
+      "reason": "spot sum 1.017069; set-sell dropped by step 7 (limited_by gas): ev 0.0498 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "paradigmxyz/reth",
+      "reason": "spot sum 0.981888; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; merge-arb dropped by step 7 (limited_by gas): ev 0.0536 repo tokens vs gas 0.3268; pair dropped by step 7 (limited_by gas): gain 0.0536 repo tokens vs gas 0.0934; directional UP dropped by step 7 (limited_by gas): ev 0.0372 repo tokens vs gas 0.0467; directional DOWN dropped by step 7 (limited_by gas): ev 0.0198 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "OffchainLabs/prysm",
+      "reason": "spot sum 0.975965; merge-arb dropped by step 7 (limited_by gas): ev 0.0948 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "safe-global/safe-smart-account",
+      "reason": "spot sum 1.011613; set-sell dropped by step 7 (limited_by gas): ev 0.0309 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "scaffold-eth/scaffold-eth-2",
+      "reason": "spot sum 1.009885; p = [0.35, 0.65, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0198 repo tokens vs gas 0.3268; directional DOWN dropped by step 7 (limited_by gas): ev 0.0331 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "sigp/lighthouse",
+      "reason": "spot sum 1.020936; set-sell dropped by step 7 (limited_by gas): ev 0.0645 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "status-im/nimbus-eth2",
+      "reason": "spot sum 1.021277; set-sell dropped by step 7 (limited_by gas): ev 0.0606 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "vyperlang/titanoboa",
+      "reason": "spot sum 1.034669; set-sell dropped by step 7 (limited_by gas): ev 0.1846 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "vyperlang/vyper",
+      "reason": "spot sum 1.002173; p = [0.19999999999999996, 0.8, 0]; neither side clears p(1-f) > price; set-sell dropped by step 7 (limited_by gas): ev 0.0006 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "wevm/viem",
+      "reason": "spot sum 1.029980; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.1263 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0128 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "argotorg/hevm",
+      "reason": "spot sum 0.999900; merge-arb dropped by step 7 (limited_by volume-min): ev -0.0000 repo tokens vs VOLUME_MIN 0.01; pair dropped by step 7 (limited_by volume-min): gain -0.0000 repo tokens vs VOLUME_MIN 0.01"
+    },
+    {
+      "market": "ethdebug/format",
+      "reason": "spot sum 1.000100; set-sell dropped by step 7 (limited_by volume-min): ev 0.0000 repo tokens vs VOLUME_MIN 0.01"
+    },
+    {
+      "market": "argotorg/act",
+      "reason": "spot sum 1.019282; p = [0.19999999999999996, 0.8, 0]; no side clears p(1-f) > price at the final prices except the directional row(s) dropped by step 7 below; set-sell dropped by step 7 (limited_by gas): ev 0.0589 repo tokens vs gas 0.3268; directional UP dropped by step 7 (limited_by gas): ev 0.0334 repo tokens vs gas 0.0467"
+    },
+    {
+      "market": "ethpandaops/ethereum-package",
+      "reason": "spot sum 1.028692; p = [0.35, 0.65, 0]; neither side clears p(1-f) > price; set-sell dropped by step 7 (limited_by gas): ev 0.1255 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethpandaops/ethereum-helm-charts",
+      "reason": "spot sum 1.008227; set-sell dropped by step 7 (limited_by gas): ev 0.0132 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "ethpandaops/checkpointz",
+      "reason": "spot sum 1.009758; set-sell dropped by step 7 (limited_by gas): ev 0.0202 repo tokens vs gas 0.3268"
+    },
+    {
+      "market": "lambdaclass/lambda_ethereum_consensus",
+      "reason": "spot sum 1.006402; set-sell dropped by step 7 (limited_by gas): ev 0.0069 repo tokens vs gas 0.3268"
+    }
+  ],
+  "totals": {
+    "staked": 58.478013859262,
+    "expected_value": 0.5057921211974415,
+    "correlated_worst_case": -58.478013859262
+  }
+}
