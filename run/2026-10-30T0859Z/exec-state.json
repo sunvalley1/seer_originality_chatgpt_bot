@@ -1,8 +1,324 @@
 {
  "run_id": "2026-10-30T0859Z",
  "plan_built_at": "2026-10-30T09:05:08.741Z",
- "groups": {},
- "stop": null,
+ "groups": {
+  "mint-parent": {
+   "status": "stopped",
+   "started_at": "2026-10-30T09:05:14.574Z",
+   "txs": [
+    {
+     "hash": "0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c",
+     "block": 158876171,
+     "recorded_at": "landed before the stop; its row was not written"
+    }
+   ],
+   "reason": "pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "mint-middle-A": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "mint-middle-B": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "mint-middle-C": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethereum/py_ecc:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:blockscout/blockscout:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:herumi/mcl:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:paulmillr/noble-curves:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:flashbots/rbuilder:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:l2beat/l2beat:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:Consensys/gnark-crypto:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:taikoxyz/taiko-mono:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:wighawag/hardhat-deploy:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:DefiLlama/chainlist:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:Plonky3/Plonky3:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:ChainSafe/bls:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:intellij-solidity/intellij-solidity:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:dappnode/DAppNode": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:dappnode/DAppNode:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:wealdtech/ethdo:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:lambdaclass/lambdaworks:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:smartcontracts/simple-optimism-node:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:skalenetwork/libBLS:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:shazow/whatsabi": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:shazow/whatsabi:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:succinctlabs/sp1:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:otterscan/otterscan:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:lambdaclass/ethrex:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:Commit-Boost/commit-boost-client": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:Commit-Boost/commit-boost-client:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:Cyfrin/aderyn:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:0xMiden/miden-vm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:holiman/goevmlab": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:holiman/goevmlab:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:edb-rs/edb:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:succinctlabs/rsp:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:OffchainLabs/stylus-sdk-rs": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:OffchainLabs/stylus-sdk-rs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethstaker/ethstaker-deposit-cli:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:dl-solarity/solidity-lib:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:powdr-labs/powdr:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:axiom-crypto/snark-verifier:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:swiss-knife-xyz/swiss-knife:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:a16z/helios:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:alloy-rs/alloy": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:alloy-rs/alloy:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:apeworx/ape:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:consensys/teku:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:erigontech/erigon:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:eth-infinitism/account-abstraction:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethereum-lists/chains:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:ethereum/consensus-specs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:ipsilon/evmone:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethereum/execution-apis:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "set-sell:argotorg/fe": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:argotorg/fe:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethers-io/ethers.js:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:foundry-rs/foundry:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:grandinetech/grandine:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:hyperledger-web3j/web3j:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:nethereum/nethereum:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:nomicfoundation/hardhat:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:openzeppelin/openzeppelin-contracts:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "dual-buy:OffchainLabs/prysm": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:safe-global/safe-smart-account:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:sigp/lighthouse:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:status-im/nimbus-eth2:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:vyperlang/titanoboa:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:argotorg/hevm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethdebug/format:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethpandaops/ethereum-helm-charts:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:ethpandaops/checkpointz:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "complex-buy:lambdaclass/lambda_ethereum_consensus:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  },
+  "simple-buy:erigontech/silkworm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group mint-parent: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+  }
+ },
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343",
+  "at": "2026-10-30T09:05:18.566Z",
+  "exit": 4,
+  "group": "mint-parent",
+  "fields": {}
+ },
  "invocations": [
   {
    "started_at": "2026-10-30T09:05:12.373Z",

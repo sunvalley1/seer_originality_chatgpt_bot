@@ -1,0 +1,57 @@
+{
+ "outcome": "stopped",
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343"
+ },
+ "mode": "wrapper",
+ "groups_total": 75,
+ "groups_done": 0,
+ "transactions_total": 392,
+ "transactions_sent": 1,
+ "sent_this_invocation": 1,
+ "first_tx": "0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c",
+ "last_tx": "0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c",
+ "gas_cost_eth_receipts": "0.000000035763118321",
+ "nonce_pinning": false,
+ "signer_env_dropped": [],
+ "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+ "tx_hash_file": "run/2026-10-30T0859Z/exec-sends.json",
+ "retained_legs": 0,
+ "consumed_rows": 0,
+ "unattributed_consumption": [],
+ "half_done": {
+  "group": "mint-parent",
+  "landed": 1,
+  "of": 2,
+  "txs": [
+   "0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c"
+  ],
+  "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+ },
+ "recovery": null,
+ "skipped_groups": [
+  "mint-middle-A",
+  "mint-middle-B",
+  "mint-middle-C",
+  "complex-buy:ethereum/py_ecc:UP",
+  "complex-buy:blockscout/blockscout:UP",
+  "complex-buy:herumi/mcl:UP",
+  "complex-buy:paulmillr/noble-curves:UP",
+  "complex-buy:flashbots/rbuilder:UP",
+  "complex-buy:l2beat/l2beat:UP",
+  "complex-buy:Consensys/gnark-crypto:UP",
+  "complex-buy:taikoxyz/taiko-mono:UP",
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+  "complex-buy:wighawag/hardhat-deploy:UP",
+  "simple-buy:DefiLlama/chainlist:DOWN",
+  "complex-buy:Plonky3/Plonky3:UP",
+  "simple-buy:ChainSafe/bls:DOWN",
+  "complex-buy:intellij-solidity/intellij-solidity:UP",
+  "set-sell:dappnode/DAppNode",
+  "complex-buy:dappnode/DAppNode:UP",
+  "complex-buy:wealdtech/ethdo:UP"
+ ],
+ "skipped_count": 74,
+ "eth_after": "0.005212783028981352"
+}

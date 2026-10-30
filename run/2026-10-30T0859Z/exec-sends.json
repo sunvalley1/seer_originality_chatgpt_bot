@@ -1,0 +1,20 @@
+[
+ {
+  "at": "2026-10-30T09:05:18.181Z",
+  "source": "entry",
+  "group": "mint-parent",
+  "idx": 0,
+  "label": "approve sUSDS -> Router (M)",
+  "nonce": 4342,
+  "tx_hash": "0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c",
+  "block": 158876171,
+  "to": "0xb5b2dc7fd34c249f4be7fb1fcea07950784229e0",
+  "gas_limit": "40802",
+  "gas_used": "34001",
+  "effective_gas_price": "1000383",
+  "l1_fee": "1749095938",
+  "cost_wei": "35763118321",
+  "rebuilt": false,
+  "settled_via": null
+ }
+]
