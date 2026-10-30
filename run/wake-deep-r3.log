@@ -25,3 +25,8 @@ fatal: the remote end hung up unexpectedly
 
 [2026-10-29T09:56:22.005Z] run 2026-10-29T0859Z: planner wake exited 3
 [2026-10-29T09:56:22.007Z] run 2026-10-29T0859Z finished, exit 3
+[2026-10-30T08:59:52.212Z] run 2026-10-30T0859Z: lock taken by routine.cjs (pid 1320 on b19fca99174b)
+[2026-10-30T08:59:52.213Z] signer log "/workspace/r3-runtime/state/r3-signer.log.jsonl"
+[2026-10-30T08:59:52.214Z] run 2026-10-30T0859Z: planner wake started
+(node:1329) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
