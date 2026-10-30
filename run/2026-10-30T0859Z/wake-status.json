@@ -1,25 +1,25 @@
 {
-  "run_id": "2026-10-30T0859Z",
-  "started_at": "2026-10-30T08:59:52.212Z",
-  "finished_at": "2026-10-30T09:05:33.197Z",
-  "status": "aborted",
-  "stopped_at_step": "exec",
-  "cadence_hours": null,
-  "bankroll": 477.327500769566,
-  "positions_sent": 0,
-  "h_rescored": [],
-  "csv": {
-    "version": 1,
-    "path": "./run/csv/originality-v1-setup-2026-10-28T112250Z.csv",
-    "sha256": "52fd0781f1b59de3f7909f005a26fbf95a5bdfdb89693248aad2abdeba140ece",
-    "supplied_at": "2026-10-28T11:28:41Z",
-    "reused": true,
-    "counts": {
-      "matched": 98,
-      "unmatched": 0,
-      "overwritten": 0,
-      "no_forecast": 0
-    }
-  },
-  "notes": "half-done: group mint-parent, 1 of 2 transactions landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c); no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c)): this run-id stays aborted, not final, until then | Half A stopped at exec: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343 | Half B sends nothing: Half A left a nonce unsettled or a send-lock held"
+ "run_id": "2026-10-30T0859Z",
+ "started_at": "2026-10-30T08:59:52.212Z",
+ "finished_at": "2026-10-30T09:05:33.197Z",
+ "status": "nothing-to-do",
+ "stopped_at_step": "exec",
+ "cadence_hours": null,
+ "bankroll": 477.327500769566,
+ "positions_sent": 0,
+ "h_rescored": [],
+ "csv": {
+  "version": 1,
+  "path": "./run/csv/originality-v1-setup-2026-10-28T112250Z.csv",
+  "sha256": "52fd0781f1b59de3f7909f005a26fbf95a5bdfdb89693248aad2abdeba140ece",
+  "supplied_at": "2026-10-28T11:28:41Z",
+  "reused": true,
+  "counts": {
+   "matched": 98,
+   "unmatched": 0,
+   "overwritten": 0,
+   "no_forecast": 0
+  }
+ },
+ "notes": "half-done: group mint-parent, 1 of 2 transactions landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c); no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c)): this run-id stays aborted, not final, until then | Half A stopped at exec: pending-transaction: approve sUSDS -> Router (M) (nonce 4342): landed (0x08276e7f1caef32843c06e7d705b26327b2ea935be8f5ed166868636e221345c), but after its receipt latest 4342 pending 4343, expected 4343 | Half B sends nothing: Half A left a nonce unsettled or a send-lock held | repaired by 2026-10-30T2103Z at 2026-10-30T21:03:57.896Z: recovery: mint-parent nothing-to-unwind"
 }

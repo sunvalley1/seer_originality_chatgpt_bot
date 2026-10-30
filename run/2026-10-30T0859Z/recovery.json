@@ -1,0 +1,28 @@
+{
+ "groups": {
+  "mint-parent": {
+   "outcome": "nothing-to-unwind",
+   "effects": {
+    "completed_idx": [],
+    "merged_back": "0",
+    "sold": {},
+    "approved_P": null
+   },
+   "attempts": [
+    {
+     "at": "2026-10-30T21:03:58.028Z",
+     "by": "the start-of-run repair of 2026-10-30T2103Z",
+     "trigger": "start-of-run repair",
+     "landed": 1,
+     "of": 2,
+     "failed": "Router.splitPosition(sUSDS, parent, M) (plan nonce 4343)",
+     "decision": null,
+     "outcome": "nothing-to-unwind",
+     "why": "completing it does not simulate clean (all_success false (failed_count 1, first failed index 0: [{\"index\":0,\"group\":0,\"to\":\"0x179d8F8c811B8C759c33809dbc6c5ceDc62D05DD\",\"status\":\"0x0\",\"error\":\"execution reverted: SUsds/insufficient-allowance\",\"revert_reason\":\"SUsds/insufficient-allowance\"}])); only an approval landed: a mint holds no position to unwind",
+     "txs": [],
+     "rows": 0
+    }
+   ]
+  }
+ }
+}
