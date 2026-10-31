@@ -34,5 +34,41 @@
   "cost_wei": "563733006612",
   "rebuilt": false,
   "settled_via": null
+ },
+ {
+  "at": "2026-10-31T21:04:01.135Z",
+  "source": "entry",
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "idx": 2,
+  "label": "approve DOWN -> SwapRouter02 (x)",
+  "nonce": 4361,
+  "tx_hash": "0xf371a56fabbc2db67fc80d914e8c5b890c0168e8abff3ebb68f53cbaac2f0dfd",
+  "block": 158940932,
+  "to": "0xe55ae60d88f72cd36b3361f24f311ab060790a5b",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000308",
+  "l1_fee": "726445040",
+  "cost_wei": "49730533652",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-31T21:04:05.805Z",
+  "source": "entry",
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "idx": 3,
+  "label": "sell x DOWN -> repo (min 99.5% of quote)",
+  "nonce": 4362,
+  "tx_hash": "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5",
+  "block": 158940935,
+  "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+  "gas_limit": "198544",
+  "gas_used": "160653",
+  "effective_gas_price": "1000308",
+  "l1_fee": "1167498434",
+  "cost_wei": "161869979558",
+  "rebuilt": false,
+  "settled_via": null
  }
 ]

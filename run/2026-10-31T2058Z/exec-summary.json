@@ -1,0 +1,60 @@
+{
+ "outcome": "stopped",
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+ },
+ "mode": "wrapper",
+ "groups_total": 69,
+ "groups_done": 0,
+ "transactions_total": 374,
+ "transactions_sent": 4,
+ "sent_this_invocation": 4,
+ "first_tx": "0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e",
+ "last_tx": "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5",
+ "gas_cost_eth_receipts": "0.000000825060626198",
+ "nonce_pinning": false,
+ "signer_env_dropped": [],
+ "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+ "tx_hash_file": "run/2026-10-31T2058Z/exec-sends.json",
+ "retained_legs": 1,
+ "consumed_rows": 1,
+ "unattributed_consumption": [],
+ "half_done": {
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "landed": 4,
+  "of": 6,
+  "txs": [
+   "0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e",
+   "0x9bdc6b296c488324ee60abd16abe84e84398f1033a5298ff16653784c968a4bc",
+   "0xf371a56fabbc2db67fc80d914e8c5b890c0168e8abff3ebb68f53cbaac2f0dfd",
+   "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5"
+  ],
+  "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+ },
+ "recovery": null,
+ "skipped_groups": [
+  "complex-buy:blockscout/blockscout:UP",
+  "complex-buy:herumi/mcl:UP",
+  "complex-buy:paulmillr/noble-curves:UP",
+  "complex-buy:flashbots/rbuilder:UP",
+  "complex-buy:Consensys/gnark-crypto:UP",
+  "complex-buy:taikoxyz/taiko-mono:UP",
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+  "complex-buy:wighawag/hardhat-deploy:UP",
+  "simple-buy:DefiLlama/chainlist:DOWN",
+  "complex-buy:Plonky3/Plonky3:UP",
+  "simple-buy:ChainSafe/bls:DOWN",
+  "complex-buy:intellij-solidity/intellij-solidity:UP",
+  "set-sell:dappnode/DAppNode",
+  "complex-buy:dappnode/DAppNode:UP",
+  "complex-buy:wealdtech/ethdo:UP",
+  "complex-buy:lambdaclass/lambdaworks:UP",
+  "complex-buy:smartcontracts/simple-optimism-node:UP",
+  "complex-buy:skalenetwork/libBLS:UP",
+  "set-sell:shazow/whatsabi",
+  "complex-buy:shazow/whatsabi:UP"
+ ],
+ "skipped_count": 68,
+ "eth_after": "0.00519365537538134"
+}

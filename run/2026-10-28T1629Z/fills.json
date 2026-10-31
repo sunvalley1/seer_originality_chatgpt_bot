@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T09:45:32.857Z",
+ "generated_at": "2026-10-31T21:04:06.915Z",
  "runs": [
   {
    "market": "PARENT-MINT",
@@ -3042,6 +3042,19 @@
    "tx_hash": null,
    "status": "filled",
    "error": "consumed by run 2026-10-29T0859Z"
+  },
+  {
+   "market": "0xc9335b722174a667c6c7d69ee85412dc41332b4c",
+   "address": "0xc217920a91f1b3d56276393aa5345f01a848ecf0",
+   "side": "consumed",
+   "route": "complex-buy",
+   "requested": 13.9189254048366,
+   "filled": 13.9189254048366,
+   "fill_price": 0,
+   "slippage_vs_quote": 0,
+   "tx_hash": null,
+   "status": "filled",
+   "error": "consumed by run 2026-10-31T2058Z"
   }
  ],
  "totals": {

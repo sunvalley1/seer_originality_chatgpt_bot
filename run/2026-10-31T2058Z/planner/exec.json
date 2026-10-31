@@ -1,0 +1,92 @@
+{
+ "subcommand": "exec",
+ "run_id": "2026-10-31T2058Z",
+ "started_at": "2026-10-31T21:03:43.512Z",
+ "finished_at": "2026-10-31T21:04:06.918Z",
+ "summary": {
+  "subcommand": "exec",
+  "run_id": "2026-10-31T2058Z",
+  "exit": 4,
+  "ok": false,
+  "stop": {
+   "step": "G",
+   "cause": "pending-transaction",
+   "status": "aborted",
+   "notes": "sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "mode": "wrapper",
+  "groups_total": 69,
+  "groups_done": 0,
+  "transactions_total": 374,
+  "transactions_sent": 4,
+  "sent_this_invocation": 4,
+  "first_tx": "0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e",
+  "last_tx": "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5",
+  "gas_cost_eth_receipts": "0.000000825060626198",
+  "nonce_pinning": false,
+  "signer_env_dropped": [],
+  "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+  "tx_hash_file": "run/2026-10-31T2058Z/exec-sends.json",
+  "retained_legs": 1,
+  "consumed_rows": 1,
+  "unattributed_consumption": [],
+  "half_done": {
+   "group": "complex-buy:ethereum/py_ecc:UP",
+   "landed": 4,
+   "of": 6,
+   "txs": [
+    "0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e",
+    "0x9bdc6b296c488324ee60abd16abe84e84398f1033a5298ff16653784c968a4bc",
+    "0xf371a56fabbc2db67fc80d914e8c5b890c0168e8abff3ebb68f53cbaac2f0dfd",
+    "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5"
+   ],
+   "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+  },
+  "recovery": null,
+  "skipped_groups": [
+   "complex-buy:blockscout/blockscout:UP",
+   "complex-buy:herumi/mcl:UP",
+   "complex-buy:paulmillr/noble-curves:UP",
+   "complex-buy:flashbots/rbuilder:UP",
+   "complex-buy:Consensys/gnark-crypto:UP",
+   "complex-buy:taikoxyz/taiko-mono:UP",
+   "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+   "complex-buy:wighawag/hardhat-deploy:UP",
+   "simple-buy:DefiLlama/chainlist:DOWN",
+   "complex-buy:Plonky3/Plonky3:UP",
+   "simple-buy:ChainSafe/bls:DOWN",
+   "complex-buy:intellij-solidity/intellij-solidity:UP",
+   "set-sell:dappnode/DAppNode",
+   "complex-buy:dappnode/DAppNode:UP",
+   "complex-buy:wealdtech/ethdo:UP",
+   "complex-buy:lambdaclass/lambdaworks:UP",
+   "complex-buy:smartcontracts/simple-optimism-node:UP",
+   "complex-buy:skalenetwork/libBLS:UP",
+   "set-sell:shazow/whatsabi",
+   "complex-buy:shazow/whatsabi:UP"
+  ],
+  "skipped_count": 68,
+  "eth_after": "0.00519365537538134"
+ },
+ "detail": {},
+ "log": [
+  "2026-10-31T21:03:44.355Z identity ok: chain 10; parent and middles' conditionId equal the skill's constants; 69 children's conditionId and questionsIds()[0] equal the plan",
+  "2026-10-31T21:03:47.434Z GROUP 0 complex-buy:ethereum/py_ecc:UP (6 tx): affordability ok: ETH 0.00519431856602798 ETH vs the requirement 0.002002687943631728 ETH (0.002 ETH reserve + 6 gas limit(s) x 2 x eth_gasPrice 1000308 wei)",
+  "2026-10-31T21:03:49.275Z SEND approve repo -> Router (x = stake) (nonce 4359) gasLimit 58787 calldata_hash 0x46532a87035607b835c3e9f0c43a87f1a71a2e6e56f4fa3e3168e3c0d14f612d",
+  "2026-10-31T21:03:53.254Z   confirmed 0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e block 158940927 gas 48989 cost 0.000000049727106376 ETH; nonce now 4360",
+  "2026-10-31T21:03:53.641Z   notes: slot0 drift vs build 1.11e-16 (reported, never stale by itself)",
+  "2026-10-31T21:03:55.496Z SEND Router.splitPosition(sUSDS, child, x) (nonce 4360) gasLimit 844136 calldata_hash 0xb1d26e9f1efbb8f38f88667f521940f5e360821985017758c96c8af46cadc08b",
+  "2026-10-31T21:03:57.298Z   confirmed 0x9bdc6b296c488324ee60abd16abe84e84398f1033a5298ff16653784c968a4bc block 158940930 gas 562757 cost 0.000000563733006612 ETH; nonce now 4361",
+  "2026-10-31T21:03:59.665Z SEND approve DOWN -> SwapRouter02 (x) (nonce 4361) gasLimit 58787 calldata_hash 0x853cbe9c59a2b2f174cce9c73026d2afac407c041bf10e114c1501dce3a0274b",
+  "2026-10-31T21:04:01.606Z   confirmed 0xf371a56fabbc2db67fc80d914e8c5b890c0168e8abff3ebb68f53cbaac2f0dfd block 158940932 gas 48989 cost 0.000000049730533652 ETH; nonce now 4362",
+  "2026-10-31T21:04:04.358Z SEND sell x DOWN -> repo (min 99.5% of quote) (nonce 4362) gasLimit 198544 calldata_hash 0x642ae83f40c96978eaf3ff65c125df465a6e26d6d2033cbd6f9ea8a287bbc99c",
+  "2026-10-31T21:04:06.226Z STOP pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363",
+  "2026-10-31T21:04:06.916Z consumed row: 13.9189254048366 of 0xc9335b722174a667c6c7d69ee85412dc41332b4c from run 2026-10-28T1629Z",
+  "2026-10-31T21:04:06.918Z failure: Error: G stop: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363\n    at Object.run (/workspace/r3-runtime/tools/planner/planner/exec.cjs:877:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async step (/workspace/r3-runtime/tools/planner/planner/wake.cjs:197:54)\n    at async halfA (/workspace/r3-runtime/tools/planner/planner/wake.cjs:232:13)\n    at async Object.run (/workspace/r3-runtime/tools/planner/planner/wake.cjs:242:3)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async main (/workspace/r3-runtime/tools/planner/planner.cjs:95:23)"
+ ],
+ "tool_calls": {
+  "helperCalls": 37,
+  "helperRetries": 0,
+  "signerCalls": 8
+ }
+}

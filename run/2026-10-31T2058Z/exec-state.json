@@ -3,7 +3,7 @@
  "plan_built_at": "2026-10-31T21:03:41.819Z",
  "groups": {
   "complex-buy:ethereum/py_ecc:UP": {
-   "status": "in-progress",
+   "status": "stopped",
    "started_at": "2026-10-31T21:03:47.434Z",
    "txs": [
     {
@@ -17,11 +17,302 @@
      "nonce": 4360,
      "hash": "0x9bdc6b296c488324ee60abd16abe84e84398f1033a5298ff16653784c968a4bc",
      "block": 158940930
+    },
+    {
+     "idx": 2,
+     "nonce": 4361,
+     "hash": "0xf371a56fabbc2db67fc80d914e8c5b890c0168e8abff3ebb68f53cbaac2f0dfd",
+     "block": 158940932
+    },
+    {
+     "hash": "0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5",
+     "block": 158940935,
+     "recorded_at": "landed before the stop; its row was not written"
     }
-   ]
+   ],
+   "reason": "pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:blockscout/blockscout:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:herumi/mcl:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:paulmillr/noble-curves:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:flashbots/rbuilder:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:Consensys/gnark-crypto:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:taikoxyz/taiko-mono:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethereum/js-ethereum-cryptography:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:wighawag/hardhat-deploy:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:DefiLlama/chainlist:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:Plonky3/Plonky3:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:ChainSafe/bls:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:intellij-solidity/intellij-solidity:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:dappnode/DAppNode": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:dappnode/DAppNode:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:wealdtech/ethdo:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:lambdaclass/lambdaworks:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:smartcontracts/simple-optimism-node:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:skalenetwork/libBLS:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:shazow/whatsabi": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:shazow/whatsabi:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:succinctlabs/sp1:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:otterscan/otterscan:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:lambdaclass/ethrex:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:Commit-Boost/commit-boost-client": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:Commit-Boost/commit-boost-client:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:Cyfrin/aderyn:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:0xMiden/miden-vm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:holiman/goevmlab": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:holiman/goevmlab:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:edb-rs/edb:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:succinctlabs/rsp:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:OffchainLabs/stylus-sdk-rs": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:OffchainLabs/stylus-sdk-rs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethstaker/ethstaker-deposit-cli:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:dl-solarity/solidity-lib:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:powdr-labs/powdr:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:axiom-crypto/snark-verifier:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:swiss-knife-xyz/swiss-knife:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:a16z/helios:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:alloy-rs/alloy": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:alloy-rs/alloy:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:apeworx/ape:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:consensys/teku:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:erigontech/erigon:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:eth-infinitism/account-abstraction:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethereum-lists/chains:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:ethereum/consensus-specs:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:ipsilon/evmone:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "set-sell:argotorg/fe": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:argotorg/fe:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethers-io/ethers.js:DOWN": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:foundry-rs/foundry:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:grandinetech/grandine:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:hyperledger-web3j/web3j:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:nethereum/nethereum:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:nomicfoundation/hardhat:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:openzeppelin/openzeppelin-contracts:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:OffchainLabs/prysm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:safe-global/safe-smart-account:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:sigp/lighthouse:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:status-im/nimbus-eth2:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:vyperlang/titanoboa:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:argotorg/hevm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethdebug/format:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethpandaops/ethereum-helm-charts:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:ethpandaops/checkpointz:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "complex-buy:lambdaclass/lambda_ethereum_consensus:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
+  },
+  "simple-buy:erigontech/silkworm:UP": {
+   "status": "skipped",
+   "reason": "not started: the run stopped at group complex-buy:ethereum/py_ecc:UP: pending-transaction: sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363"
   }
  },
- "stop": null,
+ "stop": {
+  "kind": "pending-transaction",
+  "notes": "sell x DOWN -> repo (min 99.5% of quote) (nonce 4362): landed (0x1cd55e4cacb2fef66ab5829351103e21015e941bf4a34f1285d674151c4da8b5), but after its receipt latest 4362 pending 4363, expected 4363",
+  "at": "2026-10-31T21:04:06.226Z",
+  "exit": 4,
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "fields": {}
+ },
  "invocations": [
   {
    "started_at": "2026-10-31T21:03:45.361Z",
