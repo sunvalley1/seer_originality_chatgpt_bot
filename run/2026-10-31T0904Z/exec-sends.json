@@ -1,0 +1,20 @@
+[
+ {
+  "at": "2026-10-31T09:09:27.665Z",
+  "source": "entry",
+  "group": "mint-middle-A",
+  "idx": 0,
+  "label": "approve bundle A -> Router (m_X)",
+  "nonce": 4350,
+  "tx_hash": "0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446",
+  "block": 158919496,
+  "to": "0x8d883809de718baf9fcad72133007b6115f77f6d",
+  "gas_limit": "34907",
+  "gas_used": "29089",
+  "effective_gas_price": "1000274",
+  "l1_fee": "698326177",
+  "cost_wei": "29795296563",
+  "rebuilt": false,
+  "settled_via": null
+ }
+]

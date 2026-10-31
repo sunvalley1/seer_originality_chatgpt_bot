@@ -1,0 +1,81 @@
+{
+ "subcommand": "exec",
+ "run_id": "2026-10-31T0904Z",
+ "started_at": "2026-10-31T09:09:19.146Z",
+ "finished_at": "2026-10-31T09:09:28.994Z",
+ "summary": {
+  "subcommand": "exec",
+  "run_id": "2026-10-31T0904Z",
+  "exit": 4,
+  "ok": false,
+  "stop": {
+   "step": "G",
+   "cause": "pending-transaction",
+   "status": "aborted",
+   "notes": "approve bundle A -> Router (m_X) (nonce 4350): landed (0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446), but after its receipt latest 4350 pending 4351, expected 4351"
+  },
+  "mode": "wrapper",
+  "groups_total": 74,
+  "groups_done": 0,
+  "transactions_total": 390,
+  "transactions_sent": 1,
+  "sent_this_invocation": 1,
+  "first_tx": "0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446",
+  "last_tx": "0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446",
+  "gas_cost_eth_receipts": "0.000000029795296563",
+  "nonce_pinning": false,
+  "signer_env_dropped": [],
+  "signer_log_path": "/workspace/r3-runtime/state/r3-signer.log.jsonl",
+  "tx_hash_file": "run/2026-10-31T0904Z/exec-sends.json",
+  "retained_legs": 0,
+  "consumed_rows": 0,
+  "unattributed_consumption": [],
+  "half_done": {
+   "group": "mint-middle-A",
+   "landed": 1,
+   "of": 2,
+   "txs": [
+    "0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446"
+   ],
+   "recovery": "no recovery in this run after a pending-transaction stop (G section 8 step 4); the next run's start-of-run repair applies the recovery rule (I-setup.md I.2 section 6 (c))"
+  },
+  "recovery": null,
+  "skipped_groups": [
+   "mint-middle-B",
+   "mint-middle-C",
+   "complex-buy:ethereum/py_ecc:UP",
+   "complex-buy:blockscout/blockscout:UP",
+   "complex-buy:herumi/mcl:UP",
+   "complex-buy:paulmillr/noble-curves:UP",
+   "complex-buy:flashbots/rbuilder:UP",
+   "complex-buy:l2beat/l2beat:UP",
+   "complex-buy:Consensys/gnark-crypto:UP",
+   "complex-buy:taikoxyz/taiko-mono:UP",
+   "complex-buy:ethereum/js-ethereum-cryptography:DOWN",
+   "complex-buy:wighawag/hardhat-deploy:UP",
+   "simple-buy:DefiLlama/chainlist:DOWN",
+   "complex-buy:Plonky3/Plonky3:UP",
+   "simple-buy:ChainSafe/bls:DOWN",
+   "complex-buy:intellij-solidity/intellij-solidity:UP",
+   "set-sell:dappnode/DAppNode",
+   "complex-buy:dappnode/DAppNode:UP",
+   "complex-buy:wealdtech/ethdo:UP",
+   "complex-buy:lambdaclass/lambdaworks:UP"
+  ],
+  "skipped_count": 73,
+  "eth_after": "0.005207427018966937"
+ },
+ "detail": {},
+ "log": [
+  "2026-10-31T09:09:20.109Z identity ok: chain 10; parent and middles' conditionId equal the skill's constants; 71 children's conditionId and questionsIds()[0] equal the plan",
+  "2026-10-31T09:09:24.238Z GROUP 0 mint-middle-A (2 tx): affordability ok: ETH 0.005207427018966937 ETH vs the requirement 0.002012207039812704 ETH (0.002 ETH reserve + 2 gas limit(s) x 2 x eth_gasPrice 1000274 wei)",
+  "2026-10-31T09:09:26.245Z SEND approve bundle A -> Router (m_X) (nonce 4350) gasLimit 34907 calldata_hash 0x0f4bc2a3bf87170729a4ce6ffb843d96a58b490d80a8b5f95e685112fdc667a0",
+  "2026-10-31T09:09:28.032Z STOP pending-transaction: approve bundle A -> Router (m_X) (nonce 4350): landed (0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446), but after its receipt latest 4350 pending 4351, expected 4351",
+  "2026-10-31T09:09:28.994Z failure: Error: G stop: pending-transaction: approve bundle A -> Router (m_X) (nonce 4350): landed (0xb49c1d3687cc72a2e0021958d2c78fa207dc15b6aa6d619c13a241fef7db0446), but after its receipt latest 4350 pending 4351, expected 4351\n    at Object.run (/workspace/r3-runtime/tools/planner/planner/exec.cjs:877:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async step (/workspace/r3-runtime/tools/planner/planner/wake.cjs:197:54)\n    at async halfA (/workspace/r3-runtime/tools/planner/planner/wake.cjs:232:13)\n    at async Object.run (/workspace/r3-runtime/tools/planner/planner/wake.cjs:242:3)\n    at async Object.runStep (/workspace/r3-runtime/tools/planner/planner/lib.cjs:561:17)\n    at async main (/workspace/r3-runtime/tools/planner/planner.cjs:95:23)"
+ ],
+ "tool_calls": {
+  "helperCalls": 16,
+  "helperRetries": 0,
+  "signerCalls": 2
+ }
+}

@@ -243,3 +243,10 @@ Pairs in total: cost 7.7326 repo tokens, locked gain 0.0948 repo tokens if every
 - a revert, a floor breach or a stale check stops sending; the group in progress goes to the recovery rule, the groups not started are skipped (G section 8 step 4)
 
 Files: `g-plan.json` (groups, every call with calldata, keccak256, gas limit, floors and expected effects), `g-tx/tx-NNN.json` (one signer-input file per transaction), `g-sim-main.json` (the helper simulate input), `planner/g-drift.json` (the drift report).
+
+## 9. Audit of the written plan (run after `g-plan.json` was written)
+
+- calldata audit: 74 groups, 390 transactions decoded and re-derived from allocation.json (72 rows: 72 in groups, 0 skipped), kinds {"mint":3,"complex-buy":53,"simple-buy":10,"set-sell":7,"dual-buy":1}, every approval exact (none near 2^256), every swap recipient the holder, every tier the candidates.json tier, dual-buy inMax = min(stake x 1.005, remaining); failures 0
+- fresh re-simulation of run/2026-10-31T0904Z/g-sim-main.json (sha256 3db38c904855a65f53cf43681c79208644a43144c9da696221f4e92066b49318): {"entries":74,"count":390,"all_success":true,"failed_count":0,"over_cap_count":0,"clamped_count":0,"pending_nonce":4350,"overrides_active":"absent","no_max_used_gas_count":0}
+- holder nonce latest/pending before 4350/4350, after 4350/4350 (the plan's 4350); per-call rows of the fresh simulation: 390 checked, every status 0x1 and every fresh peak within the plan's gas_limit; gasUsed equal to the build's on all
+- AUDIT PASSED: every acceptance check holds
