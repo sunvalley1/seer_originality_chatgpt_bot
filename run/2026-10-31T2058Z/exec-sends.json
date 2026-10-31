@@ -1,0 +1,38 @@
+[
+ {
+  "at": "2026-10-31T21:03:52.875Z",
+  "source": "entry",
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "idx": 0,
+  "label": "approve repo -> Router (x = stake)",
+  "nonce": 4359,
+  "tx_hash": "0x7cb5e25a8202619ce95f7709c414fdb404ff3593f6bcd49cc735e7dc3d72c59e",
+  "block": 158940927,
+  "to": "0xc9335b722174a667c6c7d69ee85412dc41332b4c",
+  "gas_limit": "58787",
+  "gas_used": "48989",
+  "effective_gas_price": "1000308",
+  "l1_fee": "723017764",
+  "cost_wei": "49727106376",
+  "rebuilt": false,
+  "settled_via": null
+ },
+ {
+  "at": "2026-10-31T21:03:56.903Z",
+  "source": "entry",
+  "group": "complex-buy:ethereum/py_ecc:UP",
+  "idx": 1,
+  "label": "Router.splitPosition(sUSDS, child, x)",
+  "nonce": 4360,
+  "tx_hash": "0x9bdc6b296c488324ee60abd16abe84e84398f1033a5298ff16653784c968a4bc",
+  "block": 158940930,
+  "to": "0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd",
+  "gas_limit": "844136",
+  "gas_used": "562757",
+  "effective_gas_price": "1000308",
+  "l1_fee": "802677456",
+  "cost_wei": "563733006612",
+  "rebuilt": false,
+  "settled_via": null
+ }
+]
