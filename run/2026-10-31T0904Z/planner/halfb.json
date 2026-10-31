@@ -1,0 +1,782 @@
+{
+ "subcommand": "halfb",
+ "run_id": "2026-10-31T0904Z",
+ "started_at": "2026-10-31T09:09:28.995Z",
+ "finished_at": "2026-10-31T09:09:43.436Z",
+ "summary": {
+  "subcommand": "halfb",
+  "run_id": "2026-10-31T0904Z",
+  "ok": true,
+  "exit": 0,
+  "stop": null,
+  "mode": "wrapper",
+  "run_ids_holding_fills": 3,
+  "processed": [
+   "2026-10-28T1629Z",
+   "2026-10-29T0859Z",
+   "2026-10-30T2103Z"
+  ],
+  "skipped_live": [],
+  "not_final": [],
+  "record_run": "2026-10-28T1629Z",
+  "held_children": 92,
+  "settled_children": [],
+  "middles_resolved": [],
+  "parent_resolved": false,
+  "answer_watch": {
+   "compared_with": "2026-10-30T2103Z",
+   "new_answers": [],
+   "questions": 98,
+   "read_at_block": 158919497,
+   "timestamp": 1793437771
+  },
+  "decided_but_unreported": [],
+  "resize_schedule": null,
+  "merge_bounds_at_read": {
+   "z_A": {
+    "z": "165.980359817629975505",
+    "scarcest": "ethereum/py_ecc",
+    "zero_balances": 0
+   },
+   "z_B": {
+    "z": "0",
+    "scarcest": "alloy-rs/alloy",
+    "zero_balances": 1
+   },
+   "z_C": {
+    "z": "0",
+    "scarcest": "safe-global/safe-smart-account",
+    "zero_balances": 1
+   },
+   "y": {
+    "y": "14.8564242378734",
+    "scarcest": "bundle A"
+   }
+  },
+  "actionable": [
+   {
+    "level": 2,
+    "groups": [
+     {
+      "id": "middle-merge:A",
+      "kind": "middle-merge",
+      "book": "2026-10-28T1629Z",
+      "txs": 35,
+      "amount": "165980359817629975505"
+     }
+    ],
+    "simulation_clean": true,
+    "problems": []
+   }
+  ],
+  "sent": [],
+  "skipped": [],
+  "half_done": [],
+  "notes": [
+   "Half B sends nothing: Half A left a nonce unsettled or a send-lock held"
+  ],
+  "artifacts": [
+   "run/2026-10-28T1629Z/halfb-sim-l2-main.json",
+   "run/2026-10-28T1629Z/halfb-tx/ (35 files)"
+  ],
+  "sends_this_invocation": 0,
+  "keep_aborted": false,
+  "budget_exhausted": false
+ },
+ "detail": {
+  "answer_watch_state": {
+   "0x2c4fd3a23c08187f9d20df21ecda01b4b21d7334cfbf6c89c84a23ce462c0170": {
+    "kind": "child",
+    "market": "ethereum/py_ecc",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc2c0bd87a5165e7c27e68e8b7ad474ba057c1bd34f9b11a7f11b7d71dbd6b94c": {
+    "kind": "child",
+    "market": "blockscout/blockscout",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x89fe7baccbd9a7e296f156d14c04f873cddf3a5b1ccf859e753e8d4d40351a49": {
+    "kind": "child",
+    "market": "LFDT-web3j/web3j",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xfd61b08c5398c50b2199c32dc8612dbdbe5737edb80744897f46a4503bcaa784": {
+    "kind": "child",
+    "market": "herumi/mcl",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf0b568de0c02eb278872f74f940d187e6739914d1270636779fab63cffecbc66": {
+    "kind": "child",
+    "market": "paulmillr/noble-curves",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x077d2c89919991b8e7d02c7e527ba3145c3108fe315a2dcfce66913897ee4c33": {
+    "kind": "child",
+    "market": "arkworks-rs/algebra",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc596d907c6ebf75fd421db81fa19fb22d8156a8b7457c9655cc50917ee1d4781": {
+    "kind": "child",
+    "market": "flashbots/rbuilder",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x39580f3a8e91e54fc6cd05820543c9bcad354593ff7ccda886772924959fed12": {
+    "kind": "child",
+    "market": "protofire/solhint",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6bb6f7601ff6c2acb7edcdc14e93dfc6e78bec1754790d5062c92f2ef05f0044": {
+    "kind": "child",
+    "market": "l2beat/l2beat",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x51bee56a63a81206c59d91dbed051ecacf8d092accc9fc76d6ffd598eac7fc47": {
+    "kind": "child",
+    "market": "Consensys/gnark-crypto",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x5bfad4595c4c3a58a0cc6beb9b198f12e26dd29bbbee3674f03802b888ddb749": {
+    "kind": "child",
+    "market": "taikoxyz/taiko-mono",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9a6deb668ec98e52ec8c20e607f21d84bf36e317f83008ff50277eab837b7b0d": {
+    "kind": "child",
+    "market": "flashbots/mev-boost",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb678fbf10adbad49f194042f135eb6fb82c3270fa3b1e156d3f176303b009e58": {
+    "kind": "child",
+    "market": "flashbots/mev-boost-relay",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x39eaf5631314ae73bee70b816bc65e94044c765c191371009d1ddf9516854d35": {
+    "kind": "child",
+    "market": "ethereum/js-ethereum-cryptography",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6c964ab55fe53fa514843f4c48985d6ef572219e30955cea3394e9c9dc00fa9f": {
+    "kind": "child",
+    "market": "libp2p/libp2p",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2b153e6c9c2705eb519a5d7b0bb51bf819dd4b1eebbd027142f3fdf910bb9e37": {
+    "kind": "child",
+    "market": "supranational/blst",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x567ee3ec95bf83548e7081db5ae7e6acdc5defd05119a883104711fdb5a9427f": {
+    "kind": "child",
+    "market": "wighawag/hardhat-deploy",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2f4ecb0bbeeff18b8b5617e7a07604b6a8e9dea70ba8d27d70938db3a3045cef": {
+    "kind": "child",
+    "market": "ethstaker/eth-docker",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xefa0e7df029465f6712ea62a12a67ee6128bdd780f614829fae597daa2f618c1": {
+    "kind": "child",
+    "market": "DefiLlama/DefiLlama-Adapters",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x25fba365bf5f9ca2a3c26a0048c9dbddb66edba71a7d4aa1427e15646fff172e": {
+    "kind": "child",
+    "market": "DefiLlama/chainlist",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc7b18949a134796a86fe3b7d2420c524a88e2394c62484489c3e8fd747a94fda": {
+    "kind": "child",
+    "market": "Certora/CertoraProver",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb892b192bfabad8bdd736b959c55df6d5ae905ef3d291475e1feb73ff50f0065": {
+    "kind": "child",
+    "market": "Plonky3/Plonky3",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x34873cd876eb7a90da3c550bf4431d8500b7ec256f215403ef08b41ec35122d4": {
+    "kind": "child",
+    "market": "ChainSafe/bls",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x97d468c84244982649e8b7a246fa9a87c94285a93b8a0eaa2a705823d5df2773": {
+    "kind": "child",
+    "market": "intellij-solidity/intellij-solidity",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x4f280b06a6f7b8a98c431e7a8048c63a18a3269c9d743ef547407e4bed6826fe": {
+    "kind": "child",
+    "market": "dappnode/DAppNode",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x34945c40402251cba02eb890adafab58874be0f95349aa3ddb479e486ce503f8": {
+    "kind": "child",
+    "market": "wealdtech/ethdo",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdbbd4df1b4b04665067fe19a4b33fcc3d08657df126cc12d676aee70aa85f3ea": {
+    "kind": "child",
+    "market": "lambdaclass/lambdaworks",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf5cccfd12c143d12ed112326d29de04d121447d86be2fecb6c617d8fc48f5d8c": {
+    "kind": "child",
+    "market": "smartcontracts/simple-optimism-node",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x8224e08c9d670b6d7c518c4b9bb3719e7861d4749ff7fd08265c8892f212f297": {
+    "kind": "child",
+    "market": "skalenetwork/libBLS",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x52b3be4be8cacf749ed0530b7c0f30d6ee72a796afa1d9934930547cce9968a5": {
+    "kind": "child",
+    "market": "shazow/whatsabi",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x3c3ceeb85ada7ae751ac7f827b7333dfe22ff17587f0ac6647e7b4c902599a6e": {
+    "kind": "child",
+    "market": "TrueBlocks/trueblocks-core",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9d91f0832bc30aad1053c6061d96c32ee4fd13e99cb0e601746e46909a0c7d36": {
+    "kind": "child",
+    "market": "EspressoSystems/jellyfish",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x59ca3c449321386dcfbf6834c94b9de97b4ef7f617a18f91f65cd206d9c79087": {
+    "kind": "child",
+    "market": "a16z/halmos",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdef540d9dadff41f3eb21effe224775cab174360e63b0359e1c1f3bf070a6d83": {
+    "kind": "child",
+    "market": "succinctlabs/op-succinct",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd28c7befd448509920478d3b2a7712e4bb50a7282d9398cb58cd58274565cc9e": {
+    "kind": "child",
+    "market": "succinctlabs/sp1",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x02e663ccb5a9743577c171032034dd6edec741a781983244a41f2f082eff9fd0": {
+    "kind": "child",
+    "market": "otterscan/otterscan",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x56098951593dd29df4722edc720f392d1951d1282ba10ba8b846c39f6510adcc": {
+    "kind": "child",
+    "market": "lambdaclass/ethrex",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xdf04ee28b557580d9427ae408a86ecabfaa78a5719cfc6b7fb73031728d7c094": {
+    "kind": "child",
+    "market": "NethermindEth/juno",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xe0fbd2c0ac7a339973add1d7ed0cae47e5190503c7e48009e9c64ff7db2c57bc": {
+    "kind": "child",
+    "market": "Commit-Boost/commit-boost-client",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7619910613af3843cd997d9faff123435e2f259f8a729064b3a94601373c431d": {
+    "kind": "child",
+    "market": "Cyfrin/aderyn",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x8930d814289deb13cd041d57f26a7883a488debc946a627dcb352529545e3971": {
+    "kind": "child",
+    "market": "0xMiden/miden-vm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x589bd43805da304ad8cedac6f865a3897fa03e7b02f869864fe79f043e722484": {
+    "kind": "child",
+    "market": "holiman/goevmlab",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd701ec3d9b576ef9d66cbbcbad82859519d83ff5f00b8b0030a75601a2c9303e": {
+    "kind": "child",
+    "market": "edb-rs/edb",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x6f44309f0aee5eece2a30e94c886fa0c2b16f4545e5e4d458228a78ecae6c203": {
+    "kind": "child",
+    "market": "evmts/tevm-monorepo",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x44ae32fbb5915b91e2414a5335d653f3768d6643df110262bf57a976d2c3875c": {
+    "kind": "child",
+    "market": "succinctlabs/rsp",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x150d07c31951d9c5a07114c844050db65a1b02f5e6a1f7aac7e7ee0f08275a45": {
+    "kind": "child",
+    "market": "OffchainLabs/stylus-sdk-rs",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc6a5ecadfa5f69bb92ff5463dee2cffd925e651d88474ce4f32aa6744f4144df": {
+    "kind": "child",
+    "market": "ethstaker/ethstaker-deposit-cli",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x04487052ff8a7ec9794c4d6714d5265bc99f7a72443a4d4168d494c81c3cdd22": {
+    "kind": "child",
+    "market": "dl-solarity/solidity-lib",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x92d9ae6aec9a764ddc3c78cb7fe4dfb00486b24800ac1700a400562c7ba61966": {
+    "kind": "child",
+    "market": "risc0/risc0-ethereum",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x499b91ef4e5cf7b296f9ea7ae65995709ec541ab806a06bc84e5cf772cf5bdcc": {
+    "kind": "child",
+    "market": "powdr-labs/powdr",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xfa1a3dc69be9ef7f0197b797d1ea479dc560d3178f7aa18c3c7a251ae6682a39": {
+    "kind": "child",
+    "market": "axiom-crypto/snark-verifier",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x19b8a515c02b53a5e6bcc2ec8c864feb461c8a1cfe36f56e122856bbc8db4826": {
+    "kind": "child",
+    "market": "swiss-knife-xyz/swiss-knife",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x5d7d649e65072c60e80b81b4526a78e1764fc4aa874b1d61a28534d8d0435ca7": {
+    "kind": "child",
+    "market": "a16z/helios",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x00001ee73c40fdc7ac708354793326118557f048f13cf04d6badde5364937802": {
+    "kind": "child",
+    "market": "alloy-rs/alloy",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xebd6da0fbcfd271666fbbc60961e874d8c42bdb32e61926d9328784e1f8eb0a4": {
+    "kind": "child",
+    "market": "apeworx/ape",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xf89d69ebc71d4139a8ab155730799896a766e616f10c0ac9ad5bc49f7f15eadc": {
+    "kind": "child",
+    "market": "consensys/teku",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb00534e0bc33072aad949a70095405667c4375c56d8534f5afc309633ea2121e": {
+    "kind": "child",
+    "market": "erigontech/erigon",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2650e67eccec78078ae718ae9b99441abc06f9934b33cd254377e4d17cde293b": {
+    "kind": "child",
+    "market": "eth-infinitism/account-abstraction",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc5475ad5628c6fd20ff96b5c1cf23379e55d20186f98952d84af2087780e4ab3": {
+    "kind": "child",
+    "market": "ethereum-lists/chains",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x911d445555ded041f8febd6e9095c4d27cb981732efe794bdb7be5a31886c98b": {
+    "kind": "child",
+    "market": "ethereum/consensus-specs",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb8b37deb846a1a251f6bd75a0262d490f02735d7026b1d69b638085ace3fbe31": {
+    "kind": "child",
+    "market": "ethereum/eips",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xad548f1020c5cdfe5952cfadc73cb6f518f29ab8eb7cedc71f5f9a8f5cb032f3": {
+    "kind": "child",
+    "market": "ipsilon/evmone",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xec811c869f26a7767edf0389845ee826f4f2bb7f1cf10bd9326e1d45f856c883": {
+    "kind": "child",
+    "market": "ethereum/execution-apis",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xded382d4b95520ef31af36503413e2c88fcd90c9612705e550a92528b39cbf1d": {
+    "kind": "child",
+    "market": "argotorg/fe",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xa0aae6c131ef390221880d294963f3b8f85761b71b6f1f0b050f274776fdbf0e": {
+    "kind": "child",
+    "market": "remix-project-org/remix-project",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc91e63784c4dd5fc0b56919c25eeb5df64f93981d95d5b3ab68db7216a56a6dc": {
+    "kind": "child",
+    "market": "argotorg/solidity",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x01251a8bba35a1eb648967a3ca3fae14c730820448ba6b16aae6b0e0b9b4e452": {
+    "kind": "child",
+    "market": "argotorg/sourcify",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7b1793c81599e5720a336a4a67aab6ebcdce55fd6fee3dcea6668613c57186d1": {
+    "kind": "child",
+    "market": "ethers-io/ethers.js",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x70dcbe08df7a81672d9b325386773fced79fe3e7f21c4977536cf0b96f570612": {
+    "kind": "child",
+    "market": "foundry-rs/foundry",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x30b3212a03118951943e2c60dad043fb5f073c8000dcdf1e12ceb9a09e848950": {
+    "kind": "child",
+    "market": "grandinetech/grandine",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb86773c44872c94997070180ed072c99108760331aa54ed7e58eb1ece3690fd0": {
+    "kind": "child",
+    "market": "hyperledger-web3j/web3j",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x298c2d4d1d50e331eb657137071e4dc2becc39144d35986c8e13d344416a8425": {
+    "kind": "child",
+    "market": "hyperledger/besu",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xb11a461dc5a260dddf5d29b83063dd371448160d6999e95017dde35db033fdec": {
+    "kind": "child",
+    "market": "nethereum/nethereum",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2ddeef07d5eaf62b5598d242553f26a55d66037b639f4cf4b358e3ccfb8f0003": {
+    "kind": "child",
+    "market": "nethermindeth/nethermind",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x1d04ccdc10b32f2d81aafaeb56316d8cb4838e53a9076a1a6e9497dc9899243b": {
+    "kind": "child",
+    "market": "nomicfoundation/hardhat",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x844f119a5b93eee1946aa2199a7c174e07017d233ab50d00eb3795aac5774430": {
+    "kind": "child",
+    "market": "openzeppelin/openzeppelin-contracts",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xccae0f8119598babded93fa7ace07cbd0c9852efa66f065ed9d024f6b22b8035": {
+    "kind": "child",
+    "market": "OffchainLabs/prysm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x12072068c3621274bb89833b3edb2dfc715d353b62519374da0edda04fb5a345": {
+    "kind": "child",
+    "market": "safe-global/safe-smart-account",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x17c0c6a837e957261c2308491d1d2dfbb97e9ea45cda6c89e8eb808e26091f55": {
+    "kind": "child",
+    "market": "scaffold-eth/scaffold-eth-2",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xa56e4df50c3b7675d102b89673dd0ec8f23f2bf875f748b756c453a1873f1bbd": {
+    "kind": "child",
+    "market": "sigp/lighthouse",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x91e0f6b330a63b59b9315b5dae14df7fbc394c8f3cf9ca56fb7317f706129bbf": {
+    "kind": "child",
+    "market": "status-im/nimbus-eth2",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd3a50dcd91eea5a803a1ad234f046e51f1047d6d090a4047bfc4c2d86167cb4b": {
+    "kind": "child",
+    "market": "vyperlang/titanoboa",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x9ff33a6872610dd0d0016aa9e37d92e9530262f511718bc1dc65f9c3d6ffdeb7": {
+    "kind": "child",
+    "market": "vyperlang/vyper",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x2f67b475a199e6a46f709c4abcf2c4f4476f7a6b1cafcb41fcae4555cd271188": {
+    "kind": "child",
+    "market": "wevm/viem",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x25e92b14cdbff0128f08a24a52cde77c9db6028af5d5bb0f179d0bebe60b4e7d": {
+    "kind": "child",
+    "market": "argotorg/hevm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x7e3744caa01377bb6ea52941427c71dc13f3f230a956c57c982dcc1654829236": {
+    "kind": "child",
+    "market": "ethdebug/format",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xbdbf21c1895eaa6b327bb8cc1c0e4725ab83d63cddcd827411f0f6871fa4db82": {
+    "kind": "child",
+    "market": "argotorg/act",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc064164bf32e0e82f68e044e43254dee4bda7444c1164b033ab16d388bb6e0bc": {
+    "kind": "child",
+    "market": "ethpandaops/ethereum-package",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x4187b712d2b0b1e6eead6a81917eb01e2041b02e2ed9d113e54e1b507f81b5a6": {
+    "kind": "child",
+    "market": "ethpandaops/ethereum-helm-charts",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x311510042456323cbb5ffce2d45e59a569bd24b03b14e31442b662b07da213fc": {
+    "kind": "child",
+    "market": "ethpandaops/checkpointz",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x32319fdff210025c7ab0440f5248a8b13b5a74e4f7ae55f2625a12a1a45dae8e": {
+    "kind": "child",
+    "market": "lambdaclass/lambda_ethereum_consensus",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x245dfb93ffc3778db6d1545e79bdffc9a60054be0c30cabf845174b2300724ab": {
+    "kind": "child",
+    "market": "erigontech/silkworm",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x23524106a4b9798604ef29f16728b61a5ef1e165b6d296e0a677156dd0463cf8": {
+    "kind": "middle",
+    "market": "middle A",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xd2f6afc6a10ce16ceb33b3f9902a42a6011e25a151652cf108ebedae0cc60820": {
+    "kind": "middle",
+    "market": "middle B",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xc45b248d1704159d19edf79e929592ef35cfb44ba8246ea50b8e42fc999fe5ff": {
+    "kind": "middle",
+    "market": "middle C",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x93164bff39e0f3705f529a29b2fe4903b6803952c304a6b3f0705bcaf7c61018": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0xca84a3c12e9e8d8a8d03fdde31ee1011d9341246417be7be18e35657cdf7054c": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   },
+   "0x70f2e0bb084af2ac7aebaaf709dc5a05dc77cdd8430d4fb29825c35c842bc8e0": {
+    "kind": "parent",
+    "market": "parent",
+    "best_answer": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "bond": "0",
+    "finalize_ts": 0
+   }
+  }
+ },
+ "log": [],
+ "tool_calls": {
+  "helperCalls": 44,
+  "helperRetries": 0,
+  "signerCalls": 35
+ }
+}
