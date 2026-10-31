@@ -1,0 +1,2064 @@
+{
+  "generated_at": "2026-10-31T09:04:36Z",
+  "method": "identity",
+  "blends": [
+    {
+      "market": "ethereum/py_ecc",
+      "address": "0x5d6a571b0f663c33831e6f81dd3c3f554eca188b",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.22139106639835854,
+        0.8274632938240752,
+        -0.04885436022243378
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "blockscout/blockscout",
+      "address": "0xe263e7febb2ccfe1ebb05f289cf858d3becec83f",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.3229223187959666,
+        0.6884715136052081,
+        -0.011393832401174697
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "LFDT-web3j/web3j",
+      "address": "0xf799b67f0b8da6ed75d6d31370346e2dd6be187d",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.21796433509080756,
+        0.7998038005185113,
+        -0.017768135609318864
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "herumi/mcl",
+      "address": "0xc7846582934c4c1d1156ddf44d988f6857b0f743",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.17987120252922523,
+        0.8331089353725364,
+        -0.012980137901761613
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "paulmillr/noble-curves",
+      "address": "0xf74142573cd11d76501dfd51d5512fc6b8ca7933",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.25750087404815825,
+        0.7595066160556291,
+        -0.017007490103787326
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "arkworks-rs/algebra",
+      "address": "0xb52c7e58dc48250b6cb4fbe5ed251f617700bf06",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.17809935134945562,
+        0.8431659612312598,
+        -0.021265312580715373
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "flashbots/rbuilder",
+      "address": "0xb44e4ad21d40efb87a87c0692e28c71c90d08d20",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.27479348850655483,
+        0.7364715252950498,
+        -0.011265013801604606
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "protofire/solhint",
+      "address": "0x808055e027cada3fb6d2b84104cd46b6685c048e",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2730951241642289,
+        0.7429064571913806,
+        -0.016001581355609473
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "l2beat/l2beat",
+      "address": "0x0954b44c816f034c6c30a0b049f0ceb6bda6100a",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.22747249137489148,
+        0.788921744822023,
+        -0.01639423619691452
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "Consensys/gnark-crypto",
+      "address": "0x9fc615e9a9e2066d3e8dda5c1c5280461489d808",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.1791711059193255,
+        0.8614032439220733,
+        -0.04057434984139885
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "Vectorized/solady",
+      "address": "0x1e405c9bcf5038770efc4e5065cd216f93658b80",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2670460978392591,
+        0.7586716598351916,
+        -0.02571775767445067
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "taikoxyz/taiko-mono",
+      "address": "0x6a6a3326d701d464034d141bece8c21a06b7854b",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2791136606566649,
+        0.7325054952746741,
+        -0.011619155931338998
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "flashbots/mev-boost",
+      "address": "0xc53217f3ca3371921076c4e7ea9457ea3b758317",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.10928574508590834,
+        0.8998792193807137,
+        -0.00916496446662203
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "flashbots/mev-boost-relay",
+      "address": "0xfd9f5746c9451fedc03fa9d334d84099b61017ca",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.21728972556692483,
+        0.7998038005185113,
+        -0.017093526085436128
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/js-ethereum-cryptography",
+      "address": "0x018a386a46949fbc8781b1254636b3a76e60a57c",
+      "own": [
+        0.55,
+        0.45,
+        0
+      ],
+      "market_price": [
+        0.46155163664481824,
+        0.5494321124480843,
+        -0.010983749092902562
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.55,
+        0.45,
+        0
+      ]
+    },
+    {
+      "market": "libp2p/libp2p",
+      "address": "0xde89236ae23777bdf655344858c44fa581c470a3",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.16710873912693508,
+        0.8442627348915159,
+        -0.011371474018451011
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "supranational/blst",
+      "address": "0x74a00a7a338f0fa8ce7afedb27279a30cf24df85",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.11607806649801809,
+        0.899789240456668,
+        -0.015867306954686064
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "wighawag/hardhat-deploy",
+      "address": "0xc8db7cdd4bc8006353dd09d87ecab65f84c620e5",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.27761058400096145,
+        0.7352206497901976,
+        -0.01283123379115908
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "ethstaker/eth-docker",
+      "address": "0x9525a58d53bc9d395ef56ec4c11e39370a88a304",
+      "own": [
+        0.4,
+        0.6,
+        0
+      ],
+      "market_price": [
+        0.41318666781734226,
+        0.5966204220748826,
+        -0.009807089892224896
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.4,
+        0.6,
+        0
+      ]
+    },
+    {
+      "market": "DefiLlama/DefiLlama-Adapters",
+      "address": "0xd71b2fe2ff2c91d5d822ce6399c646137723186a",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.28392730292721263,
+        0.7283422984901001,
+        -0.012269601417312759
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "DefiLlama/chainlist",
+      "address": "0x4b8bda295e28375ed17abc8d1472e9cccadc93aa",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.256986412655574,
+        0.7223223756411876,
+        0.0206912117032384
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "Certora/CertoraProver",
+      "address": "0x45dc37854a86f647cf45890f7167c0adc19814f2",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.20181174323058643,
+        0.7984453569828222,
+        -0.0002571002134085787
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "Plonky3/Plonky3",
+      "address": "0x8df828fcba7ec2b014742e202cf091807df939e6",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.22381730670120548,
+        0.7888428605359694,
+        -0.01266016723717489
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "ChainSafe/bls",
+      "address": "0xf8d574d0a7dc92deb6ae61adae9ad1219aac2c73",
+      "own": [
+        0.5,
+        0.5,
+        0
+      ],
+      "market_price": [
+        0.43263619182205054,
+        0.5672973664634121,
+        0.00006644171453734637
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.5,
+        0.5,
+        0
+      ]
+    },
+    {
+      "market": "intellij-solidity/intellij-solidity",
+      "address": "0xd413f199fb40a5c85e96b3582dda718570ae7675",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2302645128735023,
+        0.7880544513655178,
+        -0.018318964239020075
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "dappnode/DAppNode",
+      "address": "0xdd8e32840a811d26aac9112f530490ee86d89bbc",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.38390807879379324,
+        0.6735586252134403,
+        -0.05746670400723358
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "wealdtech/ethdo",
+      "address": "0x1773e3a7d522e80903e9914a88c815e126fb0f81",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2732590222084584,
+        0.7386102854856151,
+        -0.011869307694073516
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "lambdaclass/lambdaworks",
+      "address": "0xd756f4a29de73f261f32185d0982c8e454db3356",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.18996471102176854,
+        0.8244074891492507,
+        -0.0143722001710192
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "smartcontracts/simple-optimism-node",
+      "address": "0x04f4d33c6aa72320a822bc0fcb32e097a45ae4f9",
+      "own": [
+        0.44999999999999996,
+        0.55,
+        0
+      ],
+      "market_price": [
+        0.4799068327068517,
+        0.5230032545118851,
+        -0.002910087218736812
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.44999999999999996,
+        0.55,
+        0
+      ]
+    },
+    {
+      "market": "skalenetwork/libBLS",
+      "address": "0x5ba02d2373096140102b6d552e62f9d0f7c7c39d",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2766130324454061,
+        0.7372083283209232,
+        -0.013821360766329283
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "shazow/whatsabi",
+      "address": "0x5449093d1b651b090120a51acf68265bbcb56df3",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.30509238580659853,
+        0.7799015612187035,
+        -0.084993947025302
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "TrueBlocks/trueblocks-core",
+      "address": "0x1b3140613dc1579d5486b8eee5ff8115ce7b93de",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.17890256414399208,
+        0.8419022235154714,
+        -0.020804787659463475
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "EspressoSystems/jellyfish",
+      "address": "0x72e12907d277199d7a44fde21d7dd981150b0f1a",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.36878180532266797,
+        0.6448238750177532,
+        -0.013605680340421145
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "a16z/halmos",
+      "address": "0x293a1858e689c117708e509770b283f281bbf6cb",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2727948996923523,
+        0.7464061604184727,
+        -0.019201060110825063
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "succinctlabs/op-succinct",
+      "address": "0x48eb0ebbb9284b0d8c51747da2fc4b9f342b401f",
+      "own": [
+        0.4,
+        0.6,
+        0
+      ],
+      "market_price": [
+        0.4211539804499411,
+        0.591393456084549,
+        -0.012547436534490086
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.4,
+        0.6,
+        0
+      ]
+    },
+    {
+      "market": "succinctlabs/sp1",
+      "address": "0xf713fcde2dd95050ffe68965ab17c1f3fadebc21",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.27777719199850226,
+        0.7309689245258021,
+        -0.008746116524304348
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "otterscan/otterscan",
+      "address": "0x5457786b0f850f037496073905fd62de3572fa83",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.2802883444073924,
+        0.7320661457626522,
+        -0.012354490170044585
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "lambdaclass/ethrex",
+      "address": "0x19eb4b247fe868df4ae6d94c118ca39b950a738d",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.229482981961015,
+        0.7757792229034803,
+        -0.005262204864495329
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "NethermindEth/juno",
+      "address": "0x6aa9ba4a89cc1f5d854b898ed34f4370a3857585",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.27102757124889615,
+        0.7434266477477749,
+        -0.014454218996671042
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "Commit-Boost/commit-boost-client",
+      "address": "0x93d2239a2ae25e0ed759b9caf246c3c555b55a2f",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.30287343137327005,
+        0.7624743267496533,
+        -0.06534775812292337
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "Cyfrin/aderyn",
+      "address": "0x8717e0e2733acb24ac964667e2252bc118fb2249",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.31605393207344745,
+        0.6838744018363927,
+        0.00007166609015984982
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "0xMiden/miden-vm",
+      "address": "0x6ea039fba3c1a54ed6c5ef04c394dd2a9c26c52a",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.22099294080531165,
+        0.8022869149854271,
+        -0.023279855790738796
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "holiman/goevmlab",
+      "address": "0xdbdcdaf2aa3d75e1818029c26fef7fdd12dce893",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.3321910915550858,
+        0.7455110549511857,
+        -0.07770214650627155
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "edb-rs/edb",
+      "address": "0x73918952494d08ed3eb5c2bf82eb056f51274639",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.278416782808584,
+        0.7391274678194689,
+        -0.017544250628052926
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "evmts/tevm-monorepo",
+      "address": "0x4a4feb5f866310c4b538abda903e53677b5956c9",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.338732057964838,
+        0.6803276617965779,
+        -0.019059719761415905
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "succinctlabs/rsp",
+      "address": "0xfc80e4c59c72ab78d73886cf98139a0e4726deee",
+      "own": [
+        0.4,
+        0.6,
+        0
+      ],
+      "market_price": [
+        0.37611846893663725,
+        0.6620730502160815,
+        -0.03819151915271879
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.4,
+        0.6,
+        0
+      ]
+    },
+    {
+      "market": "aestus-relay/mev-boost-relay",
+      "address": "0xd264f08e1871926d45f08ba8c19927ba909ed495",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.30781969018023614,
+        0.7223223756411876,
+        -0.030142065821423758
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "OffchainLabs/stylus-sdk-rs",
+      "address": "0x86b3b071bd6c383e4544b18353cde9ca203158ce",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2593096129318428,
+        0.8024473803912934,
+        -0.06175699332313617
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "ethstaker/ethstaker-deposit-cli",
+      "address": "0x36b1a703d790770ef14b875d3a0d2e0ded6234c1",
+      "own": [
+        0.44999999999999996,
+        0.55,
+        0
+      ],
+      "market_price": [
+        0.41314535328201407,
+        0.5967994261007143,
+        -0.00994477938272842
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.44999999999999996,
+        0.55,
+        0
+      ]
+    },
+    {
+      "market": "dl-solarity/solidity-lib",
+      "address": "0x4b62af2f270b59ec49230d3a06b63752964a4311",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.31413196713689245,
+        0.7223223756411876,
+        -0.03645434277808007
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "risc0/risc0-ethereum",
+      "address": "0x1c3486fec53da0d19a4b0253b83748df31e10178",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.30970303448517855,
+        0.7087993539602948,
+        -0.01850238844547336
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "powdr-labs/powdr",
+      "address": "0x572f1f68c236460581ad720e1b262a604d92e703",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.2301724300901997,
+        0.7936692662412543,
+        -0.023841696331454026
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "axiom-crypto/snark-verifier",
+      "address": "0x52634d6c3fb85d5f4566550e0a85bed365524c39",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.3351606386792672,
+        0.6768669959503467,
+        -0.012027634629613926
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "swiss-knife-xyz/swiss-knife",
+      "address": "0x2109380e3dee45109d635c9968733c1f43568125",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.2642040786076857,
+        0.7569288072075406,
+        -0.02113288581522632
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "a16z/helios",
+      "address": "0x842cf887862213513895e1aa1714723009512932",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2191882980680618,
+        0.7812284550694173,
+        -0.00041675313747910336
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "alloy-rs/alloy",
+      "address": "0x107af2f9daacad63256adc9c54ddbd630b2b87d6",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.2765024148881999,
+        0.7989245439797854,
+        -0.07542695886798528
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "apeworx/ape",
+      "address": "0x34e4762227c29fb484c79cdc0a2a305fdd39ba56",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.28197504518268307,
+        0.7305304966336357,
+        -0.012505541816318744
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "chainsafe/lodestar",
+      "address": "0x7c3b8fa85d532f7ed1fd8f32054b0497541db623",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.20981650305862518,
+        0.7901849667617719,
+        -0.000001469820397032029
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "consensys/teku",
+      "address": "0xe1e506f60e6caaa6521b65231a293053b39494cd",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2349864115203889,
+        0.7812284550694173,
+        -0.0162148665898062
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "erigontech/erigon",
+      "address": "0x87a54a3ad188dfea96aa128922351fdc12da80e3",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.28194685049763335,
+        0.7311882371329586,
+        -0.013135087630591902
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "eth-infinitism/account-abstraction",
+      "address": "0xcb8ab4238ae037096e274486c4892d843e769dde",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.3451946498651807,
+        0.6522817774424837,
+        0.0025235726923355517
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "ethereum-lists/chains",
+      "address": "0xddd9d1a6ace5dca0432719b05691bb2cc7e0b9dd",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.28197504518268307,
+        0.7242027632446941,
+        -0.006177808427377196
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/consensus-specs",
+      "address": "0x7cae39d3c40b0db913ba38f61f18173be8105852",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.09717095415189955,
+        0.8808273388274064,
+        0.022001707020694067
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/eips",
+      "address": "0x238910d606c68d7198a51377c079812be40f4d99",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.09204472047192853,
+        0.9082867099908954,
+        -0.00033143046282398114
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "ipsilon/evmone",
+      "address": "0xd8825bf53db973dff16759f750c7cc86c9d45297",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.19533908161496732,
+        0.7919252002333841,
+        0.01273571815164859
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/execution-apis",
+      "address": "0x526f501d8a0a9426140d3c710262e11c3849a474",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2291390327116736,
+        0.7891584450139109,
+        -0.01829747772558446
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "argotorg/fe",
+      "address": "0xb533d9b1becb3ee98820ee2342fbc9a062c296ca",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.262020368869993,
+        0.7927967536431947,
+        -0.05481712251318771
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/go-ethereum",
+      "address": "0xecbf7ba97acc47e030ab623fa78f983892254309",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.1955736174796834,
+        0.8024473803912934,
+        0.0019790021290232163
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "remix-project-org/remix-project",
+      "address": "0x9de9aaa9c3beb5226a0acedfa3515c5a3c658b1d",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.19426771918059824,
+        0.8151445816468265,
+        -0.009412300827424697
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "argotorg/solidity",
+      "address": "0x38a9dc84c9f940262b548856c1869f992ee80ba4",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.17497488217122775,
+        0.8447694191887476,
+        -0.019744301359975347
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "argotorg/sourcify",
+      "address": "0x5c4a21e1a101c3aff192d2d307ad9bbe3d761b1e",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2547094947404445,
+        0.7455856060566809,
+        -0.0002951007971254138
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "ethereum/web3.py",
+      "address": "0x9ab54e515c12e14048b009a366a4845570c5ee6d",
+      "own": [
+        0.30000000000000004,
+        0.7,
+        0
+      ],
+      "market_price": [
+        0.28787246144037415,
+        0.7120671778329761,
+        0.00006036072664972192
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.30000000000000004,
+        0.7,
+        0
+      ]
+    },
+    {
+      "market": "ethers-io/ethers.js",
+      "address": "0x7fa95b23093b66d4b4fd0e89717b7e7883c888bc",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.1352405861954826,
+        0.8847113234225165,
+        -0.01995190961799906
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "foundry-rs/foundry",
+      "address": "0xa1cc3bd62aea7b21547f327ed20e18d8b92d89d4",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.14618185408876616,
+        0.8356118895872294,
+        0.01820625632400441
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "grandinetech/grandine",
+      "address": "0xb2453e9a21cc82280fa95e6bbe6ca34e78b722d4",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.23390801017115248,
+        0.7852226971416972,
+        -0.019130707312849715
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "hyperledger-web3j/web3j",
+      "address": "0x15607f6d09dd27d174d6d76ebbcc708da5a56646",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.27391559861002673,
+        0.738241091108569,
+        -0.012156689718595681
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "hyperledger/besu",
+      "address": "0x5a56ecb388369c2a92b51ca1e08c32f233baf178",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2245346333274297,
+        0.7893162845944981,
+        -0.013850917921927802
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "nethereum/nethereum",
+      "address": "0x49837e744bb14fab9b256785ab050352c3340aff",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.17278413885610408,
+        0.8344429098665476,
+        -0.007227048722651647
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "nethermindeth/nethermind",
+      "address": "0x84e989e3dd24b2d8448d2a90e72eab1202083f59",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.2663793497139155,
+        0.7451384112242807,
+        -0.011517760938196231
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "nomicfoundation/hardhat",
+      "address": "0xec73b19d493bb773eaed4df6b0c8f18842e77c26",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.21586040678308197,
+        0.7755465356756059,
+        0.008593057541312094
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "openzeppelin/openzeppelin-contracts",
+      "address": "0xde4c752ed72f51de6d57085728a564a08866e97c",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.18998370749287072,
+        0.8270496862677018,
+        -0.01703339376057253
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "paradigmxyz/reth",
+      "address": "0xd2652335a8576ff1e61c10aa531aee08d2533cde",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.19162453076516123,
+        0.7901849667617719,
+        0.018190502473066916
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "OffchainLabs/prysm",
+      "address": "0x1ac42dde2f605435771a0a4b6928b8c802388285",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2010664566746735,
+        0.7748488926615122,
+        0.024084650663814267
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "safe-global/safe-smart-account",
+      "address": "0xad30e4cc2f96e533a92cef4fcd9c57d4a4e5188c",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.2762260644888291,
+        0.7353677012723622,
+        -0.011593765761191255
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "scaffold-eth/scaffold-eth-2",
+      "address": "0x09790fb4115e57367f47c82244cce088583e503f",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.34063418336524065,
+        0.6692618292609929,
+        -0.009896012626233519
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "sigp/lighthouse",
+      "address": "0x6a8c24d317ca7edcc0c996d41950e0cf2e622e6c",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.18257121358117276,
+        0.8383738254161641,
+        -0.02094503899733688
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "status-im/nimbus-eth2",
+      "address": "0xe48392583e40d8194c8019f4fa4c6bb60536c8b8",
+      "own": [
+        0.09999999999999998,
+        0.9,
+        0
+      ],
+      "market_price": [
+        0.1372432058776638,
+        0.8840038727537187,
+        -0.021247078631382532
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.09999999999999998,
+        0.9,
+        0
+      ]
+    },
+    {
+      "market": "vyperlang/titanoboa",
+      "address": "0x7942645c35fa3a7f84ff1c731c81087f375c1eaa",
+      "own": [
+        0.25,
+        0.75,
+        0
+      ],
+      "market_price": [
+        0.30046023025455254,
+        0.734192112450625,
+        -0.03465234270517753
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.25,
+        0.75,
+        0
+      ]
+    },
+    {
+      "market": "vyperlang/vyper",
+      "address": "0x845468b87b4821fae1d42f250c382b7a3a85bdb1",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2022359719645619,
+        0.7998837808985632,
+        -0.002119752863125046
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "wevm/viem",
+      "address": "0xeb72792576d123fee15f8974784fd9026ab8d050",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.23571596313991938,
+        0.7943044239260929,
+        -0.03002038706601229
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "argotorg/hevm",
+      "address": "0xdfb022190820d74babd62379fe53b45f0ac1cc67",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.23141866069664482,
+        0.7684445817172523,
+        0.00013675758610290356
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "ethdebug/format",
+      "address": "0x4b2b2d4e947c9e33e3ae18979562e752606127ac",
+      "own": [
+        0.15000000000000002,
+        0.85,
+        0
+      ],
+      "market_price": [
+        0.19747981638012974,
+        0.8026881386796346,
+        -0.00016795505976435754
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.15000000000000002,
+        0.85,
+        0
+      ]
+    },
+    {
+      "market": "argotorg/act",
+      "address": "0x0d91d33dc1bbe47469f5aef3dc113ed706ebabcb",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2285440747545125,
+        0.7906591962853788,
+        -0.019203271039891334
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "ethpandaops/ethereum-package",
+      "address": "0x08dafca21f736aec39d0a45adf779cb8e437a61e",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.36184144027953613,
+        0.6667902592931144,
+        -0.02863169957265055
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "ethpandaops/ethereum-helm-charts",
+      "address": "0xfd03f01a33eb653b75f59ab8e17c2f9ead376354",
+      "own": [
+        0.4,
+        0.6,
+        0
+      ],
+      "market_price": [
+        0.43267945544123276,
+        0.5755826874370846,
+        -0.008262142878317391
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.4,
+        0.6,
+        0
+      ]
+    },
+    {
+      "market": "ethpandaops/checkpointz",
+      "address": "0x3ea9da5b674276d48d843b7e07daf95ac89ceffa",
+      "own": [
+        0.35,
+        0.65,
+        0
+      ],
+      "market_price": [
+        0.4517798512083326,
+        0.5579584247769437,
+        -0.009738275985276268
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.35,
+        0.65,
+        0
+      ]
+    },
+    {
+      "market": "lambdaclass/lambda_ethereum_consensus",
+      "address": "0x5285cd403845c358140c87f75488aec1aaf1a1f2",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2327414472849014,
+        0.7736875486145309,
+        -0.006428995899432327
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    },
+    {
+      "market": "erigontech/silkworm",
+      "address": "0xbcb9981cdb1b7ed0b01505eb9c87aa4e25a9ccc0",
+      "own": [
+        0.19999999999999996,
+        0.8,
+        0
+      ],
+      "market_price": [
+        0.2814398279746012,
+        0.7185043845598572,
+        0.000055787465541579095
+      ],
+      "w": 1,
+      "w_reason": "naive baseline: no reconciliation",
+      "blended": [
+        0.19999999999999996,
+        0.8,
+        0
+      ]
+    }
+  ]
+}
