@@ -1,9 +1,6 @@
 name: R3 repair checks
 
 on:
-  push:
-    branches:
-      - 'r3-repair/**'
   pull_request:
     branches:
       - main
@@ -14,17 +11,30 @@ permissions:
 
 concurrency:
   group: r3-repair-tests-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   offline:
     name: Offline ${{ matrix.suite }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
-        suite: [gates, planner, routine, helper, signer, nonce-regression]
+        suite:
+          - gates
+          - planner-core
+          - planner-pipeline
+          - planner-c-variants
+          - planner-boundary
+          - planner-wake
+          - planner-ramp
+          - planner-recovery
+          - planner-cap
+          - routine
+          - helper
+          - signer
+          - nonce-regression
     env:
       # Official Node 22.22.0 bookworm image, verified against Docker Hub metadata.
       R3_TEST_IMAGE: node:22.22.0-bookworm@sha256:20a424ecd1d2064a44e12fe287bf3dae443aab31dc5e0c0cb6c74bef9c78911c
