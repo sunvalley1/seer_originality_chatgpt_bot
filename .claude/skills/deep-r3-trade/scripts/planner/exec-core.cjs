@@ -491,9 +491,10 @@ async function confirm(env, book, tx, n, hash, meta = {}, settlement = null) {
       await sleep(delay);
     }
   } catch (cause) {
-    const e = asStop(env.step, cause); e.fields = { ...e.fields, keep_aborted: true }; e.landed = { hash, receipt: rc, record: rec };
+    const e = asStop(env.step, cause); e.fields = { ...e.fields, keep_aborted: true };
     // An inconsistent/unreadable fresh receipt keeps the original write-ahead for the existing settlement path.
-    if (!receiptUncertain) { book.settleInflight(); env.open = null; }
+    // Do not mark a group effect landed until that path resolves the uncertainty; e.landed drives that bookkeeping.
+    if (!receiptUncertain) { e.landed = { hash, receipt: rc, record: rec }; book.settleInflight(); env.open = null; }
     throw e;
   }
   book.settleInflight(); env.open = null;
