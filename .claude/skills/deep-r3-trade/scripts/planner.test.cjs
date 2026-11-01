@@ -901,6 +901,21 @@ async function libSection(L) {
     const r = await lib.runSigner({ ...cfg, signerPath: 'never-run' }, 'send', 'run/mine/a.json', ['--force']).then(() => 'ran', (e) => e.code); ok(r === 'internal', `send --force: ${r}`);
     const r2 = await lib.runSigner({ ...cfg, signerPath: 'never-run' }, 'check', '../outside.json').then(() => 'ran', (e) => e.code); ok(r2 === 'path_traversal', `check ../: ${r2}`);
   });
+  await test('lib: a waiter that expires when woken hands the free slot to the next waiter', async () => {
+    // Load the unchanged implementation in a private VM with a controlled clock. Expose queue primitives only
+    // in this test copy, so the exact release/deadline ordering is deterministic without real-time races.
+    const file = path.join(L.bin, 'planner', 'lib.cjs'); const mod = { exports: {} }; let clock = 1000;
+    const vm = require('vm'); const { createRequire } = require('module');
+    vm.runInNewContext(fs.readFileSync(file, 'utf8') + '\nmodule.exports.__queueTest = { acquire, release, queue };', { module: mod, exports: mod.exports, require: createRequire(file), __dirname: path.dirname(file), __filename: file, process, Buffer, console, setTimeout, clearTimeout, Date: class extends Date { static now() { return clock; } } }, { filename: file });
+    const q = mod.exports.__queueTest; const config = { parallel: 1, rpcGapMs: 0 };
+    ok(await q.acquire(config), 'first slot acquired');
+    const expired = q.acquire(config, 1010); const next = q.acquire(config);
+    clock = 1010; q.release();
+    ok(await expired === false, 'first waiter expired at wake');
+    let timer; const acquired = await Promise.race([next, new Promise((resolve) => { timer = setTimeout(() => resolve(false), 200); })]); clearTimeout(timer);
+    ok(acquired === true, 'next waiter must acquire the now-free slot');
+    q.release(); ok(q.queue.active === 0 && q.queue.waiters.length === 0, 'no leaked slot or waiter');
+  });
   await test('lib: helper deadline bounds a hanging read and a queued read without spawning the queued helper', async () => {
     const script = path.join(L.root, 'deadline-helper.cjs'); fs.writeFileSync(script, "setInterval(() => {}, 1000);\n");
     const bounded = { ...cfg, helperPath: script, parallel: 1, rpcGapMs: 0 }; const before = lib.stats.helperCalls;
@@ -1202,7 +1217,7 @@ async function nonceConfirmSection(root) {
   const receipt = { found: true, tx_hash: TXH, success: true, status: '0x1', block_number: 1003, transaction_index: 2, from: H0, to: TO, gas_used: '50000', effective_gas_price: '1000000', l1_fee: '1000' };
   const pair = (latest, pending) => ({ address: H0, latest, pending });
   let seq = 0;
-  const run = async ({ nonces = [pair(N + 1, N + 1)], freshReceipt, deadlineAfter, nonceError, receiptError, initialReceipt = receipt } = {}) => {
+  const run = async ({ nonces = [pair(N + 1, N + 1)], freshReceipt, deadlineAfter, nonceError, receiptError, initialReceipt = receipt, pin = true } = {}) => {
     const runId = `nc-${++seq}`; const book = new X.Book(cfg, runId);
     const w = (rel, o) => { const p = path.join(proj, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, typeof o === 'string' ? o : JSON.stringify(o)); };
     w(`run/${runId}/base-forecast.json`, { method: 'csv-face-value' }); w(`run/${runId}/allocation.json`, { objective: 'max-ev' });
@@ -1230,7 +1245,7 @@ async function nonceConfirmSection(root) {
       opts.onLine(JSON.stringify(bc), bc); opts.onLine(JSON.stringify(conf), conf);
       return { exit: 0, last: conf };
     };
-    const e = X.makeEnv(c, { step: 'G', holder: H0, setup: { nonce_pinning: true } });
+    const e = X.makeEnv(c, { step: 'G', holder: H0, setup: { nonce_pinning: pin } });
     e.lock = { mode: 'wrapper', taken: false, text: owner }; e.now = () => clock; e.sleep = async (ms) => { calls.waits.push(ms); clock += ms; };
     if (deadlineAfter !== undefined) e.deadlineMs = clock + deadlineAfter;
     let result = null; let error = null;
@@ -1238,8 +1253,8 @@ async function nonceConfirmSection(root) {
     finally { rmrf(path.join(proj, 'run', '.lock.deep-r3-trade')); }
     return { result, error, calls, book, env: e };
   };
-  const once = (r) => {
-    ok(r.calls.signer === 1 && JSON.stringify(r.calls.signerExtra) === JSON.stringify(['--nonce', String(N)]), 'must keep nonce pin and exactly one send');
+  const once = (r, pin = true) => {
+    ok(r.calls.signer === 1 && JSON.stringify(r.calls.signerExtra) === JSON.stringify(pin ? ['--nonce', String(N)] : []), 'must preserve signer nonce mode and exactly one send');
     ok(r.book.sends().length === 1 && r.env.sentThisInvocation === 1 && r.book.attempts().length === 1, 'must record exactly one landed send/attempt');
   };
   await test('nonce-confirm: stale latest converges without resend', async () => {
@@ -1254,6 +1269,11 @@ async function nonceConfirmSection(root) {
       const r = await run({ nonces: [lag, pair(N + 1, N + 1)] }); ok(!r.error && r.result, r.error && r.error.message); once(r);
       ok(r.calls.nonce === 2 && r.calls.receipt === 2, 'must reread matching receipt before accepting convergence');
     }
+  });
+  await test('nonce-confirm: unpinned production mode converges with one send and no nonce flag', async () => {
+    const r = await run({ pin: false, nonces: [pair(N, N + 1), pair(N + 1, N + 1)] });
+    ok(!r.error && r.result, r.error && r.error.message); once(r, false);
+    ok(r.calls.nonce === 2 && r.calls.receipt === 2, 'unpinned mode still requires a fresh receipt and both next-nonce tags');
   });
   await test('nonce-confirm: already current tags require no retry', async () => {
     const r = await run(); ok(!r.error && r.result, r.error && r.error.message); once(r);
@@ -1279,7 +1299,7 @@ async function nonceConfirmSection(root) {
     for (const change of [{ found: false }, { success: false, status: '0x0' }, { tx_hash: '0x' + 'ef'.repeat(32) }, { from: TO }, { to: H0 }, { block_number: 1004 }, { transaction_index: 3 }, { gas_used: '50001' }]) {
       const r = await run({ nonces: [pair(N, N + 1), pair(N + 1, N + 1)], freshReceipt: { ...receipt, ...change } }); once(r);
       ok(r.error && r.error.cause === 'chain-mismatch' && r.error.fields.keep_aborted === true, 'inconsistent receipt must block further sends');
-      ok(r.book.exists('inflight.json') && r.env.open && r.calls.nonce === 1, 'leave original write-ahead for settlement, no new nonce accepted');
+      ok(r.book.exists('inflight.json') && r.env.open && r.calls.nonce === 1 && !r.error.landed, 'leave original write-ahead for settlement, no new nonce accepted or confirmed group effect claimed');
     }
   });
   await test('nonce-confirm: caller deadline shortens wait and never accepts a late result', async () => {
@@ -1291,7 +1311,7 @@ async function nonceConfirmSection(root) {
     const fault = new lib.ToolFailure({ tool: 'helper', args: ['nonce', H0], helperExit: 5, code: 'planner_timeout', text: 'synthetic timeout', transient: true, attempts: 1 });
     const r = await run({ nonceError: fault }); once(r); ok(r.error && r.error.cause === 'transport' && r.error.landed.hash === TXH && r.error.fields.keep_aborted === true, 'transport stop keeps landed evidence and blocks immediate recovery sends');
     const q = await run({ nonces: [pair(N, N + 1)], receiptError: fault }); once(q);
-    ok(q.error && q.error.cause === 'transport' && q.book.exists('inflight.json') && q.env.open, 'unreadable fresh receipt keeps unresolved write-ahead');
+    ok(q.error && q.error.cause === 'transport' && q.book.exists('inflight.json') && q.env.open && !q.error.landed, 'unreadable fresh receipt keeps unresolved write-ahead without claiming a confirmed group effect');
   });
   await test('nonce-confirm: an initial receipt for another hash is refused', async () => {
     const r = await run({ initialReceipt: { ...receipt, tx_hash: '0x' + 'ef'.repeat(32) } });
