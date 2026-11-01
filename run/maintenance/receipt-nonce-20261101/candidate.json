@@ -1,0 +1,210 @@
+{
+  "maintenance_id": "receipt-nonce-20261101",
+  "owner": "durable-promoter:01a182e2-df18-71ca-b51b-4accee2140b1; desktop repair candidate",
+  "status": "promoting",
+  "base": "4ea4b38b39b30ffb953510c56847d32d7474d9f1",
+  "head": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
+  "tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
+  "branch": "r3-repair/receipt-nonce-20261101",
+  "pr": 1,
+  "merged_commit": "002b787dab1521794536cd7b913a35e2c6d7dc85",
+  "ci_run_id": 41270481413,
+  "ci_jobs": [
+    {
+      "id": 124742205098,
+      "name": "Offline nonce-regression",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205105,
+      "name": "Offline routine",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205128,
+      "name": "Offline helper",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205159,
+      "name": "Offline planner-core",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205161,
+      "name": "Offline planner-boundary",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205184,
+      "name": "Offline planner-ramp",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205199,
+      "name": "Offline signer",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205213,
+      "name": "Offline planner-c-variants",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205234,
+      "name": "Offline planner-wake",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205251,
+      "name": "Offline gates",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205273,
+      "name": "Offline planner-pipeline",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205289,
+      "name": "Offline planner-cap",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124742205299,
+      "name": "Offline planner-recovery",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "manifest": "run/maintenance/receipt-nonce-20261101/candidate-source-manifest.json",
+  "manifest_sha256": "749c49614f59cd8dcba553913fdd78bea6f4b0068b58431eaf3963aae945ca17",
+  "ci_artifacts": [
+    {
+      "suite": "planner-cap",
+      "artifact_id": 13069575637,
+      "artifact_digest": "sha256:68e5f2e42c3d3053847553d71ac4fcdf37c9edf30fa1a7e6fa2f0f905acc3a66",
+      "manifest_sha256": "0ac7967d0d97c78d123cbe041b87c6fdad2150c34d344818e5c9dcd0f2c8e13a",
+      "summary": "4 passed, 0 failed, 0 skipped (222 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "routine",
+      "artifact_id": 13069510573,
+      "artifact_digest": "sha256:2bab2d48518d141ef4f95267d01c75e8a5975ffae74d53d95ac6c4e512abb9e0",
+      "manifest_sha256": "63e8504479dc53346cddca43aa0e171bec01f680145d5c5f83c9330f5963197e",
+      "summary": "57 passed, 0 failed, 1 skipped (36 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "nonce-regression",
+      "artifact_id": 13069510303,
+      "artifact_digest": "sha256:d382e88073b8a959eae1a2d8ff77abffa929f1b2636ac11aeda41d236f632057",
+      "manifest_sha256": "341df0170e1381a93c24a3ccaef0b2fd18666bdff9455f8eaefefb61d2deee8d",
+      "summary": "13 passed, 0 failed, 0 skipped (0 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "signer",
+      "artifact_id": 13069480561,
+      "artifact_digest": "sha256:a118d99af459c4b7f5cb0bd1abc3dc5923bd930f3b151819bc518d372ba19c66",
+      "manifest_sha256": "2cbfbd4e6e1487bc1da45bd395b8949604d0de6646a5371c1d2a03371aa8c9ab",
+      "summary": "110 passed, 0 failed, 1 skipped  (transcript: /tmp/signer-tests/run-2026-11-01T03-48-04-511Z-c7f3aa/transcript.txt)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-boundary",
+      "artifact_id": 13069166313,
+      "artifact_digest": "sha256:4c67847d9f8118ab4b42c2145ab5c5f35c54741dd08f2cd1249ef13e4a5638d1",
+      "manifest_sha256": "a4c69df3df7437f0e34a186791ad973c6e1820cd3d057fe9dd901c10b20b870e",
+      "summary": "9 passed, 0 failed, 0 skipped (94 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "helper",
+      "artifact_id": 13068992755,
+      "artifact_digest": "sha256:d71ace317f88991490ffd3b0318b4b4ceffa2fb8ca93dafd980cb6f63299e7b1",
+      "manifest_sha256": "0fda4b814fdd894a5728d876086975a171012cc6efdd11aaea01f08526f2d231",
+      "summary": "93 passed, 0 failed, 1 skipped",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-core",
+      "artifact_id": 13068982755,
+      "artifact_digest": "sha256:597f3bd935c36c6b2f269f6138ab75d56a548e760dba742a4518ddd82a8c4bcf",
+      "manifest_sha256": "ce9f54de4794cc96d47d030981f9e915244aea6afa3ea09eecfaf0cae5df4b4b",
+      "summary": "64 passed, 0 failed, 0 skipped (16 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-pipeline",
+      "artifact_id": 13068973398,
+      "artifact_digest": "sha256:1b5eea945933ed6b77923e93be852090c412efc0234c8823d7e785cb38e14bf5",
+      "manifest_sha256": "4fd2f0590f01edfa2127ae7c7fb87fd464c52bf4f1bad9936e8424b0d1172411",
+      "summary": "39 passed, 0 failed, 0 skipped (233 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-recovery",
+      "artifact_id": 13068963844,
+      "artifact_digest": "sha256:5c0f8c75eb4eb30fa80c253cacaa15ec17e6e7c1774ad8efa474f2ce937d40be",
+      "manifest_sha256": "931af8250be569e11a548833e3da7ead820bf79f67dd599c69b83cb8cbe12a7a",
+      "summary": "7 passed, 0 failed, 0 skipped (530 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-wake",
+      "artifact_id": 13068894048,
+      "artifact_digest": "sha256:9906b3a946f2a72e1f9fddb2419023d2ab31700a1a2be6c1f1d94340a0386633",
+      "manifest_sha256": "86f7e3e66a4aa916daf7cf999b6d02ad4da369e716ed70e8a4a7829abe165c67",
+      "summary": "17 passed, 0 failed, 0 skipped (338 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-ramp",
+      "artifact_id": 13068813767,
+      "artifact_digest": "sha256:7d947b66dc309f4f0a552152da62c22bdca4ccc46f10b737c100f674ab36eac9",
+      "manifest_sha256": "ad5353c2bf9000bc299b9804477be1bf638307e46d061fb7afb654b93661e392",
+      "summary": "6 passed, 0 failed, 0 skipped (75 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "planner-c-variants",
+      "artifact_id": 13068768904,
+      "artifact_digest": "sha256:7cd6686067ef2cad9db2d4a32e76f9d6a03cd651c52e0c2a131babb24cdd99d3",
+      "manifest_sha256": "c238e66a5e66c9563d0b724dfecba9f876a9cc50bbc4a11a8d6fb8e7c0a9eb09",
+      "summary": "8 passed, 0 failed, 0 skipped (26 s)",
+      "exact_source_manifest_verified": true
+    },
+    {
+      "suite": "gates",
+      "artifact_id": 13068524619,
+      "artifact_digest": "sha256:3aaa12c0a172cac75e86c4b85a07440e491dced39d440606cc1c9f8a8338bec6",
+      "manifest_sha256": "56a02eb55439a45203d8e965488060ddfb1136547d4c820efe1e71b311a1168f",
+      "summary": "# duration_ms 60.252267",
+      "exact_source_manifest_verified": true
+    }
+  ],
+  "review": "Two independent source-only reviews found no blockers; CI-only sharding preserves all15 selectors and global assertions",
+  "clearance": {
+    "run_id": "2026-11-01T0359Z-clearance",
+    "passed": true,
+    "empty_plan": false
+  },
+  "remaining_gates": [
+    "Final saved prompt/pin readback, reviewed record push and matching guard removal"
+  ],
+  "updated_at": "2026-11-01T04:07:08.388635+00:00"
+}

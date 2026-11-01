@@ -1,0 +1,27 @@
+{
+  "/workspace/r3-runtime/signer/signer.config.json": {
+    "actual": "6633237dd5a02d5a95bb0264fde9e863d366f2e368a7bb0cdaff95f1bd72bd79",
+    "expected": "6633237dd5a02d5a95bb0264fde9e863d366f2e368a7bb0cdaff95f1bd72bd79",
+    "match": true
+  },
+  "/workspace/r3-runtime/tools/chain-helper.config.json": {
+    "actual": "4f21bbe0eb10587fe3668c63f3219591d4fad1994bec27d17725ebcea083d767",
+    "expected": "4f21bbe0eb10587fe3668c63f3219591d4fad1994bec27d17725ebcea083d767",
+    "match": true
+  },
+  "/workspace/r3-runtime/tools/planner/planner.config.json": {
+    "actual": "3498678da7f683782c997fdf16cb0c0d4f00c1f251c0defbaa42e3eba4370703",
+    "expected": "3498678da7f683782c997fdf16cb0c0d4f00c1f251c0defbaa42e3eba4370703",
+    "match": true
+  },
+  "/workspace/nontrading-validation/deps/package-lock.json": {
+    "actual": "9fd244da71a8a21b055415ed3f4f348efc121022d6fff39cb74487d9dd5523de",
+    "expected": "9fd244da71a8a21b055415ed3f4f348efc121022d6fff39cb74487d9dd5523de",
+    "match": true
+  },
+  "routine.config.json": {
+    "actual": "ceec1fe173b1c1c96bc92a433d24104038c553904dc93cb4ce6f22951381d928",
+    "expected": "ceec1fe173b1c1c96bc92a433d24104038c553904dc93cb4ce6f22951381d928",
+    "match": true
+  }
+}

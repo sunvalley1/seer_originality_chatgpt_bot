@@ -1,0 +1,140 @@
+{
+  "maintenance_id": "receipt-nonce-20261101",
+  "recorded_at": "2026-11-01T03:47:41.050871+00:00",
+  "phase": "candidate_tested_reviewed_installed_and_genuinely_cleared",
+  "base_commit": "4ea4b38b39b30ffb953510c56847d32d7474d9f1",
+  "candidate_commit": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
+  "candidate_tree": "787b74246c4c6fdb933f3683d0f5d627d85a0cd6",
+  "base_code_tree_excluding_run": "3e3ec397a8a03998026cf9e8afaedf049102283a",
+  "candidate_code_tree_excluding_run": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
+  "changed_files": [
+    ".claude/skills/deep-r3-trade/scripts/planner.test.cjs",
+    ".claude/skills/deep-r3-trade/scripts/planner/exec-core.cjs",
+    ".claude/skills/deep-r3-trade/scripts/planner/lib.cjs",
+    ".github/workflows/r3-repair-tests.yml",
+    "ci/README.md",
+    "ci/repair-deps/package-lock.json",
+    "ci/repair-deps/package.json",
+    "ci/run-repair-tests.sh"
+  ],
+  "diff_sha256": "807df4b0f2bce5be2ad42b257f38fe0e42237b06e523b85a4cdc90a3cc20dd41",
+  "changed_file_sha256": {
+    ".claude/skills/deep-r3-trade/scripts/planner.test.cjs": "7f8ba34020a364744e3c2da6085654a140bbd054c2f44bccd43121fa16eff2b9",
+    ".claude/skills/deep-r3-trade/scripts/planner/exec-core.cjs": "dd8d06ce7a5d609c8b2fb380c3f0679183af09ac2601f39cd36748c7e4ba3884",
+    ".claude/skills/deep-r3-trade/scripts/planner/lib.cjs": "997f0ec8bd5d3bf1ba24564da0f6d3f8d9de150b5d7c480ae2ce5db488b89d6b",
+    ".github/workflows/r3-repair-tests.yml": "4b4316b47e7c03a0b1d301dc65b0cfb86a3b8fcdcfe3da46f52e49c793d91f28",
+    "ci/README.md": "a9bad63abcc052a8a3356a0a6e49b2221eee8fc1fd2eb844d6ce1c90060600e8",
+    "ci/repair-deps/package-lock.json": "5de95f263a78cf5392a9f5f6f2fd84292cf64810cba61cacf4951cc0bfda1a43",
+    "ci/repair-deps/package.json": "c4161069355ee17182311bbd9314aee090eb5ab4d84877e121ee24dd93d28f5b",
+    "ci/run-repair-tests.sh": "15379e92d1614080f6e12e159b36b217618621c98a9bd7ff49d375de03d61965"
+  },
+  "source_sha256": {
+    ".claude/skills/deep-r3-trade/scripts/chain-helper.cjs": "29673eb497de0ddfb16f611aaed10c99a6e281de7d6563f70889c67c4ae6acbc",
+    ".claude/skills/deep-r3-trade/scripts/chain-helper.test.cjs": "eefff553728e88fa2cc923cbf516734f1dc7e899d3cee8195805a68b1d761d67",
+    ".claude/skills/deep-r3-trade/scripts/planner/c.cjs": "970aecb2021a56246fdf2423572a14f73cf7a90387b5fd6e2d2adb30eb48dc91",
+    ".claude/skills/deep-r3-trade/scripts/planner/d.cjs": "d77cb760a0f76becd28663a7ba8f9ad19f606caf8354f60f0f3691788ad56ed7",
+    ".claude/skills/deep-r3-trade/scripts/planner/e.cjs": "72b99c27dea8c075b533336386b93dac4991b15c9a66ceef2449a866266afae2",
+    ".claude/skills/deep-r3-trade/scripts/planner/exec-core.cjs": "dd8d06ce7a5d609c8b2fb380c3f0679183af09ac2601f39cd36748c7e4ba3884",
+    ".claude/skills/deep-r3-trade/scripts/planner/exec.cjs": "6ceeef840e2a1bd23381f45b78c1a00bc52802c348b8bb72fca1322c09779f7a",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-engine.cjs": "54135dbde54f07904396962996582f2860f59c86391373e810947144577cf2c5",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-lib.cjs": "e05fa6f31a2763a29f6ecff5e10a2f155e29be83b690807f15b50b72e62232b0",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-plan.cjs": "0453a1bdb78cb3fb2e4a1401e3abbf9f78418648835d7c4840c870d2c856fd0f",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-print.cjs": "0d070caa3e3050c0ef5b879a422fecb4c38cf94f9a5fb6f5ede12f31c40d31b2",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-probe-post3a.cjs": "ae3b0d1eaf05d396005fdfcdbac7f5dfaf8e0a16611d8a1bc66c007139ed050a",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-read.cjs": "9b9a5411ad997e4e25af48919b8de9d90d515d3eec6483c5db8e944a911ff21e",
+    ".claude/skills/deep-r3-trade/scripts/planner/f-verify.cjs": "87cb7ab6c7ae861dc745d27e5fe39207b29f6eb116119a1e4e494c93ae63880b",
+    ".claude/skills/deep-r3-trade/scripts/planner/f.cjs": "996fd15bb7245225de01ceed561772c9d3d3a998c8ac59b0d405a61b8f75ec79",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-audit.cjs": "2bfcbf61e76797644a93b34d71218a8f528dc455903938bce58a2f42fc6c3754",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-build.cjs": "3a1a24a5bec7f3bcc95979d8bbce4af2e8b431802a9668ffdf6a3f60154d26f0",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-emit.cjs": "a3da2cda3d49d6760e32329bab4a01c2b9219239f5af38d0f56356021d02d0df",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-indep.cjs": "0d640518c7b3b00aea62c555a1f9d91e10030edc0bc24289f0ae5229d916645a",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-lib.cjs": "c997af2609ef2a4444ec570c8bc49f5e3ca6023061a762d4ff398f82ef6c3455",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-read.cjs": "9c2ef0ba358eeece76a5864f6a5ce6b4839d1ab62082682e08352d7fb76ef7d4",
+    ".claude/skills/deep-r3-trade/scripts/planner/g-verify.cjs": "f39039008d9260e7e97729947858c4cc04606606a8f6268c33975d4474b625ad",
+    ".claude/skills/deep-r3-trade/scripts/planner/g.cjs": "2e90acb6edee64e3cbd4f2bd1606adc8eb2a666535862742298c75f8c62a8738",
+    ".claude/skills/deep-r3-trade/scripts/planner/h.cjs": "775f68189c74cd7a576df4cd9868a3be1218d26ec0b1f3771361a1fa4cad2eae",
+    ".claude/skills/deep-r3-trade/scripts/planner/halfb.cjs": "f469de4b846564af34e12ecc301adb723853bb4aed3deb182348529d9b91e55d",
+    ".claude/skills/deep-r3-trade/scripts/planner/lib.cjs": "997f0ec8bd5d3bf1ba24564da0f6d3f8d9de150b5d7c480ae2ce5db488b89d6b",
+    ".claude/skills/deep-r3-trade/scripts/planner/ramp.cjs": "dc14003d7085f958d81a47fa2369dc94203c17c593340e4d154fd8691a8da086",
+    ".claude/skills/deep-r3-trade/scripts/planner/report.cjs": "2497231ceac4454ad47f7693990a7508793a461c0c2b00445da92dbc6b25edbb",
+    ".claude/skills/deep-r3-trade/scripts/planner/table.cjs": "4d4e00d9e90c9840dd7ac67e20e027ce9547ce989c8a4b402b424bd16083280d",
+    ".claude/skills/deep-r3-trade/scripts/planner/wake.cjs": "a0c95ad60392de5d0dbcfbb9091bb75d49d05be9d49f1b44bca330f972503581",
+    ".claude/skills/deep-r3-trade/scripts/planner-gates.test.cjs": "f74befedf52eda0e53819f47299b6b03048c8c280161d3145504686e821f0230",
+    ".claude/skills/deep-r3-trade/scripts/planner.cjs": "d46f49bd70ef1cd2c1f890c0e175312e7f686ef37ca331eaa883227228783e09",
+    ".claude/skills/deep-r3-trade/scripts/planner.test.cjs": "7f8ba34020a364744e3c2da6085654a140bbd054c2f44bccd43121fa16eff2b9",
+    ".claude/skills/deep-r3-trade/scripts/routine.cjs": "c8fa95253a743889a37e3810fe59e9ea65cf699ca3595a53317a27ee67bf4769",
+    ".claude/skills/deep-r3-trade/scripts/routine.test.cjs": "99cc9e1b309186f1e1267926dd8e6ae8c4bdda6a2278d94ea57c0ea4bb9d7dc5",
+    ".claude/skills/deep-r3-trade/scripts/signer.cjs": "19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef",
+    ".claude/skills/deep-r3-trade/scripts/signer.test.cjs": "0894378a989005525e00f76f51eb401667e5edf516a2729341be9ca5dec1191b"
+  },
+  "dependency_comparison": {
+    "package_count": 9,
+    "version_integrity_match": true,
+    "ci_lock_sha256": "5de95f263a78cf5392a9f5f6f2fd84292cf64810cba61cacf4951cc0bfda1a43"
+  },
+  "review": {
+    "blocking_code_findings": [],
+    "nonce_reads_max": 11,
+    "read_deadline_ms": 30000,
+    "retries_revalidate_receipt": true,
+    "accept_only_latest_pending_n_plus_one": true,
+    "no_resend_added": true,
+    "uncertain_fresh_receipt_preserves_inflight_without_landed": true,
+    "production_nonce_pinning_false_test_authored": true,
+    "queue_deadline_and_expired_waiter_tests_authored": true,
+    "ci_security": "Pinned image/actions; read-only token, no production credentials/mounts; tests in network-none read-only containers; locked deps installed separately with lifecycle scripts disabled. Candidate code not executed in this wallet runtime.",
+    "budget_limitation": "Helper timeout uses existing child SIGTERM/close handling; it rejects deadline-late results, not an OS hard real-time guarantee."
+  },
+  "validation_paths": {
+    "existing_clearance": "run/2026-10-28T1129Z-clearance/clearance.json",
+    "existing_summary": "run/setup-2026-10-28T112250Z/validation-summary.json",
+    "policy_cases": "run/setup-2026-10-28T1129Z/selftest",
+    "mode_checks": "run/setup-2026-10-28T112250Z/mode-check/results.json"
+  },
+  "future_commands_NOT_EXECUTED": [
+    "NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs clearance --push",
+    "NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs selftest --cases run/setup-2026-10-28T1129Z/selftest --push"
+  ],
+  "remaining_gates": [
+    "Saved pin/policy/remote readback and matching guard removal"
+  ],
+  "production_changes": false,
+  "ci": {
+    "run_id": 41270481413,
+    "required_jobs": [
+      "gates",
+      "planner-core",
+      "planner-pipeline",
+      "planner-c-variants",
+      "planner-boundary",
+      "planner-wake",
+      "planner-ramp",
+      "planner-recovery",
+      "planner-cap",
+      "routine",
+      "helper",
+      "signer",
+      "nonce-regression"
+    ],
+    "all_required_passed": true,
+    "retained_results": "retained-ci-results.json"
+  },
+  "release_eligible": true,
+  "superseded_reason": null,
+  "ci_only_review": {
+    "changed_since_prior_candidate": [
+      ".github/workflows/r3-repair-tests.yml",
+      "ci/README.md",
+      "ci/run-repair-tests.sh"
+    ],
+    "runtime_and_test_source_hashes_unchanged": true,
+    "selectors": 15,
+    "planner_shards": 8,
+    "global_assertions_retained_per_shard": true,
+    "other_suites_retained": 5,
+    "isolation_unchanged": true,
+    "independent_review": "no blocking findings; source-only review",
+    "pr_required_to_trigger_future_ci": true,
+    "canceled_never_passes": true
+  }
+}

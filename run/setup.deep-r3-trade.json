@@ -19,7 +19,14 @@
     "results": [
       "run/setup-2026-10-28T1129Z/selftest/results.json",
       "run/setup-2026-10-28T112250Z/mode-check/results.json"
-    ]
+    ],
+    "maintenance_policy_recheck": {
+      "run_id": "setup-2026-11-01T0358Z",
+      "passed": 20,
+      "failed": [],
+      "results": "run/setup-2026-11-01T0358Z/selftest/results.json",
+      "signer_bytes_path_unchanged": true
+    }
   },
   "chain_helper": {
     "path": "/workspace/r3-runtime/tools/chain-helper.cjs",
@@ -39,7 +46,7 @@
       "planner/c.cjs": "970aecb2021a56246fdf2423572a14f73cf7a90387b5fd6e2d2adb30eb48dc91",
       "planner/d.cjs": "d77cb760a0f76becd28663a7ba8f9ad19f606caf8354f60f0f3691788ad56ed7",
       "planner/e.cjs": "72b99c27dea8c075b533336386b93dac4991b15c9a66ceef2449a866266afae2",
-      "planner/exec-core.cjs": "d0e7289d9cf8c7211d33836bcd6107c0006c325da8519b59728921d287671bfc",
+      "planner/exec-core.cjs": "dd8d06ce7a5d609c8b2fb380c3f0679183af09ac2601f39cd36748c7e4ba3884",
       "planner/exec.cjs": "6ceeef840e2a1bd23381f45b78c1a00bc52802c348b8bb72fca1322c09779f7a",
       "planner/f-engine.cjs": "54135dbde54f07904396962996582f2860f59c86391373e810947144577cf2c5",
       "planner/f-lib.cjs": "e05fa6f31a2763a29f6ecff5e10a2f155e29be83b690807f15b50b72e62232b0",
@@ -59,15 +66,18 @@
       "planner/g.cjs": "2e90acb6edee64e3cbd4f2bd1606adc8eb2a666535862742298c75f8c62a8738",
       "planner/h.cjs": "775f68189c74cd7a576df4cd9868a3be1218d26ec0b1f3771361a1fa4cad2eae",
       "planner/halfb.cjs": "f469de4b846564af34e12ecc301adb723853bb4aed3deb182348529d9b91e55d",
-      "planner/lib.cjs": "8b90c9cb15575ceae7c22b8c0e7f746c8eabff3776839991e6dac4ef1e794459",
+      "planner/lib.cjs": "997f0ec8bd5d3bf1ba24564da0f6d3f8d9de150b5d7c480ae2ce5db488b89d6b",
       "planner/ramp.cjs": "dc14003d7085f958d81a47fa2369dc94203c17c593340e4d154fd8691a8da086",
       "planner/report.cjs": "2497231ceac4454ad47f7693990a7508793a461c0c2b00445da92dbc6b25edbb",
       "planner/table.cjs": "4d4e00d9e90c9840dd7ac67e20e027ce9547ce989c8a4b402b424bd16083280d",
       "planner/wake.cjs": "a0c95ad60392de5d0dbcfbb9091bb75d49d05be9d49f1b44bca330f972503581"
     },
-    "c_checked_at": "2026-10-28T11:29:19.223Z",
-    "exec_check_checked_at": "2026-10-28T11:47:04.034Z",
-    "clearance_run_id": "2026-10-28T1129Z-clearance"
+    "c_checked_at": "2026-11-01T04:05:56.948Z",
+    "exec_check_checked_at": "2026-11-01T04:05:56.948Z",
+    "clearance_run_id": "2026-11-01T0359Z-clearance",
+    "clearance_record": "run/2026-11-01T0359Z-clearance/clearance.json",
+    "source_install_hashes_record": "run/maintenance/receipt-nonce-20261101/source-install-hashes.json",
+    "reviewed_code_tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e"
   },
   "autonomy": {
     "enabled": true,
@@ -79,35 +89,47 @@
     "planner_sha256": "d46f49bd70ef1cd2c1f890c0e175312e7f686ef37ca331eaa883227228783e09"
   },
   "schedule": {
-    "enabled": false,
+    "enabled": true,
     "signer_allow_rule_added_at": "2026-10-28T15:07:29Z",
-    "cadence_hours": null,
+    "cadence_hours": 12,
     "timezone": "Etc/UTC",
-    "creation_status": "created; paused; prepared for USER manual activation",
+    "creation_status": "User-enabled existing schedule; cadence/activation unchanged during guarded maintenance",
     "time_limit_hours": 6,
     "automation_id": "6ae20602fadc8191ba6f741dbd0a7084",
     "title": "R3 daily trading \u2014 PAUSED",
     "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
     "start_new_chat": false,
     "next_run_time": null,
-    "prompt_record": "run/paused-trading-prompt-2026-10-28.txt",
-    "metadata_record": "run/paused-trading-schedule-2026-10-28.json",
+    "prompt_record": "run/maintenance/receipt-nonce-20261101/trading-prompt-guarded.txt",
+    "metadata_record": "run/maintenance/receipt-nonce-20261101/trading-metadata-guarded.json",
     "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json",
     "fixed_utc_times": [
       "09:00",
-      "15:00"
+      "21:00"
     ],
     "requested_local_times": [
       "16:00",
-      "22:00"
+      "04:00 following day"
     ],
     "display_timezone": "Asia/Bangkok",
     "alternating_gap_hours": [
-      6,
-      18
+      12,
+      12
     ],
-    "cadence_description": "Twice every day at 09:00 and 15:00 UTC; alternating 6h and 18h gaps",
-    "cadence_hours_usage": "Display/status field only; null because schedule has no uniform interval"
+    "cadence_description": "Twice every day at fixed 09:00 and 21:00 UTC, 12 hours apart",
+    "cadence_hours_usage": "Display/status record matching fixed UTC schedule; recurrence remains hosted authority"
   },
-  "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json"
+  "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json",
+  "maintenance": {
+    "id": "receipt-nonce-20261101",
+    "stage": "validated_awaiting_final_policy_readback",
+    "candidate_commit": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
+    "merged_commit": "002b787dab1521794536cd7b913a35e2c6d7dc85",
+    "code_tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
+    "ci_run_id": 41270481413,
+    "ci_jobs_passed": 13,
+    "clearance_run_id": "2026-11-01T0359Z-clearance",
+    "source_install_hashes_record": "run/maintenance/receipt-nonce-20261101/source-install-hashes.json",
+    "financial_commands": false
+  }
 }

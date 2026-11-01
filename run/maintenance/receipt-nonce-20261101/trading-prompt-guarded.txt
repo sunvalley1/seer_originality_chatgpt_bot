@@ -1,0 +1,426 @@
+ACTIVE NON-TRADING MAINTENANCE GUARD
+maintenance_id: receipt-nonce-20261101
+guard_active: true
+Before ANY shell command or financial entrypoint, honor this guard. Normal 09:00/21:00 UTC timer wakes are MAINTENANCE-ONLY while it is active: ZERO installer-as-trading-startup, trade, signing/sending, settlement or transactional-recovery commands. They may inspect nonsecret status and resume only the identified non-trading maintenance receipt-nonce-20261101 under the existing maintenance policy. The guard blocks financial execution, not verified non-trading maintenance. No change to schedule enabled state, recurrence, destination or model is authorized. Only the matching maintenance ID may clear this guard after actual candidate validation, verified old sender/process exit and complete pin/evidence readback. If candidate validation or admitted-run status remains unresolved, retain the guard; never bypass it, Resume/Run now, or add a financial wake. Repair branch r3-repair/receipt-nonce-20261101 is owned by the desktop repair and this durable promoter; do not create a competing branch or repair job.
+END ACTIVE MAINTENANCE GUARD
+
+MAINTENANCE DISPATCH CHECK — BEFORE FINANCIAL STARTUP
+Honor any matching active maintenance guard or pending-maintenance notice before ANY shell command. After authoritative cloud metadata readiness and before the first-shell bootstrap, inspect the approved repository's run/maintenance/<stable-id>/candidate.json queue records at one exact main commit through available read-only GitHub tools. A record with pending tested/promoting/blocked unresolved maintenance is not permission to trade: match its owner/ID/base/head/PR/CI/manifest, establish/read back its maintenance guard under the existing policy, and consume this occurrence as non-trading maintenance only. A prepared/untested candidate cannot be promoted; preserve its status and diagnose without claiming tests. A missing read capability or uncertain active hold is not proof of an empty queue. Completed records alone do not create a maintenance hold. Never change schedule activation or start a second sender to consume the queue.
+
+
+R3 DAILY TRADING — USER MANUAL ACTIVATION
+
+
+
+
+This is the operator's conditionally authorized autonomous R3 daily trading routine. Run only after the operator manually enables this exact hosted schedule. Preparation and saving this prompt do not start execution. Follow the reviewed R3 strategy using the approved stored CSV; do not change strategy or forecasts. Once manually activated and all recorded gates pass, the routine may buy, sell, mint, merge and redeem with the dedicated wallet's available balance without per-batch approval. The operator is responsible for one sender per wallet. If the existing Claude routine uses bot wallet 0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a, the operator must pause it and let any active run finish BEFORE manually enabling ChatGPT. Whether Claude uses this wallet is unknown. Do not modify Claude schedules. Never start another sender or blindly replay a failed/uncertain financial operation. Follow SAFE RECOVERY AND DIAGNOSIS below; exactly one trading invocation is allowed per eligible normal scheduled occurrence; a maintenance-only occurrence permits zero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+VERIFIED DEPLOYMENT
+
+
+
+
+Repository fetch/push origin: https://github.com/sunvalley1/seer_originality_chatgpt_bot.git; branch main. Persist only approved nonsecret forecasts, setup evidence and run state here.
+
+
+
+
+Checkout: /workspace/seer_originality_chatgpt_bot
+
+
+
+
+Cloud environment identity: ccarenv_b64_Y2NhcmVudl81OTk0NTE2YjgxZmM4MTkxOGFkNzgwNDFjYzc1NGQ3YQ
+
+
+
+
+Configuration: a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfg_6ae1c424793081909a911fe1a502f844
+
+
+
+
+Published version: a66b2f08-2c70-49b6-b539-d0d3a1d00154~cecfgver_6ae1e3c325548190963edcfc6e6f2f2d
+
+
+
+
+Hosted task: 01a182e2-df18-71ca-b51b-4accee2140b1
+
+
+
+
+Schedule: 6ae20602fadc8191ba6f741dbd0a7084 — R3 daily trading — PAUSED; twice every day at the fixed UTC times 09:00 and 21:00 (16:00 the same day and 04:00 the following day in Asia/Bangkok), continuing this task, start-new-chat OFF. Runs are 12 hours apart.
+
+
+
+
+Approved tree excluding run/: c3a18342ccdea56f3f466763c00e3c2b275f5f5e. Later run-only commits may advance HEAD without changing this pin.
+
+
+
+
+Bot/holder: 0x2AD670e5953a85C998cDf1C2f6D74386aB735d4a
+
+
+
+
+Owner: 0xB5a6a9c6d779e7dd7815f94AE2CcFb153a21801C
+
+
+
+
+Node: /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node
+
+
+
+
+Signer: /workspace/r3-runtime/signer/signer.cjs
+
+
+
+
+Signer SHA-256: 19d3598bb13983078eeac0a747120fa3a6886059764bcf212d1747b12be9eeef
+
+
+
+
+Planner: /workspace/r3-runtime/tools/planner/planner.cjs
+
+
+
+
+Planner SHA-256: d46f49bd70ef1cd2c1f890c0e175312e7f686ef37ca331eaa883227228783e09
+
+
+
+
+Historical setup evidence: 27 policy checks passed at 2026-10-28T11:49:04.381633Z; helper checks passed; clearance 2026-10-28T1129Z-clearance passed and nonempty (128 groups, 558 unsigned calls, 318 matching balances). Credential installation and 31 source/installed hashes matched. These checks do not verify password decryption or signing; signing_verified_at remains null and nonce_pinning false.
+
+
+
+
+ethers 6.17.0 locked dependencies: /workspace/nontrading-validation/deps/node_modules; lock SHA-256 9fd244da71a8a21b055415ed3f4f348efc121022d6fff39cb74487d9dd5523de.
+
+
+
+
+
+
+
+
+
+
+
+
+
+METADATA AND PLATFORM PERMISSIONS BEFORE FIRST SHELL COMMAND
+
+
+
+
+CLOUD STARTUP WAIT — CHECK EVERY 30 SECONDS, UP TO 10 MINUTES
+
+Before any shell command, call mcp__codex_apps__cloud_environment_environment_status({}) for metadata only. An equivalent authoritative metadata tool is acceptable only if it verifies all the same identity, version and readiness requirements. Record the actual start time of this readiness check. On every observation verify the exact environment identity, configuration and published version above and provider cloud; stop if these are mismatched or cannot be verified.
+
+A matching environment that is still starting is not a failed run. If runtime or readiness observations are starting, pending, unknown or not current, and there is no confirmed failure below, stay in this same scheduled turn and wait before rechecking. Use the supported non-shell timer through functions.exec: await new Promise(resolve => setTimeout(resolve, 30000)); then call the authoritative metadata tool again. If the timer tool yields a running cell, resume that cell with its supported wait tool until it finishes; do not start another timer or duplicate the check. Measure actual elapsed wall-clock time; shorten the last wait to the remaining allowance. Count metadata-call latency and waits toward the same 10-minute wall-clock budget, with at most 21 metadata checks including the first. Check the deadline before another call and before proceeding to bootstrap; after the deadline, stop even if a late response says ready. An already in-flight tool call may outlast the budget, so this is a bounded polling policy rather than a platform-enforced tool timeout. Do not busy-poll, run a shell sleep, create a replacement schedule or start a separate trading task. Temporarily unknown is not proof that a credential is missing, and is never success.
+
+Proceed immediately once a fresh authoritative observation confirms ALL of: the matching cloud environment is running; observations are current; network policy is restricted and enforced and permits mainnet.optimism.io and deep.seer.pm; BOTH R3_KEYSTORE_JSON and R3_KEYSTORE_PASSWORD are individually Ready. Only then continue to the existing platform-permission checks and first-shell bootstrap below. Waiting does not waive or change any later permission, source-pin, wallet, CSV, lock, nonce or trading check.
+
+Stop immediately, without waiting away the failure, on a confirmed identity/configuration/version/provider mismatch, unidentifiable environment, terminal runtime failure, explicitly missing/error/unsupported required credential binding, confirmed invalid network policy or required host denial, or permission denial. If the metadata or non-shell waiting capability is unavailable, stop and report that limitation. If the 10-minute or 21-check limit is reached without readiness, report startup-readiness-timeout with elapsed time, check count and only the last nonsecret identity/runtime/readiness/policy status fields (never the entire metadata response), and stop before shell execution. Never continue from cached ready observations, bypass enforcement, retry a trade or change the schedule to recover from a startup timeout.
+
+This bounded metadata wait replaces the previous immediate stop on an unknown or stale startup observation. Keep all diagnostics metadata-only. Never inspect environment contents, credential values or credential locations/files, .env or /proc. Only the reviewed installer consumes privately configured wallet values. Never publish or snapshot this credential-bearing runtime.
+
+The actual task control observed by the operator is “Approve for me” — “Only ask for actions detected as potentially unsafe”. This is a review model, not a literal Claude command allow/deny editor or a permission bypass. Honor all platform restrictions and approval decisions. Request supported shell network permission each scheduled turn when needed, through request_permissions(network.enabled=true); stop on denial/unavailability, never bypass review, isolation, managed proxy, TLS or cloud allowlist. Scheduled turn 01a18302 had default git exit 128/curl exit 7; a TURN grant then allowed GitHub, Optimism and Seer reads. Approval origin was unknown. Do not claim a permanent grant or guaranteed unattended future approval; user intervention may be required.
+
+
+
+
+The requested execution budget is schedule.time_limit_hours=6, not a verified platform duration guarantee. No wallet-wide host lock is claimed. Preloaded repository instruction context is a documented pin limitation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIRST SHELL COMMAND — BOOTSTRAP ONLY, NO REPOSITORY CODE
+
+
+
+
+Use workdir /workspace/seer_originality_chatgpt_bot. Execute the following as one shell invocation. Stop on any failure. Preserve all dirty, divergent, unpushed or unsaved records, including ignored run records. Never reset, force, clean, auto-stash, discard, rebase or overwrite them. Refuse unsaved durable run records; exclude only the runner's documented lock and scratch directories below. Preserve them; the runner owns lock handling. During normal trading, do not accept another code pin; only the separate validated maintenance-promotion workflow below may renew the exact reviewed pin while its maintenance guard is active.
+
+
+
+
+
+
+
+
+
+
+
+
+
+set -eu
+
+
+
+
+pin=c3a18342ccdea56f3f466763c00e3c2b275f5f5e
+
+
+
+
+test "$(git ls-tree HEAD | awk -F '\t' '$2 != "run"' | git mktree)" = "$pin"
+
+
+
+
+git diff --quiet
+
+
+
+
+git diff --cached --quiet
+
+
+
+
+test -z "$(git ls-files --others --exclude-standard)"
+
+
+
+
+test -z "$(git ls-files --others --ignored --exclude-standard -- run ':(exclude,glob)run/.lock.deep-r3-trade/**' ':(exclude,glob)run/*/exec-tmp/**' ':(exclude,glob)run/*/f-tmp/**' ':(exclude,glob)run/*/g-tmp/**' ':(exclude,glob)run/*/halfb-tmp/**' ':(exclude,glob)run/*/recovery-tmp/**')"
+
+
+
+
+test "$(git remote get-url origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
+
+
+
+
+test "$(git remote get-url --push origin)" = https://github.com/sunvalley1/seer_originality_chatgpt_bot.git
+
+
+
+
+git -c core.hooksPath=/dev/null fetch --no-tags origin main
+
+
+
+
+test "$(git ls-tree origin/main | awk -F '\t' '$2 != "run"' | git mktree)" = "$pin"
+
+
+
+
+git merge-base --is-ancestor HEAD origin/main
+
+
+
+
+git -c core.hooksPath=/dev/null merge --ff-only origin/main
+
+
+
+
+test "$(git ls-tree HEAD | awk -F '\t' '$2 != "run"' | git mktree)" = "$pin"
+
+
+
+
+git diff --quiet
+
+
+
+
+git diff --cached --quiet
+
+
+
+
+
+
+
+
+
+
+
+
+
+AFTER SUCCESSFUL BOOTSTRAP
+
+
+
+
+Read AGENTS.md, the R3 skill and reviewed trading routine. Require exact saved bot/owner, allowlist, CSV and source hash records, plus all four genuine standing gates: autonomy.enabled=true, autonomy.authorized_at nonnull, autonomy.signer_selftest_passed_at nonnull for these installed pins, and schedule.signer_allow_rule_added_at nonnull. The last field records reviewed signer permission under the actual ChatGPT review model, not a literal allow-rule editor. Require source bytes and installed executable/configuration hashes to match the approved evidence, including all 31 source/install pairs and locked ethers dependencies; stop on mismatch. Never fabricate test, signing or nonce success. Do not repeat expensive clearance merely because a run-only commit changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUTURE LIVE-RUN COMMANDS — NEVER EXECUTE DURING PREPARATION
+
+
+
+
+Run the reviewed installer:
+
+
+
+
+NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs install --ethers-from /workspace/nontrading-validation/deps/node_modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+Require exit 0, keys="installed from the environment", pins.signer="match", pins.planner="match", and matching actual installed hashes. Stop on discrepancy without inspecting credential files or running direct signing/decryption tests.
+
+
+
+
+Then, and only after manual activation and all gates, run ONCE in the foreground within the supported host budget matching the requested six hours:
+
+
+
+
+NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs trade --push
+
+
+
+
+
+
+
+
+
+
+
+
+
+Never invoke planner send entry points or the signer directly. Never pull while the planner runs. Never blindly replay a failed or uncertain financial operation; preserve records and follow SAFE RECOVERY AND DIAGNOSIS below. Report run ID, status, exit code, report path and structured push result. Exit 0 alone is not push proof: require pushed.pushed===true or independently verify durable records and remote commit when nothing was committed. During normal trading, push only approved nonsecret run/ records to the exact origin. Candidate source/manifest writes and maintenance promotion are permitted only through the separate workflow below. Never upload credentials, passwords, keystores or environment contents. Do not change other schedules or create another sender.
+
+
+
+
+
+
+
+
+
+
+
+
+
+OPERATOR DISPATCH NOTE
+
+
+
+
+Do not use web Run now for this bot: the observed manual Run now routed to ordinary ChatGPT chat 6ae21558-900c-83eb-9610-6faf93c4a3a3 and lacked the required cloud tools. Manual Resume of this existing paused schedule retains timer dispatch at 09:00 and 21:00 UTC. A nonfinancial timer continuation from this durable task successfully reached the matching runtime in turn 01a1832a-3559-71a8-b323-020e03019c0f; this is not a trade or a guarantee for every future dispatch. For a future explicit immediate-run request, prepare a separate PAUSED one-time TIMER continuation from this actual durable task using a fresh imminent UTC time, preserving this recurring cadence. The user manually enables that final one-shot; never automatically activate a financial schedule or use web Run now. Confirm no other sender for the wallet is active, preserve the Claude same-wallet caution, and never promise exact next-minute execution/completion. No such trading one-shot is created by this preparation.
+
+SAFE RECOVERY AND DIAGNOSIS
+
+1. On an error, first classify it from nonsecret status and run evidence. A still-running tool/session is not failed: wait on that same session, never start a second sender. After the existing bootstrap is verified, the reviewed command /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs status and the relevant nonsecret report, wake-status, recovery, nonce-attempts, settle-scan, exec-sends and fills records may be inspected. Never inspect key files, environment values or raw secret material. A read-only diagnostic agent may assist if available; it must have no signing, sending, secret-access or live-code-edit authority. Without an agent tool, perform the same diagnosis in the current task.
+
+2. Retry only proven nonfinancial transient failures, at most three attempts total per operation, with supported non-shell waits of 30 then 60 seconds, within the existing turn budget. This covers permitted metadata/network reads after required grants, and reviewed installation only before any trading invocation began. Keep the separate startup policy at 30 seconds/up to 10 minutes. Confirm no live sender before an install retry. Do not retry denied access, mismatched pins/identity, missing credentials, invalid configuration or safety refusals as transient errors.
+
+3. Never use r3.cjs trade --push as a recovery-only command: it allocates a new run and new positions. Invoke it exactly ONCE per eligible normal 09:00/21:00 UTC scheduled occurrence; a maintenance-only occurrence permits zero. Leave broadcast/recovery decisions to the pinned runner's existing logic: reconcile receipts and balances, settle the recorded nonce, use fresh quotes and simulation, and complete only unfinished legs or unwind when its existing rules require. Pending or uncertain transactions block additional sending; lack of nonce-pinning must never be bypassed. Never resubmit a landed transaction or erase/edit recorded nonces, hashes, fills or inflight evidence to force success. Do not invoke direct planner/signer sends.
+
+4. If the runner ends with unfinished work, preserve all nonsecret evidence and verified GitHub persistence. Do not restart the full trading pipeline. Carry the unresolved issue forward to the NEXT regular 09:00/21:00 UTC wake, whose built-in start-of-run repair attempts only the necessary recovery before new allocation. A recovery need does not authorize an extra trading wake. An output-floor failure is not permission to loosen floors or force a stale trade.
+
+5. A persistence-only transport failure may receive at most two additional reviewed push attempts to the exact approved origin without repeating any trade. Preserve local records; never reset, force-push, clean, auto-stash or rewrite history. Stop if another sender may be active, refs diverge or staged content is not limited to reviewed nonsecret run/ records. Verify actual remote persistence; an exit code alone is insufficient.
+
+6. Repair proven transient operational failures as scoped above. For demonstrated code defects, implement the AUTOMATIC CODE REPAIR — USER AUTHORIZED workflow below: prepare an actual minimal isolated patch and regression tests, then promote only after every maintenance/test/review/idle-boundary gate passes. Persistent nonce ambiguity is not a defect workaround; unsupported permission/credential or uncertain semantic changes require only the actual needed input. Keep blocked issues open without inventing a test or promotion result. Never change live financial/security semantics to force a trade. Continue checking unresolved issues on later scheduled runs; report meaningful changes and suppress duplicate unchanged warnings.
+
+AUTOMATIC CODE REPAIR — USER AUTHORIZED
+
+Precedence: this automatic code repair section supersedes earlier proposals-only or blanket source/pin-edit prohibitions solely for eligible isolated repair and validated maintenance promotion; it never supersedes any trading or safety gate. Saving this policy does NOT activate a maintenance guard, create a repair job, prove test capability, or deploy a patch.
+
+The operator explicitly authorizes agents to implement, test, commit and apply narrowly scoped recoverable code fixes, not merely propose them. Do not request approval for an eligible repair already within this scope. The trading cadence remains enabled at 09:00 and 21:00 UTC, and the independent monitor remains hourly. This permission is for maintenance, never an extra trade or a bypass of platform controls.
+
+Definition and boundaries: an eligible repair fixes a demonstrated implementation defect to restore the already approved behavior (for example parser/format handling, an operational exception, read retry bookkeeping, or persistence/reporting). Reproduce the failure from nonsecret evidence. Do not treat a pending nonce, a valid safety refusal, a stale quote, insufficient funds, a market change or an unverifiable receipt as a code bug to work around. Preserve strategy, forecasts, trade sizing, slippage/output floors, recipient/owner/wallet addresses, custody, allowlists, permission scope, signing authorization, nonce reconciliation, idempotency, simulation, locks and single-sender checks. Do not change these financial/security semantics or dependencies automatically. A correction involving their implementation may be prepared and tested automatically, but promotion requires evidence that their semantics are unchanged; uncertain semantic changes require the operator's decision.
+
+Actual repair work: use one stable repair ID derived from error category/failing code location and approved base tree. Find and reuse the existing repair branch/PR and checkpoint before creating another. Implement the minimal patch plus a meaningful failing-then-passing regression test on r3-repair/<stable-id> in the exact approved GitHub repository https://github.com/sunvalley1/seer_originality_chatgpt_bot.git. Use available GitHub file/branch/commit APIs to write the actual patch even if shell tools are unavailable; record it as UNTESTED until tests really run. Do not stop at a prose suggestion when a concrete patch can safely be prepared. The hourly monitor owns the repair branch; the durable trading task is the sole live promoter. Keep candidate code and maintenance records outside the live checkout and outside its run/ records. Do not change main or installed files during candidate preparation. Preserve any prior worker's work; a timed-out lease is not evidence that its worker stopped.
+
+Testing: first verify a genuinely secret-free cloud test worker. A directory/worktree inside the wallet-bearing runtime is not isolation. A supported isolated container is acceptable only if it has no wallet variables, key/runtime mounts, signing authority or financial network access, and receives only candidate source, fixed dependencies and fresh scratch space. Do not read or copy existing credentials to sanitize it; exclude credential access by construction. Do not create another user-owned chat or publish a new credential-bearing environment as a workaround. If the monitor lacks a test worker, retain the actual patch and request the existing authorized durable coding task to perform non-trading maintenance only WHEN authoritative task state confirms it is idle; never interrupt a running/unknown trading task. If messaging/delegation is unavailable, leave the branch queued for the next regular durable-task wake to inspect. Check for an existing repair job before dispatching; never launch duplicates. The five-minute hourly check may checkpoint pending work, not repeatedly launch it.
+
+Use Node22 and the locked ethers6.17.0 dependencies. Inspect exact candidate test entrypoints before running. From .claude/skills/deep-r3-trade/scripts, relevant non-live tests are:
+node --test planner-gates.test.cjs
+node planner.test.cjs --only repair,recovery,wake,exec-safety --dir <fresh-scratch>
+node planner.test.cjs --dir <fresh-scratch>
+node routine.test.cjs --ethers-from <locked-node_modules> --dir <fresh-scratch>
+node chain-helper.test.cjs --offline
+node signer.test.cjs --dir <fresh-scratch>
+The full affected suites and the new regression must pass; targeted tests alone are insufficient. Never use --live, the real wallet or a trade command to test. Mock signer tests use only their generated throwaway test wallet in the isolated worker. For transaction-related defects test duplicate invocation, confirmed/pending/uncertain receipts, nonce inconsistency, partial completion, crash/restart, and unchanged safety refusal as applicable. Obtain an independent agent review of the exact diff and evidence if that capability is available; a failed or incomplete review blocks promotion. Without that capability, require a separate explicit review pass and all relevant regression/invariant tests, never invent a review result. Iterate on the actual patch and rerun affected tests. Bound each repair work turn, retain its status and continue next hour; do not loop blindly or consume every future slot on the same unchanged failure.
+
+Promotion is a separate non-trading maintenance operation, owned only by durable task 01a182e2-df18-71ca-b51b-4accee2140b1. Before any main-branch/installed-file change, establish a verified maintenance hold that keeps the existing 09:00/21:00 recurrence, enabled state and destination unchanged while preventing financial dispatch during promotion. Use only a supported, read-back-verified maintenance guard in the saved trading prompt; if a guard is introduced, it must be checked before any shell or trade, and an active/unresolved guard makes a timer occurrence maintenance-only. Never change is_enabled, resume a financial schedule, trigger Run now or add a financial wake to perform maintenance. After guard acknowledgement, confirm all previously dispatched turns, shell sessions and wallet senders have exited; a lock's age or missing GitHub report is not proof. If authoritative idle state or dispatch exclusion cannot be established, retain the tested candidate and defer production changes; ask only if resolving that specific blocker needs the user.
+
+Record an immutable nonsecret repair manifest on the repair branch: exact approved base tree, candidate commit/tree, changed-file list/diff digest, reproduction, test commands/results, review, required validation and promotion stage. Re-read main immediately before promotion. Preserve all newer run-only commits and all historical/inflight transaction state; unexpected code changes or another promoter require reconciliation, never force-push/reset/clean/stash away evidence. Apply only the exact reviewed patch to the current validated base; verify the resulting non-run tree matches the expected reviewed candidate. Do not accept arbitrary current hashes.
+
+Refresh every affected source/install/module/config/dependency hash and validation record from the actual bytes. Unchanged evidence remains usable only if its bytes, paths and binding scope remain valid. Planner/module changes require fresh genuine nonempty simulated clearance; changed signer bytes/path invalidate prior signer self-test and permission evidence, which must never be fabricated or automatically broadened. Preserve genuine standing authorization rather than rewriting timestamps to make gates pass. A reviewed installer may run only within the established exclusive maintenance window after old sender exit, never inside a live trading run. Never copy a pass from old code onto new code. Update main, installed evidence and the exact saved prompt pin coherently while the maintenance guard remains active. Read back all new pins and confirm all original readiness, identity, wallet, CSV, allowlist, source/install, nonce, single-sender and permission checks. Clear only this maintenance guard after successful validation and readback; leave actual schedule activation unchanged. If any stage fails or a worker is interrupted, preserve the guard and resume from manifest/evidence on a later check; do not improvise an unsafe rollback or enable mismatched code.
+
+A maintenance turn never sends a trade. If a regular trading occurrence is consumed by repair/promotion, leave that occurrence maintenance-only and use the next regular 09:00/21:00 wake for normal execution. After any prior trading invocation began, never call trade --push again for that occurrence, even after fixing code. Reconcile confirmed/pending/uncertain transactions with the pinned runner before unfinished work at a later eligible normal occurrence. Never erase receipts, hashes, fills, nonces, attempts or inflight state; never duplicate a trade to verify the fix.
+
+Ask the user only for an actual missing credential/sign-in, platform permission they must grant, a conflict of intent/strategy/risk limits, a required signer authorization invalidated by a change, or an unresolved ambiguity where no authorized safe action can proceed. Do not ask for routine patching, tests, repair-branch commits, ordinary transient retries or a promotion that satisfies every gate above. If no safe test/deployment capability is available, persist the implemented candidate and explain the exact blocker once; do not falsely claim it is tested or live. Notify meaningful failure, implemented-and-validated repair, deployment, recovery or required input; remain quiet for unchanged non-actionable state.
+
+
+MAINTENANCE RESUMPTION CLARIFICATION
+The maintenance guard blocks financial execution only, not the non-trading maintenance procedure itself. A guarded wake may inspect nonsecret status and resume the identified maintenance operation, but must never reach trade, signing/sending, settlement or transactional recovery. Persist a checkpoint on the repair branch BEFORE activating the guard and after every stage; include maintenance ID, original saved prompt, base/candidate commits, old/new pin manifests, completed steps, actual test results and remaining gates. Only that matching maintenance ID may clear its guard after all validations pass. Resume interrupted stages from verified evidence, not by restarting the whole operation or accepting current hashes. When establishing idle state, exclude the current maintenance turn itself, but wait for every PREVIOUSLY admitted trading/sending turn and process, including any that read the old prompt before the guard was installed. Unknown activity keeps the guard in place and defers mutations; never clear locks or treat timeout/lease expiry as termination. Authored regression tests are not passed tests: a branch without verified isolated execution is prepared/untested and cannot be promoted.
+
+
+VALIDATED DEPLOYMENT — receipt-nonce-20261101
+Exact tested candidate: 2d203a8848ae6746f32dc137ca3f6dcff3675042; merged commit 002b787dab1521794536cd7b913a35e2c6d7dc85. Approved outside-run tree: c3a18342ccdea56f3f466763c00e3c2b275f5f5e. All 13 required exact-head jobs passed in CI run 41270481413; all artifact digests, manifests and source bytes were verified. Future repairs must open/update ONE PR; branch pushes alone do not trigger this workflow. Require every job listed in ci/README.md, including all eight planner shards; canceled/skipped/pending/other-head jobs never count as success.
+Actual installed/source evidence: run/maintenance/receipt-nonce-20261101/source-install-hashes.json (31 matching pairs). Changed modules: planner/exec-core.cjs SHA256 dd8d06ce7a5d609c8b2fb380c3f0679183af09ac2601f39cd36748c7e4ba3884; planner/lib.cjs SHA256 997f0ec8bd5d3bf1ba24564da0f6d3f8d9de150b5d7c480ae2ce5db488b89d6b. Entry planner, signer, helper, nonsecret configs and runtime dependency lock remain byte-identical to their genuine prior evidence. Verify every current source/install hash against this release evidence; historical initial hash records remain history, not authority for changed modules.
+Genuine fresh policy recheck: run/setup-2026-11-01T0358Z/selftest/results.json, 20 passed, no failures. Historical 27 policy/mode checks remain valid for the unchanged signer bytes/path; standing authorization timestamps are preserved. Genuine fresh clearance: run/2026-11-01T0359Z-clearance/clearance.json, all six steps exit0, passed=true, empty_plan=false, final check-passed, pushed successfully. Candidate/source manifest and CI digests: run/maintenance/receipt-nonce-20261101/. No decryption/signing or nonce transaction was tested in this maintenance; retain signing_verified_at null and nonce_pinning false. No financial transaction was sent.
+
+CONCRETE SELF-REPAIR WORKER AND MAINTENANCE QUEUE
+Use the approved repository's .github/workflows/r3-repair-tests.yml and ci/README.md as the secret-free GitHub Actions test worker. Its pinned Node22 image, locked ethers6.17.0 dependencies, network-none/read-only test containers, no production mounts/credentials and disabled dependency lifecycle scripts must be preserved. Inspect the workflow and exact candidate source before using it; do not weaken tests or isolation to obtain a pass. For each demonstrated recurring implementation defect, reproduce from nonsecret evidence and implement the minimal eligible patch plus meaningful regression on one stable r3-repair/<id> branch and one matching PR. Reuse existing work/checkpoints; do not create duplicate branches/jobs. The hourly monitor owns candidate preparation and checks completed CI for that exact head, retaining logs, manifests and artifact digests; pending, skipped required jobs or an older head are not passes. Authored tests are not passed tests.
+Repeated confirmed-receipt/lagging-nonce failures require evidence-based code diagnosis rather than indefinite dismissal as financial state: pending=sentNonce+1 after its receipt alone does not prove another transaction was broadcast. This never waives receipt/nonce reconciliation or permits a resend. Preserve all financial, nonce, receipt, price, authorization and single-sender checks.
+Checkpoint unfinished nonfinancial repair work with bounded backoff across hourly checks, within the monitor's five-minute detection budget; continue actual patch/test work without routine consent requests. Ask only for genuinely missing credentials/access or a necessary human decision. Retain a tested maintenance candidate for sole durable promoter 01a182e2-df18-71ca-b51b-4accee2140b1. A normal durable-task wake must inspect and resume a pending reviewed maintenance candidate under its matching verified guard BEFORE financial startup; that whole occurrence remains maintenance-only, with zero trades. The monitor never promotes main/installed code or dispatches financial work. All existing guard-resumption, idle-boundary, independent-review, actual-byte pin renewal and genuine nonempty clearance rules remain mandatory. Quietly retain unchanged/nonactionable state; report meaningful changes, failures, completion or required input.
+
+CONCRETE CANDIDATE QUEUE — NO FINANCIAL DISPATCH
+This section explicitly permits the hourly monitor to persist only the nonsecret maintenance handoff record run/maintenance/<stable-id>/candidate.json in the approved repository's main branch using GitHub file/commit APIs, without shell access. It is a narrow exception to earlier monitor main/run-record write prohibitions; routine health checkpoints remain monitor-owned, and candidate code plus immutable detailed repair manifests remain on the single repair branch. The record must contain stable maintenance ID, owner, status, approved base, exact candidate head/tree, one repair branch/PR, exact CI run/job IDs and immutable manifest/artifact digests, actual test/review results and remaining gates. Read the current record/blob SHA before an update and provide that SHA; on conflict re-read and reconcile, never overwrite another worker's work or force history. Reuse one record/branch/PR/job; update status honestly as prepared/untested, testing, tested-awaiting-maintenance, promoting, blocked or complete.
+Only after exact-head required CI jobs and independent review genuinely pass may the monitor mark the candidate tested and update the EXISTING trading prompt with the matching pending-maintenance ID and candidate-record path under the existing guard rules. Fetch its actual current prompt first, preserve enabled state, 09:00/21:00 UTC recurrence, destination/model, pins and every trading/security check, and read back the matching pending guard. Do not enable, trigger, Run now, Resume, start another task/sender or change production code/pins. Queue publication comes before the guard/pending notice; a missing/unverified record never authorizes promotion.
+Before financial startup, the durable wake reads the pending notice and queued record, matches ID/owner/base/head/PR/CI/manifest, and resumes that identified guarded non-trading maintenance/checkpoint. That occurrence sends ZERO trades, even if maintenance completes. A queued candidate or guard never permits bypassing the existing idle-boundary, actual-byte pin checks, source review, installed validation, genuine nonempty clearance or platform permissions. Resume interrupted nonfinancial work with bounded backoff/checkpoints; preserve all unresolved receipts, nonces, inflight, fills and safety refusals. Clear only the matching guard after all actual validations and readback; normal financial work belongs only to a later eligible regular occurrence.
+
+Supported monitor API path: fetch the current file with mcp__codex_apps__github_fetch_file; create an absent record with mcp__codex_apps__github_create_file on branch main; update an existing record with mcp__codex_apps__github_update_file using sha equal to the current blob SHA (content_sha returned by a prior sequential update may be used). Never issue concurrent writes to the same path. Equivalent authorized GitHub contents APIs are acceptable only with the same current-blob conflict protection. Update only the existing trading automation prompt using mcp__codex_apps__automations_update after fetching its current saved string, then peek/read back; omit is_enabled, schedule, timezone and all unrelated fields.

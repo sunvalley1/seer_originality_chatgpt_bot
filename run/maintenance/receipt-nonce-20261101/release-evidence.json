@@ -1,0 +1,129 @@
+{
+  "maintenance_id": "receipt-nonce-20261101",
+  "stage": "validated_awaiting_policy_and_persistence_readback",
+  "candidate": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
+  "merged_commit": "002b787dab1521794536cd7b913a35e2c6d7dc85",
+  "new_code_tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
+  "ci_jobs_passed": 13,
+  "ci_run_url": "https://github.com/sunvalley1/seer_originality_chatgpt_bot/actions/runs/41270481413",
+  "nonce_regression": {
+    "baseline_specific_failure": true,
+    "candidate_passed": 13,
+    "failed": 0,
+    "production_nonce_pinning_false_case_passed": true
+  },
+  "install": {
+    "exit": 0,
+    "keys": "installed from the environment",
+    "pins": {
+      "planner": "match",
+      "signer": "match"
+    },
+    "changed_modules": [
+      "planner/exec-core.cjs",
+      "planner/lib.cjs"
+    ],
+    "actual_source_install_pairs": 31,
+    "nonsecret_configs_unchanged": true
+  },
+  "selftest": {
+    "run_id": "setup-2026-11-01T0358Z",
+    "passed": 20,
+    "failed": [],
+    "exit": 0,
+    "pushed": true
+  },
+  "clearance": {
+    "run_id": "2026-11-01T0359Z-clearance",
+    "passed": true,
+    "empty_plan": false,
+    "exit": 0,
+    "steps": [
+      {
+        "step": "c",
+        "exit": 0,
+        "seconds": 12,
+        "stop": null,
+        "outcome": "body"
+      },
+      {
+        "step": "d",
+        "exit": 0,
+        "seconds": 0,
+        "stop": null,
+        "outcome": "stored"
+      },
+      {
+        "step": "e",
+        "exit": 0,
+        "seconds": 0,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "f",
+        "exit": 0,
+        "seconds": 138,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "g --indep",
+        "exit": 0,
+        "seconds": 124,
+        "stop": null,
+        "outcome": null
+      },
+      {
+        "step": "exec --check",
+        "exit": 0,
+        "seconds": 140,
+        "stop": null,
+        "outcome": "check-passed"
+      }
+    ],
+    "at": "2026-11-01T04:05:56.948Z",
+    "installed_hashes_match_actual": true,
+    "pushed": true
+  },
+  "authorization_preserved": true,
+  "signer_and_configs_unchanged": true,
+  "financial_commands": false,
+  "previous_financial_state_preserved": true,
+  "idle_evidence": {
+    "observed_at_utc": "2026-11-01T03:58:10.169957+00:00",
+    "current_executor_sender_processes": [],
+    "locks": {
+      "run/.lock.deep-r3-trade/owner.txt": {
+        "exists": false
+      },
+      "/workspace/r3-runtime/state/r3-signer-send.lock": {
+        "exists": false
+      }
+    },
+    "known_runner_sessions": {
+      "96233": "exited 4",
+      "95312": "exited 3",
+      "23819": "exited 4",
+      "88716": "exited 4",
+      "78621": "exited 4",
+      "71316": "exited 4"
+    },
+    "source": "Actual prior tool results in this durable-task history plus fresh names-only process and nonsecret lock observations",
+    "latest_run_ended": true,
+    "automation_reported_in_progress": false,
+    "automation_run_detail_limitation": "Trading last_run details refer to older Oct28 ChatGPT Run-now refusal, not the Oct31 durable runner; last_run_time Oct31 20:57:19 is not independent completion evidence",
+    "prior_admitted_unknown_turns": "No exhaustive supported API; none evidenced active, enumeration uncertainty remains",
+    "global_wallet_serialization_claimed": false,
+    "latest_verified_run_ended_at": "2026-10-31T21:04:55.240Z",
+    "local_installation_idle": true,
+    "previously_admitted_bot_sender_evidence": "Known prior tool sessions exited; latest durable trading run finished; no current Node/signer process or local locks. Automation metadata reports no active run but history is stale; API cannot enumerate all prior turns."
+  },
+  "limitations": [
+    "No OS hard-kill deadline guarantee; helper SIGTERM/close handling rejects late results",
+    "No platform-wide serialization claim; local installed-code idle evidence and saved guard used",
+    "No new password decryption/signing or nonce-pinning verification; nonce_pinning remains false",
+    "Future network grants remain platform-reviewed per turn, not guaranteed unattended"
+  ],
+  "ci_evidence_retained_outside_live_checkout": "/workspace/work/maintenance/receipt-nonce-20261101/candidate-2d203a/ci-evidence"
+}
