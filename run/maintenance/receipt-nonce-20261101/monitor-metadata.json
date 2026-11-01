@@ -1,0 +1,15 @@
+{
+  "id": "6ae4350cc49c81908745eef7ede47d8a",
+  "title": "R3 hourly health check",
+  "is_enabled": true,
+  "schedule": "BEGIN:VEVENT\nRRULE:FREQ=HOURLY;INTERVAL=1;BYMINUTE=0\nEND:VEVENT",
+  "default_timezone": "UTC",
+  "thread_id": null,
+  "conversation_id": "6ae43ffd-ac60-83eb-9239-892092eb53c0",
+  "timing_mode": "exact_schedule",
+  "updated_at": "2026-11-01T04:10:36.434150+00:00",
+  "exact_prompt_readback_verified": true,
+  "matching_maintenance_hold_removed": true,
+  "model_visibility": "Not exposed; model omitted from prompt-only updates.",
+  "prompt_sha256": "126fbf48c47254fb1e0a4ebd31ac8060d07e5ffe992de667e483387059f6c6f6"
+}

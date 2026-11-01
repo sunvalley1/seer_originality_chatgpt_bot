@@ -100,8 +100,8 @@
     "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
     "start_new_chat": false,
     "next_run_time": null,
-    "prompt_record": "run/maintenance/receipt-nonce-20261101/trading-prompt-guarded.txt",
-    "metadata_record": "run/maintenance/receipt-nonce-20261101/trading-metadata-guarded.json",
+    "prompt_record": "run/maintenance/receipt-nonce-20261101/trading-prompt.txt",
+    "metadata_record": "run/maintenance/receipt-nonce-20261101/trading-metadata.json",
     "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json",
     "fixed_utc_times": [
       "09:00",
@@ -122,7 +122,7 @@
   "authorization_evidence": "run/manual-activation-authorization-2026-10-28.json",
   "maintenance": {
     "id": "receipt-nonce-20261101",
-    "stage": "validated_awaiting_final_policy_readback",
+    "stage": "complete",
     "candidate_commit": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
     "merged_commit": "002b787dab1521794536cd7b913a35e2c6d7dc85",
     "code_tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
@@ -130,6 +130,8 @@
     "ci_jobs_passed": 13,
     "clearance_run_id": "2026-11-01T0359Z-clearance",
     "source_install_hashes_record": "run/maintenance/receipt-nonce-20261101/source-install-hashes.json",
-    "financial_commands": false
+    "financial_commands": false,
+    "completed_at": "2026-11-01T04:10:57.677945+00:00",
+    "matching_guard_removed": true
   }
 }

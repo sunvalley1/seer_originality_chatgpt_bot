@@ -1,0 +1,15 @@
+{
+  "id": "6ae20602fadc8191ba6f741dbd0a7084",
+  "title": "R3 daily trading \u2014 PAUSED",
+  "is_enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261029T090000Z\nRRULE:FREQ=DAILY;BYHOUR=9,21;BYMINUTE=0\nEND:VEVENT",
+  "default_timezone": "Etc/UTC",
+  "thread_id": "01a182e2-df18-71ca-b51b-4accee2140b1",
+  "conversation_id": null,
+  "timing_mode": "exact_schedule",
+  "updated_at": "2026-11-01T04:10:32.233892+00:00",
+  "exact_prompt_readback_verified": true,
+  "matching_maintenance_hold_removed": true,
+  "model_visibility": "Not exposed; model omitted from prompt-only updates.",
+  "prompt_sha256": "195c549f55ba88e72a55b1db53766d0ec47e0726d3784c042bfb8024791a423c"
+}

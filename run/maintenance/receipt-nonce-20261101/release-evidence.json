@@ -1,6 +1,6 @@
 {
   "maintenance_id": "receipt-nonce-20261101",
-  "stage": "validated_awaiting_policy_and_persistence_readback",
+  "stage": "complete",
   "candidate": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
   "merged_commit": "002b787dab1521794536cd7b913a35e2c6d7dc85",
   "new_code_tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
@@ -125,5 +125,15 @@
     "No new password decryption/signing or nonce-pinning verification; nonce_pinning remains false",
     "Future network grants remain platform-reviewed per turn, not guaranteed unattended"
   ],
-  "ci_evidence_retained_outside_live_checkout": "/workspace/work/maintenance/receipt-nonce-20261101/candidate-2d203a/ci-evidence"
+  "ci_evidence_retained_outside_live_checkout": "/workspace/work/maintenance/receipt-nonce-20261101/candidate-2d203a/ci-evidence",
+  "completed_at": "2026-11-01T04:10:57.677945+00:00",
+  "guard_removed_after_validation_and_guarded_remote_readback": true,
+  "policy_readback": {
+    "exact_both": true,
+    "new_pin": true,
+    "concrete_13_job_pr_worker": true,
+    "concrete_blob_sha_queue": true,
+    "durable_maintenance_before_financial_startup": true,
+    "timing_activation_destinations_unchanged": true
+  }
 }

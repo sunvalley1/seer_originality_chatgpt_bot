@@ -1,7 +1,7 @@
 {
   "maintenance_id": "receipt-nonce-20261101",
   "recorded_at": "2026-11-01T03:47:41.050871+00:00",
-  "phase": "candidate_tested_reviewed_installed_and_genuinely_cleared",
+  "phase": "complete_validated_deployment",
   "base_commit": "4ea4b38b39b30ffb953510c56847d32d7474d9f1",
   "candidate_commit": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
   "candidate_tree": "787b74246c4c6fdb933f3683d0f5d627d85a0cd6",
@@ -95,9 +95,7 @@
     "NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs clearance --push",
     "NODE_USE_ENV_PROXY=1 NODE_USE_SYSTEM_CA=1 /workspace/nontrading-validation/node-v22.22.0-linux-x64/bin/node r3.cjs selftest --cases run/setup-2026-10-28T1129Z/selftest --push"
   ],
-  "remaining_gates": [
-    "Saved pin/policy/remote readback and matching guard removal"
-  ],
+  "remaining_gates": [],
   "production_changes": false,
   "ci": {
     "run_id": 41270481413,

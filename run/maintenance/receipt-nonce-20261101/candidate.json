@@ -1,7 +1,7 @@
 {
   "maintenance_id": "receipt-nonce-20261101",
   "owner": "durable-promoter:01a182e2-df18-71ca-b51b-4accee2140b1; desktop repair candidate",
-  "status": "promoting",
+  "status": "complete",
   "base": "4ea4b38b39b30ffb953510c56847d32d7474d9f1",
   "head": "2d203a8848ae6746f32dc137ca3f6dcff3675042",
   "tree": "c3a18342ccdea56f3f466763c00e3c2b275f5f5e",
@@ -90,7 +90,7 @@
     }
   ],
   "manifest": "run/maintenance/receipt-nonce-20261101/candidate-source-manifest.json",
-  "manifest_sha256": "749c49614f59cd8dcba553913fdd78bea6f4b0068b58431eaf3963aae945ca17",
+  "manifest_sha256": "6c5e8deeffe3b9b3616fe4136db4df8d32098def3c09d2e8fcf6b4129029a344",
   "ci_artifacts": [
     {
       "suite": "planner-cap",
@@ -203,8 +203,8 @@
     "passed": true,
     "empty_plan": false
   },
-  "remaining_gates": [
-    "Final saved prompt/pin readback, reviewed record push and matching guard removal"
-  ],
-  "updated_at": "2026-11-01T04:07:08.388635+00:00"
+  "remaining_gates": [],
+  "updated_at": "2026-11-01T04:10:57.677945+00:00",
+  "completed_at": "2026-11-01T04:10:57.677945+00:00",
+  "matching_guard_removed": true
 }
