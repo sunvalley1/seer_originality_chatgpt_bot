@@ -20,7 +20,7 @@
  * made-up holder address; and a JSON ledger the mock signer "mines" a transaction into (it holds no key and signs
  * nothing). The prices are set so that F finds every route: a set-sell, a pair (dual-buy), simple buys on both sides, a
  * complex buy, a market whose forecast equals its price (no row) and 92 markets with no forecast.
- * Sections (--only takes any of them): static, usage, lib, repair, pipeline, c-variants, g-safety, exec-safety, boundary,
+ * Sections (--only takes any of them): static, usage, lib, repair, nonce-confirm, pipeline, c-variants, g-safety, exec-safety, boundary,
  * mergearb, wake, ramp, recovery, cap.
  * g-safety and exec-safety run on the plan the pipeline builds, so they run the pipeline first.
  *
@@ -635,7 +635,7 @@ const ARGS = {
   helper: argOf('--helper'), signer: argOf('--signer'), bin: argOf('--bin'), project: argOf('--project'), csvStore: argOf('--csv-store'),
   ethersFrom: argOf('--ethers-from'), runId: argOf('--run-id'), gapMs: argOf('--gap-ms'),
 };
-const SECTIONS = ['static', 'usage', 'lib', 'repair', 'pipeline', 'c-variants', 'g-safety', 'exec-safety', 'boundary', 'mergearb', 'wake', 'ramp', 'recovery', 'cap'];
+const SECTIONS = ['static', 'usage', 'lib', 'repair', 'nonce-confirm', 'pipeline', 'c-variants', 'g-safety', 'exec-safety', 'boundary', 'mergearb', 'wake', 'ramp', 'recovery', 'cap'];
 const ONLY = ARGS.only ? new Set(ARGS.only.split(',').map((s) => s.trim())) : null;
 if (ONLY) for (const s of ONLY) if (!SECTIONS.includes(s)) { console.log(`unknown section ${s}; sections: ${SECTIONS.join(', ')}`); process.exit(2); }
 const want = (s) => !ONLY || ONLY.has(s);
@@ -901,6 +901,32 @@ async function libSection(L) {
     const r = await lib.runSigner({ ...cfg, signerPath: 'never-run' }, 'send', 'run/mine/a.json', ['--force']).then(() => 'ran', (e) => e.code); ok(r === 'internal', `send --force: ${r}`);
     const r2 = await lib.runSigner({ ...cfg, signerPath: 'never-run' }, 'check', '../outside.json').then(() => 'ran', (e) => e.code); ok(r2 === 'path_traversal', `check ../: ${r2}`);
   });
+  await test('lib: helper deadline bounds a hanging read and a queued read without spawning the queued helper', async () => {
+    const script = path.join(L.root, 'deadline-helper.cjs'); fs.writeFileSync(script, "setInterval(() => {}, 1000);\n");
+    const bounded = { ...cfg, helperPath: script, parallel: 1, rpcGapMs: 0 }; const before = lib.stats.helperCalls;
+    let firstDone = false;
+    const first = lib.runHelper(bounded, ['nonce'], { retries: 9, deadlineMs: Date.now() + 1000 }).catch((e) => e).finally(() => { firstDone = true; });
+    const second = await lib.runHelper(bounded, ['nonce'], { retries: 9, deadlineMs: Date.now() + 100 }).catch((e) => e);
+    ok(second instanceof lib.ToolFailure && second.code === 'planner_timeout' && !firstDone, 'queued read must expire before the running read');
+    const a = await first;
+    ok(a instanceof lib.ToolFailure && a.code === 'planner_timeout' && a.attempts === 1, 'hanging read killed at its deadline without retries');
+    ok(lib.stats.helperCalls - before === 1, 'queued read must never spawn');
+    const expired = await lib.runHelper(bounded, ['nonce'], { deadlineMs: Date.now() - 1 }).catch((e) => e);
+    ok(expired.code === 'planner_timeout' && lib.stats.helperCalls - before === 1, 'expired deadline must not spawn');
+    fs.unlinkSync(script);
+  });
+  await test('lib: helper deadline also bounds retry backoff and rate-limit start spacing', async () => {
+    const script = path.join(L.root, 'deadline-retry-helper.cjs'); fs.writeFileSync(script, "console.log(JSON.stringify({ error: 'unreachable', code: 'rpc_unreachable' })); process.exitCode = 5;\n");
+    const bounded = { ...cfg, helperPath: script, parallel: 1, rpcGapMs: 0 }; const before = lib.stats.helperCalls;
+    const r = await lib.runHelper(bounded, ['nonce'], { retries: 9, deadlineMs: Date.now() + 500 }).catch((e) => e);
+    ok(r instanceof lib.ToolFailure && r.code === 'planner_timeout' && lib.stats.helperCalls - before === 1, 'backoff must not start another read past deadline');
+    fs.writeFileSync(script, "console.log(JSON.stringify({ ok: true }));\n");
+    await lib.runHelper({ ...bounded, rpcGapMs: 1000 }, ['nonce']);
+    const calls = lib.stats.helperCalls;
+    const gap = await lib.runHelper(bounded, ['nonce'], { deadlineMs: Date.now() + 100 }).catch((e) => e);
+    ok(gap instanceof lib.ToolFailure && gap.code === 'planner_timeout' && lib.stats.helperCalls === calls, 'start spacing must not overrun deadline or spawn');
+    fs.unlinkSync(script);
+  });
   await test('lib: rate-limit text is transient (the public RPC answers a rate limit as a plain rpc_error): re-run, then the answer', async () => {
     ok(['exceeded its requests per second capacity', 'over rate limit', 'Too Many Requests', 'HTTP 429', 'at capacity'].every((t) => lib.RATE_LIMIT_TEXT.test(t)), 'RATE_LIMIT_TEXT');
     setWorld(L, freshWorld()); fs.writeFileSync(path.join(L.mock, 'scenario.json'), JSON.stringify({ rateLimit: { n: 2, subs: ['chain-id'] } }));
@@ -1165,6 +1191,114 @@ async function libSection(L) {
 // signer (no mock process): an unsettled inflight.json in a prior FINAL run-id (Half B writes there), and a not-sent
 // finding on a signer that cannot pin the nonce
 // =================================================================================================================
+// Post-receipt nonce regression: entirely synthetic chain and signer events, no network or wallet access.
+// Kept separate so CI can run these new cases against the original source and prove the stale-read failure.
+async function nonceConfirmSection(root) {
+  const proj = path.join(root, 'nonce-confirm-proj'); fs.mkdirSync(path.join(proj, 'run'), { recursive: true });
+  const bin = path.join(root, 'nonce-confirm-bin'); installPlanner(bin, null);
+  const lib = require(path.join(bin, 'planner', 'lib.cjs')); const X = require(path.join(bin, 'planner', 'exec-core.cjs'));
+  const cfg = { projectRoot: proj }; const H0 = '0x' + '11'.repeat(20); const TO = '0x' + '22'.repeat(20);
+  const HASH = '0x' + 'ab'.repeat(32); const TXH = '0x' + 'cd'.repeat(32); const N = 7;
+  const receipt = { found: true, tx_hash: TXH, success: true, status: '0x1', block_number: 1003, transaction_index: 2, from: H0, to: TO, gas_used: '50000', effective_gas_price: '1000000', l1_fee: '1000' };
+  const pair = (latest, pending) => ({ address: H0, latest, pending });
+  let seq = 0;
+  const run = async ({ nonces = [pair(N + 1, N + 1)], freshReceipt, deadlineAfter, nonceError, receiptError, initialReceipt = receipt } = {}) => {
+    const runId = `nc-${++seq}`; const book = new X.Book(cfg, runId);
+    const w = (rel, o) => { const p = path.join(proj, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, typeof o === 'string' ? o : JSON.stringify(o)); };
+    w(`run/${runId}/base-forecast.json`, { method: 'csv-face-value' }); w(`run/${runId}/allocation.json`, { objective: 'max-ev' });
+    const owner = JSON.stringify({ pid: 4242, process_start_time: 'x', host: 'h', started_at: new Date().toISOString(), stage: 'claude-p', run_id: runId });
+    w('run/.lock.deep-r3-trade/owner.txt', owner); w('run/.lock.deep-r3-trade/live-runs.txt', '');
+    const calls = { nonce: 0, receipt: 0, signer: 0, waits: [], readOptions: [], signerExtra: null }; let clock = Date.now();
+    const c = lib.makeContext({ cfg, sub: 'exec', runId }); c.holder = () => H0;
+    c.helper = async (args, opts = {}) => {
+      if (args[0] === 'block') return { json: { number: 1005 } };
+      if (args[0] === 'receipt') {
+        calls.receipt++;
+        if (calls.receipt > 1) { calls.readOptions.push(opts); if (receiptError) throw receiptError; }
+        return { json: calls.receipt === 1 ? initialReceipt : (freshReceipt || receipt) };
+      }
+      if (args[0] === 'nonce') {
+        calls.readOptions.push(opts); const i = calls.nonce++;
+        if (nonceError) throw nonceError;
+        return { json: nonces[Math.min(i, nonces.length - 1)] };
+      }
+      throw new Error('unexpected helper call ' + args.join(' '));
+    };
+    c.signer = async (sub, file, extra, opts) => {
+      ok(sub === 'send', 'only the synthetic original send should occur'); calls.signer++; calls.signerExtra = extra;
+      const bc = { event: 'broadcast', hash: TXH, nonce: N, input_hash: HASH }; const conf = { event: 'confirmed', hash: TXH };
+      opts.onLine(JSON.stringify(bc), bc); opts.onLine(JSON.stringify(conf), conf);
+      return { exit: 0, last: conf };
+    };
+    const e = X.makeEnv(c, { step: 'G', holder: H0, setup: { nonce_pinning: true } });
+    e.lock = { mode: 'wrapper', taken: false, text: owner }; e.now = () => clock; e.sleep = async (ms) => { calls.waits.push(ms); clock += ms; };
+    if (deadlineAfter !== undefined) e.deadlineMs = clock + deadlineAfter;
+    let result = null; let error = null;
+    try { result = await X.broadcast(e, book, { label: 'synthetic approval', to: TO, signer_input_file: `run/${runId}/tx.json`, gas_limit: '100000' }, N, HASH); } catch (x) { error = x; }
+    finally { rmrf(path.join(proj, 'run', '.lock.deep-r3-trade')); }
+    return { result, error, calls, book, env: e };
+  };
+  const once = (r) => {
+    ok(r.calls.signer === 1 && JSON.stringify(r.calls.signerExtra) === JSON.stringify(['--nonce', String(N)]), 'must keep nonce pin and exactly one send');
+    ok(r.book.sends().length === 1 && r.env.sentThisInvocation === 1 && r.book.attempts().length === 1, 'must record exactly one landed send/attempt');
+  };
+  await test('nonce-confirm: stale latest converges without resend', async () => {
+    const r = await run({ nonces: [pair(N, N + 1), pair(N, N + 1), pair(N + 1, N + 1)] });
+    ok(!r.error && r.result && r.result.hash === TXH, r.error && r.error.message); once(r);
+    ok(r.calls.nonce === 3 && r.calls.receipt === 3 && r.calls.waits.length === 2, 'fresh receipt and nonce each reread');
+    ok(!r.book.exists('inflight.json') && r.book.exists('inflight.settled.json'), 'settled write-ahead');
+    ok(r.calls.readOptions.every((o) => o.retries === 0 && Number.isFinite(o.deadlineMs)) && new Set(r.calls.readOptions.map((o) => o.deadlineMs)).size === 1, 'one absolute helper deadline, no nested retries');
+  });
+  await test('nonce-confirm: stale pending and both stale converge without resend', async () => {
+    for (const lag of [pair(N + 1, N), pair(N, N)]) {
+      const r = await run({ nonces: [lag, pair(N + 1, N + 1)] }); ok(!r.error && r.result, r.error && r.error.message); once(r);
+      ok(r.calls.nonce === 2 && r.calls.receipt === 2, 'must reread matching receipt before accepting convergence');
+    }
+  });
+  await test('nonce-confirm: already current tags require no retry', async () => {
+    const r = await run(); ok(!r.error && r.result, r.error && r.error.message); once(r);
+    ok(r.calls.nonce === 1 && r.calls.receipt === 1 && r.calls.waits.length === 0, 'no unnecessary polling');
+  });
+  await test('nonce-confirm: persistent lag stops after bounded reads and preserves landed evidence', async () => {
+    const r = await run({ nonces: [pair(N, N + 1)] }); once(r);
+    ok(r.error && r.error.cause === 'pending-transaction' && r.error.landed.hash === TXH, 'must stop with the original landed send');
+    ok(r.calls.nonce === 11 && r.calls.receipt === 11 && r.calls.waits.length === 10, 'bounded 11 reads');
+    ok(r.error.fields.keep_aborted === true, 'further sends remain blocked');
+  });
+  await test('nonce-confirm: foreign activity and malformed values stop immediately', async () => {
+    for (const bad of [pair(N + 1, N + 2), pair(N + 2, N + 2), pair(N, N + 2), pair(N - 1, N), pair(String(N), N + 1), pair(null, N + 1), pair(N + 0.5, N + 1), null]) {
+      const r = await run({ nonces: [bad, pair(N + 1, N + 1)] }); once(r);
+      ok(r.error && r.error.landed && r.calls.nonce === 1 && !r.calls.waits.length, 'must not wait away a genuine or invalid conflict');
+    }
+  });
+  await test('nonce-confirm: foreign advancement during lag stops without another reread', async () => {
+    const r = await run({ nonces: [pair(N, N + 1), pair(N + 1, N + 2), pair(N + 1, N + 1)] }); once(r);
+    ok(r.error && r.error.cause === 'pending-transaction' && r.calls.nonce === 2 && r.calls.waits.length === 1, 'foreign advancement must stop');
+  });
+  await test('nonce-confirm: missing or changed receipt retains unresolved write-ahead', async () => {
+    for (const change of [{ found: false }, { success: false, status: '0x0' }, { tx_hash: '0x' + 'ef'.repeat(32) }, { from: TO }, { to: H0 }, { block_number: 1004 }, { transaction_index: 3 }, { gas_used: '50001' }]) {
+      const r = await run({ nonces: [pair(N, N + 1), pair(N + 1, N + 1)], freshReceipt: { ...receipt, ...change } }); once(r);
+      ok(r.error && r.error.cause === 'chain-mismatch' && r.error.fields.keep_aborted === true, 'inconsistent receipt must block further sends');
+      ok(r.book.exists('inflight.json') && r.env.open && r.calls.nonce === 1, 'leave original write-ahead for settlement, no new nonce accepted');
+    }
+  });
+  await test('nonce-confirm: caller deadline shortens wait and never accepts a late result', async () => {
+    const r = await run({ nonces: [pair(N, N + 1), pair(N + 1, N + 1)], deadlineAfter: 500 }); once(r);
+    ok(r.error && r.calls.nonce === 1 && JSON.stringify(r.calls.waits) === '[500]', 'must stop at earlier caller deadline');
+    const expired = await run({ deadlineAfter: 0 }); once(expired); ok(expired.error && expired.calls.nonce === 0, 'expired caller budget prevents another read');
+  });
+  await test('nonce-confirm: transport errors preserve the recorded send and do not retry signing', async () => {
+    const fault = new lib.ToolFailure({ tool: 'helper', args: ['nonce', H0], helperExit: 5, code: 'planner_timeout', text: 'synthetic timeout', transient: true, attempts: 1 });
+    const r = await run({ nonceError: fault }); once(r); ok(r.error && r.error.cause === 'transport' && r.error.landed.hash === TXH && r.error.fields.keep_aborted === true, 'transport stop keeps landed evidence and blocks immediate recovery sends');
+    const q = await run({ nonces: [pair(N, N + 1)], receiptError: fault }); once(q);
+    ok(q.error && q.error.cause === 'transport' && q.book.exists('inflight.json') && q.env.open, 'unreadable fresh receipt keeps unresolved write-ahead');
+  });
+  await test('nonce-confirm: an initial receipt for another hash is refused', async () => {
+    const r = await run({ initialReceipt: { ...receipt, tx_hash: '0x' + 'ef'.repeat(32) } });
+    ok(r.error && r.error.cause === 'hash-mismatch' && r.calls.nonce === 0 && r.book.sends().length === 0 && r.book.exists('inflight.json'), 'wrong hash cannot be recorded as our send');
+  });
+}
+
 async function repairSection(root) {
   const proj = path.join(root, 'repair-proj'); rmrf(proj); fs.mkdirSync(path.join(proj, 'run'), { recursive: true });
   const bin = path.join(root, 'repair-bin'); installPlanner(bin, null);
@@ -2208,6 +2342,7 @@ async function liveSection(workRoot) {
     if (want('usage')) await sec('usage', () => usageSection(L));
     if (want('lib')) await sec('lib', () => libSection(L));
     if (want('repair')) await sec('repair', () => repairSection(root));
+    if (want('nonce-confirm')) await sec('nonce-confirm', () => nonceConfirmSection(root));
     const needPipe = want('pipeline') || want('g-safety') || want('exec-safety');
     if (needPipe) await sec('pipeline', () => pipelineSection(L));
     if (want('c-variants')) await sec('c-variants', () => cVariantsSection(L));
