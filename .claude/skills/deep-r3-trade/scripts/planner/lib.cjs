@@ -368,9 +368,10 @@ async function acquire(cfg, deadlineMs = Infinity) {
         resolve(false);
       }, Math.max(0, deadlineMs - Date.now()));
     });
-    if (!ready) return false;
+    if (!ready) { if (queue.active < cfg.parallel) wakeWaiter(); return false; }
   }
-  if (Date.now() >= deadlineMs) return false;
+  // A released slot may wake us at our deadline. Pass that free slot on instead of stranding the next waiter.
+  if (Date.now() >= deadlineMs) { if (queue.active < cfg.parallel) wakeWaiter(); return false; }
   queue.active++;
   const now = Date.now();
   const start = Math.max(now, queue.nextStart);
@@ -379,7 +380,8 @@ async function acquire(cfg, deadlineMs = Infinity) {
   if (start > now) await sleep(start - now);
   return true;
 }
-function release() { queue.active--; const w = queue.waiters.shift(); if (w) w(); }
+function wakeWaiter() { const w = queue.waiters.shift(); if (w) w(); }
+function release() { queue.active--; wakeWaiter(); }
 
 // Spawn `node <script> <args...>` in the project root. Streams stdout lines to onLine. No shell.
 function spawnNode(cfg, script, args, { onLine, env, timeoutMs } = {}) {
