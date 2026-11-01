@@ -9,7 +9,8 @@
 //     (a) gas_limit >= the fresh gas_used x 1.2, (b) gas_limit >= the peak the ordered simulation measured for that
 //     call (max_used_gas, else gas_used), (c) the fresh gas_used at most 10% above the plan's gas_used.
 //   Never the old `gasUsed x 1.5 <= gas_limit` form, which rejects every refund-free call once limits come from a real
-//   maxUsedGas. No block number or hash is ever compared between two reads (G section 8, The head moves).
+//   maxUsedGas. Pre-send checks do not compare the advancing head between reads (G section 8, The head moves).
+//   Post-receipt retries below require that the specific mined receipt remains unchanged.
 //   Then the lock is confirmed still ours, inflight.json and the attempt are written BEFORE the broadcast, the signer's
 //   `send` runs once (re-run only on a throttle answered before signing, with no broadcast line: lib.runSigner), the hash
 //   is recorded at the broadcast event, the receipt is confirmed through the helper and the nonce must then read n + 1.
@@ -35,6 +36,11 @@ const STALE_APPROVAL_MS = 2 * 3600 * 1000; // I-setup.md I.2 section 8: STALE_AP
 const SCAN_BUDGET_MS = 15 * 60 * 1000;
 const SCAN_SAVE_EVERY = 100; // blocks between two writes of the scan cursor
 const HELPER_RETRIES = 9;
+// Only lag-shaped post-receipt reads may be repeated. These limits include helper queueing and transport time;
+// the caller's earlier deadline wins. Neither this loop nor its helper ever signs or resends a transaction.
+const POST_RECEIPT_READS = 11;
+const POST_RECEIPT_WAIT_MS = 2000;
+const POST_RECEIPT_BUDGET_MS = 30000;
 
 // Float to wei and back (G section 1 rule; exponent notation expanded first).
 function toWei(x) {
@@ -451,15 +457,47 @@ async function confirm(env, book, tx, n, hash, meta = {}, settlement = null) {
   const rc = await env.H(['receipt', hash]);
   if (!rc.found) { const s = await settleNonce(env, book, n); if (!(s.outcome === 'landed' && s.receipt && s.receipt.success)) return afterUnclear(env, book, tx, n, s, `${where}: no receipt for ${hash} through the helper`, meta); return confirm(env, book, tx, n, s.hash, meta, settlement); }
   if (rc.success !== true) { book.settleInflight(); env.open = null; throw xstop(env.step, 'reverted', `${where}: receipt of ${hash} shows status ${rc.status}`, { landed_reverted: hash }); }
-  if (lc(rc.from) !== env.holder || lc(rc.to) !== lc(tx.to)) throw xstop(env.step, 'hash-mismatch', `${where}: receipt from ${rc.from} to ${rc.to}, expected the holder to ${tx.to}`, { keep_aborted: true });
-  book.settleInflight(); env.open = null;
+  if (lc(rc.tx_hash) !== lc(hash) || lc(rc.from) !== env.holder || lc(rc.to) !== lc(tx.to)) throw xstop(env.step, 'hash-mismatch', `${where}: receipt hash/from/to does not match ${hash} from the holder to ${tx.to}`, { keep_aborted: true });
   const cost = BigInt(rc.gas_used) * BigInt(rc.effective_gas_price) + BigInt(rc.l1_fee || 0);
   const rec = { at: lib.nowIso(), source: meta.source || env.step, group: meta.group || null, idx: tx.idx === undefined ? null : tx.idx, label: tx.label, nonce: n, tx_hash: hash, block: rc.block_number, to: lc(tx.to), gas_limit: String(tx.gas_limit), gas_used: rc.gas_used, effective_gas_price: rc.effective_gas_price, l1_fee: rc.l1_fee || '0', cost_wei: cost.toString(), rebuilt: !!tx.rebuilt, settled_via: settlement ? settlement.via : null };
   book.addSend(rec);
   env.sentThisInvocation++;
-  // the transaction landed and is recorded; only then is the nonce judged (a move after it is someone else's send)
-  const n2 = await env.H(['nonce', env.holder]);
-  if (n2.latest !== n + 1 || n2.pending !== n + 1) { const e = xstop(env.step, n2.latest !== n2.pending ? 'pending-transaction' : 'nonce-moved', `${where}: landed (${hash}), but after its receipt latest ${n2.latest} pending ${n2.pending}, expected ${n + 1}`); e.landed = { hash, receipt: rc, record: rec }; throw e; }
+  // Record the landed transaction exactly once. A load-balanced RPC can return the pre-receipt nonce on one
+  // tag after returning its receipt on another backend. Wait only for n/n+1 lag, never for foreign activity.
+  const now = env.now || Date.now; const sleep = env.sleep || lib.sleep;
+  const deadlineMs = Math.min(now() + POST_RECEIPT_BUDGET_MS, env.deadlineMs || Infinity);
+  const read = async (args) => (await env.ctx.helper(args, { retries: 0, deadlineMs })).json;
+  const nonceStop = (nn, why) => xstop(env.step, nn && nn.latest !== nn.pending ? 'pending-transaction' : 'nonce-moved', `${where}: landed (${hash}), but after its receipt latest ${nn && nn.latest} pending ${nn && nn.pending}, expected ${n + 1}; ${why}`, { keep_aborted: true });
+  let n2 = null; let receiptUncertain = false;
+  try {
+    for (let i = 0; i < POST_RECEIPT_READS; i++) {
+      if (now() >= deadlineMs) throw nonceStop(n2, 'post-receipt read deadline exhausted');
+      if (i > 0) {
+        receiptUncertain = true;
+        const fresh = await read(['receipt', hash]);
+        if (!fresh || !fresh.found || fresh.success !== true || fresh.status !== rc.status || lc(fresh.tx_hash) !== lc(hash) || lc(fresh.from) !== env.holder || lc(fresh.to) !== lc(tx.to) || fresh.block_number !== rc.block_number || fresh.transaction_index !== rc.transaction_index || fresh.gas_used !== rc.gas_used || fresh.effective_gas_price !== rc.effective_gas_price || (fresh.l1_fee || '0') !== (rc.l1_fee || '0')) throw xstop(env.step, 'chain-mismatch', `${where}: receipt changed or disappeared while waiting for its nonce tags; settlement is required before further sends`, { keep_aborted: true });
+        receiptUncertain = false;
+      }
+      n2 = await read(['nonce', env.holder]);
+      if (now() >= deadlineMs) throw nonceStop(n2, 'post-receipt read deadline exhausted');
+      if (!n2 || typeof n2 !== 'object') throw nonceStop(n2, 'invalid nonce response; no reread or resend');
+      if (n2.latest === n + 1 && n2.pending === n + 1) break;
+      const lagOnly = [n2.latest, n2.pending].every((v) => Number.isSafeInteger(v) && (v === n || v === n + 1));
+      if (!lagOnly) throw nonceStop(n2, 'conflicting or invalid nonce; no reread or resend');
+      if (i + 1 === POST_RECEIPT_READS) throw nonceStop(n2, 'post-receipt reread limit exhausted');
+      const delay = Math.min(POST_RECEIPT_WAIT_MS, deadlineMs - now());
+      if (delay <= 0) throw nonceStop(n2, 'post-receipt read deadline exhausted');
+      env.ctx.log(`  receipt ${hash} is recorded; latest ${n2.latest} pending ${n2.pending} lag expected ${n + 1}; rereading without resending`);
+      await sleep(delay);
+    }
+  } catch (cause) {
+    const e = asStop(env.step, cause); e.fields = { ...e.fields, keep_aborted: true };
+    // An inconsistent/unreadable fresh receipt keeps the original write-ahead for the existing settlement path.
+    // Do not mark a group effect landed until that path resolves the uncertainty; e.landed drives that bookkeeping.
+    if (!receiptUncertain) { e.landed = { hash, receipt: rc, record: rec }; book.settleInflight(); env.open = null; }
+    throw e;
+  }
+  book.settleInflight(); env.open = null;
   env.ctx.log(`  confirmed ${hash} block ${rc.block_number} gas ${rc.gas_used} cost ${eth(cost)}; nonce now ${n2.latest}`);
   return { hash, receipt: rc, record: rec };
 }
