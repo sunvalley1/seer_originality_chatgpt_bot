@@ -1,0 +1,17 @@
+{
+  "types": {
+    "Permit": [
+      {
+        "name": "spender",
+        "type": "address"
+      }
+    ]
+  },
+  "primaryType": "Permit",
+  "domain": {
+    "chainId": 10
+  },
+  "message": {
+    "spender": "0x000000000000000000000000000000000000dEaD"
+  }
+}
