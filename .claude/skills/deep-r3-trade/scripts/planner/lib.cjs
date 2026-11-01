@@ -357,13 +357,27 @@ const HELPER_TIMEOUT_MS = 10 * 60 * 1000;
 
 const queue = { active: 0, waiters: [], nextStart: 0 };
 const stats = { helperCalls: 0, helperRetries: 0, signerCalls: 0 };
-async function acquire(cfg) {
-  while (queue.active >= cfg.parallel) await new Promise((r) => queue.waiters.push(r));
+async function acquire(cfg, deadlineMs = Infinity) {
+  while (queue.active >= cfg.parallel) {
+    const ready = await new Promise((resolve) => {
+      let timer = null;
+      const wake = () => { if (timer) clearTimeout(timer); resolve(true); };
+      queue.waiters.push(wake);
+      if (Number.isFinite(deadlineMs)) timer = setTimeout(() => {
+        const i = queue.waiters.indexOf(wake); if (i !== -1) queue.waiters.splice(i, 1);
+        resolve(false);
+      }, Math.max(0, deadlineMs - Date.now()));
+    });
+    if (!ready) return false;
+  }
+  if (Date.now() >= deadlineMs) return false;
   queue.active++;
   const now = Date.now();
   const start = Math.max(now, queue.nextStart);
+  if (start >= deadlineMs) { release(); return false; }
   queue.nextStart = start + cfg.rpcGapMs;
   if (start > now) await sleep(start - now);
+  return true;
 }
 function release() { queue.active--; const w = queue.waiters.shift(); if (w) w(); }
 
@@ -393,14 +407,21 @@ function spawnNode(cfg, script, args, { onLine, env, timeoutMs } = {}) {
 
 // Run the read-only chain helper. Returns { json, attempts }. Throws ToolFailure.
 // retries: re-runs on a transient failure (default 5; 0 for `data`, whose failures take C's fallback instead).
-async function runHelper(cfg, args, { retries = DEFAULT_RETRIES, log } = {}) {
+async function runHelper(cfg, args, { retries = DEFAULT_RETRIES, log, deadlineMs = Infinity } = {}) {
   if (!Array.isArray(args) || !args.length || args.some((a) => typeof a !== 'string' || /^--/.test(a))) throw new PlannerError('internal', 'helper arguments must be plain strings (the helper takes no options)', EXIT.INTERNAL);
+  if (deadlineMs !== Infinity && (!Number.isFinite(deadlineMs) || deadlineMs <= 0)) throw new PlannerError('internal', 'helper deadline must be an absolute timestamp', EXIT.INTERNAL);
   let attempt = 0;
+  const deadlineFailure = () => new ToolFailure({ tool: 'helper', args, helperExit: 5, code: 'planner_timeout', json: null, text: 'read-only helper deadline exhausted', transient: true, attempts: attempt });
   for (;;) {
+    if (Date.now() >= deadlineMs) throw deadlineFailure();
     attempt++;
-    await acquire(cfg);
+    if (!await acquire(cfg, deadlineMs)) throw deadlineFailure();
     let r;
-    try { stats.helperCalls++; r = await spawnNode(cfg, cfg.helperPath, args, { timeoutMs: HELPER_TIMEOUT_MS }); } finally { release(); }
+    try {
+      if (Date.now() >= deadlineMs) throw deadlineFailure();
+      stats.helperCalls++; r = await spawnNode(cfg, cfg.helperPath, args, { timeoutMs: Math.min(HELPER_TIMEOUT_MS, Math.max(1, deadlineMs - Date.now())) });
+    } finally { release(); }
+    if (Date.now() >= deadlineMs) throw deadlineFailure();
     const j = lastJson(r.stdout);
     if (r.code === 0 && j && typeof j === 'object' && !j.error) return { json: j, attempts: attempt };
     const code = r.timedOut ? 'planner_timeout' : (j && (j.code || null));
@@ -410,7 +431,7 @@ async function runHelper(cfg, args, { retries = DEFAULT_RETRIES, log } = {}) {
     if (transient && attempt <= retries) {
       stats.helperRetries++;
       if (log) log(`helper ${args[0]} transient failure (${code || 'exit ' + exit}), re-run ${attempt} of ${retries}`);
-      await sleep(Math.min(20000, 1500 * attempt));
+      await sleep(Math.min(20000, 1500 * attempt, Math.max(0, deadlineMs - Date.now())));
       continue;
     }
     throw new ToolFailure({ tool: 'helper', args, helperExit: exit, code, json: j, text, transient, attempts: attempt });
